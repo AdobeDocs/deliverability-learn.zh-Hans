@@ -9,9 +9,9 @@ doc-type: article
 activity: understand
 team: ACS
 translation-type: tm+mt
-source-git-commit: d42a8c3b06308fca0cf3e9db8d634a767fc0cdc6
+source-git-commit: 283f1cb2bb40818e11daa1a3753e8428b47e08ee
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '322'
 ht-degree: 0%
 
 ---
@@ -33,4 +33,4 @@ Bulking是将邮件投放到ISP的垃圾邮件或垃圾邮件文件夹中。 当
 
 ## Journey Orchestration
 
-* [阻止列表数据库](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/deliverability-management/block-list-databases.html?lang=en#sending-messages)
+* 了解有关[实时Blackhole列表](/help/additional-resources/blocklist-databases.md)的更多信息，这些实时Blackhole应用程序维护可能被垃圾邮件发送者使用的IP地址和域的数据库。
