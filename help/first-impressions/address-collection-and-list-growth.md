@@ -9,9 +9,9 @@ doc-type: article
 activity: understand
 team: TM
 translation-type: tm+mt
-source-git-commit: 131e3f06ac8d593d4b67711ee3688ff895aa380c
+source-git-commit: ec0bb2f9ee514cc94c764744e0cc51e62e811c20
 workflow-type: tm+mt
-source-wordcount: '1580'
+source-wordcount: '1623'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 * 未确认的电子邮件地址可能有打字错误或格式错误、不正确或恶意使用。 打字错误和地址格式错误会导致较高的跳出率，这会并会引发ISP或IP信誉损失的阻止。
 
-* 恶意提交已知的垃圾邮件陷阱(有时称为“列表中毒”)，如果陷阱所有者采取行动，会导致投放和声誉出现严重问题。 如果没有确认，就无法确定收件人是否真的希望添加到营销列表。 这同样使得设置收件人的期望变得不可能，并可能导致更多的垃圾邮件投诉 — 如果收集的电子邮件恰好是垃圾邮件陷阱，有时还会黑名单。
+* 恶意提交已知的垃圾邮件陷阱(有时称为“列表中毒”)，如果陷阱所有者采取行动，会导致投放和声誉出现严重问题。 如果没有确认，就无法确定收件人是否真的希望添加到营销列表。 这同样使得设置收件人的期望变得不可能，并可能导致更多的垃圾邮件投诉，有时还会收集的电子邮件是否恰列入阻止列表当是垃圾邮件陷阱。
 
 有关如何将物理存储和单选加入中的问题降至最低的指导，请访问本指南的[数据质量和卫生](#data-quality-and-hygiene)部分，了解多次选择加入的详细信息和益处。
 
@@ -88,5 +88,17 @@ DOI包括向已注册到您电子邮件项目的订阅者电子邮件地址发�
 **展会或其他事件收**
 集在展位上或通过其他官方、明显带有品牌的方法收集地址非常有用。风险在于，许多像这样的事件会收集所有地址，并通过事件推广者或主机分发这些地址。 这意味着这些电子邮件地址的所有者从未请求接收您品牌的电子邮件。 这些订阅者可能会投诉您的邮件，并将其标记为垃圾邮件，他们可能没有提供准确的联系信息。
 
-**抽**
-奖抽奖可以快速提供大量电子邮件地址。但这些订阅者希望获得奖项，而不是你的电子邮件。 他们甚至可能没有关注谁将与他们接触的名字。 他们可能会抱怨您的邮件并将其标记为垃圾邮件，而且他们可能永远不会参与或购买邮件。
+**抽奖**
+
+抽奖可以快速提供大量电子邮件地址。 但这些订阅者希望获得奖项，而不是你的电子邮件。 他们甚至可能没有关注谁将与他们接触的名字。 他们可能会抱怨您的邮件并将其标记为垃圾邮件，而且他们可能永远不会参与或购买邮件。
+
+## 产品特定资源
+
+**Adobe Campaign Classic**
+
+* [创建包含订阅选择加入的多次表单](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/use-cases--web-forms.html?lang=en#create-a-subscription--form-with-double-opt-in)
+
+**Adobe Campaign Standard**
+
+* [多次选择加入流程](https://experienceleague.adobe.com/docs/campaign-standard/using/communication-channels/landing-pages/setting-up-a-double-opt-in-process.html?lang=en#communication-channels)
+
