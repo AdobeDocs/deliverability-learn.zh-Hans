@@ -9,9 +9,9 @@ doc-type: article
 activity: understand
 team: ACS
 translation-type: tm+mt
-source-git-commit: d42a8c3b06308fca0cf3e9db8d634a767fc0cdc6
+source-git-commit: 283f1cb2bb40818e11daa1a3753e8428b47e08ee
 workflow-type: tm+mt
-source-wordcount: '453'
+source-wordcount: '575'
 ht-degree: 0%
 
 ---
@@ -42,3 +42,17 @@ ht-degree: 0%
 2. 购物车放弃 — 中型 — 高参与度(一般
 3. 欢迎电子邮件 — 高参与度，但可能包含不良地址，具体取决于您的列表收集方法
 4. 回访电子邮件 — 通常降低参与度
+
+## 产品特定资源
+
+**Campaign**
+
+* 了解在[本节](/help/putting-it-in-practice/ac-starting-new-platform.md)中使用Adobe Campaign启动新平台时如何管理交付性的更多信息。
+* 了解如何在[本节](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#sending-using-multiple-waves)中使用Adobe Campaign Classic的多个批次进行发送。
+* 了解如何将子域完全委派给[本节](/help/putting-it-in-practice/ac-domain-name-setup.md)中的Adobe Campaign Classic或标准。
+* [控制面板:完全子域委派（教程）](https://experienceleague.corp.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) - *了解如何将子域完全委派给Adobe Campaign Classic。*
+* [控制面板:完全子域委派（教程）](https://experienceleague.corp.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) - *了解如何将子域完全委派给Adobe Campaign Standard。*
+
+## Journey Orchestration
+
+* 了解有关通过[本节](/help/additional-resources/increase-reputation-with-ip-warming.md)中的IP变暖提高电子邮件声誉的更多信息。
