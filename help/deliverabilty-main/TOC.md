@@ -3,10 +3,10 @@ user-guide-title: 投放最佳实践指南
 user-guide-breadcrumb: Deliverability Best Practice Guide
 user-guide-description: 了解关键的可交付性术语、概念和方法，以使您能够确保您的营销计划取得成功。
 translation-type: tm+mt
-source-git-commit: 96ed84da391faaabd3001ddd6a411ddc1f46b033
+source-git-commit: a823349a7619595c6dc3e0d135c253bc5150046e
 workflow-type: tm+mt
-source-wordcount: '163'
-ht-degree: 22%
+source-wordcount: '160'
+ht-degree: 23%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 22%
    + [Verizon Media Group（Yahoo、AOL、Verizon等）](/help/internet-service-provider-specifics/verizon-media-group.md)
 + [持续监测](/help/ongoing-monitoring.md)
 + 实践{#putting-it-in-practice}
-   + [如何取得成功](/help/putting-it-in-practice/how-to-reach-success.md)
+   + [概述](/help/putting-it-in-practice/putting-it-in-practice.md)
    + Campaign {#campaign}
       + [域名设置](/help/putting-it-in-practice/ac-domain-name-setup.md)
       + [SSL证书请求进程](/help/putting-it-in-practice/ac-ssl-certificate-request.md)
