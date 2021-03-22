@@ -9,10 +9,10 @@ doc-type: article
 activity: understand
 team: ACS
 translation-type: tm+mt
-source-git-commit: d42a8c3b06308fca0cf3e9db8d634a767fc0cdc6
+source-git-commit: 283f1cb2bb40818e11daa1a3753e8428b47e08ee
 workflow-type: tm+mt
-source-wordcount: '888'
-ht-degree: 1%
+source-wordcount: '924'
+ht-degree: 2%
 
 ---
 
@@ -57,7 +57,16 @@ ht-degree: 1%
 
 ## 产品特定资源
 
+**Adobe Campaign Classic**
+
+* [定义正确的受众](https://experienceleague.adobe.com/docs/campaign-standard/using/communication-channels/delivery-bestpractices/define-the-right-audience.html#communication-channels)
+* [压力规则](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/pressure-rules.html)
+
 **Adobe Campaign Standard**
 
 * [定义正确的受众](https://experienceleague.adobe.com/docs/campaign-standard/using/communication-channels/delivery-bestpractices/define-the-right-audience.html)
-* [疲劳规则（产品文档）](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/working-with-typology-rules/fatigue-rules.html)
+* [疲劳规则](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/working-with-typology-rules/fatigue-rules.html)
+
+## Journey Orchestration
+
+* 了解有关[本节](/help/additional-resources/re-engagement.md)中的重新参与（或赢回）策略的更多信息。
