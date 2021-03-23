@@ -9,7 +9,7 @@ doc-type: article
 activity: understand
 team: ACS
 translation-type: tm+mt
-source-git-commit: 283f1cb2bb40818e11daa1a3753e8428b47e08ee
+source-git-commit: 1e539b5df54250a5927701009e7a9c84e5d73fae
 workflow-type: tm+mt
 source-wordcount: '575'
 ht-degree: 0%
@@ -47,9 +47,9 @@ ht-degree: 0%
 
 **Campaign**
 
-* 了解在[本节](/help/putting-it-in-practice/ac-starting-new-platform.md)中使用Adobe Campaign启动新平台时如何管理交付性的更多信息。
+* 了解在[本节](/help/additional-resources/ac-starting-new-platform.md)中使用Adobe Campaign启动新平台时如何管理交付性的更多信息。
 * 了解如何在[本节](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#sending-using-multiple-waves)中使用Adobe Campaign Classic的多个批次进行发送。
-* 了解如何将子域完全委派给[本节](/help/putting-it-in-practice/ac-domain-name-setup.md)中的Adobe Campaign Classic或标准。
+* 了解如何将子域完全委派给[本节](/help/additional-resources/ac-domain-name-setup.md)中的Adobe Campaign Classic或标准。
 * [控制面板:完全子域委派（教程）](https://experienceleague.corp.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) - *了解如何将子域完全委派给Adobe Campaign Classic。*
 * [控制面板:完全子域委派（教程）](https://experienceleague.corp.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) - *了解如何将子域完全委派给Adobe Campaign Standard。*
 
