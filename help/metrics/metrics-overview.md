@@ -1,6 +1,6 @@
 ---
-title: 交付能力指标
-description: 了解要监控的关键交付能力指标以及如何使用它们来识别信誉问题。
+title: 可投放性指标
+description: 了解要监测哪些关键可投放性指标以及如何使用它们识别信誉问题。
 feature: 量度
 topics: Deliverability
 kt: 5256
@@ -12,19 +12,19 @@ translation-type: tm+mt
 source-git-commit: 550821608eb7049f739a156536dd31b6b2faa2fa
 workflow-type: tm+mt
 source-wordcount: '142'
-ht-degree: 15%
+ht-degree: 62%
 
 ---
 
 
-# 交付能力指标
+# 可投放性指标
 
-识别发送信誉问题的最佳方法之一是通过指标。 让我们看一下一些关键的可交付性指标，以及如何使用它们来识别声誉问题。
+识别发送信誉问题的最佳方法之一是通过指标。让我们看一下要监测的一些关键可投放性指标，以及如何使用它们识别信誉问题。
 
 * [跳出次数](/help/metrics/bounces.md)
 * [投诉](/help/metrics/complaints.md)
 * [垃圾邮件陷阱](/help/metrics/spam-traps.md)
-* [膨胀和阻塞](/help/metrics/bulking-and-blocking.md)
+* [批处理和阻止](/help/metrics/bulking-and-blocking.md)
 
 ## 产品特定资源
 
