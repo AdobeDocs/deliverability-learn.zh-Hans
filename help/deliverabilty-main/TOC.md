@@ -3,10 +3,10 @@ user-guide-title: 投放最佳实践指南
 user-guide-breadcrumb: Deliverability Best Practice Guide
 user-guide-description: 了解关键的可交付性术语、概念和方法，以使您能够确保您的营销计划取得成功。
 translation-type: tm+mt
-source-git-commit: a823349a7619595c6dc3e0d135c253bc5150046e
+source-git-commit: 1e539b5df54250a5927701009e7a9c84e5d73fae
 workflow-type: tm+mt
-source-wordcount: '160'
-ht-degree: 23%
+source-wordcount: '165'
+ht-degree: 21%
 
 ---
 
@@ -40,19 +40,20 @@ ht-degree: 23%
    + [Microsoft（Hotmail、Outlook、Windows Live等）](/help/internet-service-provider-specifics/microsoft.md)
    + [Verizon Media Group（Yahoo、AOL、Verizon等）](/help/internet-service-provider-specifics/verizon-media-group.md)
 + [持续监测](/help/ongoing-monitoring.md)
-+ 实践{#putting-it-in-practice}
-   + [概述](/help/putting-it-in-practice/putting-it-in-practice.md)
-   + Campaign {#campaign}
-      + [域名设置](/help/putting-it-in-practice/ac-domain-name-setup.md)
-      + [SSL证书请求进程](/help/putting-it-in-practice/ac-ssl-certificate-request.md)
-      + [启动新平台](/help/putting-it-in-practice/ac-starting-new-platform.md)
-      + [Campaign Classic — 技术建议](/help/putting-it-in-practice/acc-technical-recommendations.md)
-+ 其他资源 {#additional-resources}
++ [付诸实践](/help/putting-it-in-practice.md)
++ 附录：其他资源{#additional-resources}
    + [概述](/help/additional-resources/general-resources.md)
-   + [关于垃圾邮件陷阱](/help/additional-resources/all-about-spam-traps.md)
-   + [利用IP升温提高您的电子邮件声誉](/help/additional-resources/increase-reputation-with-ip-warming.md)
-   + [身份验证](/help/additional-resources/authentication.md)
-   + [重复](/help/additional-resources/duplicates.md)
-   + [重新参与最佳实践](/help/additional-resources/re-engagement.md)
-   + [实时黑洞列表](/help/additional-resources/blocklist-databases.md)
-   + [故障诊断](/help/additional-resources/troubleshooting.md)
+   + 通用资源{#generic-resources}
+      + [关于垃圾邮件陷阱](/help/additional-resources/all-about-spam-traps.md)
+      + [利用IP升温提高您的电子邮件声誉](/help/additional-resources/increase-reputation-with-ip-warming.md)
+      + [身份验证](/help/additional-resources/authentication.md)
+      + [重复](/help/additional-resources/duplicates.md)
+      + [重新参与最佳实践](/help/additional-resources/re-engagement.md)
+      + [实时黑洞列表](/help/additional-resources/blocklist-databases.md)
+      + [故障诊断](/help/additional-resources/troubleshooting.md)
+   + 产品特定资源{#product-specific-resources}
+      + Campaign {#campaign}
+         + [域名设置](/help/additional-resources/ac-domain-name-setup.md)
+         + [SSL证书请求进程](/help/additional-resources/ac-ssl-certificate-request.md)
+         + [启动新平台](/help/additional-resources/ac-starting-new-platform.md)
+         + [Campaign Classic — 技术建议](/help/additional-resources/acc-technical-recommendations.md)
