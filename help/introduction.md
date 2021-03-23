@@ -8,9 +8,9 @@ doc-type: article
 activity: understand
 team: ACS
 translation-type: tm+mt
-source-git-commit: 6297a3331b458b88ce2141a6fa30bbc69190b524
+source-git-commit: 1e539b5df54250a5927701009e7a9c84e5d73fae
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '431'
 ht-degree: 15%
 
 ---
@@ -39,8 +39,11 @@ ht-degree: 15%
 7. [发件人永久性](/help/sender-permanence.md)
 8. [因特网服务提供商](/help/internet-service-provider-specifics/overview.md)
 9. [持续监测](/help/ongoing-monitoring.md)
-10. [付诸实践](/help/putting-it-in-practice/putting-it-in-practice.md)
-11. [其他资源](/help/additional-resources/general-resources.md)
+10. [付诸实践](/help/putting-it-in-practice.md)
+
+>[!NOTE]
+>
+>下载[adobe-deliverability-best-practice-guide.pdf](/help/assets/adobe-deliverability-best-practice-guide.pdf)
 
 ## 源
 
@@ -50,4 +53,4 @@ ht-degree: 15%
 
 ## Journey Orchestration
 
-下载[adobe-deliverability-best-practice-guide.pdf](/help/assets/adobe-deliverability-best-practice-guide.pdf)
+[附录：其他资源](/help/additional-resources/general-resources.md)
