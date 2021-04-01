@@ -1,14 +1,14 @@
 ---
-cloud: experience-cloud
+cloud: Experience Cloud
 solution: Experience Cloud
 product: experience cloud
 type: 教程
 mini-toc-levels: 2
 git-repo: https://git.corp.adobe.com/AdobeDocs/deliverability-learn.zh-Hans
 index: true
-translation-type: ht
-source-git-commit: 004ab7179c37e3ad8b318020a49f41e8a5a9b9fc
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 6039f6602ec27d32a3b4d5855856843a81a22fb6
+workflow-type: tm+mt
 source-wordcount: '66'
 ht-degree: 100%
 
