@@ -2,14 +2,14 @@
 cloud: Experience Cloud
 solution: Experience Cloud
 product: experience cloud
-type: 教程
+type: Tutorial
 mini-toc-levels: 2
 git-repo: https://git.corp.adobe.com/AdobeDocs/deliverability-learn.zh-Hans
 index: true
 translation-type: tm+mt
 source-git-commit: 6039f6602ec27d32a3b4d5855856843a81a22fb6
 workflow-type: tm+mt
-source-wordcount: '66'
+source-wordcount: '65'
 ht-degree: 100%
 
 ---
@@ -19,4 +19,4 @@ ht-degree: 100%
 
 metadata.md 文件包括可传递给存储库中用户指南 TOC.md 文件的存储库级别元数据。如果要更改任何用户指南的 metadata.md 内容，请在任意 TOC.md 文件中进行更改。
 
-请参阅[元数据](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/editing/user-guide-setup/metadata.html?lang=en)以获取 **solution**、**product** 和 **type** 的有效值的列表。
+请参阅[元数据](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/editing/user-guide-setup/metadata.html?lang=zh-Hans)以获取 **solution**、**product** 和 **type** 的有效值的列表。
