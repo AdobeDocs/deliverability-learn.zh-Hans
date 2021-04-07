@@ -8,11 +8,11 @@ thumbnail: kt7051.jpg
 doc-type: article
 activity: understand
 team: ACS
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 283f1cb2bb40818e11daa1a3753e8428b47e08ee
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '322'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -33,4 +33,4 @@ ht-degree: 93%
 
 ## Journey Orchestration
 
-* 了解有关[实时Blackhole列表](/help/additional-resources/blocklist-databases.md)的更多信息，这些实时Blackhole应用程序维护可能被垃圾邮件发送者使用的IP地址和域的数据库。
+* 了解更多关于[实时黑洞列表](/help/additional-resources/blocklist-databases.md)的信息，该列表用于维护可能被垃圾邮件发送者使用的 IP 地址和域的数据库。
