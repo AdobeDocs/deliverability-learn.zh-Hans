@@ -2,11 +2,11 @@
 user-guide-title: 投放最佳实践指南
 user-guide-breadcrumb: Deliverability Best Practice Guide
 user-guide-description: 了解关键的可交付性术语、概念和方法，以使您能够确保您的营销计划取得成功。
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 5a7e8ef210941b79bd5eb31b27041ca329e301f2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '165'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -45,15 +45,15 @@ ht-degree: 80%
    + [概述](/help/additional-resources/general-resources.md)
    + 通用资源{#generic-resources}
       + [关于垃圾邮件陷阱](/help/additional-resources/all-about-spam-traps.md)
-      + [利用IP升温提高您的电子邮件声誉](/help/additional-resources/increase-reputation-with-ip-warming.md)
+      + [利用 IP 预热提高您的电子邮件声誉](/help/additional-resources/increase-reputation-with-ip-warming.md)
       + [身份验证](/help/additional-resources/authentication.md)
       + [重复](/help/additional-resources/duplicates.md)
-      + [重新参与最佳实践](/help/additional-resources/re-engagement.md)
+      + [重新接触最佳实践](/help/additional-resources/re-engagement.md)
       + [实时黑洞列表](/help/additional-resources/blocklist-databases.md)
-      + [故障诊断](/help/additional-resources/troubleshooting.md)
+      + [疑难解答](/help/additional-resources/troubleshooting.md)
    + 产品特定资源 {#product-specific-resources}
       + Campaign {#campaign}
          + [域名设置](/help/additional-resources/ac-domain-name-setup.md)
-         + [SSL证书请求进程](/help/additional-resources/ac-ssl-certificate-request.md)
+         + [SSL 证书请求进程](/help/additional-resources/ac-ssl-certificate-request.md)
          + [启动新平台](/help/additional-resources/ac-starting-new-platform.md)
-         + [Campaign Classic — 技术建议](/help/additional-resources/acc-technical-recommendations.md)
+         + [Campaign Classic - 技术建议](/help/additional-resources/acc-technical-recommendations.md)
