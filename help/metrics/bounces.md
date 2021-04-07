@@ -8,11 +8,11 @@ thumbnail: kt7047.jpg
 doc-type: article
 activity: understand
 team: ACS
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 283f1cb2bb40818e11daa1a3753e8428b47e08ee
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '478'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -53,12 +53,12 @@ ht-degree: 88%
 
 **Adobe Campaign Classic**
 
-* [投放失败类型和原因](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html#delivery-failure-types-and-reasons)
-* [弹回邮件管理](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html#bounce-mail-management)
-* [非交付件和退回报告](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/reports-on-deliveries/global-reports.html#non-deliverables-and-bounces)
+* [投放失败类型和原因](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html?lang=zh-Hans#delivery-failure-types-and-reasons)
+* [退回邮件管理](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html?lang=zh-Hans#bounce-mail-management)
+* [无法投放项和退回报告](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/reports-on-deliveries/global-reports.html?lang=zh-Hans#non-deliverables-and-bounces)
 
 **Adobe Campaign Standard**
 
-* [投放失败类型和原因](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-delivery-failures.html#delivery-failure-types-and-reasons)
-* [退回邮件鉴别](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-delivery-failures.html#bounce-mail-qualification)
-* [跳出摘要报表](https://experienceleague.adobe.com/docs/campaign-standard/using/reporting/list-of-reports/bounce-summary.html?lang=en#reporting)
+* [投放失败类型和原因](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-delivery-failures.html?lang=zh-Hans#delivery-failure-types-and-reasons)
+* [退回邮件鉴别](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-delivery-failures.html?lang=zh-Hans#bounce-mail-qualification)
+* [邮件退回摘要报告](https://experienceleague.adobe.com/docs/campaign-standard/using/reporting/list-of-reports/bounce-summary.html?lang=zh-Hans#reporting)
