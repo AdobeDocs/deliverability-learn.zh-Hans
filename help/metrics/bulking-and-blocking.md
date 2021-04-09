@@ -8,14 +8,14 @@ thumbnail: kt7051.jpg
 doc-type: article
 activity: understand
 team: ACS
+exl-id: 4b280f90-73b9-4b88-adb8-57b6a46ddad7
 translation-type: ht
-source-git-commit: 283f1cb2bb40818e11daa1a3753e8428b47e08ee
+source-git-commit: e433002423bd1ab2f4a89425198c16160dae0719
 workflow-type: ht
 source-wordcount: '322'
 ht-degree: 100%
 
 ---
-
 
 # 批处理和阻止
 
