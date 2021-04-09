@@ -8,14 +8,14 @@ thumbnail: kt5255.jpg
 doc-type: article
 activity: understand
 team: ACS
+exl-id: 5285eda9-5099-48d5-b150-ce2c376ee549
 translation-type: ht
-source-git-commit: d42a8c3b06308fca0cf3e9db8d634a767fc0cdc6
+source-git-commit: e433002423bd1ab2f4a89425198c16160dae0719
 workflow-type: ht
 source-wordcount: '844'
 ht-degree: 100%
 
 ---
-
 
 # 可投放性策略和定义
 
