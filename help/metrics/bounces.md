@@ -8,14 +8,14 @@ thumbnail: kt7047.jpg
 doc-type: article
 activity: understand
 team: ACS
+exl-id: 6338eb67-3efd-476e-8b26-97bbb6a1d35f
 translation-type: ht
-source-git-commit: 283f1cb2bb40818e11daa1a3753e8428b47e08ee
+source-git-commit: e433002423bd1ab2f4a89425198c16160dae0719
 workflow-type: ht
 source-wordcount: '478'
 ht-degree: 100%
 
 ---
-
 
 # 跳出次数
 
