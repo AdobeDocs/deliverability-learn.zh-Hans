@@ -7,14 +7,14 @@ thumbnail: kt5321.jpg
 doc-type: article
 activity: understand
 team: ACS
+exl-id: 929e325a-514d-49e3-91cf-c8383bb9465e
 translation-type: ht
-source-git-commit: 1e539b5df54250a5927701009e7a9c84e5d73fae
+source-git-commit: e433002423bd1ab2f4a89425198c16160dae0719
 workflow-type: ht
 source-wordcount: '431'
 ht-degree: 100%
 
 ---
-
 
 # 可投放性最佳实践简介
 
