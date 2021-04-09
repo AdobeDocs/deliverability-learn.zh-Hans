@@ -8,14 +8,14 @@ thumbnail: kt5256.jpg
 doc-type: article
 activity: understand
 team: ACS
+exl-id: d781a0b6-5670-4958-8649-f061e7e9a84f
 translation-type: ht
-source-git-commit: 550821608eb7049f739a156536dd31b6b2faa2fa
+source-git-commit: e433002423bd1ab2f4a89425198c16160dae0719
 workflow-type: ht
 source-wordcount: '142'
 ht-degree: 100%
 
 ---
-
 
 # 可投放性指标
 
