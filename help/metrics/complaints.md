@@ -8,14 +8,14 @@ thumbnail: kt7048.jpg
 doc-type: article
 activity: understand
 team: ACS
+exl-id: 0343820d-f5af-4b8a-bcab-dbb47ae7aecb
 translation-type: ht
-source-git-commit: 550821608eb7049f739a156536dd31b6b2faa2fa
+source-git-commit: e433002423bd1ab2f4a89425198c16160dae0719
 workflow-type: ht
 source-wordcount: '291'
 ht-degree: 100%
 
 ---
-
 
 # 投诉
 
