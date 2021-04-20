@@ -1,7 +1,7 @@
 ---
 title: 定位条件
 description: 了解如何在着手建立良好声誉，在与参与度较低的受众接触之前有效建立信任。
-feature: 过渡流程
+feature: Transition Process
 topics: Deliverability
 kt: 7053
 thumbnail: kt7053.jpg

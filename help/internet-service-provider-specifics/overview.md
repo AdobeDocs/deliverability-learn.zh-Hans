@@ -1,7 +1,7 @@
 ---
 title: 因特网服务提供商
 description: ISP并不完全一样。 他们在确定允许通过哪些电子邮件进入用户的收件箱以及过滤到垃圾邮件文件夹或根本不允许通过哪些电子邮件时，会专注于不同的事情。 我们将快速浏览一些ISP之间的重要差异。 它不是所有ISP的完全列表，也不是涵盖所有可能的差异。
-feature: ISP
+feature: ISPs
 topics: Deliverability
 kt: null
 doc-type: article

@@ -1,7 +1,7 @@
 ---
 title: 参与度
 description: 参与度已成为影响收件箱放置决策的最重要因素。
-feature: 参与度
+feature: Engagement
 topics: Deliverability
 kt: 5257
 thumbnail: kt5257.jpg

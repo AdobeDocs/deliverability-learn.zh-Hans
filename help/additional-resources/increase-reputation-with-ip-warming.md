@@ -1,7 +1,7 @@
 ---
 title: 利用IP升温提高您的电子邮件声誉
 description: 了解为什么在IP升温时提高电子邮件声誉非常重要，以及如何继续实现最佳交付能力。
-feature: Journey Orchestration
+feature: Additional resources
 topics: Deliverability
 kt: null
 thumbnail: null

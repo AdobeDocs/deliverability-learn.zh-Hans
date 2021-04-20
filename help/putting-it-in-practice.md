@@ -1,7 +1,7 @@
 ---
 title: 付诸实践
 description: 发送持久性是建立一致的发送量和策略以保持ISP信誉的过程。
-feature: 可投放性
+feature: Deliverability
 topics: Deliverability
 kt: 5264
 thumbnail: kt5264.jpg

@@ -1,7 +1,7 @@
 ---
 title: 实现最佳交付能力的内容最佳实践
 description: 内容是关键。 您已经阅读了我们对相关性的看法，但以下是有关在内容方面优化您的交付能力的一些额外提示。
-feature: 内容
+feature: Content
 topics: Deliverability
 kt: 5260
 thumbnail: kt5260.jpg

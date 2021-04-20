@@ -1,7 +1,7 @@
 ---
 title: 基础结构
 description: '了解正确构建电子邮件基础架构所需的内容。 '
-feature: 过渡流程
+feature: Transition Process
 topics: Deliverability
 kt: 7052
 thumbnail: kt7052.jpg

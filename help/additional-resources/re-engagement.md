@@ -1,7 +1,7 @@
 ---
 title: 重新参与最佳实践
 description: 了解如何通过重新参与战略提高交付能力。
-feature: Journey Orchestration
+feature: Additional resources
 topics: Deliverability
 kt: null
 thumbnail: null

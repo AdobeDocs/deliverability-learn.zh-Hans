@@ -1,7 +1,7 @@
 ---
 title: Gmail
 description: 在多数发送方的电子邮件列表中，Gmail占了最大比例。 他们对电子邮件的态度也与其他人略有不同。
-feature: ISP
+feature: ISPs
 topics: Deliverability
 kt: 5262
 doc-type: article

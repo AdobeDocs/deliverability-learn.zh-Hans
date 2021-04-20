@@ -1,7 +1,7 @@
 ---
 title: 重复
 description: 了解如何识别和限制重复以提高交付能力。
-feature: Journey Orchestration
+feature: Additional resources
 topics: Deliverability
 kt: null
 thumbnail: null

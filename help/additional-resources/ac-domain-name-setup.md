@@ -1,7 +1,7 @@
 ---
 title: 域名设置
 description: 了解如何将子域委派到Adobe Campaign。
-feature: 付诸实践
+feature: Putting it in practice
 topics: Deliverability
 kt: null
 thumbnail: null

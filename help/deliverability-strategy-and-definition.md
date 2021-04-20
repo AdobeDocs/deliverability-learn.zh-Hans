@@ -1,7 +1,7 @@
 ---
 title: 什么是可投放性策略以及如何定义可投放性
 description: 了解可投放性的定义、其重要原因和关键可投放性指标。
-feature: 可投放性
+feature: Deliverability
 topics: Deliverability
 kt: 5255
 thumbnail: kt5255.jpg

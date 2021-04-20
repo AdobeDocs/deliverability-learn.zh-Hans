@@ -1,7 +1,7 @@
 ---
 title: 解决收集和列表增长问题
 description: '了解新电子邮件地址的最佳来源、如何确保高数据质量并符合法律准则。 '
-feature: 受众
+feature: Audiences
 topics: Deliverability
 kt: 7063
 thumbnail: kt7063.jpg

@@ -1,7 +1,7 @@
 ---
 title: 如何在切换电子邮件平台时顺畅过渡。
 description: '移动电子邮件服务提供商(ESP)时，无法同时过渡现有的已建IP地址。 重新开始时，务必遵循最佳实践，以建立良好的声誉。 '
-feature: 可投放性
+feature: Deliverability
 topics: Deliverability
 kt: 5259
 thumbnail: kt5259.jpg

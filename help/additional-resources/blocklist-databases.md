@@ -1,7 +1,7 @@
 ---
 title: 实时黑洞列表
 description: 了解维护IP地址和可能被垃圾邮件发送者使用的域的列表的组织。
-feature: Journey Orchestration
+feature: Additional resources
 topics: Deliverability
 kt: null
 thumbnail: null

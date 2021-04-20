@@ -1,7 +1,7 @@
 ---
 title: 跳出次数
 description: 了解不同类型的退回。
-feature: 量度
+feature: Metrics
 topics: Deliverability
 kt: 7047
 thumbnail: kt7047.jpg

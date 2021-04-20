@@ -1,7 +1,7 @@
 ---
 title: 欢迎电子邮件
 description: 了解构建欢迎电子邮件时要考虑的关键元素。
-feature: 电子邮件
+feature: Email
 topics: Deliverability
 kt: 7064
 thumbnail: kt7064.jpg

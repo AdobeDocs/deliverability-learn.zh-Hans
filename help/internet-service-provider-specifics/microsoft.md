@@ -1,7 +1,7 @@
 ---
 title: Microsoft（Hotmail、Outlook、Windows Live等）
 description: Microsoft通常是第二或第三大提供商，具体取决于您的列表的组成，它们处理的流量与其他ISP略有不同。
-feature: ISP
+feature: ISPs
 topics: Deliverability
 kt: 5319
 doc-type: article

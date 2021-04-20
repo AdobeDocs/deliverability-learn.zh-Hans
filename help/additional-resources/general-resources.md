@@ -1,7 +1,7 @@
 ---
 title: Journey Orchestration
 description: 本节列表了有关交付能力的许多其他资源。
-feature: Journey Orchestration
+feature: Additional resources
 topics: Deliverability
 kt: null
 thumbnail: null

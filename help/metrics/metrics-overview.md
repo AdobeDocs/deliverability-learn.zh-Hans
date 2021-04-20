@@ -1,7 +1,7 @@
 ---
 title: 可投放性指标
 description: 了解要监测哪些关键可投放性指标以及如何使用它们识别信誉问题。
-feature: 量度
+feature: Metrics
 topics: Deliverability
 kt: 5256
 thumbnail: kt5256.jpg

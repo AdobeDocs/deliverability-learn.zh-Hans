@@ -1,7 +1,7 @@
 ---
 title: 可交付性疑难解答
 description: 了解如何确定和解决可交付性问题。
-feature: Journey Orchestration
+feature: Additional resources
 topics: Deliverability
 kt: null
 thumbnail: null

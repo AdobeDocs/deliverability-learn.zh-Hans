@@ -1,7 +1,7 @@
 ---
 title: Campaign Classic — 技术建议
 description: 探索可用于提高Adobe Campaign Classic交付率的技术、配置和工具。
-feature: 付诸实践
+feature: Putting it in practice
 topics: Deliverability
 kt: null
 thumbnail: null

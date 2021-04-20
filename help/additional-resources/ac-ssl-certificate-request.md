@@ -1,7 +1,7 @@
 ---
 title: SSL证书请求进程
 description: 了解如何在您委托给Adobe的子域上安装SSL证书。
-feature: 付诸实践
+feature: Putting it in practice
 topics: Deliverability
 kt: null
 thumbnail: null

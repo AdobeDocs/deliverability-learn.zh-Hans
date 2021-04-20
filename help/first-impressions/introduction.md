@@ -1,7 +1,7 @@
 ---
 title: 第一印象 — 列表收集和欢迎电子邮件
 description: '了解如何通过给人留下良好的第一印象来建立成功的电子邮件项目。 '
-feature: 受众，电子邮件
+feature: Audiences, Email
 topics: Deliverability
 kt: 5258
 thumbnail: kt5258.jpg

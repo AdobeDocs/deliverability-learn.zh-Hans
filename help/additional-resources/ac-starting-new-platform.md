@@ -1,7 +1,7 @@
 ---
 title: 启动新平台
 description: 了解有关使用Adobe Campaign启动新平台时管理交付能力的更多信息。
-feature: 付诸实践
+feature: Putting it in practice
 topics: Deliverability
 kt: null
 thumbnail: null

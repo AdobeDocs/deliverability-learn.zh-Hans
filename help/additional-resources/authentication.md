@@ -1,7 +1,7 @@
 ---
 title: 身份验证
 description: 了解有关SPF、DKIM和DMARC验证方法的更多信息。
-feature: Journey Orchestration
+feature: Additional resources
 topics: Deliverability
 kt: null
 thumbnail: null

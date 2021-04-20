@@ -1,7 +1,7 @@
 ---
 title: 关于垃圾邮件陷阱
 description: 了解如何在管理交付能力时理解、识别和避免垃圾邮件陷阱。
-feature: Journey Orchestration
+feature: Additional resources
 topics: Deliverability
 kt: null
 thumbnail: null

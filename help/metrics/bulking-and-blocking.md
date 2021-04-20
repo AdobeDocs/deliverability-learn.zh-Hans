@@ -1,7 +1,7 @@
 ---
 title: 批处理和阻止电子邮件
 description: 了解 ISP 将电子邮件消息放入批量文件夹或阻止它们的原因。
-feature: 量度
+feature: Metrics
 topics: Deliverability
 kt: 7051
 thumbnail: kt7051.jpg

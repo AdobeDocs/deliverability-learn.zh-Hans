@@ -1,7 +1,7 @@
 ---
 title: '可投放性最佳实践简介 '
 description: 了解关键的可交付性术语、概念和方法，以使您能够确保您的营销计划取得成功。
-feature: 可投放性
+feature: Deliverability
 kt: 5321
 thumbnail: kt5321.jpg
 doc-type: article

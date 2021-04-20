@@ -1,7 +1,7 @@
 ---
 title: 音量 — 有关如何顺畅过渡的提示
 description: 您发送的邮件数量对于建立良好声誉至关重要。 了解您可以如何顺利地过渡。
-feature: 过渡流程
+feature: Transition Process
 topics: Deliverability
 kt: 7055
 thumbnail: kt7055.jpg
