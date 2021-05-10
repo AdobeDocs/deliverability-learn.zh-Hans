@@ -1,21 +1,21 @@
 ---
 title: 基础结构
-description: '了解正确构建电子邮件基础架构所需的内容。 '
-feature: Transition Process
+description: '了解需要什么才能正确地构造电子邮件基础架构。 '
+feature: 过渡流程
 topics: Deliverability
 kt: 7052
 thumbnail: kt7052.jpg
 doc-type: article
 activity: understand
 team: ACS
+exl-id: 4025d95c-cc77-4e0c-9904-aaf60019b18c
 translation-type: tm+mt
-source-git-commit: 1e539b5df54250a5927701009e7a9c84e5d73fae
+source-git-commit: 65eb1fd03e6a6617ef24661c371f850d1f8e6054
 workflow-type: tm+mt
 source-wordcount: '912'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
-
 
 # 基础结构
 
@@ -45,7 +45,7 @@ Adobe平台上新发件人的入门过程包括设置发送域并确保正确建
 
 在幕后，Adobe平台正在处理与退回、投诉、取消订阅等相关的数据。 这些反馈循环的设置是可交付性的一个重要方面。 投诉会损害声誉，因此您应该通过电子邮件向目标受众注册投诉。 必须指出的是，Gmail没有提供此数据。 列表取消订阅报头和参与过滤对Gmail用户尤为重要，Gmail用户现在占用户数据库的大部分。
 
-## 身份验证{#authentication}
+## 身份验证 {#authentication}
 
 身份验证是ISP用来验证发送方身份的过程。 最常见的两种身份验证协议是[!DNL Sender Policy Framework](SPF)和[!DNL DomainKeys Identified Mail](DKIM)。 最终用户看不到这些内容，但确实可以帮助ISP过滤来自经过验证的发件人的电子邮件。 [!DNL Domain-based Message Authentication Reporting and Conformance] (DMARC)正在普及，尽管其政策尚未被所有ISP纳入其声誉系统。
 
@@ -66,11 +66,11 @@ Adobe平台上新发件人的入门过程包括设置发送域并确保正确建
 **Campaign**
 
 * 了解如何将子域完全委派给[本节](/help/additional-resources/ac-domain-name-setup.md)中的Adobe Campaign Classic或标准。
-* [控制面板:完全子域委派（教程）](https://experienceleague.corp.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) - *了解如何将子域完全委派给Adobe Campaign Classic。*
-* [控制面板:完全子域委派（教程）](https://experienceleague.corp.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) - *了解如何将子域完全委派给Adobe Campaign Standard。*
+* [控制面板:完全子域委派（教程）](https://experienceleague.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) - *了解如何将子域完全委派给Adobe Campaign Classic。*
+* [控制面板:完全子域委派（教程）](https://experienceleague.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) - *了解如何将子域完全委派给Adobe Campaign Standard。*
 * 了解有关在[本节](/help/additional-resources/acc-technical-recommendations.md#feedback-loop-acc)中为Campaign Classic实例实现反馈循环的更多信息。
 
-## Journey Orchestration
+## 其他资源
 
 * 了解有关[本节](/help/additional-resources/authentication.md)中的SPF、DKIM和DMARC验证方法的更多信息。
 * 了解有关通过[本节](/help/additional-resources/increase-reputation-with-ip-warming.md)中的IP变暖提高电子邮件声誉的更多信息。
