@@ -5,7 +5,7 @@ feature: 可投放性
 topics: Deliverability
 hide: true
 hidefromtoc: true
-source-git-commit: cc0f8f4d8a5f4584d30b281492c2f948624ce1c1
+source-git-commit: 7b0f59aed1e4074cb93fdd762bab0b7302a6cbdd
 workflow-type: tm+mt
 source-wordcount: '1084'
 ht-degree: 0%
@@ -30,8 +30,7 @@ iOS 15版本将于今年秋季发布，最早可能在9月发布。 虽然当前
 
 ## 还有其他影响吗？
 
-默认情况下，Apple将在其本机Mail应用程序、Safari浏览器和iCloud服务中隐藏IP地址信息。 测量打开率并非电子邮件营销中唯一受到Apple邮件隐私保护影响的方面。 电子邮件打开可推动发送时间优化策略、实时个性化、重新参与营销活动和自动化的多波营销活动。 这些更改意味着营销人员
-在iOS 15发布并且隐私保护功能今年秋季开始生效后，必须开始计划确定这些策略对于Apple用户的外观。 Adobe将帮助我们的客户通过更新、指导和思想领导力来应对这些变化。
+默认情况下，Apple将在其本机Mail应用程序、Safari浏览器和iCloud服务中隐藏IP地址信息。 测量打开率并非电子邮件营销中唯一受到Apple邮件隐私保护影响的方面。 电子邮件打开可推动发送时间优化策略、实时个性化、重新参与营销活动和自动化的多波营销活动。 这些更改意味着，营销人员必须开始规划，在iOS 15发布并且隐私保护功能在今年秋季开始发挥作用后，确定这些策略对于Apple用户的外观。 Adobe将帮助我们的客户通过更新、指导和思想领导力来应对这些变化。
 
 ## 此公告是否与在Apple设备上打开的所有电子邮件有关？
 
