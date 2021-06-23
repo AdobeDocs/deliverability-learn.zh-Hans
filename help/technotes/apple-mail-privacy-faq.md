@@ -1,18 +1,18 @@
 ---
-title: Apple Mail隐私保护常见问题解答2021年6月23日
-description: Apple Mail隐私保护常见问题解答2021年6月23日
+title: Apple Mail隐私保护常见问题解答
+description: Apple Mail隐私保护常见问题解答
 feature: 可投放性
 topics: Deliverability
 hide: true
 hidefromtoc: true
-source-git-commit: fe42e3a1edfb48192fd1bb3b811247fcd528ab05
+source-git-commit: cc0f8f4d8a5f4584d30b281492c2f948624ce1c1
 workflow-type: tm+mt
-source-wordcount: '1087'
+source-wordcount: '1084'
 ht-degree: 0%
 
 ---
 
-# Apple Mail隐私保护常见问题解答2021年6月23日
+# Apple Mail隐私保护常见问题解答
 
 针对Apple发布的有关其iOS 15版本的公告，此常见问题解答提供了初始指导，其中包括[Mail Privacy Protection](https://www.apple.com/newsroom/2021/06/apple-advances-its-privacy-leadership-with-ios-15-ipados-15-macos-monterey-and-watchos-8/)。 这些更改将在9月进行，我们将继续更新此文档，并为客户提供指导。
 
