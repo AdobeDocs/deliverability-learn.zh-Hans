@@ -1,7 +1,7 @@
 ---
 title: 批处理和阻止电子邮件
 description: 了解 ISP 将电子邮件消息放入批量文件夹或阻止它们的原因。
-feature: Metrics
+feature: 量度
 topics: Deliverability
 kt: 7051
 thumbnail: kt7051.jpg
@@ -9,9 +9,8 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 4b280f90-73b9-4b88-adb8-57b6a46ddad7
-translation-type: ht
 source-git-commit: e433002423bd1ab2f4a89425198c16160dae0719
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '322'
 ht-degree: 100%
 
@@ -31,6 +30,6 @@ ht-degree: 100%
 
 当第三方阻止列表管理者登记与发件人关联的类似垃圾邮件的行为时，会发生列入阻止列表操作。阻止列表的原因有时由列入阻止列表方发布。列表通常基于 IP 地址，但在更严重的情况下，可以按 IP 范围甚至发送域分类。解决列入阻止列表问题应当囊括来自您的 Adobe 可投放性顾问的支持，以便完全解决并防止进一步列表。某些列表极其严重，可能导致难以解决的长期信誉问题。列入阻止列表的结果因阻止列表而异，但可能影响所有电子邮件的投放。
 
-## Journey Orchestration
+## 其他资源
 
 * 了解更多关于[实时黑洞列表](/help/additional-resources/blocklist-databases.md)的信息，该列表用于维护可能被垃圾邮件发送者使用的 IP 地址和域的数据库。
