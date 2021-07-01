@@ -1,16 +1,15 @@
 ---
 title: '可投放性最佳实践简介 '
 description: 了解关键的可交付性术语、概念和方法，以使您能够确保您的营销计划取得成功。
-feature: Deliverability
+feature: 可投放性
 kt: 5321
 thumbnail: kt5321.jpg
 doc-type: article
 activity: understand
 team: ACS
 exl-id: 929e325a-514d-49e3-91cf-c8383bb9465e
-translation-type: ht
 source-git-commit: e433002423bd1ab2f4a89425198c16160dae0719
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '431'
 ht-degree: 100%
 
@@ -51,6 +50,6 @@ ht-degree: 100%
 
 [!DNL Lori Lewis]，[“2019: This Is What Happens in an Internet Minute”](https://www.allaccess.com/merge/archive/29580/2019-this-is-what-happens-in-an-internet-minute)，Merge，2019 年 3 月 5 日。
 
-## Journey Orchestration
+## 其他资源
 
 [附录：其他资源](/help/additional-resources/general-resources.md)
