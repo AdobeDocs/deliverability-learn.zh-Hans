@@ -1,31 +1,30 @@
 ---
-title: IP加温期间的ISP特定考虑事项
-description: null
+title: IP 预热期间的 ISP 特定考虑因素
+description: ISP有不同的规则和不同的流量查看方式。 这需要一个自定义计划，该计划只针对初始参与度最高的用户。
 topics: Deliverability
 kt: 7054
 thumbnail: kt7054.jpg
 doc-type: article
 activity: understand
 team: ACS
-translation-type: tm+mt
-source-git-commit: 283f1cb2bb40818e11daa1a3753e8428b47e08ee
+exl-id: 7d61c81c-aa40-47a6-9869-1953a6ad22b2
+source-git-commit: 4d82aa498ce155919dde24aa695a8848351763a6
 workflow-type: tm+mt
-source-wordcount: '132'
-ht-degree: 1%
+source-wordcount: '159'
+ht-degree: 16%
 
 ---
 
+# IP 预热期间的 ISP 特定考虑因素
 
-# IP加温期间的ISP特定考虑事项
+ISP有不同的规则和不同的流量查看方式。 例如，Gmail是最复杂的ISP之一，因为除了所有其他声誉衡量指标外，Gmail还非常严格地考虑参与（打开数和点击数）。 这需要一个自定义计划，该计划仅针对开始时参与度最高的用户。 其他ISP也可能需要相同的ISP。 与您的Adobe可交付性顾问合作，制定特定计划。
 
-ISP有不同的规则和不同的流量观察方式。 例如，Gmail是最老练的ISP之一，因为除了其他所有声誉衡量指标，Gmail还非常严格地考虑客户参与度（打开和点击）。 这需要一个自定义计划，该计划只能在开始时目标参与度最高的用户。 其他ISP也可能要求相同。 与您的Adobe交付性顾问合作制定特定计划。
-
-有关以下所选提供者组之间重要差异的更多信息，请参阅[ Internet服务提供商特性](/help/internet-service-provider-specifics/overview.md)部分：
+请参阅[Internet服务提供商详情](/help/internet-service-provider-specifics/overview.md)部分，以了解有关以下选定提供商组之间重要差异的详细信息：
 
 * [Gmail](/help/internet-service-provider-specifics/gmail.md)
-* [Microsoft（Hotmail、Outlook、Windows Live等）](/help/internet-service-provider-specifics/microsoft.md)
-* [Verizon Media Group（Yahoo、AOL、Verizon等）](/help/internet-service-provider-specifics/verizon-media-group.md)
+* [Microsoft（Hotmail、Outlook、Windows Live 等）](/help/internet-service-provider-specifics/microsoft.md)
+* [Verizon Media Group（Yahoo、AOL、Verizon 等）](/help/internet-service-provider-specifics/verizon-media-group.md)
 
-## Journey Orchestration
+## 其他资源
 
-* 了解有关通过[本节](/help/additional-resources/increase-reputation-with-ip-warming.md)中的IP变暖提高电子邮件声誉的更多信息。
+* 在[此部分](/help/additional-resources/increase-reputation-with-ip-warming.md)中了解有关通过IP变温提高电子邮件声誉的更多信息。
