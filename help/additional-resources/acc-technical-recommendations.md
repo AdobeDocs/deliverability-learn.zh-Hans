@@ -1,55 +1,53 @@
 ---
-title: Campaign Classic — 技术建议
-description: 探索可用于提高Adobe Campaign Classic交付率的技术、配置和工具。
-feature: Putting it in practice
+title: Campaign Classic - 技术建议
+description: 了解使用Adobe Campaign Classic提高投放能力率的技术、配置和工具。
 topics: Deliverability
 kt: null
 thumbnail: null
 doc-type: article
 activity: understand
 team: ACS
-translation-type: tm+mt
-source-git-commit: 1e539b5df54250a5927701009e7a9c84e5d73fae
+exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
+source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
 workflow-type: tm+mt
-source-wordcount: '1579'
+source-wordcount: '1575'
 ht-degree: 1%
 
 ---
 
+# Campaign Classic - 技术建议 {#technical-recommendations}
 
-# Campaign Classic — 技术建议{#technical-recommendations}
-
-下面列出了在使用Adobe Campaign Classic时可用于提高交付率的多种技术、配置和工具。
+下面列出了在使用Adobe Campaign Classic时可用于提高投放能力率的多种技术、配置和工具。
 
 ## 配置 {#configuration}
 
 ### 反向DNS {#reverse-dns}
 
-Adobe Campaign检查是否为IP地址提供了反向DNS，并且这正确地指向IP。
+Adobe Campaign会检查是否为IP地址提供了反向DNS，并且这是否正确指向了IP。
 
-网络配置中的一个重要点是确保为每个传出消息的IP地址定义了正确的反向DNS。 这意味着对于给定的IP地址，存在具有匹配DNS（A记录）的反向DNS记录（PTR记录），该记录循环回初始IP地址。
+网络配置中的一个重要点是确保为传出消息的每个IP地址定义正确的反向DNS。 这意味着对于给定的IP地址，存在一个具有匹配DNS（A记录）的反向DNS记录（PTR记录），该记录循环回初始IP地址。
 
-在与某些ISP打交道时，反向DNS的域选择会产生影响。 特别是，AOL只接受与反向DNS在同一域中具有地址的反馈循环（请参阅[反馈循环](#feedback-loop)）。
-
->[!NOTE]
->
->可以使用[此外部工具](https://mxtoolbox.com/SuperTool.aspx)验证域的配置。
-
-### MX规则{#mx-rules}
-
-MX规则（邮件eXchanger）是管理发送服务器与接收服务器之间的通信的规则。
-
-更准确地说，它们用于控制Adobe CampaignMTA（邮件传输代理）向每个电子邮件域或ISP（例如hotmail.com、comcast.net）发送电子邮件的速度。 这些规则通常基于ISP发布的限制（例如，每个SMTP连接不包含20条以上的邮件）。
+在处理某些ISP时，反向DNS的域选择会产生影响。 尤其是AOL，它只接受与反向DNS在同一域中具有地址的反馈循环（请参阅[反馈循环](#feedback-loop)）。
 
 >[!NOTE]
 >
->有关Adobe Campaign Classic中MX管理的详细信息，请参阅[本节](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/email-deliverability.html#mx-configuration)。
+>您可以使用[此外部工具](https://mxtoolbox.com/SuperTool.aspx)来验证域的配置。
+
+### MX规则 {#mx-rules}
+
+MX规则（邮件eXchanger）是管理发送服务器与接收服务器之间通信的规则。
+
+更准确地说，它们用于控制Adobe Campaign MTA（消息传输代理）向每个单独的电子邮件域或ISP（例如hotmail.com、comcast.net）发送电子邮件的速度。 这些规则通常基于ISP发布的限制（例如，每个SMTP连接不包含超过20条消息）。
+
+>[!NOTE]
+>
+>有关Adobe Campaign Classic中MX管理的更多信息，请参阅[此部分](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/email-deliverability.html#mx-configuration)。
 
 ### TLS {#tls}
 
-TLS（传输层安全性）是一种加密协议，可用于保护两个电子邮件服务器之间的连接并保护电子邮件内容不被除预期收件人之外的任何人读取。
+TLS（传输层安全性）是一种加密协议，可用于保护两个电子邮件服务器之间的连接，并保护电子邮件内容不受目标收件人以外的任何人读取。
 
-### 发件人的域{#sender-domain}
+### 发件人的域 {#sender-domain}
 
 要定义用于HELO命令的域，请编辑实例的配置文件(conf/config-instance.xml)并定义“localDomain”属性，如下所示：
 
@@ -61,75 +59,75 @@ TLS（传输层安全性）是一种加密协议，可用于保护两个电子�
 </serverConf>
 ```
 
-MAIL FROM域是用于技术弹回邮件的域。 此地址在部署向导中或通过NmsEmail_DefaultErrorAddr选项定义。
+MAIL FROM域是技术退回邮件中使用的域。 此地址在部署向导中或通过NmsEmail_DefaultErrorAddr选项定义。
 
-### SPF记录{#dns-configuration}
+### SPF记录 {#dns-configuration}
 
-SPF记录当前可以在DNS服务器上定义为TXT类型记录（代码16）或SPF类型记录（代码99）。 SPF记录采用字符串形式。 例如：
+SPF记录当前可在DNS服务器上定义为TXT类型记录（代码16）或SPF类型记录（代码99）。 SPF记录采用字符串形式。 例如：
 
 ```
 v=spf1 ip4:12.34.56.78/32 ip4:12.34.56.79/32 ~all
 ```
 
-定义两个IP地址12.34.56.78和12.34.56.79，即有权发送域的电子邮件。 **~** all意味着任何其他地址应解释为SoftFail。
+定义有权为域发送电子邮件的两个IP地址，即12.34.56.78和12.34.56.79。 **~** all意味着任何其他地址都应解释为SoftFail。
 
 Recommendations，用于定义SPF记录：
 
-* 最后添加&#x200B;**~all**(SoftFail)或&#x200B;**-all**(Fail)以拒绝除所定义服务器之外的所有服务器。 如果没有此功能，服务器将能够构建此域（使用中性评估）。
-* 请勿添加&#x200B;**ptr**（openspf.org建议您不要这样做，因为这样做成本高昂且不可靠）。
+* 在末尾添加&#x200B;**~all**(SoftFail)或&#x200B;**-all**（失败）以拒绝除所定义服务器之外的所有服务器。 如果没有这一点，服务器将能够伪造此域（通过中性评估）。
+* 请勿添加&#x200B;**ptr**（openspf.org建议不要添加ptr，因为这样做成本高昂且不可靠）。
 
 >[!NOTE]
 >
->在[本节](/help/additional-resources/authentication.md#spf)中了解有关SPF的更多信息。
+>在[此部分](/help/additional-resources/authentication.md#spf)中了解有关SPF的更多信息。
 
 ## 身份验证
 
 >[!NOTE]
 >
->了解有关[本节](/help/additional-resources/authentication.md)中不同形式的电子邮件身份验证的更多信息。
+>在[此部分](/help/additional-resources/authentication.md)中了解有关电子邮件身份验证不同形式的更多信息。
 
 ### DKIM {#dkim-acc}
 
 >[!NOTE]
 >
->对于托管或混合安装，如果您已升级到[增强的MTA](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/sending-with-enhanced-mta.html#sending-messages)，则DKIM电子邮件身份验证签名由增强的MTA对所有域的所有消息完成。
+>对于托管或混合安装，如果您已升级到[Enhanced MTA](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/sending-with-enhanced-mta.html#sending-messages)，则所有域的所有消息的DKIM电子邮件身份验证签名都由Enhanced MTA完成。
 
-将[DKIM](/help/additional-resources/authentication.md#dkim)与Adobe Campaign Classic一起使用需要以下先决条件：
+将[DKIM](/help/additional-resources/authentication.md#dkim)与Adobe Campaign Classic结合使用需要满足以下先决条件：
 
-**Adobe Campaign选项声明**:在Adobe Campaign中，DKIM私钥基于DKIM选择器和域。当前无法为具有不同选择器的同一域/子域创建多个私钥。 无法定义平台或电子邮件中身份验证必须使用哪个选择器域/子域。 该平台将选择其中一个私钥，这意味着身份验证很有可能失败。
+**Adobe Campaign选项声明**:在Adobe Campaign中，DKIM私钥基于DKIM选择器和域。当前无法为具有不同选择器的同一域/子域创建多个私钥。 无法定义平台或电子邮件中身份验证都必须使用哪个选择器域/子域。 平台或者将选择其中一个私钥，这意味着身份验证很有可能失败。
 
-* 如果已为Adobe Campaign实例配置DomainKeys，您只需在[域管理规则](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html#email-management-rules)中选择&#x200B;**dkim**。 否则，请按照与DomainKeys（替换DKIM）相同的配置步骤（私有/公钥）。
-* 无需为DKIM是DomainKeys的改进版本，因此对同一域同时启用DomainKeys和DKIM。
-* 以下域当前验证DKIM:AOL，Gmail。
+* 如果您为Adobe Campaign实例配置了DomainKeys，则只需在[域管理规则](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html#email-management-rules)中选择&#x200B;**dkim**&#x200B;即可。 如果没有，请执行与DomainKeys（取代DKIM）相同的配置步骤（私钥/公钥）。
+* 对于DKIM是DomainKeys的改进版本，因此不必为同一域同时启用DomainKeys和DKIM。
+* 以下域当前正在验证DKIM:AOL，Gmail。
 
-## 反馈循环{#feedback-loop-acc}
+## 反馈循环 {#feedback-loop-acc}
 
-反馈循环的工作方式是在ISP级别为用于发送消息的一系列IP地址声明一个给定的电子邮件地址。 ISP将以类似方式向此邮箱发送邮件，这些邮件被收件人报告为垃圾邮件。 平台应配置为阻止向已投诉的用户进行未来投放。 即使他们未使用正确的退出链接，也必须不再与他们联系。 ISP将在其中添加IP地址，这是基于这些抱怨阻止列表的。 根据ISP的不同，约1%的投诉率将导致IP地址被阻塞。
+反馈循环在ISP级别为用于发送消息的IP地址范围声明给定的电子邮件地址。 ISP将以与退回邮件类似的方式，将收件人报告为垃圾邮件的邮件发送到此邮箱。 应该将平台配置为阻止将来向已投诉的用户交付内容。 即使他们未使用正确的选择退出链接，也必须不再与他们联系。 根据这些投诉，ISP将在其中添加一个IP地阻止列表址。 如果投诉率在1%左右，则会导致阻止IP地址，具体取决于ISP。
 
 目前正在制定一个标准来定义反馈循环消息的格式：[滥用反馈报告格式(ARF)](https://tools.ietf.org/html/rfc6650)。
 
-为实例实现反馈循环需要：
+为实例实施反馈循环需要：
 
-* 专用于实例的邮箱，该邮箱可能是弹回邮箱
+* 专用于实例的邮箱，可能是退回邮箱
 * 专用于实例的IP发送地址
 
-在Adobe Campaign中实现简单的反馈循环使用弹回消息功能。 反馈循环邮箱用作跳回邮箱，并定义规则来检测这些邮件。 将邮件报告为垃圾邮件的收件人的电子邮件地址会添加到隔离列表。
+在Adobe Campaign中实施简单的反馈循环时，会使用退件消息功能。 反馈循环邮箱用作退回邮箱，并定义规则来检测这些邮件。 将邮件报告为垃圾邮件的收件人的电子邮件地址添加到隔离列表。
 
-* 在&#x200B;**[!UICONTROL Administration > Campaign Management > Non deliverables Management > Mail rule sets]**&#x200B;中创建或修改弹出邮件规则&#x200B;**Feedback_loop**，原因为&#x200B;**Recombed**&#x200B;和类型&#x200B;**Hard**。
-* 如果为反馈循环专门定义了邮箱，请通过在&#x200B;**[!UICONTROL Administration > Platform > External accounts]**&#x200B;中新建一个外部Bounce Meals帐户来定义参数以访问该邮箱。
+* 在&#x200B;**[!UICONTROL Administration > Campaign Management > Non deliverables Management > Mail rule sets]**&#x200B;中创建或修改退回邮件规则&#x200B;**Feedback_loop**，原因为&#x200B;**Recommended**&#x200B;和类型&#x200B;**Hard**。
+* 如果为反馈循环专门定义了邮箱，请定义参数以通过在&#x200B;**[!UICONTROL Administration > Platform > External accounts]**&#x200B;中创建新的外部退回邮件帐户来访问该邮箱。
 
-该机制可立即处理投诉通知。 要确保此规则正常工作，您可以暂时取消激活帐户以使其不收集这些邮件，然后手动检查反馈循环邮箱的内容。 在服务器上，执行以下命令：
+该机制立即开始处理投诉通知。 为确保此规则正常工作，您可以暂时停用帐户，以便它们不收集这些邮件，然后手动检查反馈循环邮箱的内容。 在服务器上，执行以下命令：
 
 ```
 nlserver stop inMail@instance,
 nlserver inMail -instance:instance -verbose.
 ```
 
-如果强制您对多个实例使用一个反馈循环地址，则必须：
+如果您被强制对多个实例使用一个反馈循环地址，则必须：
 
-* 复制在任意数量的邮箱上接收的消息，
-* 让每个邮箱由一个实例选取，
-* 配置实例，以便它们只处理与它们相关的消息：实例信息包含在由Adobe Campaign发送的消息的Message-ID头中，因此也位于反馈循环消息中。 只需在实例配置文件中指定&#x200B;**checkInstanceName**&#x200B;参数即可（默认情况下，该实例不会验证，这可能导致某些地址被错误隔离）：
+* 复制在任意数量的邮箱上收到的消息，
+* 让每个邮箱由一个实例提取，
+* 配置实例，以便它们只处理与它们相关的消息：实例信息包含在Adobe Campaign发送的消息的消息ID标头中，因此也位于反馈循环消息中。 只需在实例配置文件中指定&#x200B;**checkInstanceName**&#x200B;参数即可（默认情况下，不会验证实例，这可能会导致某些地址被错误隔离）：
 
    ```
    <serverConf>
@@ -137,19 +135,19 @@ nlserver inMail -instance:instance -verbose.
    </serverConf>
    ```
 
-Adobe Campaign的可交付性服务管理您对以下ISP的反馈循环服务的订阅:AOL、BlueTie、Comcast、Cox、EarthLink、FastMail、Gmail、HostedEmail、Libero、Mail.ru、MailTrust、OpenSRS、QQ、RoadRunner、Synacor、Terra、UnitedOnline、USA、XSA4ALL，雅虎，Yandex，Zoho。
+Adobe Campaign的可投放性服务可管理您对以下ISP的反馈循环服务的订购：AOL、BlueTie、Comcast、Cox、EarthLink、FastMail、Gmail、HostedEmail、Libero、Mail.ru、MailTrust、OpenSRS、QQ、RoadRunner、Synacor、Telenor、Terra、UniteOnline、USA、XS4ALL、Yaho、Yandex、Zoho。
 
-## 列表 — 取消订阅{#list-unsubscribe}
+## 列表取消订阅 {#list-unsubscribe}
 
-### 关于列表 — 取消订阅{#about-list-unsubscribe}
+### 关于List-Unsubscribe {#about-list-unsubscribe}
 
-必须添加名为&#x200B;**列表-Unsubscribe**&#x200B;的SMTP头，以确保最佳的可交付性管理。
+必须添加名为&#x200B;**List-Unsubscribe**&#x200B;的SMTP标头，才能确保实现最佳投放能力管理。
 
-此标题可用作“报告为垃圾邮件”图标的替代内容。 它将在电子邮件界面中显示为退订链接。
+此标头可用作“报告为垃圾邮件”图标的替代内容。 它将在电子邮件界面中显示为退订链接。
 
-使用此功能有助于保护您的声誉，反馈将作为退订执行。
+使用此功能有助于保护您的声誉，并且将作为退订执行反馈。
 
-要使用“列表取消订阅”，您必须输入类似于以下命令行：
+要使用“列表取消订阅”，必须输入类似于以下的命令行：
 
 ```
 List-Unsubscribe: mailto: client@newsletter.example.com?subject=unsubscribe?body=unsubscribe
@@ -157,42 +155,42 @@ List-Unsubscribe: mailto: client@newsletter.example.com?subject=unsubscribe?body
 
 >[!CAUTION]
 >
->上例基于收件人表。 如果从另一个表执行数据库实现，请确保使用正确的信息重写命令行。
+>以上示例基于收件人表。 如果从另一个表完成了数据库实现，请确保用正确的信息重述命令行。
 
-以下命令行可用于创建动态&#x200B;**列表-Unsubscribe**:
+以下命令行可用于创建动态&#x200B;**List-Unsubscribe**:
 
 ```
 List-Unsubscribe: mailto: %=errorAddress%?subject=unsubscribe%=message.mimeMessageId%
 ```
 
-Gmail、Outlook.com和Microsoft Outlook支持此方法，并且其界面中直接提供取消订阅按钮。 这种技术降低了投诉率。
+Gmail、Outlook.com和Microsoft Outlook支持此方法，并且其界面中可直接使用取消订阅按钮。 这种技术可以降低投诉率。
 
-您可以通过以下任一方式实现&#x200B;**列表-Unsubscribe**:
+您可以通过以下任一方式实施&#x200B;**List-Unsubscribe**:
 
-* 直接[在投放模板](#adding-a-command-line-in-a-delivery-template)中添加命令行
+* 直接[在投放模板中添加命令行](#adding-a-command-line-in-a-delivery-template)
 * [创建分类规则](#creating-a-typology-rule)
 
-### 在投放模板{#adding-a-command-line-in-a-delivery-template}中添加命令行
+### 在投放模板中添加命令行 {#adding-a-command-line-in-a-delivery-template}
 
-必须在电子邮件SMTP头的其他部分添加命令行。
+必须在电子邮件SMTP标头的其他部分中添加命令行。
 
-此添加操作可在每封电子邮件中或现有投放模板中完成。 您还可以创建包含此功能的新投放模板。
+此添加操作可以在每封电子邮件中或现有投放模板中完成。 您还可以创建包含此功能的新投放模板。
 
-### 创建分类规则{#creating-a-typology-rule}
+### 创建分类规则 {#creating-a-typology-rule}
 
-规则必须包含生成命令行的脚本，并且必须包含在电子邮件标头中。
+规则必须包含用于生成命令行的脚本，且必须包含在电子邮件标头中。
 
 >[!NOTE]
 >
->我们建议创建类型规则:“列表取消订阅”功能将自动添加到每封电子邮件中。
+>我们建议创建分类规则：列表取消订阅功能将自动添加到每封电子邮件中。
 
-1. 列表 — 取消订阅：&lt;mailto:unsubscribe@domain.com>
+1. 列表取消订阅：&lt;mailto:unsubscribe@domain.com>
 
-   单击&#x200B;**取消订阅**&#x200B;链接可打开用户的默认电子邮件客户端。 此类型规则必须添加到用于创建电子邮件的类型学中。
+   单击&#x200B;**取消订阅**&#x200B;链接会打开用户的默认电子邮件客户端。 必须在用于创建电子邮件的分类中添加此分类规则。
 
-1. 列表 — 取消订阅：`<https://domain.com/unsubscribe.jsp>`
+1. 列表取消订阅：`<https://domain.com/unsubscribe.jsp>`
 
-   单击&#x200B;**取消订阅**&#x200B;链接会将用户重定向到您的退订表单。
+   单击&#x200B;**取消订阅**&#x200B;链接会将用户重定向到您的取消订阅表单。
 
    示例：
 
@@ -200,18 +198,18 @@ Gmail、Outlook.com和Microsoft Outlook支持此方法，并且其界面中直�
 
 >[!NOTE]
 >
->了解如何在[此部分](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/about-campaign-typologies.html#typology-rules)的Adobe Campaign Classic中创建类型规则。
+>在[此部分](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/about-campaign-typologies.html#typology-rules)中了解如何在Adobe Campaign Classic中创建分类规则。
 
-## 电子邮件优化{#email-optimization}
+## 电子邮件优化 {#email-optimization}
 
 ### SMTP {#smtp}
 
-SMTP（简单邮件传输协议）是用于电子邮件传输的因特网标准。
+SMTP（简单邮件传输协议）是电子邮件传输的Internet标准。
 
-未由规则检查的SMTP错误列在&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]** > **[!UICONTROL Delivery log qualification]**&#x200B;文件夹中。 默认情况下，这些错误消息被解释为不可到达软错误。
+规则未检查的SMTP错误列在&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]** > **[!UICONTROL Delivery log qualification]**&#x200B;文件夹中。 默认情况下，这些错误消息被解释为不可到达的软错误。
 
-如果要正确限定来自SMTP服务器的反馈，则必须识别最常见的错误，并在&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]** > **[!UICONTROL Mail rule sets]**&#x200B;中添加相应的规则。 否则，平台将执行不必要的重试(未知用户情况)，或在给定数量的测试后错误地将某些收件人放在隔离中。
+如果要正确限定来自SMTP服务器的反馈，则必须识别最常见的错误，并在&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]** > **[!UICONTROL Mail rule sets]**&#x200B;中添加相应的规则。 如果没有这种情况，平台将执行不必要的重试（用户未知的情况），或在给定数量的测试后错误地将某些收件人置于隔离中。
 
 ### 专用IP {#dedicated-ips}
 
-Adobe为每位客户提供专用的IP战略，以便提高信誉和优化投放性能。
+Adobe为每位客户提供专用的IP策略，并提升IP，以建立信誉并优化交付性能。
