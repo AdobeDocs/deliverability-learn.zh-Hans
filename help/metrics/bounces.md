@@ -1,7 +1,6 @@
 ---
 title: 跳出次数
-description: 了解不同类型的退回。
-feature: Metrics
+description: 了解不同类型的退信。
 topics: Deliverability
 kt: 7047
 thumbnail: kt7047.jpg
@@ -9,10 +8,9 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 6338eb67-3efd-476e-8b26-97bbb6a1d35f
-translation-type: ht
-source-git-commit: e433002423bd1ab2f4a89425198c16160dae0719
-workflow-type: ht
-source-wordcount: '478'
+source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
+workflow-type: tm+mt
+source-wordcount: '477'
 ht-degree: 100%
 
 ---
