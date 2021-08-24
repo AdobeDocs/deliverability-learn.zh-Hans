@@ -1,16 +1,15 @@
 ---
 title: '可投放性最佳实践简介 '
 description: 了解关键的可交付性术语、概念和方法，以使您能够确保您的营销计划取得成功。
-feature: 可投放性
 kt: 5321
 thumbnail: kt5321.jpg
 doc-type: article
 activity: understand
 team: ACS
 exl-id: 929e325a-514d-49e3-91cf-c8383bb9465e
-source-git-commit: e433002423bd1ab2f4a89425198c16160dae0719
+source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: '430'
 ht-degree: 100%
 
 ---
