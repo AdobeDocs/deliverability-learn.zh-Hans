@@ -1,13 +1,12 @@
 ---
 title: Apple Mail隐私保护常见问题解答
 description: Apple Mail隐私保护常见问题解答
-feature: 可投放性
 topics: Deliverability
 hide: true
 hidefromtoc: true
-source-git-commit: 7b0f59aed1e4074cb93fdd762bab0b7302a6cbdd
+source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
 workflow-type: tm+mt
-source-wordcount: '1084'
+source-wordcount: '1083'
 ht-degree: 0%
 
 ---
