@@ -1,7 +1,6 @@
 ---
 title: SSL证书请求过程
 description: 了解如何在您委派给Adobe的子域上安装SSL证书。
-feature: 付诸实践
 topics: Deliverability
 kt: null
 thumbnail: null
@@ -9,10 +8,10 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 8a78abd3-afba-49a7-a2ae-8b2c75326749
-source-git-commit: e3caa0e9fae0df983c05c7027406f9874174a8ba
+source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
 workflow-type: tm+mt
-source-wordcount: '2270'
-ht-degree: 2%
+source-wordcount: '2266'
+ht-degree: 1%
 
 ---
 
