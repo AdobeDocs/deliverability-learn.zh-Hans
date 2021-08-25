@@ -2,15 +2,13 @@
 title: 重新接触最佳实践
 description: 了解如何通过重新参与策略来提高投放能力。
 topics: Deliverability
-kt: null
-thumbnail: null
 doc-type: article
 activity: understand
 team: ACS
 exl-id: 30118706-d4c0-4bd8-8c9b-50c26b8374ef
-source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
+source-git-commit: d6094cd2ef0a8a7741e7d8aa4db15499fad08f90
 workflow-type: tm+mt
-source-wordcount: '926'
+source-wordcount: '924'
 ht-degree: 1%
 
 ---
@@ -30,7 +28,7 @@ ht-degree: 1%
 
 多年来，ISP一直使用用户的参与度反馈量度来决定在何处放置消息，或者是否应该发送消息。 用户[参与](/help/engagement.md)包含正反馈和负反馈，ISP也会持续监控。 没有参与或许是消极参与的主要因素之一。 从投放能力的角度来看，持续向未显示参与度的用户发送促销活动，也会降低您IP地址和域的整体声誉。
 
-Gmail、Microsoft和OATH等ISP将不参与视为不需要的电子邮件，并开始将消息重定向到垃圾邮件文件夹。 此外，这些订阅者可能不再拥有电子邮件帐户，并且这可以用作“回收”垃圾邮件陷阱。 这意味着地址在一段时间内无效，所有消息都被拒绝。 如果您的订阅者管理系统未删除“硬退回”地址，则很可能会通过邮件发送到垃圾邮件陷阱，从而导致重大投放问题。
+Gmail、Microsoft®和OATH等ISP将不参与视为不需要的电子邮件，并开始将消息重定向到垃圾邮件文件夹。 此外，这些订阅者可能不再拥有电子邮件帐户，并且这可以用作“回收”垃圾邮件陷阱。 这意味着地址在一段时间内无效，所有消息都被拒绝。 如果您的订阅者管理系统未删除“硬退回”地址，则可能会通过邮件发送到垃圾邮件陷阱，从而导致重大投放问题。
 
 ## 您应该如何处理非活动状态？ {#how-should-you-approach-inactivity-}
 
@@ -46,7 +44,7 @@ Gmail、Microsoft和OATH等ISP将不参与视为不需要的电子邮件，并�
 
 ### 阶段1 {#phase-1}
 
-* 第一步是识别很少打开或单击活动的订阅者，并据此根据设置的时间范围对此组进行分段。 经验法则是审查过去90天内未打开或单击电子邮件的订阅者。 但是，这会因业务性质（例如，季节性发送）而异。
+* 第一步是识别很少甚至没有打开或单击活动的订阅者，并据此根据设置的时间范围对此组进行分段。 经验法则是审查过去90天内未打开或单击电子邮件的订阅者。 但是，这会因业务性质（例如，季节性发送）而异。
 * 在定义时间范围时要记住的另一点是，ISP和阻止列表公司认为参与期介于1.5到1.8年之间。 此外，行为活动（如购买和网站活动）或其他接触点（如注册阶段或首次联系点期间的首选项）。
 
 ### 阶段2 {#phase-2}
@@ -73,7 +71,7 @@ Gmail、Microsoft和OATH等ISP将不参与视为不需要的电子邮件，并�
 
    ![](../../help/assets/deliverability_implementation_4.png)
 
-## 产品特定资源
+## 特定于产品的资源
 
 **Adobe Campaign**
 
@@ -82,4 +80,4 @@ Gmail、Microsoft和OATH等ISP将不参与视为不需要的电子邮件，并�
 
 **Adobe客户历程管理**
 
-* [消息跟踪](https://experienceleague.adobe.com/docs/customer-journey-management/using/reporting/message-tracking.html)
+* [消息跟踪](https://experienceleague.adobe.com/docs/journey-optimizer/using/reporting/message-tracking.html?lang=zh-Hans)
