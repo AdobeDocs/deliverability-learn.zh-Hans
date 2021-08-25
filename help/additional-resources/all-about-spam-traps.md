@@ -2,13 +2,11 @@
 title: 关于垃圾邮件陷阱
 description: 了解如何在管理投放能力时了解、识别和避免垃圾邮件陷阱。
 topics: Deliverability
-kt: null
-thumbnail: null
 doc-type: article
 activity: understand
 team: ACS
 exl-id: 45cdcda0-70e4-47f4-8713-a834500e7881
-source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
+source-git-commit: d6094cd2ef0a8a7741e7d8aa4db15499fad08f90
 workflow-type: tm+mt
 source-wordcount: '440'
 ht-degree: 2%
