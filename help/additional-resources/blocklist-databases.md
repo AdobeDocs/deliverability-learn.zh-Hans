@@ -2,13 +2,11 @@
 title: 实时黑洞列表
 description: 了解维护IP地址列表以及可能由垃圾邮件发送者使用的域的组织。
 topics: Deliverability
-kt: null
-thumbnail: null
 doc-type: article
 activity: understand
 team: ACS
 exl-id: 4155b89f-a636-404c-8951-563c1b4d0289
-source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
+source-git-commit: d6094cd2ef0a8a7741e7d8aa4db15499fad08f90
 workflow-type: tm+mt
 source-wordcount: '407'
 ht-degree: 6%
