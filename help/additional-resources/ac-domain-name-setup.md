@@ -6,9 +6,9 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 4d52d197-d20e-450c-bfcf-e4541c474be4
-source-git-commit: d6094cd2ef0a8a7741e7d8aa4db15499fad08f90
+source-git-commit: 82f7254a9027f79d2af59aece81f032105c192d5
 workflow-type: tm+mt
-source-wordcount: '2028'
+source-wordcount: '2061'
 ht-degree: 2%
 
 ---
@@ -54,10 +54,22 @@ Adobe自主实施所有技术最佳实践，以在发送电子邮件期间充分
 | MX | 为传入邮件指定邮件服务器 | <i>email.example.com</i></br><i>10 inbound.email.example.com</i> |
 | SPF(TXT) | 发件人策略框架 | <i>email.example.com</i></br>&quot;v=spf1 redirect=__spf.campaign.adobe.com&quot; |
 | DKIM(TXT) | 已识别的DomainKeys邮件 | <i>客户。_domainkey.email.example.com</i></br>&quot;v=DKIM1;k=rsa;&quot; &quot;DKIMPUBLICKEY HERE&quot; |
-| DMARC(TXT) | 基于域的消息身份验证 | 报告与合规性 | _dmarc.email.example.com</br>&quot;v=DMARC1;p=none;rua=mailto:mailauth-reports@myemail.com |
 | 主机记录(A) | 镜像页面、图像托管和跟踪链接，所有发送域 | m.email.example.com A 123.111.100.99</br>t.email.example.com A 123.111.100.98</br>email.example.com A 123.111.100.97 |
 | 反向DNS(PTR) | 将客户端IP地址映射到客户端品牌主机名 | 18.101.100.192.in-addr.arpa域名指针r18.email.example.com |
-| CNAME | 为其他域名提供别名 | t1.email.example.com是 | t1.email.example.campaign.adobe.com |
+| CNAME | 为其他域名提供别名 | t1.email.example.com是t1.email.example.campaign.adobe.com的别名 |
+
+
+建议使用基于域的邮件身份验证、报告和符合性(DMARC)来验证邮件发送者，并确保目标电子邮件系统信任从您的域发送的邮件。
+
+DMARC TXT记录示例：
+
+```
+_dmarc.email.example.com
+
+“v=DMARC1; p=none; rua=mailto:mailauth-reports@myemail.com” 
+```
+
+您可以手动实施DMARC或联系Adobe，以协助您为品牌设置DMARC。
 
 ## 设置要求
 

@@ -23,7 +23,7 @@ ht-degree: 11%
 
 ![过渡过程](../assets/transition-process.png)
 
-您的IP地址和域的预热时间可能有所不同，但通常发送方在大多数第1级ISP（Gmail、Microsoft、Verizon/Yahoo/AOL等）建立声誉时，通常最多可以使用8周的基准。
+您的IP地址和域的温暖时间可能有所不同，但通常发送方在大多数第1级ISP(Gmail、Microsoft、Verizon/Yahoo/AOL等)建立声誉时，通常最多需要8周的基准。
 
 在接下来的部分中，我们将调查一些需要重点关注的关键领域，以正确载入：
 

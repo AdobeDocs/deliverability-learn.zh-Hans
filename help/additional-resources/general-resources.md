@@ -6,14 +6,21 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 75538ef8-8e4b-4940-8d11-42ebd7c65e93
-source-git-commit: d6094cd2ef0a8a7741e7d8aa4db15499fad08f90
+source-git-commit: f441fe45b5b7309082c8eea7423d40003b913b7b
 workflow-type: tm+mt
-source-wordcount: '99'
-ht-degree: 39%
+source-wordcount: '126'
+ht-degree: 31%
 
 ---
 
 # 其他资源 — 概述
+
+## 新增功能
+
+请参阅以下技术说明，了解有关投放能力的最新更新的更多信息。
+
+* [实施Gmail的品牌标识报文(BIMI)](../technotes/implement-bimi.md)
+* [Apple邮件隐私保护常见问题解答](../technotes/apple-mail-privacy-faq.md)
 
 ## 通用资源
 
@@ -35,7 +42,7 @@ ht-degree: 39%
 
 此外，此部分还列出了许多特定于产品的资源，可帮助您实施可交付性并使用Adobe解决方案取得成功。
 
-**Campaign**
+**[!DNL Adobe Campaign]**
 
 * [域名设置](../../help/additional-resources/ac-domain-name-setup.md)
 * [CSR和SSL证书请求过程](../../help/additional-resources/ac-ssl-certificate-request.md)

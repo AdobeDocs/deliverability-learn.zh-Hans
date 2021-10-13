@@ -8,9 +8,9 @@ doc-type: article
 activity: understand
 team: TM
 exl-id: 2defe1ae-5148-46f9-aaa7-8034107980ee
-source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
+source-git-commit: e842a8aefa715da80325cb107c2d2092c64a699b
 workflow-type: tm+mt
-source-wordcount: '202'
+source-wordcount: '200'
 ht-degree: 35%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 35%
 **Adobe Campaign Standard**
 
 * [监测投放](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/monitoring-a-delivery.html?lang=zh-Hans)
-* [投放摘要](https://docs-author-stg.corp.adobe.com/content/help/en/campaign-standard/using/reporting/list-of-reports/delivery-summary.html)
+* [投放摘要](https://experienceleague.adobe.com/docs/campaign-standard/using/reporting/list-of-reports/delivery-summary.html)
 * [监测投放能力](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/managing-deliverability/monitor-deliverability.html?lang=zh-Hans#testing-and-sending)
 
 ## 其他资源
