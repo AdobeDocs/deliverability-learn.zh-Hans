@@ -3,9 +3,9 @@ user-guide-title: 投放最佳实践指南
 user-guide-breadcrumb: Deliverability Best Practice Guide
 user-guide-description: 了解关键的可交付性术语、概念和方法，以使您能够确保您的营销计划取得成功。
 source-git-commit: 3e933104107cd4f62eab99c66957ccd9acb51409
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '169'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -50,11 +50,11 @@ ht-degree: 95%
       + [重新接触最佳实践](/help/additional-resources/re-engagement.md)
       + [实时黑洞列表](/help/additional-resources/blocklist-databases.md)
       + [疑难解答](/help/additional-resources/troubleshooting.md)
-   + [!DNL Adobe Campaign] {#campaign}的资源
+   + 有关 [!DNL Adobe Campaign] {#campaign} 的资源
       + [域名设置](/help/additional-resources/ac-domain-name-setup.md)
       + [SSL 证书请求进程](/help/additional-resources/ac-ssl-certificate-request.md)
       + [启动新平台](/help/additional-resources/ac-starting-new-platform.md)
       + [Campaign Classic - 技术建议](/help/additional-resources/acc-technical-recommendations.md)
    + 技术说明{#technotes}
-      + [Apple隐私常见问题解答](/help/technotes/apple-mail-privacy-faq.md)
-      + [实施BIMI](/help/technotes/implement-bimi.md)
+      + [Apple 隐私常见问题解答](/help/technotes/apple-mail-privacy-faq.md)
+      + [实施 BIMI](/help/technotes/implement-bimi.md)
