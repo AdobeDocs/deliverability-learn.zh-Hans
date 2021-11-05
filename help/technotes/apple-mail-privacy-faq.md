@@ -1,22 +1,22 @@
 ---
-title: Apple邮件隐私保护常见问题解答
-description: Apple邮件隐私保护常见问题解答
+title: Apple 邮件隐私保护常见问题解答
+description: Apple 邮件隐私保护常见问题解答
 topics: Deliverability
 exl-id: c4b9839d-db1a-4bbc-a1d5-385dddca95a8
-source-git-commit: c66a1d519ab844d103de5b6dd64c5f7f40c3d8d9
+source-git-commit: 994e31f8038f2a6d9ec986f93dc2640e6a8796d7
 workflow-type: tm+mt
-source-wordcount: '1083'
-ht-degree: 0%
+source-wordcount: '1106'
+ht-degree: 1%
 
 ---
 
-# Apple邮件隐私保护常见问题解答
+# Apple 邮件隐私保护常见问题解答
 
-针对Apple关于其iOS 15版本的公告，本常见问题解答提供了初始指导，其中包括[Mail Privacy Protection](https://www.apple.com/newsroom/2021/06/apple-advances-its-privacy-leadership-with-ios-15-ipados-15-macos-monterey-and-watchos-8/)。 这些更改将在9月进行，我们将继续更新此文档，并为客户提供指导。
+针对Apple关于其iOS 15版本的公告，此常见问题解答提供了初始指导，包括 [邮件隐私保护](https://www.apple.com/newsroom/2021/06/apple-advances-its-privacy-leadership-with-ios-15-ipados-15-macos-monterey-and-watchos-8/). 这些更改将在9月进行，我们将继续更新此文档，并为客户提供指导。
 
 ## Apple宣布了什么？
 
-6月7日，在Apple年度全球开发人员大会(WWDC 2021)上，他们在iOS 15版中宣布，将在所有Apple设备(iPhone、iPad和Mac)上的本机邮件应用程序上启用[邮件隐私保护](https://www.apple.com/newsroom/2021/06/apple-advances-its-privacy-leadership-with-ios-15-ipados-15-macos-monterey-and-watchos-8/)。 据Apple称，“邮件隐私保护阻止发件人使用不可见的像素来收集有关用户的信息，这样发件人就无法知道何时打开电子邮件并掩盖其IP地址，因此无法将其链接到其他在线活动或用于确定其位置。” 这对营销人员意味着，他们不知道用户何时或是否在Apple的邮件应用程序中打开了电子邮件。 该限制需要用户同意，适用于在Apple Mail应用程序（Gmail、Yahoo、Outlook等）上打开的任何电子邮件。
+6月7日，在Apple年度全球开发者大会(WWDC 2021)上，他们在iOS 15版中宣布： [邮件隐私保护](https://www.apple.com/newsroom/2021/06/apple-advances-its-privacy-leadership-with-ios-15-ipados-15-macos-monterey-and-watchos-8/) 将在所有Apple设备(iPhone、iPad和Mac)上的本机邮件应用程序中启用。 据Apple称，“邮件隐私保护阻止发件人使用不可见的像素来收集有关用户的信息，这样发件人就无法知道何时打开电子邮件并掩盖其IP地址，因此无法将其链接到其他在线活动或用于确定其位置。” 这对营销人员意味着，他们不知道用户何时或是否在Apple的邮件应用程序中打开了电子邮件。 该限制需要用户同意，适用于在Apple Mail应用程序（Gmail、Yahoo、Outlook等）上打开的任何电子邮件。
 
 ## 这什么时候生效？
 
@@ -24,7 +24,9 @@ iOS 15版本将于今年秋季发布，最早可能于9月发布。 虽然当前
 
 ## 这对跟踪和衡量电子邮件促销活动结果有何影响？
 
-将禁用Apple Mail中的跟踪像素，这意味着营销人员将不再能够可靠地知道何时打开了电子邮件。 虽然禁用跟踪像素并不是新增功能，但过去有多个提供商采取了类似措施。 Apple的Mail应用程序已在许多提供商中得到广泛采用。 因此，与其他提供程序选择默认禁用跟踪像素时相比，此影响可能会更加显着。 需要用户同意的隐私保护将适用于在Apple Mail应用程序（Gmail、Yahoo、Outlook等）上打开的任何电子邮件。 如果用户使用Gmail应用程序或其他邮件应用程序，则隐私控制将不会受到影响。 就上下文而言，第1季度，[Apple移动设备市场份额](https://www.counterpointresearch.com/global-smartphone-share/)在全球为17%，美国为55%。
+来自跟踪Apple Mail中像素的数据将不再准确，这意味着营销人员将无法再可靠地判断电子邮件的打开时间。 虽然预先加载图像和像素以及使用代理对数据进行匿名化并不新鲜，但一些提供者过去也采取了类似的措施，其实施的范围、方法和范围是新的。
+
+Apple的Mail应用程序已在许多提供商中得到广泛采用。 因此，与其他提供程序选择默认禁用跟踪像素时相比，此影响可能会更加显着。 需要用户同意的隐私保护将适用于在Apple Mail应用程序（Gmail、Yahoo、Outlook等）上打开的任何电子邮件。 如果用户使用Gmail应用程序或其他邮件应用程序，则隐私控制将不会受到影响。 对于上下文， [Apple移动设备市场份额](https://www.counterpointresearch.com/global-smartphone-share/) 第1季度，全球17%，美国55%。
 
 ## 还有其他影响吗？
 
@@ -52,4 +54,4 @@ iOS 15版本将于今年秋季发布，最早可能于9月发布。 虽然当前
 
 ## Adobe如何支持我们的客户？
 
-我们将发布其他内容，概述我们的视点和建议的战略（近期和长期）。 此外，客户还可以下载[可投放性指南](../introduction.md)、参加[可投放性课程](http://bit.ly/Deliverability-Course)，以及查看[最近的可投放性网络研讨会](https://primetime.bluejeans.com/a2m/events/playback/29edda30-a9b8-4e4b-a460-e829c02c912a)，以跟上最新趋势和最佳实践。 客户当然可以留意未来的博客文章、网络研讨会和有关可投放性的更新，以及其他与隐私相关的不断发展的动态。
+我们将发布其他内容，概述我们的视点和建议的战略（近期和长期）。 此外，客户还可以下载 [投放能力指南](../introduction.md)，获取 [可投放性课程](http://bit.ly/Deliverability-Course)，并查看 [近期网络研讨会](https://primetime.bluejeans.com/a2m/events/playback/29edda30-a9b8-4e4b-a460-e829c02c912a) ，以跟上最新趋势和最佳实践。 客户当然可以留意未来的博客文章、网络研讨会和有关可投放性的更新，以及其他与隐私相关的不断发展的动态。
