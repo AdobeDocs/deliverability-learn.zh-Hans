@@ -27,7 +27,7 @@ ht-degree: 22%
 
 **Analytics**
 
-* [如何提高参与度和维系率（教程）](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/mobile-app-analytics/measuring-mobile-analytics/how-to-increase-engagement-and-retention-rates.html?lang=en#mobile-app-analytics): *通过使用同类群组的行为识别参与的受众，并了解导致移动设备应用程序吸引力的根本原因。使用 Segment IQ 中的数据科学算法了解区段之间的区别和相似之处。*
+* [如何提高参与度和维系率（教程）](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/mobile-app-analytics/measuring-mobile-analytics/how-to-increase-engagement-and-retention-rates.html?lang=en#mobile-app-analytics): *通过使用同类群组的行为识别参与的受众，并了解导致移动设备应用程序吸引力的根本原因。 使用 Segment IQ 中的数据科学算法了解区段之间的区别和相似之处。*
 
 **Campaign Standard**
 

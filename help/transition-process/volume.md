@@ -23,14 +23,14 @@ ht-degree: 1%
 
 以下是有关如何顺利过渡的提示和提示列表：
 
-* **** 权限是任何成功电子邮件计划的基础。
-* **低速**  — 从低发送量开始，然后在建立发件人信誉时提高发送量。
-* **串联邮寄策略**&#x200B;允许您在使用当前ESP时提高Campaign的流量，而不会中断您的电子邮件日历。
-* **参与度很重要**  — 从定期打开并单击您电子邮件的订阅者开始。
-* **遵循计划**  — 我们的建议已帮助数百个Campaign客户成功地启动其电子邮件项目。
-* **监控您的回复电子邮件帐户**。对于您的客户而言，使用noreply@xyz.com或不做出响应是个糟糕的体验。
+* **权限** 是任何成功的电子邮件计划的基础。
+* **低和慢**  — 从低发送量开始，然后在建立发件人信誉时增加。
+* A **串联邮寄策略** 允许您在使用当前ESP时增加Campaign的流量，而不中断电子邮件日历。
+* **参与事项**  — 从定期打开并单击您电子邮件的订阅者开始。
+* **遵循计划**  — 我们的建议已帮助数百个Campaign客户成功地增加其电子邮件项目。
+* **监控回复电子邮件帐户**. 对于您的客户而言，使用noreply@xyz.com或不做出响应是个糟糕的体验。
 * 不活动的地址可能会对投放能力产生负面影响。 **在您当前的平台上重新激活并重新授予权限**，而不是您的新IP。
-* **域**  — 使用发送域，该域是您公司实际域的子域
+* **域**  — 使用是您公司实际域的子域的发送域
    * 例如，如果您的公司域是xyz.com，则email.xyz.com比xyzemail.com为ISP提供更可信性
 * **透明度**  — 您的电子邮件域的注册详细信息应公开提供，且不应为私有。
 
@@ -45,12 +45,12 @@ ht-degree: 1%
 
 **Campaign**
 
-* 在[此部分](/help/additional-resources/ac-starting-new-platform.md)中了解有关在使用Adobe Campaign启动新平台时管理投放能力的更多信息。
-* 在[此部分](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#sending-using-multiple-waves)中了解如何使用多个批次与Adobe Campaign Classic一起发送。
-* 了解如何在[此部分](/help/additional-resources/ac-domain-name-setup.md)中将子域完全委派给Adobe Campaign Classic或Standard。
-* [控制面板:完全子域委派（教程）](https://experienceleague.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html)  -  *了解如何将子域完全委派给Adobe Campaign Classic。*
-* [控制面板:完全子域委派（教程）](https://experienceleague.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html)  -  *了解如何将子域完全委派给Adobe Campaign Standard。*
+* 在中使用Adobe Campaign启动新平台时，了解有关管理投放能力的更多信息 [此部分](/help/additional-resources/ac-starting-new-platform.md).
+* 了解如何通过Adobe Campaign Classic(位于 [此部分](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#sending-using-multiple-waves).
+* 了解如何在中将子域完全委派给Adobe Campaign Classic或Standard [此部分](/help/additional-resources/ac-domain-name-setup.md).
+* [控制面板:完全子域委派（教程）](https://experienceleague.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) - *了解如何将子域完全委派给Adobe Campaign Classic。*
+* [控制面板:完全子域委派（教程）](https://experienceleague.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) - *了解如何将子域完全委派给Adobe Campaign Standard。*
 
 ## 其他资源
 
-* 在[此部分](/help/additional-resources/increase-reputation-with-ip-warming.md)中了解有关通过IP变温提高电子邮件声誉的更多信息。
+* 了解有关通过IP升温提高电子邮件声誉的更多信息，请参阅 [此部分](/help/additional-resources/increase-reputation-with-ip-warming.md).

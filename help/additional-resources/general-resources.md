@@ -9,7 +9,7 @@ exl-id: 75538ef8-8e4b-4940-8d11-42ebd7c65e93
 source-git-commit: f441fe45b5b7309082c8eea7423d40003b913b7b
 workflow-type: tm+mt
 source-wordcount: '126'
-ht-degree: 31%
+ht-degree: 35%
 
 ---
 
@@ -20,11 +20,11 @@ ht-degree: 31%
 请参阅以下技术说明，了解有关投放能力的最新更新的更多信息。
 
 * [实施Gmail的品牌标识报文(BIMI)](../technotes/implement-bimi.md)
-* [Apple邮件隐私保护常见问题解答](../technotes/apple-mail-privacy-faq.md)
+* [Apple 邮件隐私保护常见问题解答](../technotes/apple-mail-privacy-faq.md)
 
 ## 通用资源
 
-本节列出了一些有关可投放性的其他资源，例如特定建议和最佳实践、其他工具或疑难解答过程。
+此部分列出了一些有关可投放性的其他资源，例如特定建议和最佳实践、其他工具或疑难解答过程。
 
 * [关于垃圾邮件陷阱](../../help/additional-resources/all-about-spam-traps.md)
 * [利用 IP 预热提高您的电子邮件声誉](../../help/additional-resources/increase-reputation-with-ip-warming.md)

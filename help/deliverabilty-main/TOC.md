@@ -3,7 +3,7 @@ user-guide-title: 投放最佳实践指南
 user-guide-breadcrumb: Deliverability Best Practice Guide
 user-guide-description: 了解关键的可交付性术语、概念和方法，以使您能够确保您的营销计划取得成功。
 source-git-commit: 3e933104107cd4f62eab99c66957ccd9acb51409
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '169'
 ht-degree: 100%
 

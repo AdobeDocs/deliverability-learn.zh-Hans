@@ -40,4 +40,4 @@ ht-degree: 35%
 
 ## 其他资源
 
-* 了解如何在[此部分](/help/additional-resources/troubleshooting.md)中解决可投放性问题。
+* 了解如何在 [此部分](/help/additional-resources/troubleshooting.md).

@@ -15,17 +15,17 @@ ht-degree: 2%
 
 # 域名设置
 
-本文档介绍了域名设置和委派的业务和技术要求。 您将需要选择电子邮件发送子域，以及（可选）面向外部的子域，以托管您所使用的Adobe平台的Web组件（登陆页面、选择退出页面）。
+本文档介绍了域名设置和委派的业务和技术要求。 您将需要选择电子邮件发送子域以及（可选）面向外部的子域，以托管您所使用的Adobe平台的Web组件（登陆页面、选择退出页面）。
 
 >[!NOTE]
 >
->您还可以使用控制面板设置新子域（可作为测试版使用）。 在[此部分](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html#must-read)中了解详情。
+>您还可以使用控制面板设置新子域（可作为测试版使用）。 在 [此部分](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html#must-read).
 
 ## 子域
 
 借助Adobe，数字营销可以真正成为推动您品牌的客户参与营销计划的情境引擎。  电子邮件仍是数字营销计划的基础。 但是，进入收件箱比以往更加困难。
 
-通过为电子邮件促销活动创建子域，品牌可以将不同类型的流量（例如，营销与公司流量）隔离到特定IP池中，并使用特定的域，从而加快[IP预热过程](../../help/additional-resources/increase-reputation-with-ip-warming.md)并提高整体投放能力。 如果您共享域，并且该域被阻止或添加到阻止列表中，则可能会影响您的公司邮件投放。 但是，特定于电子邮件营销通信的域名存在的声誉问题或阻止，将仅影响电子邮件的流量。  如果将主域用作多个邮件流的发件人或“发件人”地址，则也可能会中断电子邮件身份验证，从而阻止您的邮件或将其置于垃圾邮件文件夹中。
+通过为电子邮件促销活动创建子域，品牌可以将不同类型的流量（例如，营销与公司流量）隔离到特定IP池中，并使用特定的域，从而加快 [IP预热过程](../../help/additional-resources/increase-reputation-with-ip-warming.md) 提高整体投放能力。 如果您共享域，并且该域被阻止或添加到阻止列表中，则可能会影响您的公司邮件投放。 但是，特定于电子邮件营销通信的域名存在的声誉问题或阻止，将仅影响电子邮件的流量。  如果将主域用作多个邮件流的发件人或“发件人”地址，则也可能会中断电子邮件身份验证，从而阻止您的邮件或将其置于垃圾邮件文件夹中。
 
 ### 委派
 
@@ -35,8 +35,7 @@ ht-degree: 2%
 
 通过委派子域以与Adobe Campaign一起使用，客户可以依赖Adobe来维护满足其电子邮件营销发送域行业标准可交付性要求所需的DNS基础结构，同时继续维护和控制其内部电子邮件域的DNS。  子域委派允许：
 
-客户使用带有其域名的DNS别名来保留其品牌形象
-Adobe自主实施所有技术最佳实践，以在发送电子邮件期间充分优化投放能力
+客户可通过使用带有其域名Adobe的DNS别名来保持其品牌形象，从而自主实施所有技术最佳实践，以在发送电子邮件期间完全优化投放能力
 
 ## DNS设置选项
 
@@ -54,7 +53,7 @@ Adobe自主实施所有技术最佳实践，以在发送电子邮件期间充分
 | MX | 为传入邮件指定邮件服务器 | <i>email.example.com</i></br><i>10 inbound.email.example.com</i> |
 | SPF(TXT) | 发件人策略框架 | <i>email.example.com</i></br>&quot;v=spf1 redirect=__spf.campaign.adobe.com&quot; |
 | DKIM(TXT) | 已识别的DomainKeys邮件 | <i>客户。_domainkey.email.example.com</i></br>&quot;v=DKIM1;k=rsa;&quot; &quot;DKIMPUBLICKEY HERE&quot; |
-| 主机记录(A) | 镜像页面、图像托管和跟踪链接，所有发送域 | m.email.example.com A 123.111.100.99</br>t.email.example.com A 123.111.100.98</br>email.example.com A 123.111.100.97 |
+| 主机记录(A) | 镜像页面、图像托管和跟踪链接，所有发送域 | A 123.111.100.99中的m.email.example.com</br>A 123.111.100.98中的t.email.example.com</br>email.example.com A 123.111.100.97中的 |
 | 反向DNS(PTR) | 将客户端IP地址映射到客户端品牌主机名 | 18.101.100.192.in-addr.arpa域名指针r18.email.example.com |
 | CNAME | 为其他域名提供别名 | t1.email.example.com是t1.email.example.campaign.adobe.com的别名 |
 
@@ -112,7 +111,7 @@ marketing.example.com. NS d.ns.campaign.adobe.com.
 >[!NOTE]
 >
 >* “回复地址”字段的用途是希望收件人回复与“发件人地址”不同的地址。  虽然不是必填字段，但Adobe强烈建议“回复地址”有效并链接到受监控的邮箱。  此邮箱必须由客户托管。  它可以是一个支持邮箱，例如customercare@customer.com，用于读取和响应电子邮件。
->* 如果客户未选择“Reply-To Address”，则默认地址始终为`<tenant>-<type>-<env>@<subdomain>`。
+>* 如果客户未选择“回复地址”，则默认地址始终为 `<tenant>-<type>-<env>@<subdomain>`.
 >* 以这种方式设置“回复地址”时，将向未监控的邮箱发送回复。
 >* 从Adobe Campaign发送电子邮件时，“发件人地址”邮箱不受监控，营销用户无法访问此邮箱。 Adobe Campaign还不提供自动回复或自动转发此邮箱中收到的电子邮件的功能。
 >* 营销活动发件人/发件人地址和错误地址不能为“滥用”或“邮递员”。
@@ -124,7 +123,7 @@ marketing.example.com. NS d.ns.campaign.adobe.com.
 
 | 委派子域 | DNS说明 |
 |--- |--- |
-| `<subdomain>` | `<subdomain>` NS a.ns.campaign.adobe.com。  </br> `<subdomain>` NS b.ns.campaign.adobe.com。  </br> `<subdomain>` NS c.ns.campaign.adobe.com。  </br> `<subdomain>` NS d.ns.campaign.adobe.com。 |
+| `<subdomain>` | `<subdomain>` NS a.ns.campaign.adobe.com。 </br> `<subdomain>` NS b.ns.campaign.adobe.com。 </br> `<subdomain>` NS c.ns.campaign.adobe.com。 </br> `<subdomain>` NS d.ns.campaign.adobe.com。 |
 
 ## 跟踪、镜像页面、资源
 
@@ -167,7 +166,7 @@ marketing.example.com. NS d.ns.campaign.adobe.com.
 
 | 委派子域 | DNS说明 |
 |--- |--- |
-| `<subdomain>` | `<subdomain>` CNAME  `<internal customer server>` |
+| `<subdomain>` | `<subdomain>` CNAME `<internal customer server>` |
 
 ## 已提供的服务
 
@@ -206,4 +205,4 @@ marketing.example.com. NS d.ns.campaign.adobe.com.
 
 >[!NOTE]
 >
->[控制](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hans) 面板仅适用于使用Adobe Managed Services的客户。
+>[控制面板](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hans) 仅供使用Adobe Managed Services的客户使用。

@@ -34,8 +34,8 @@ ht-degree: 2%
 
 制定结构完善的知识产权战略以帮助建立良好的声誉，这一点很重要。 IP和设置的数量因您的业务模式和营销目标而异。 与专家合作，制定明确的战略，以便立即开始。 请考虑以下需要注意的事项：
 
-* **太多的** IPscan会触发声誉问题，因为它是垃圾邮件发送者对Snowshoe的常见策略，而Snowshoe ****&#x200B;是垃圾邮件发送者使用的一种策略，其中流量分布在许多IP中，以最大限度地发送垃圾邮件。即使您不是垃圾邮件发送者，如果您使用的IP过多，特别是这些IP之前没有任何流量，您看起来可能就像一个垃圾邮件发送者。
-* **IPscan太少会** 导致吞吐量问题，并可能触发信誉问题。吞吐量因ISP而异。 ISP愿意接受的数量和速度通常取决于其基础架构和发送信誉阈值。
+* **IP过多** 可能会触发声誉问题，因为它是垃圾邮件发送者的常见策略， **雪鞋**，这是垃圾邮件发送者使用的一种策略，在这种策略中，流量会分布在许多IP中，以最大限度地发送垃圾邮件。 即使您不是垃圾邮件发送者，如果您使用的IP过多，特别是这些IP之前没有任何流量，您看起来可能就像一个垃圾邮件发送者。
+* **IP太少** 可能会导致吞吐量问题，并可能触发声誉问题。 吞吐量因ISP而异。 ISP愿意接受的数量和速度通常取决于其基础架构和发送信誉阈值。
 * 为报文传送类型划分流量是关键。 至少应在单独的IP池上单独分开营销和事务型邮件。
 * 根据您的邮件策略，如果您的声誉存在显着差异，则建议在不同的IP池上分隔不同的产品或营销流。 某些营销人员还按地区进行细分。 为声誉较低的流量分隔IP不会解决声誉问题，但会防止“声誉良好的”电子邮件投放出现问题。 毕竟，你不想为了一个风险更高的受众而牺牲好观众。
 
@@ -45,7 +45,7 @@ ht-degree: 2%
 
 ## 身份验证 {#authentication}
 
-身份验证是ISP用于验证发件人身份的过程。 最常见的两种身份验证协议是[!DNL Sender Policy Framework](SPF)和[!DNL DomainKeys Identified Mail](DKIM)。 最终用户看不到这些邮件，但可帮助ISP过滤来自已验证发件人的电子邮件。 [!DNL Domain-based Message Authentication Reporting and Conformance] (DMARC)越来越受欢迎，尽管其政策尚未被所有ISP纳入其声誉系统。
+身份验证是ISP用于验证发件人身份的过程。 最常见的两种身份验证协议是 [!DNL Sender Policy Framework] (SPF)和 [!DNL DomainKeys Identified Mail] (DKIM)。 最终用户看不到这些邮件，但可帮助ISP过滤来自已验证发件人的电子邮件。 [!DNL Domain-based Message Authentication Reporting and Conformance] (DMARC)越来越受欢迎，尽管其政策尚未被所有ISP纳入其声誉系统。
 
 ### SPF
 
@@ -53,22 +53,22 @@ ht-degree: 2%
 
 ### DKIM
 
-[!DNL Domain Keys Identified Mail] (DKIM)是一种身份验证方法，用于检测伪造的发件人地址（通常称为欺骗）。如果启用了DKIM，则允许接收者确认是否有权从该域发送邮件。
+[!DNL Domain Keys Identified Mail] (DKIM)是一种身份验证方法，用于检测伪造的发件人地址（通常称为欺骗）。 如果启用了DKIM，则允许接收者确认是否有权从该域发送邮件。
 
 ### DMARC
 
-[!DNL Domain-based Message Authentication, Reporting and Conformance] (DMARC)是一种验证方法，允许域所有者保护其域免受未经授权的使用。DMARC使用SPF或DKIM或两者都允许域所有者控制验证失败邮件的情况：已送达、已隔离或已拒绝。
+[!DNL Domain-based Message Authentication, Reporting and Conformance] (DMARC)是一种验证方法，允许域所有者保护其域免受未经授权的使用。 DMARC使用SPF或DKIM或两者都允许域所有者控制验证失败邮件的情况：已送达、已隔离或已拒绝。
 
 ## 产品特定资源
 
 **Campaign**
 
-* 了解如何在[此部分](/help/additional-resources/ac-domain-name-setup.md)中将子域完全委派给Adobe Campaign Classic或Standard。
-* [控制面板:完全子域委派（教程）](https://experienceleague.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html)  -  *了解如何将子域完全委派给Adobe Campaign Classic。*
-* [控制面板:完全子域委派（教程）](https://experienceleague.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html)  -  *了解如何将子域完全委派给Adobe Campaign Standard。*
-* 在[此部分](/help/additional-resources/acc-technical-recommendations.md#feedback-loop-acc)中了解有关为Campaign Classic实例实施反馈循环的更多信息。
+* 了解如何在中将子域完全委派给Adobe Campaign Classic或Standard [此部分](/help/additional-resources/ac-domain-name-setup.md).
+* [控制面板:完全子域委派（教程）](https://experienceleague.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) - *了解如何将子域完全委派给Adobe Campaign Classic。*
+* [控制面板:完全子域委派（教程）](https://experienceleague.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) - *了解如何将子域完全委派给Adobe Campaign Standard。*
+* 了解有关在中为Campaign Classic实例实施反馈循环的更多信息 [此部分](/help/additional-resources/acc-technical-recommendations.md#feedback-loop-acc).
 
 ## 其他资源
 
-* 在[此部分](/help/additional-resources/authentication.md)中了解有关SPF、DKIM和DMARC身份验证方法的更多信息。
-* 在[此部分](/help/additional-resources/increase-reputation-with-ip-warming.md)中了解有关通过IP变温提高电子邮件声誉的更多信息。
+* 在 [此部分](/help/additional-resources/authentication.md).
+* 了解有关通过IP升温提高电子邮件声誉的更多信息，请参阅 [此部分](/help/additional-resources/increase-reputation-with-ip-warming.md).

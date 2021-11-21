@@ -31,19 +31,19 @@ ISP自然会怀疑从未用来发送电子邮件的IP地址，而这些地址会
 
 * 配置专用子域，该子域专用于从Adobe发送的电子邮件促销活动。
 
-* 如果您有此信息，**会将无效地址导入隔离表**。
+* 如果你有这些信息， **将无效地址导入隔离表**.
 首次使用地址列表（可能未完全限定）时，通常会启动平台。 如果您将发送到无效地址或蜜罐地址，这将有助于降低平台的声誉。
 
-   * 如果您有无效地址列表，则在首次发送之前将其导入隔离表符合您的最大利益。 隔离表可通过&#x200B;**[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]**(Campaign Classic)和&#x200B;**[!UICONTROL Administration > Channels > Quarantines > Addresses]**(Campaign Standard)菜单访问。
+   * 如果您有无效地址列表，则在首次发送之前将其导入隔离表符合您的最大利益。 隔离表可通过 **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]** (Campaign Classic)和 **[!UICONTROL Administration > Channels > Quarantines > Addresses]** (Campaign Standard)菜单。
 
    * 尽管如此，如果您希望重新指定无效地址，则最好在建立平台声誉后再逐位地执行此操作，以便随着时间的推移“稀释”不良地址的使用。
 
-* **通过限制** 匹配项数量来限制吞吐量率。有关调整此类技术设置的更多信息，请与Adobe Campaign管理员联系。
+* **限制吞吐率** 限制母婴数量。 有关调整此类技术设置的更多信息，请与Adobe Campaign管理员联系。
 
-* **逐步增加发送的** 卷，以避免被标记为垃圾邮件。请不要从一开始就定位整个数据库，而是在每次发送时添加列表的额外部分。 这样，您就可以在每一步增加卷，同时降低无效地址的总体速率。 为确保启动阶段的顺利开发，您可以使用批次。
+* **逐步增加发送的卷** 以避免被标记为垃圾邮件。 请不要从一开始就定位整个数据库，而是在每次发送时添加列表的额外部分。 这样，您就可以在每一步增加卷，同时降低无效地址的总体速率。 为确保启动阶段的顺利开发，您可以使用批次。
 
-* **定期发送**。从某种程度上讲，最好定期发送小照片，而不是偶尔发送大型活动。
-* **密切关注投放报告**。高错误指示器可能意味着技术设置配置错误。
+* **定期发送**. 从某种程度上讲，最好定期发送小照片，而不是偶尔发送大型活动。
+* **密切关注投放报告**. 高错误指示器可能意味着技术设置配置错误。
 
 ## 其他资源
 

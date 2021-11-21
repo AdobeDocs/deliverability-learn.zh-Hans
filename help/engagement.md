@@ -17,29 +17,29 @@ ht-degree: 2%
 
 # 参与度
 
-参与度已成为影响收件箱放置决策的最重要因素。 多年来，ISP已将注意力从内容相关过滤器转移到行为模型上，严重依赖积极和消极的参与行动。 积极参与主要包括打开数、点击数、转发数和回复数。 负面参与包括删除而不打开、忽略、取消订阅和标记为垃圾信息。 获得明确的权限是积极电子邮件参与的基础。 一个品牌获得许可后，应通过定期测量并通过频度和内容满足客户期望来培养这种关系。
+参与度已成为影响收件箱放置决策的最重要因素。 Over the years, ISPs have shifted their focus from content-related filters to a behavioral model, heavily relying on positive and negative engagement actions. 积极参与主要包括打开数、点击数、转发数和回复数。 负面参与包括删除而不打开、忽略、取消订阅和标记为垃圾信息。 获得明确的权限是积极电子邮件参与的基础。 一个品牌获得许可后，应通过定期测量并通过频度和内容满足客户期望来培养这种关系。
 
-良好的打开和点击率因不同发件人的多种因素而异。 请咨询您的可投放性顾问，为电子邮件计划确立特定目标和基线。
+良好的打开和点击率因不同发件人的多种因素而异。 Consult with your deliverability consultant to establish specific goals and baselines for your email program.
 
-电子邮件参与度也是一个术语，用于描述一种有助于确定IP声誉的量度类型。 拥有自己门户的ISP（Hotmail、AOL、Yahoo、Gmail等） 拥有大量关于客户与其邮件交互的数据。 即使邮件被移入或移出垃圾邮件文件夹，用户也可以看到打开数、点击数和许多其他形式的交互。 他们还可以查看发送到的电子邮件地址是否在客户端地址簿中。
+Email engagement is also a term used to describe one type of metric that helps to determine IP reputations. 拥有自己门户的ISP（Hotmail、AOL、Yahoo、Gmail等） 拥有大量关于客户与其邮件交互的数据。 即使邮件被移入或移出垃圾邮件文件夹，用户也可以看到打开数、点击数和许多其他形式的交互。 他们还可以查看发送到的电子邮件地址是否在客户端地址簿中。
 
-虽然您作为发件人无法跟踪所有相同的参与量度，但打开和点击量会成为良好的起点。 请务必注意，ISP只能查看电子邮件参与情况。 虽然其他形式的参与对于整体业务来说非常重要，但ISP仅具有可见性，并根据电子邮件量度做出筛选决定。
+虽然您作为发件人无法跟踪所有相同的参与量度，但打开和点击量会成为良好的起点。 It’s important to note that ISPs only have visibility to email engagement. 虽然其他形式的参与对于整体业务来说非常重要，但ISP仅具有可见性，并根据电子邮件量度做出筛选决定。
 
 ## 超量质量
 
-**自然名** 单是健康名单的基石。许多营销人员非常关注列表增长，但从投放能力的角度来看，构建高度参与的订阅者的高质量列表至关重要。 持续向基本上未参与的受众发送电子邮件可能会降低您的发送信誉，并大大增加电子邮件进入垃圾邮件或垃圾邮件文件夹的可能性。
+**自然列表增长** 是健康名单的基石。 许多营销人员非常关注列表增长，但从投放能力的角度来看，构建高度参与的订阅者的高质量列表至关重要。 持续向基本上未参与的受众发送电子邮件可能会降低您的发送信誉，并大大增加电子邮件进入垃圾邮件或垃圾邮件文件夹的可能性。
 
-**邮件** 频率在创建和维护电子邮件营销计划时务必要考虑。在欢迎邮件中设置收件人的期望值是人们希望了解预期内容的非常有用的策略。 然而，这些预期需要得到满足：过多地发送电子邮件可能会导致客户疲劳，在某些情况下可能会增加投诉和取消订阅。
+**邮件频度** 创建和维护电子邮件营销计划时，务必要考虑这一点。 在欢迎邮件中设置收件人的期望值是人们希望了解预期内容的非常有用的策略。 然而，这些预期需要得到满足：过多地发送电子邮件可能会导致客户疲劳，在某些情况下可能会增加投诉和取消订阅。
 
 正确的频率是每个营销人员必须针对其特定营销计划找到的内容。 我们建议测试不同的频率，以便为任何特定的营销计划找到适当的平衡。 保持收件人的参与度和活跃度，是营销人员为确保电子邮件营销计划成功而可采取的最重要措施之一。
 
 ## 改变兴趣
 
-订阅者的兴趣在不断变化，营销人员需要了解对品牌的承诺可能只是暂时的。 有些订阅者会选择退出，但许多订阅者只会删除或忽略不需要的电子邮件。 从消费者的角度来看，任何未经请求或不需要的消息都会被视为垃圾邮件。 因此，营销人员需要依赖&#x200B;**基于权限的营销**&#x200B;和&#x200B;**监控参与度**&#x200B;来失去兴趣。 为了实现最佳收件箱放置，我们建议营销人员使用重新激活活动和回退策略来战略性地重新吸引订阅者，这对于电子邮件营销人员而言非常有用。
+Subscriber interests are constantly evolving, and marketers need to understand that commitment to a brand may be temporary. 有些订阅者会选择退出，但许多订阅者只会删除或忽略不需要的电子邮件。 从消费者的角度来看，任何未经请求或不需要的消息都会被视为垃圾邮件。 Therefore, marketers need to rely on **permission-based marketing** and **monitor engagement** for loss of interest. In order to achieve optimal inbox placement, we recommend that marketers strategically reengage subscribers using reactivation campaigns and a win-back strategy, which can be very useful tools to an email marketer.
 
-**回赢策略**&#x200B;是指定期向营销数据库的特定部分发送特殊激励，以尝试重新参与具有低打开和点击活动的列表。 将保留积极响应，并将未响应的列表部分移至不活动状态，且不再将其邮寄至。
+A **双赢策略** 是指定期向营销数据库的特定部分发送特殊激励，以尝试重新吸引打开次数和点击次数较少的列表。 将保留积极响应，并将未响应的列表部分移至不活动状态，且不再将其邮寄至。
 
-**重新激活营销活动**&#x200B;类似，但用于一次性重新确认列表，在处理旧的过时列表时（即12个月以上甚至数年未邮寄到的列表），此功能非常有用。 此类型的营销活动通常也由阻止列表强制执行以解析块。 未通过此流程成功重新参与的订阅者应从未来电子邮件促销活动中排除。
+A **重新激活营销活动** 类似，但用于一次性重新确认列表，在处理旧的、过时的列表（那些已超过12个月甚至数年未邮寄到的列表）时，这非常有用。 此类型的营销活动通常也由阻止列表强制执行以解析块。 未通过此流程成功重新参与的订阅者应从未来电子邮件促销活动中排除。
 
 实施回访或重新激活营销活动的最佳方式将是电子邮件计划特有的，并且应根据您的业务需求和情况进行完全自定义。
 
@@ -47,11 +47,11 @@ ht-degree: 2%
 
 将回复电子邮件设置为“无回复”地址很容易，但如果忽略大局，这将是一个错误。
 
-当收件人回复营销电子邮件时，会收到相应的响应。 通过启用&#x200B;**回复和响应系统**，您将帮助提高发件人的声誉。 这将增加正投放能力和收件箱投放率的可能性。
+当收件人回复营销电子邮件时，会收到相应的响应。 By enabling a **reply-and-respond system**, you will help boost your sender reputation. This will increase the likelihood of positive deliverability and inbox placement rates.
 
-它也是一个更好的客户体验，有助于提升消费者对您品牌的正面认知。 毕竟，没有人说“请和我们做生意”，比如“我们想听你们说”。
+It is also a much better customer experience and will help to increase positive consumer perception of your brand. After all, nothing says “please do business with us” like “we want to hear from you.”
 
-回复策略的最后一个关键部分是，如果您有一个他们可以回复的真实电子邮件地址，请确保有人正在监控它，而且它不只是自动回复。 如果不进行监控，则未达到的预期可能会令客户感到沮丧，并导致投诉或降低参与度。
+回复策略的最后一个关键部分是，如果您有一个他们可以回复的真实电子邮件地址，请确保有人正在监控它，而且它不只是自动回复。 If not monitored, the missed expectations can frustrate the customer and lead to complaints or lower engagement.
 
 ## 产品特定资源
 
@@ -67,4 +67,4 @@ ht-degree: 2%
 
 ## 其他资源
 
-* 在[此部分](/help/additional-resources/re-engagement.md)中了解有关重新参与（或双赢）策略的更多信息。
+* 在 [此部分](/help/additional-resources/re-engagement.md).
