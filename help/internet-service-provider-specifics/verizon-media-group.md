@@ -1,13 +1,13 @@
 ---
 title: Verizon Media Group（Yahoo、AOL、Verizon 等）
-description: '[!DNL Verizon Media Group] 通常是大多数B2C列表的前三个域之一。 他们的行为有些独特，因为在出现声誉问题时，他们通常会限制或批量发送邮件。'
+description: '"[!DNL Verizon Media Group] 通常是大多数B2C列表的前三个域之一。 他们的行为有些独特，因为如果声誉出现问题，他们通常会限制或批量发送邮件。”'
 topics: Deliverability
 kt: 5320
 doc-type: article
 activity: understand
 team: TM
 exl-id: 43e6d3cb-23c3-4076-8026-a1a08e76bd1b
-source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
+source-git-commit: a5c86d5e6f310534787f07a04971722dbc9bb33b
 workflow-type: tm+mt
 source-wordcount: '290'
 ht-degree: 2%
