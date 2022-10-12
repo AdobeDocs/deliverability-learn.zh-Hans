@@ -2,9 +2,9 @@
 user-guide-title: 投放最佳实践指南
 user-guide-breadcrumb: Deliverability Best Practice Guide
 user-guide-description: 了解关键的可交付性术语、概念和方法，以使您能够确保您的营销计划取得成功。
-source-git-commit: 3e933104107cd4f62eab99c66957ccd9acb51409
+source-git-commit: 3616470b31f45d589d323a6b90c7fd5df3b467b7
 workflow-type: tm+mt
-source-wordcount: '169'
+source-wordcount: '166'
 ht-degree: 100%
 
 ---
@@ -56,5 +56,4 @@ ht-degree: 100%
       + [启动新平台](/help/additional-resources/ac-starting-new-platform.md)
       + [Campaign Classic - 技术建议](/help/additional-resources/acc-technical-recommendations.md)
    + 技术说明{#technotes}
-      + [Apple 隐私常见问题解答](/help/technotes/apple-mail-privacy-faq.md)
       + [实施 BIMI](/help/technotes/implement-bimi.md)
