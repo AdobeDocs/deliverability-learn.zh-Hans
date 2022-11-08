@@ -3,16 +3,16 @@ title: 实施Gmail的品牌标识报文(BIMI)
 description: 了解如何实施BIMI
 topics: Deliverability
 exl-id: 6b911bcc-a531-466a-8bd3-7fa469b96cc7
-source-git-commit: a4d2a75e85f37f48aa3246707b98e473682e13f6
+source-git-commit: 683ffd3c87a4849aa9fa48fbf50db9ade97991af
 workflow-type: tm+mt
-source-wordcount: '686'
+source-wordcount: '715'
 ht-degree: 0%
 
 ---
 
 # 实施Gmail的 [!DNL Brand Indicators for Message Identification] (BIMI)
 
-Gmail最近宣布，他们将 [BIMI的普通支持](https://cloud.google.com/blog/products/identity-security/bringing-bimi-to-gmail-in-google-workspace). 在利用此功能之前，您必须处理许多项目，包括：已验证标记证书、商标标志、格式正确的标志、DMARC设置，并最终将BIMI记录发布到您的DNS。 我们将在本文中回顾所有这些步骤。
+Gmail最近宣布，他们将 [BIMI的普通支持](https://cloud.google.com/blog/products/identity-security/bringing-bimi-to-gmail-in-google-workspace){target=&quot;_blank&quot;}。 在利用此功能之前，您必须处理许多项目，包括：已验证标记证书、商标标志、格式正确的标志、DMARC设置，并最终将BIMI记录发布到您的DNS。 我们将在本文中回顾所有这些步骤。
 
 [!DNL Brand Indicators for Message Identification] (BIMI)是一个行业标准，允许在参与的平台中，在发件人电子邮件旁边显示一个经过批准的徽标。 这种吸引眼球的做法不仅可能提高参与度，还有助于确认发送者的真实性，从而降低网络钓鱼和其他垃圾邮件策略的风险。
 
@@ -41,7 +41,7 @@ VMC在某些方面将与SSL证书类似。 对于要显示的每个徽标，您�
 
 这也是确保您的徽标符合BIMI徽标格式要求的好时机。
 
-它必须采用SVG格式，并遵循SVG可移植/安全(SVG-P/S)配置文件。 有关如何执行此操作的指导，请参阅 [BIMI工作组](https://bimigroup.org/svg-conversion-tools-released).
+它必须采用SVG格式，并遵循SVG可移植/安全(SVG-P/S)配置文件。 有关如何执行此操作的指导，请参阅 [BIMI工作组](https://bimigroup.org/svg-conversion-tools-released){target=&quot;_blank&quot;}。
 
 ## DMARC
 
@@ -59,12 +59,14 @@ VMC在某些方面将与SSL证书类似。 对于要显示的每个徽标，您�
 default._bimi.[domain] IN TXT “v=BIMI1; l=[SVG URL] 
 ```
 
-您可以获取有关该条目的详细信息，甚至可以使用 [BIMI工作组网站](https://bimigroup.org/implementation-guide).
+您可以获取有关该条目的详细信息，甚至可以使用 [BIMI工作组网站](https://bimigroup.org/implementation-guide){target=&quot;_blank&quot;}。
 
 
 ## 主要优点
 
-如果您是 [!DNL Adobe Campaign] 或者，Marketo客户端，Adobe可以帮助您创建BIMI DNS更新：请联系Adobe客户关怀团队以请求获取。 Adobe还有助于对BIMI不能正常工作的情况进行故障诊断。
+如果您是 [!DNL Adobe Campaign],Adobe可帮助您创建BIMI DNS更新：请联系Adobe客户关怀团队以请求获取。 Adobe还有助于对BIMI不能正常工作的情况进行故障诊断。
+
+如果您是Marketo客户，请参阅 [此博客帖子](https://nation.marketo.com/t5/support-blogs/how-to-bimi/ba-p/296966){target=&quot;_blank&quot;}，以获取有关创建BIMI记录的指导。
 
 要获得有关商标或经验证的标记证书的帮助，请与您的法律团队和授权的VMC供应商合作。
 
