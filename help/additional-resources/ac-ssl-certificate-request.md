@@ -6,10 +6,10 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 8a78abd3-afba-49a7-a2ae-8b2c75326749
-source-git-commit: d6094cd2ef0a8a7741e7d8aa4db15499fad08f90
+source-git-commit: b89bdd05d6b96af8c5520a4c500be76db46ea820
 workflow-type: tm+mt
-source-wordcount: '2265'
-ht-degree: 1%
+source-wordcount: '2253'
+ht-degree: 3%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
->安装SSL证书之前，请确保您了解 [本页](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/renewing-subdomain-certificate.html#installing-ssl-certificate).
+>安装SSL证书之前，请确保您了解 [本页](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/renewing-subdomain-certificate.html?lang=zh-Hans#installing-ssl-certificate).
 >
 >Adobe最多仅支持2048位证书。 尚不支持4096位证书。
 
@@ -126,7 +126,7 @@ ht-degree: 1%
 从Adobe收到CSR文件后，请执行以下步骤：
 
 1. 将CSR文件文本复制并粘贴到在线解码器中，如https://www.sslshopper.com/csr-decoder.html <!--https://www.certlogik.com/decoder/,--> 或https://www.entrust.net/ssl-technical/csr-viewer.cfm。
-或者，您也可以使用 *OpenSSL* 命令。 有关更多信息，请参阅 [此外部页面](https://www.question-defense.com/2009/09/22/use-openssl-to-verify-the-contents-of-a-csr-before-submitting-for-a-ssl-certificate).
+或者，您也可以使用 *OpenSSL* 命令。
 1. 确认所有检查均成功。
 1. 检查是否包含正确的参数和域名。
 1. 检查所有其他数据是否与您在提交请求时提供的详细信息相匹配。
@@ -199,7 +199,7 @@ ht-degree: 1%
 
 * 创建支持票证，以在证书过期日期至少提前两周请求更新的证书。 除非CSR详细信息发生更改，否则您无需请求其他CSR。
 
-* 如果您有权访问 [控制面板](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html)，并且如果您的环境由AWS环境中的Adobe托管，则可以使用控制面板在证书过期之前续订证书。 在 [此部分](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html#monitoring-certificates).
+* 如果您有权访问 [控制面板](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html)，并且如果您的环境由AWS环境中的Adobe托管，则可以使用控制面板在证书过期之前续订证书。 有关详细信息，请参阅[此部分](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html#monitoring-certificates)。
 
 ### 步骤8 — 更新任何特定配置 {#update-configuration}
 
@@ -222,4 +222,4 @@ ht-degree: 1%
 
 **Campaign Standard**
 
-* [控制面板:添加SSL证书（教程）](https://experienceleague.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/adding-ssl-certificates.html)  — 了解如何添加SSL证书以保护子域。
+* [控制面板:添加SSL证书（教程）](https://experienceleague.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/adding-ssl-certificates.html?lang=zh-Hans)  — 了解如何添加SSL证书以保护子域。
