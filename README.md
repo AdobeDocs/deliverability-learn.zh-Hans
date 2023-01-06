@@ -1,8 +1,7 @@
 ---
-source-git-commit: 321dc7eb5ec9e3d82d7d133689104282b553efd1
+source-git-commit: 8ccd915f558f3b06e9ac4b97dc45aefd6b27a4f1
 workflow-type: ht
-translation-type: ht
-source-wordcount: '430'
+source-wordcount: '424'
 ht-degree: 100%
 
 ---
@@ -16,13 +15,13 @@ ht-degree: 100%
 
 ## 关于您对 Adobe 内容的贡献
 
-请参阅 [Adobe Docs 参与者指南](https://docs.adobe.com/content/help/zh-Hans/contributor/contributor-guide/introduction.html)。
+请参阅 [Adobe Docs 参与者指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=zh-Hans)。
 
 您的参与方式取决于您的身份以及您想提供的更改类型：
 
 ### 次要更改
 
-如果您出于善意而想要对文章进行次要更新，请访问文章，并单击文章中的&#x200B;**编辑**&#x200B;链接以转到文章所对应的 GitHub 源。然后，只需使用 GitHub UI 即可进行更新。有关更多信息，请参阅 [Adobe Docs 参与者指南](https://docs.adobe.com/content/help/zh-Hans/contributor/contributor-guide/introduction.html)。
+如果您出于善意而想要对文章进行次要更新，请访问文章，并单击文章中的&#x200B;**编辑**&#x200B;链接以转到文章所对应的 GitHub 源。然后，只需使用 GitHub UI 即可进行更新。有关更多信息，请参阅 [Adobe Docs 参与者指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=zh-Hans)。
 
 您对本存储库中文档和代码示例提交的细微更正或说明均受 Adobe 使用条款的约束。
 
@@ -44,7 +43,7 @@ If you submit a pull request with significant changes to documentation and code 
 
 社区参与者可以使用 GitHub UI 进行基本编辑或创建存储库分支，以做出主要更改。
 
-有关详细信息，请参阅 [Adobe Docs 参与者指南](https://docs.adobe.com/content/help/zh-Hans/contributor/contributor-guide/introduction.html)。
+有关详细信息，请参阅 [Adobe Docs 参与者指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=zh-Hans)。
 
 ## 如何使用 Markdown 格式化您的主题
 
