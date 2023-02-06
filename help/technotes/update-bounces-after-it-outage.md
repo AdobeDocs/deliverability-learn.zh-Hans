@@ -2,7 +2,7 @@
 title: 在Italia Online中断后更新退件资格
 description: 了解如何在Italia Online服务中断后更新退回资格
 feature: Deliverability
-source-git-commit: 4494363c060b7e2e1efde46f7ab8260fa900ffd7
+source-git-commit: 489a153c72b364bd59b3bace5aa9206d4d888c38
 workflow-type: tm+mt
 source-wordcount: '332'
 ht-degree: 0%
@@ -39,7 +39,7 @@ ht-degree: 0%
 要查找受此问题影响的收件人，或者如果在其他ISP中再次发生此问题，请参阅以下说明：
 
 * 有关Campaign Classicv7和Campaign v8，请参阅 [本页](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html?lang=en#unquarantine-bulk){_blank}。
-* 有关Campaign Standard，请参阅 [本页](https://experienceleague.corp.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=en#unquarantine-bulk){_blank}。
+* 有关Campaign Standard，请参阅 [本页](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=en#unquarantine-bulk){_blank}。
 
 
 
