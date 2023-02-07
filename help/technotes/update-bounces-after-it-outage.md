@@ -2,10 +2,11 @@
 title: 在Italia Online中断后更新退件资格
 description: 了解如何在Italia Online服务中断后更新退回资格
 feature: Deliverability
-source-git-commit: 489a153c72b364bd59b3bace5aa9206d4d888c38
+exl-id: a11e88cf-bf37-42cc-9c09-1d58360459b7
+source-git-commit: e4efde4b7caac1bcf11d24632ec9982f98f958a2
 workflow-type: tm+mt
-source-wordcount: '332'
-ht-degree: 0%
+source-wordcount: '415'
+ht-degree: 1%
 
 ---
 
@@ -34,6 +35,8 @@ ht-degree: 0%
 
 ## 更新流程{#outage-update}
 
+### Adobe Campaign{#ac-update}
+
 根据标准退回处理逻辑，Adobe Campaign会通过 **[!UICONTROL Status]** 设置 **[!UICONTROL Quarantine]**. 要更正此问题，您需要通过查找和删除这些收件人，或更改其 **[!UICONTROL Status]** to **[!UICONTROL Valid]** 以便夜间清理工作流将删除它们。
 
 要查找受此问题影响的收件人，或者如果在其他ISP中再次发生此问题，请参阅以下说明：
@@ -41,5 +44,11 @@ ht-degree: 0%
 * 有关Campaign Classicv7和Campaign v8，请参阅 [本页](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html?lang=en#unquarantine-bulk){_blank}。
 * 有关Campaign Standard，请参阅 [本页](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=en#unquarantine-bulk){_blank}。
 
+### Adobe Journey Optimizer{#ajo-update}
 
+根据标准的跳出处理逻辑，Adobe Journey Optimizer会通过 **[!UICONTROL Reason]** 设置 **[!UICONTROL Invalid Recipient]**. 要更正此问题，您需要通过查找并删除这些电子邮件地址来更新禁止列表。
+
+识别后，即可使用 **[!UICONTROL Delete]** 按钮。 然后，这些地址便可以包含在将来的电子邮件促销活动中。
+
+在 [此部分](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/monitor-reputation/manage-suppression-list.html#remove-from-suppression-list){_blank}。
 
