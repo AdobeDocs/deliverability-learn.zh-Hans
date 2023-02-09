@@ -5,9 +5,9 @@ feature: Deliverability
 exl-id: a11e88cf-bf37-42cc-9c09-1d58360459b7
 hide: true
 hidefromtoc: true
-source-git-commit: 016d7f9da67193d893e762fbe6e191cf87d5b030
+source-git-commit: aca77fb9326e34455a6fec7ffc9a7ad8e1750467
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: '422'
 ht-degree: 1%
 
 ---
@@ -27,11 +27,11 @@ ht-degree: 1%
 
 ## 影响{#outage-impact}
 
-与大多数ISP中断时一样，通过Campaign发送的某些电子邮件错误地标记为退回。 这不仅影响了Adobe，而且在停机期间，所有试图向Italia Online发送电子邮件的人。
+与大多数互联网服务提供商(ISP)中断的情况一样，通过Campaign或Journey Optimizer发送的某些电子邮件被错误地标记为退回。 这不仅影响了Adobe，而且在停机期间，所有试图向Italia Online发送电子邮件的人。
 
 症状为：
 
-* **延期退回** 消息 `452 requested action aborted: try again later`  — 自动重试这些操作，无需执行任何操作。
+* **软退回** 消息 `452 requested action aborted: try again later`  — 自动重试这些操作，无需执行任何操作。
 
 * **硬退回** 消息 `550 <email address> recipient rejected` ISP已于当地时间1月26日早8点至晚2点返回，以防止发送方继续使其服务器过载。 正如意大利在线邮递员所确认的，这些地址并非真正的硬退回，因此我们建议取消对因该邮件而于2023年1月26日被排除的所有电子邮件地址的隔离。
 
