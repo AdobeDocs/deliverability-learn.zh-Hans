@@ -3,7 +3,7 @@ title: 实施Gmail的品牌标识报文(BIMI)
 description: 了解如何实施BIMI
 topics: Deliverability
 exl-id: 6b911bcc-a531-466a-8bd3-7fa469b96cc7
-source-git-commit: 05f6cd331f4e610e2442d43405333823644d349e
+source-git-commit: 7b8fbb09883b34b66c2729b6b5cfa1292ae1814e
 workflow-type: tm+mt
 source-wordcount: '1063'
 ht-degree: 0%
@@ -22,7 +22,7 @@ BIMI不会直接提高投放能力或声誉。 它有助于与收件人建立更
 
 ## 看起来怎么样？
 
-您可以找到来自不同提供商的实施的一些示例，以及有关哪些提供商在 [BIMI Group的页面](https://bimigroup.org/where-is-my-bimi-logo-displayed/).
+您可以找到来自不同提供商的实施的一些示例，以及有关哪些提供商在 [BIMI Group的页面](https://bimigroup.org/where-is-my-bimi-logo-displayed/){target="_blank"}.
 
 ## BIMI集团是谁？
 
@@ -32,7 +32,7 @@ BIMI集团由来自行业不同领域的若干利益相关方组成：Google、Y
 
 ## 谁支持BIMI?
 
-支持BIMI的邮箱提供商名单正在稳步增长。 可以找到最新列表 [此处](https://bimigroup.org/bimi-infographic/) 支持提供商和考虑BIMI的提供商。
+支持BIMI的邮箱提供商名单正在稳步增长。 可以找到最新列表 [此处](https://bimigroup.org/bimi-infographic/){target="_blank"} 支持提供商和考虑BIMI的提供商。
 
 自2023年4月起，该列表包括Gmail、Yahoo、La Poste、Fastmail、Onet.pl和Zone、Proofpoint作为防垃圾邮件设备和Apple Mail(从iOS 16开始)。
 
@@ -65,7 +65,7 @@ DMARC是一个标准，它允许品牌决定邮箱提供商对失败的电子邮
 
 ### 创建品牌徽标 {#create-brand-logo}
 
-徽标的创建需要完全遵循要求。 请始终参考 [BIMI Group的准则](https://bimigroup.org/creating-bimi-svg-logo-files/).
+徽标的创建需要完全遵循要求。 请始终参考 [BIMI Group的准则](https://bimigroup.org/creating-bimi-svg-logo-files/){target="_blank"}.
 
 除技术要求外，还有一些实用的建议，如标有方形标识、以纯色为背景等。 这些推荐是最佳可视化图表。
 请注意，不合规可能会导致徽标不显示。
@@ -102,10 +102,10 @@ default._bimi.[domain] IN TXT "v=BIMI1; l=[SVG URL]; a=[PEM URL]
 
 ## 提示和技巧
 
-* BIMI小组为BIMI提供了方便的验证工具。 如果您想要再次检查所有内容是否已设置并准备就绪，或者只想查看徽标是否符合标准，请转到 [此链接](https://bimigroup.org/bimi-generator/). 对于后者，只需单击 **[!UICONTROL Generate BIMI]** 并输入占位符域，但是正确的徽标URL。 检查员会告诉你徽标是否合规。
+* BIMI小组为BIMI提供了方便的验证工具。 如果您想要再次检查所有内容是否已设置并准备就绪，或者只想查看徽标是否符合标准，请转到 [此链接](https://bimigroup.org/bimi-generator/){target="_blank"}. 对于后者，只需单击 **[!UICONTROL Generate BIMI]** 并输入占位符域，但是正确的徽标URL。 检查员会告诉你徽标是否合规。
 
 * 您无需VMC即可安全启动，如果您的BIMI记录不包含VMC URL，但该徽标已显示在Yahoo中，则对您的声誉没有任何损害。
 
 * 在组织层面实施DMARC是一项大工程。 一些公司专门帮助品牌全面采用DMARC。
 
-* 发布了一系列常见问题 [此处](https://bimigroup.org/faqs-for-senders-esps/).
+* 发布了一系列常见问题 [此处](https://bimigroup.org/faqs-for-senders-esps/){target="_blank"}.
