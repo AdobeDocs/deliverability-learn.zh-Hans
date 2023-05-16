@@ -3,9 +3,9 @@ user-guide-title: 投放最佳实践指南
 user-guide-breadcrumb: Deliverability Best Practice Guide
 user-guide-description: 了解关键的可交付性术语、概念和方法，以使您能够确保您的营销计划取得成功。
 source-git-commit: 05604fff57bbe64a02e97a27369c4aff6c999216
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '172'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -57,5 +57,5 @@ ht-degree: 96%
       + [Campaign Classic - 技术建议](/help/additional-resources/acc-technical-recommendations.md)
    + 技术说明 {#technotes}
       + [实施 BIMI](/help/technotes/implement-bimi.md)
-      + [Italia Online中断后更新退回](/help/technotes/update-bounces-after-it-outage.md)
+      + [在 Italia Online 服务中断后更新退回](/help/technotes/update-bounces-after-it-outage.md)
 
