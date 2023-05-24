@@ -1,6 +1,6 @@
 ---
 title: Microsoft（Hotmail、Outlook、Windows Live 等）
-description: 根據您清單的組成，Microsoft通常是第二大或第三大提供者，而且他們處理的流量與其他ISP略有不同。
+description: Microsoft一般是第二大或第三大提供商，具体取决于您名单的组成，并且它们处理的流量与其他ISP略有不同。
 topics: Deliverability
 kt: 5319
 doc-type: article
@@ -16,24 +16,24 @@ ht-degree: 2%
 
 # [!DNL Microsoft] ([!DNL Hotmail]， [!DNL Outlook]， [!DNL Windows Live]、等)
 
-[!DNL Microsoft] 根據您清單的組成，通常為第二大或第三大提供者，而且他們處理的流量與其他ISP略有不同。
+[!DNL Microsoft] 通常为第二大或第三大提供商（具体取决于您名单的组成），它们的处理流量与其他ISP略有不同。
 
-以下是一些重點：
+以下是一些亮点：
 
-## 哪些資料重要
+## 哪些数据非常重要
 
-[!DNL Microsoft] 專注於寄件者信譽、投訴、使用者參與度以及他們自己輪詢意見的受信任使用者群組（也稱為寄件者信譽資料或SRD）。
+[!DNL Microsoft] 重点关注发件人信誉、投诉、用户参与以及他们自己负责轮询反馈的受信任用户组（也称为发件人信誉数据或SRD）。
 
-## 他們提供哪些資料
+## 他们提供了哪些数据
 
-[!DNL Microsoft]專屬的寄件者報告工具， [!DNL Smart Network Data Services] (SNDS)，可讓您檢視關於您傳送了多少郵件、接受了多少郵件，以及投訴和垃圾郵件陷阱的量度。 請記住，共用的資料為範例，不會反映確切數字，但最能代表如何進行 [!DNL Microsoft] 將您視為寄件者。 [!DNL Microsoft] 不會公開提供其受信任使用者群組的資訊，但可透過 [!DNL Return Path Certification] 計畫需額外付費。
+[!DNL Microsoft]的专有发件人报告工具， [!DNL Smart Network Data Services] (SNDS)，可让您查看关于发送多少邮件、接受多少邮件以及投诉和垃圾邮件陷阱的量度。 请记住，共享的数据是一个示例，并不反映准确的数字，但最能说明如何这样做 [!DNL Microsoft] 将您视为发件人。 [!DNL Microsoft] 不公开提供有关其受信任用户组的信息，但可通过 [!DNL Return Path Certification] 计划需额外付费。
 
-## 寄件者信譽
+## 发件人信誉
 
-[!DNL Microsoft] 傳統上專注於在信譽評估和篩選決定中傳送IP。 他們也在積極擴展傳送網域功能。 兩者主要受到投訴和垃圾郵件陷阱等傳統信譽影響者的推動。 「回訪路徑認證」計畫也會對傳遞能力產生重大影響，該計畫具有特定的定量和定性計畫要求。
+[!DNL Microsoft] 传统上，他们专注于在信誉评估和筛选决策中发送IP。 他们也在积极扩展其发送域功能。 两者主要受到投诉和垃圾邮件陷阱等传统信誉影响者的推动。 可交付性还受到回访路径认证计划的严重影响，该计划确实有具体的定量和定性计划要求。
 
 ## 见解
 
-[!DNL Microsoft] 結合其所有接收網域，以建立及追蹤傳送信譽。 其中包括 [!DNL Hotmail]， [!DNL Outlook]， MSN， [!DNL Windows Live]，依此類推，以及任何企業Office 365代管電子郵件。 [!DNL Microsoft] 可能會對數量波動特別敏感，所以請考慮套用特定策略來增加或減少大型傳送的流量，而不是允許數量突然變更。
+[!DNL Microsoft] 合并其所有接收域以建立和跟踪发送信誉。 这包括 [!DNL Hotmail]， [!DNL Outlook]，MSN， [!DNL Windows Live]，等等，以及任何企业Office 365托管的电子邮件。 [!DNL Microsoft] 可能对数量的波动特别敏感，因此请考虑应用特定策略来增大和减小大型发送的数量，而不是允许基于数量的突然更改。
 
-[!DNL Microsoft] 在IP暖機的最初幾天也特別嚴格，這通常意味著大多數郵件最初都會被過濾。 在證實有罪之前，大多數ISP會認為寄件者無罪。 [!DNL Microsoft] 恰恰相反，在您證明自己無罪之前，都會認為您有罪。
+[!DNL Microsoft] 此外，在IP预热的最初几天特别严格，这通常意味着大多数邮件最初都会被过滤。 大多数ISP认为发件人在被证明有罪之前是无辜的。 [!DNL Microsoft] 恰恰相反，在你证明自己无罪之前，会认为你有罪。

@@ -1,6 +1,6 @@
 ---
 title: 发件人永久性
-description: 永久傳送是建立一致的傳送數量和策略以維持ISP信譽的過程。
+description: 永久发送是建立一致的发送数量和策略以维护ISP信誉的过程。
 topics: Deliverability
 kt: 5261
 thumbnail: kt5261.jpg
@@ -17,16 +17,16 @@ ht-degree: 5%
 
 # 发件人永久性
 
-永久傳送是建立一致的傳送數量和策略以維持ISP信譽的過程。 以下是傳送者永久性很重要的一些原因：
+永久发送是建立一致的发送数量和策略以维护ISP信誉的过程。 以下是发件人永久性很重要的一些原因：
 
-* 垃圾郵件傳送者通常會「IP位址躍點」，這表示他們會持續在許多IP位址間轉移流量，以避免信譽問題。
-* 一致性是向ISP證明傳送者信譽良好的關鍵，並且不會嘗試繞過任何由於傳送實務不良所造成的信譽問題。
-* 在某些ISP甚至認為傳送者完全可信之前，需要長時間維持這些一致的策略。
+* 垃圾邮件发送者通常会“IP地址跃点”，这意味着他们会不断跨多个IP地址转移流量，以避免信誉问题。
+* 一致性是向ISP证明发送者信誉良好且不会试图绕过任何由于发送实践不佳而导致的信誉问题的关键。
+* 在某些ISP甚至认为发件人完全可信之前，需要长期保持这些一致的策略。
 
 **下面给出了一些示例：**
 
-![良好的傳送永久性](assets/Sender_Permanence_1.png)
+![良好的发送持久性](assets/Sender_Permanence_1.png)
 
-![傳送永久性錯誤](assets/Sender_Permanence_2.png)
+![发送持久性错误](assets/Sender_Permanence_2.png)
 
-![可接受的傳送永久性](assets/Sender_Permanence_3.png)
+![可接受的发送持久性](assets/Sender_Permanence_3.png)

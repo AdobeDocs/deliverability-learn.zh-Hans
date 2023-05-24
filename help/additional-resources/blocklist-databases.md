@@ -1,6 +1,6 @@
 ---
 title: 实时黑洞列表
-description: 瞭解維護垃圾郵件傳送者可能使用的IP位址和網域清單的組織。
+description: 了解维护可能被垃圾邮件发送者使用的IP地址和域列表的组织。
 topics: Deliverability
 doc-type: article
 activity: understand
@@ -15,43 +15,43 @@ ht-degree: 6%
 
 # 实时黑洞列表
 
-數個組織會維護據稱供垃圾郵件傳送者使用的IP位址和網域資料庫。 查閱這些網站有助於瞭解為什麼某些郵件會遭到拒絕成為垃圾郵件。 通常可以請求移除錯誤地新增到這些清單中的地址。
+一些组织维护着被垃圾邮件发送者使用的IP地址和域的数据库。 查阅这些网站有助于了解为什么某些邮件被作为垃圾邮件拒绝。 通常可以请求移除错误地添加到这些列表中的地址。
 
-這些資料庫稱為RBL （即時黑洞清單），可透過DNS機制來查閱這些資料庫。 RBL有三種型別：
+这些数据库称为RBL（实时黑洞列表），通过DNS机制来查阅它们。 RBL有三种类型：
 
-* 依IP位址：列出傳送垃圾郵件或可能轉送垃圾郵件的IP位址。
-* 依寄件者網域：列出傳送垃圾郵件或設定錯誤的寄件者網域（退回郵件地址的完整網域）。
-* 依網域：列出在垃圾郵件內容中所包含連結和影像的URL中找到的網域（向註冊機構註冊的高層網域）。 在Adobe解決方案中，要考量的網域通常是用於追蹤的地址。
+* 按IP地址：列出发送垃圾邮件或可能正在转发垃圾邮件的IP地址。
+* 按发件人域：列出发送垃圾邮件或配置不正确的发件人域（退回邮件地址的完整域）。
+* 按Web域：列出在垃圾邮件内容中包含的链接和图像的URL中找到的域（向注册商注册的高级别域）。 在Adobe解决方案中，要考虑的域通常是用于跟踪的地址。
 
-以下列出最廣泛使用的RBL。 如需更完整的清單，請參閱 [https://www.dnsstuff.com/](https://tools.dnsstuff.com/).
+以下列出最广泛使用的RBL。 有关更全面的列表，您可以参阅 [https://www.dnsstuff.com/](https://tools.dnsstuff.com/).
 
 * **Spamhaus**
 
-   請參閱 [https://www.spamhaus.org/](https://www.spamhaus.org/)
+   请参阅 [https://www.spamhaus.org/](https://www.spamhaus.org/)
 
-   資料庫比較重要。 一般而言，被分類到這份清單中是很嚴重的情況。 如果發生這種情況，您必須立即採取行動並警告商業服務、傳遞能力和 [Adobe客戶服務](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+   数据库更重要。 被列入这一名单总的来说是一种严重的情况。 如果发生这种情况，您必须立即采取行动并警告商业服务、可投放性和 [Adobe客户关怀](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
-* **垃圾訊息**
+* **垃圾邮件**
 
-   請參閱 [https://www.spamcop.net/](https://www.spamcop.net/)
+   请参阅 [https://www.spamcop.net/](https://www.spamcop.net/)
 
-   它是最著名的資料庫之一。 如果您的其中一個IP位址放在這個清單中，這通常表示SpamCop使用者已將您的訊息宣告為Spam，或您已傳送訊息至SpamCop蜜罐。
+   它是最著名的数据库之一。 如果您的IP地址之一被列入此列表，这通常意味着SpamCop用户已将您的邮件声明为垃圾邮件，或者您已将邮件发送到SpamCop蜜罐。
 
 * **URIBL**
 
-   請參閱 [https://www.uribl.com/](https://www.uribl.com/)
+   请参阅 [https://www.uribl.com/](https://www.uribl.com/)
 
-   此清單可識別在宣告為垃圾訊息的訊息中經常出現的網域。 如果您的網域出現在此清單上，可能會大幅影響您的傳遞能力。 您應通知傳遞服務並 [Adobe客戶服務](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 立即。
+   此列表标识在声明为垃圾邮件的邮件中经常出现的域。 如果您的域出现在此列表中，则会显着影响您的可投放性。 您应告知可投放性服务和 [Adobe客户关怀](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 立即。
 
 * **SURBL**
 
-   請參閱 [https://surbl.org/](https://surbl.org/)
+   请参阅 [https://surbl.org/](https://surbl.org/)
 
-   SURBL會識別定期出現在垃圾郵件中的網站。 如果您的網域出現在此清單上，可能會大幅影響您的傳遞能力。 您應通知傳遞服務並 [Adobe客戶服務](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 立即。
+   SURBL标识定期出现在垃圾邮件中的网站。 如果您的域出现在此列表中，则会显着影响您的可投放性。 您应告知可投放性服务和 [Adobe客户关怀](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 立即。
 
-* **iX馬尼圖**
+* **iX马尼图**
 
-   這是IP清單，在德國被廣泛使用。 請參閱 [https://www.heise.de/ix/nixspam/](https://www.heise.de/ix/nixspam/)
+   这是IP列表，在德国被广泛使用。 请参阅 [https://www.heise.de/ix/nixspam/](https://www.heise.de/ix/nixspam/)
 
 <!--* SORBS
 

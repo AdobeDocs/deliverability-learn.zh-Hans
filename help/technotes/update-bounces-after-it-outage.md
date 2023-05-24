@@ -1,6 +1,6 @@
 ---
-title: 在Italia Online中斷後更新彈回資格
-description: 瞭解如何在Italia Online中斷後更新彈回資格
+title: 在意大利在线中断后更新退回限定条件
+description: 了解如何在Italia在线中断后更新退回鉴别
 feature: Deliverability
 exl-id: a11e88cf-bf37-42cc-9c09-1d58360459b7
 hide: true
@@ -16,41 +16,41 @@ ht-degree: 3%
 
 ## 上下文{#outage-context}
 
-自1月22日（當地時間）起，Italia Online已發生中斷，導致數次延遲並拒絕電子郵件。 服務於1月26日以有限容量開始恢復。
+从1月22日（当地时间）开始，Italia Online经历了多次中断，导致多次延迟并拒绝电子邮件。 1月26日，该服务在有限容量下开始恢复。
 
-受影響的網域包括： **libero.it**， **virgilio.it**， **inwind.it**， **iol.it**、和 **blu.it**.
+受影响的域包括： **libero.it**， **virgilio.it**， **inwind.it**， **iol.it**、和 **blu.it**.
 
-此問題發生在2023年1月22日到2023年1月26日，但大多數錯誤隔離發生在1月26日。
+此问题发生在2023年1月22日至2023年1月26日，但大多数错误隔离发生在1月26日。
 
-在官方通訊中瞭解更多 [此處](https://tecnologia.libero.it/avviato-il-ritorno-online-di-libero-mail-e-virgilio-mail-66832){_blank}。
+在官方沟通中了解详情 [此处](https://tecnologia.libero.it/avviato-il-ritorno-online-di-libero-mail-e-virgilio-mail-66832){_blank}。
 
 
 ## 影响{#outage-impact}
 
-如同大多數網際網路服務提供者(ISP)發生中斷的情況一樣，透過Campaign或Journey Optimizer傳送的某些電子郵件被錯誤標籤為跳出。 這不僅會影響Adobe，也會影響所有嘗試在中斷期間將電子郵件傳送到Italia Online的人。
+与大多数互联网服务提供商(ISP)发生中断的情况一样，通过Campaign或Journey Optimizer发送的一些电子邮件被错误地标记为跳出。 这不仅影响到Adobe，而且还会影响在服务中断期间尝试将电子邮件发送到Italia Online的所有人。
 
-症狀如下：
+症状如下：
 
-* **軟退信** 包含訊息 `452 requested action aborted: try again later`  — 會自動重試，且不需要採取任何動作。
+* **软退回** 包含消息 `452 requested action aborted: try again later`  — 这些操作会自动重试，无需执行任何操作。
 
-* **硬跳出** 包含訊息 `550 <email address> recipient rejected` ISP已於1月26日當地時間上午8點至下午2點之間傳回，以防止寄件者持續讓伺服器超載。 如Italia線上郵局主管所確認，這些並不是真正的硬跳出，因此我們建議取消隔離2023年1月26日因該訊息而被排除的所有電子郵件地址。
+* **硬退回** 包含消息 `550 <email address> recipient rejected` ISP已于1月26日当地时间上午8点至下午2点之间返回，以防止发件人不断超出其服务器。 正如意大利在线邮局主管所确认的，这些都不是真正的硬退回，因此我们建议取消隔离2023年1月26日因该消息而被排除的所有电子邮件地址。
 
 ## 更新流程{#outage-update}
 
 ### Adobe Campaign{#ac-update}
 
-根據標準退信處理邏輯，Adobe Campaign會使用自動將這些收件者新增至隔離清單 **[!UICONTROL Status]** 設定 **[!UICONTROL Quarantine]**. 若要修正此問題，您需要尋找並移除這些收件者，或變更其收件者，以更新Campaign中的隔離表格 **[!UICONTROL Status]** 至 **[!UICONTROL Valid]** 以便「夜間清理」工作流程會將其移除。
+根据标准退回处理逻辑，Adobe Campaign会使用自动将这些收件人添加到隔离列表 **[!UICONTROL Status]** 设置 **[!UICONTROL Quarantine]**. 要更正此问题，您需要通过查找并移除这些收件人或更改其在Campaign中的隔离表来更新隔离表 **[!UICONTROL Status]** 到 **[!UICONTROL Valid]** 以便“夜间清理”工作流会删除它们。
 
-若要尋找受此問題影響的收件者，或當此問題再次發生在任何其他ISP上時，請參閱下列指示：
+要查找受此问题影响的收件人，或者如果任何其他ISP再次发生此情况，请参阅以下说明：
 
-* 如需Campaign Classicv7和Campaign v8的相關資訊，請參閱 [此頁面](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html?lang=en#unquarantine-bulk){_blank}。
-* 如需Campaign Standard，請參閱 [此頁面](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=en#unquarantine-bulk){_blank}。
+* 有关Campaign Classicv7和Campaign v8的信息，请参阅 [此页面](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html?lang=en#unquarantine-bulk){_blank}。
+* 有关Campaign Standard，请参阅 [此页面](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=en#unquarantine-bulk){_blank}。
 
 ### Adobe Journey Optimizer{#ajo-update}
 
-根據標準退信處理邏輯，Adobe Journey Optimizer會使用自動將這些電子郵件地址新增到隱藏清單 **[!UICONTROL Reason]** 設定 **[!UICONTROL Invalid Recipient]**. 若要修正此問題，您需要透過尋找並移除這些電子郵件地址來更新隱藏清單。
+根据标准退回处理逻辑，Adobe Journey Optimizer会使用自动将这些电子邮件地址添加到禁止显示列表 **[!UICONTROL Reason]** 设置 **[!UICONTROL Invalid Recipient]**. 要更正此问题，您需要通过查找并删除这些电子邮件地址来更新禁止显示列表。
 
-識別地址後，您可使用手動從隱藏清單中移除這些地址 **[!UICONTROL Delete]** 按鈕。 這些地址隨後可包含在未來的電子郵件行銷活動中。
+标识地址后，可以使用手动从禁止显示列表中删除这些地址 **[!UICONTROL Delete]** 按钮。 然后，这些地址可以包含在将来的电子邮件营销活动中。
 
-進一步瞭解 [本節](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/monitor-reputation/manage-suppression-list.html#remove-from-suppression-list){_blank}。
+了解详情，请参阅 [本节](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/monitor-reputation/manage-suppression-list.html#remove-from-suppression-list){_blank}。
 
