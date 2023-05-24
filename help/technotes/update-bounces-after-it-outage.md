@@ -1,6 +1,6 @@
 ---
-title: 在Italia Online中断后更新退件资格
-description: 了解如何在Italia Online服务中断后更新退回资格
+title: 在Italia Online中斷後更新彈回資格
+description: 瞭解如何在Italia Online中斷後更新彈回資格
 feature: Deliverability
 exl-id: a11e88cf-bf37-42cc-9c09-1d58360459b7
 hide: true
@@ -8,7 +8,7 @@ hidefromtoc: true
 source-git-commit: aca77fb9326e34455a6fec7ffc9a7ad8e1750467
 workflow-type: tm+mt
 source-wordcount: '422'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
@@ -16,41 +16,41 @@ ht-degree: 1%
 
 ## 上下文{#outage-context}
 
-从1月22日（当地时间）开始，Italia Online发生了中断，导致了多次延迟和拒绝电子邮件。 服务于1月26日开始恢复，容量有限。
+自1月22日（當地時間）起，Italia Online已發生中斷，導致數次延遲並拒絕電子郵件。 服務於1月26日以有限容量開始恢復。
 
-受影响的域包括： **libero.it**, **virgilio.it**, **inwind.it**, **iol.it**&#x200B;和 **blu.it**.
+受影響的網域包括： **libero.it**， **virgilio.it**， **inwind.it**， **iol.it**、和 **blu.it**.
 
-此问题发生在1/22/2023到1/26/2023之间，但大多数错误的隔离发生在1月26日。
+此問題發生在2023年1月22日到2023年1月26日，但大多數錯誤隔離發生在1月26日。
 
-在官方通信中了解详情 [此处](https://tecnologia.libero.it/avviato-il-ritorno-online-di-libero-mail-e-virgilio-mail-66832){_blank}。
+在官方通訊中瞭解更多 [此處](https://tecnologia.libero.it/avviato-il-ritorno-online-di-libero-mail-e-virgilio-mail-66832){_blank}。
 
 
 ## 影响{#outage-impact}
 
-与大多数互联网服务提供商(ISP)中断的情况一样，通过Campaign或Journey Optimizer发送的某些电子邮件被错误地标记为退回。 这不仅影响了Adobe，而且在停机期间，所有试图向Italia Online发送电子邮件的人。
+如同大多數網際網路服務提供者(ISP)發生中斷的情況一樣，透過Campaign或Journey Optimizer傳送的某些電子郵件被錯誤標籤為跳出。 這不僅會影響Adobe，也會影響所有嘗試在中斷期間將電子郵件傳送到Italia Online的人。
 
-症状为：
+症狀如下：
 
-* **软退回** 消息 `452 requested action aborted: try again later`  — 自动重试这些操作，无需执行任何操作。
+* **軟退信** 包含訊息 `452 requested action aborted: try again later`  — 會自動重試，且不需要採取任何動作。
 
-* **硬退回** 消息 `550 <email address> recipient rejected` ISP已于当地时间1月26日早8点至晚2点返回，以防止发送方继续使其服务器过载。 正如意大利在线邮递员所确认的，这些地址并非真正的硬退回，因此我们建议取消对因该邮件而于2023年1月26日被排除的所有电子邮件地址的隔离。
+* **硬跳出** 包含訊息 `550 <email address> recipient rejected` ISP已於1月26日當地時間上午8點至下午2點之間傳回，以防止寄件者持續讓伺服器超載。 如Italia線上郵局主管所確認，這些並不是真正的硬跳出，因此我們建議取消隔離2023年1月26日因該訊息而被排除的所有電子郵件地址。
 
 ## 更新流程{#outage-update}
 
 ### Adobe Campaign{#ac-update}
 
-根据标准退回处理逻辑，Adobe Campaign会通过 **[!UICONTROL Status]** 设置 **[!UICONTROL Quarantine]**. 要更正此问题，您需要通过查找和删除这些收件人，或更改其 **[!UICONTROL Status]** to **[!UICONTROL Valid]** 以便夜间清理工作流将删除它们。
+根據標準退信處理邏輯，Adobe Campaign會使用自動將這些收件者新增至隔離清單 **[!UICONTROL Status]** 設定 **[!UICONTROL Quarantine]**. 若要修正此問題，您需要尋找並移除這些收件者，或變更其收件者，以更新Campaign中的隔離表格 **[!UICONTROL Status]** 至 **[!UICONTROL Valid]** 以便「夜間清理」工作流程會將其移除。
 
-要查找受此问题影响的收件人，或者如果在其他ISP中再次发生此问题，请参阅以下说明：
+若要尋找受此問題影響的收件者，或當此問題再次發生在任何其他ISP上時，請參閱下列指示：
 
-* 有关Campaign Classicv7和Campaign v8，请参阅 [本页](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html?lang=en#unquarantine-bulk){_blank}。
-* 有关Campaign Standard，请参阅 [本页](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=en#unquarantine-bulk){_blank}。
+* 如需Campaign Classicv7和Campaign v8的相關資訊，請參閱 [此頁面](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html?lang=en#unquarantine-bulk){_blank}。
+* 如需Campaign Standard，請參閱 [此頁面](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=en#unquarantine-bulk){_blank}。
 
 ### Adobe Journey Optimizer{#ajo-update}
 
-根据标准的跳出处理逻辑，Adobe Journey Optimizer会通过 **[!UICONTROL Reason]** 设置 **[!UICONTROL Invalid Recipient]**. 要更正此问题，您需要通过查找并删除这些电子邮件地址来更新禁止列表。
+根據標準退信處理邏輯，Adobe Journey Optimizer會使用自動將這些電子郵件地址新增到隱藏清單 **[!UICONTROL Reason]** 設定 **[!UICONTROL Invalid Recipient]**. 若要修正此問題，您需要透過尋找並移除這些電子郵件地址來更新隱藏清單。
 
-识别后，即可使用 **[!UICONTROL Delete]** 按钮。 然后，这些地址便可以包含在将来的电子邮件促销活动中。
+識別地址後，您可使用手動從隱藏清單中移除這些地址 **[!UICONTROL Delete]** 按鈕。 這些地址隨後可包含在未來的電子郵件行銷活動中。
 
-在 [此部分](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/monitor-reputation/manage-suppression-list.html#remove-from-suppression-list){_blank}。
+進一步瞭解 [本節](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/monitor-reputation/manage-suppression-list.html#remove-from-suppression-list){_blank}。
 

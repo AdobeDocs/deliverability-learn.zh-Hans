@@ -1,6 +1,6 @@
 ---
 title: 投诉
-description: '了解当用户指示电子邮件为不需要或意外时登记的投诉。 '
+description: 了解当用户指示电子邮件为不需要或意外时登记的投诉。
 topics: Deliverability
 kt: 7048
 thumbnail: kt7048.jpg

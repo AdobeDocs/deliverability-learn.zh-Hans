@@ -1,6 +1,6 @@
 ---
 title: 其他资源
-description: 此部分列出了有关投放能力的其他资源数量。
+description: 本節列出有關傳遞能力的許多其他資源。
 topics: Deliverability
 doc-type: article
 activity: understand
@@ -13,17 +13,17 @@ ht-degree: 33%
 
 ---
 
-# 其他资源 — 概述
+# 其他資源 — 概觀
 
 ## 新增功能
 
-请参阅以下技术说明，了解有关投放能力的最新更新的更多信息。
+請參閱下列技術檔案，深入瞭解傳遞能力的最新更新。
 
-* [实施Gmail的品牌标识报文(BIMI)](../technotes/implement-bimi.md)
+* [實施訊息識別的Gmail品牌指標(BIMI)](../technotes/implement-bimi.md)
 
 ## 通用资源
 
-此部分列出了一些有关可投放性的其他资源，例如特定建议和最佳实践、其他工具或疑难解答过程。
+本節列出一些關於傳遞能力的其他資源，例如特定建議和最佳實務、其他工具或疑難排解程式。
 
 * [关于垃圾邮件陷阱](../../help/additional-resources/all-about-spam-traps.md)
 * [利用 IP 预热提高您的电子邮件声誉](../../help/additional-resources/increase-reputation-with-ip-warming.md)
@@ -39,11 +39,11 @@ ht-degree: 33%
 
 ## 产品特定资源
 
-此外，此部分还列出了许多特定于产品的资源，可帮助您实施可交付性并使用Adobe解决方案取得成功。
+此外，本節還列出許多產品專屬資源，協助您實作傳遞能力，並成功使用Adobe解決方案。
 
 **[!DNL Adobe Campaign]**
 
 * [域名设置](../../help/additional-resources/ac-domain-name-setup.md)
-* [CSR和SSL证书请求过程](../../help/additional-resources/ac-ssl-certificate-request.md)
+* [CSR和SSL憑證請求流程](../../help/additional-resources/ac-ssl-certificate-request.md)
 * [启动新平台](../../help/additional-resources/ac-starting-new-platform.md)
 * [Campaign Classic - 技术建议](../../help/additional-resources/acc-technical-recommendations.md)

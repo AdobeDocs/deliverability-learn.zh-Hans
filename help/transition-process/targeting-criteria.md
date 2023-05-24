@@ -17,18 +17,18 @@ ht-degree: 22%
 
 # 定位标准
 
-发送新流量时，只会在IP加温的早期阶段将目标用户参与度最高。 这有助于在吸引参与度较低的受众之前，从开始着手有效构建信任，从而建立良好声誉。 以下是参与度的基本公式：
+傳送新流量時，只在IP暖機的早期階段鎖定參與度最高的使用者。 這有助於從一開始就建立良好的信譽，以便在吸引較少參與的受眾之前有效地建立信任。 以下是參與的基本公式：
 
-![参与度公式](../assets/formula-for-enagement.png)
+![參與公式](../assets/formula-for-enagement.png)
 
-通常，参与率基于特定时间段。 此量度可能会因公式的整体应用级别或特定邮件类型或营销活动而有很大差异。 由于每个发件人和ISP都有所不同，通常需要定制计划，因此需要与Adobe可投放性顾问合作，以提供特定的定位标准。
+通常，參與率會根據特定時段。 此量度可能會因公式套用至整體層級或特定郵寄型別或行銷活動而有很大的差異。 特定鎖定目標條件需要透過與您的Adobe傳遞顧問合作來提供，因為每個寄件者和ISP都不同，通常需要自訂計畫。
 
 ## 产品特定资源
 
 **Analytics**
 
-* [如何提高参与度和维系率（教程）](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/mobile-app-analytics/measuring-mobile-analytics/how-to-increase-engagement-and-retention-rates.html?lang=en#mobile-app-analytics): *通过使用同类群组的行为识别参与的受众，并了解导致移动设备应用程序吸引力的根本原因。 使用 Segment IQ 中的数据科学算法了解区段之间的区别和相似之处。*
+* [如何提高參與度和駐留率（教學課程）](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/mobile-app-analytics/measuring-mobile-analytics/how-to-increase-engagement-and-retention-rates.html?lang=en#mobile-app-analytics)： *使用同類群組的行為來識別參與的對象，並了行動應用程式中促成繫結的根本原因。 使用 Segment IQ 中的数据科学算法了解区段之间的区别和相似之处。*
 
 **Campaign Standard**
 
-* [AI支持的电子邮件：预测参与度评分](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/preparing-and-testing-messages/predictive.html#predictive-scoring)
+* [AI支援電子郵件：預測性參與計分](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/preparing-and-testing-messages/predictive.html#predictive-scoring)

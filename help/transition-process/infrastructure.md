@@ -1,6 +1,6 @@
 ---
 title: 基础结构
-description: '了解需要什么才能正确地构造电子邮件基础架构。 '
+description: 了解需要什么才能正确地构造电子邮件基础架构。
 topics: Deliverability
 kt: 7052
 thumbnail: kt7052.jpg
@@ -17,58 +17,58 @@ ht-degree: 2%
 
 # 基础结构
 
-能否成功投放取决于坚实的基础。 电子邮件基础结构是核心元素。 正确构建的电子邮件基础结构包括多个组件，即域和IP地址。 这些组件与您发送的电子邮件背后的机器类似，通常也是发送声誉的锚。 可投放性顾问可确保在实施过程中正确设置这些元素，但鉴于信誉元素，您务必要了解这些基本信息。
+成功傳遞取決於堅實的基礎。 電子郵件基礎架構是核心元素。 正確建構的電子郵件基礎結構包括多個元件，即網域和IP位址。 這些元件就像您傳送之電子郵件背後的機器，通常是傳送信譽的錨點。 傳遞能力顧問會確保在實作期間已正確設定這些元素，但由於信譽元素，因此您必須瞭解此基本知識。
 
-## 域设置和策略 {#domain-setup-and-strategy}
+## 網域設定和策略 {#domain-setup-and-strategy}
 
-时代已经改变，一些ISP（如Gmail和Yahoo）现在将域名声誉作为附加到发件人电子邮件声誉上的附加点。 您的域名信誉基于您的发送域，而不是IP地址。 这意味着在ISP筛选决策时，您的品牌优先受用。
+時代已經改變，有些ISP （例如Gmail和Yahoo）現在將網域聲譽納入附加點來附加給寄件者的電子郵件信譽。 您的網域信譽是以您的傳送網域為基礎，而不是以您的IP位址為基礎。 這表示當涉及ISP篩選決定時，您的品牌優先。
 
-在Adobe平台上为新发件人提供的入门流程包括设置发送域并确保正确建立基础结构。 您应该与专家合作，了解您计划长期使用哪些领域。 以下是一些可形成良好域策略的提示：
+Adobe平台上新寄件者的上線流程包括設定您的傳送網域，並確保您的基礎架構已正確建立。 您應與專家合作，瞭解您計畫長期使用哪些網域。 以下是一些可塑造良好網域策略的秘訣：
 
-* 在您选择的域中尽可能清晰地反映品牌，以便用户不会将邮件错误地识别为垃圾邮件。 有些示例包括newsletter.foo.com、reects.foo.com等。
-* 您不应使用父域或公司域，因为它可能会影响从贵组织向ISP发送邮件。
-* 考虑使用父域的子域来使发送域合法化。
-* 为事务型消息和营销消息类别分隔子域。 这将帮助您的电子邮件流量在更可靠的基础上流动，因为ISP会查找此发送方法，这是已知的电子邮件最佳实践，强烈建议使用此方法。
+* 對於您選擇的網域，請儘可能清楚反映品牌，讓使用者不會將郵件錯誤地識別為垃圾郵件。 部分範例為newsletter.foo.com、receipts.foo.com等。
+* 您不應使用您的上層或公司網域，因為這可能會影響從您的組織傳送郵件給ISP。
+* 請考慮使用上層網域的子網域來合法化您的傳送網域。
+* 針對「交易」和「行銷」訊息類別分隔您的子網域。 當ISP尋找此傳送方法時，這將有助於您的電子郵件流量更可靠，這是已知的電子郵件最佳實務，強烈建議使用。
 
 ## IP策略 {#ip-strategy}
 
-制定结构完善的知识产权战略以帮助建立良好的声誉，这一点很重要。 IP和设置的数量因您的业务模式和营销目标而异。 与专家合作，制定明确的战略，以便立即开始。 请考虑以下需要注意的事项：
+形成結構良好的IP策略非常重要，這樣有助於建立良好的信譽。 IP的數量和設定會依您的業務模式和行銷目標而有所不同。 與專家合作，制定明確的策略，從頭開始。 請注意下列重要事項：
 
-* **IP过多** 可能会触发声誉问题，因为它是垃圾邮件发送者的常见策略， **雪鞋**，这是垃圾邮件发送者使用的一种策略，在这种策略中，流量会分布在许多IP中，以最大限度地发送垃圾邮件。 即使您不是垃圾邮件发送者，如果您使用的IP过多，特别是这些IP之前没有任何流量，您看起来可能就像一个垃圾邮件发送者。
-* **IP太少** 可能会导致吞吐量问题，并可能触发声誉问题。 吞吐量因ISP而异。 ISP愿意接受的数量和速度通常取决于其基础架构和发送信誉阈值。
-* 为报文传送类型划分流量是关键。 至少应在单独的IP池上单独分开营销和事务型邮件。
-* 根据您的邮件策略，如果您的声誉存在显着差异，则建议在不同的IP池上分隔不同的产品或营销流。 某些营销人员还按地区进行细分。 为声誉较低的流量分隔IP不会解决声誉问题，但会防止“声誉良好的”电子邮件投放出现问题。 毕竟，你不想为了一个风险更高的受众而牺牲好观众。
+* **IP過多** 可能會觸發信譽問題，因為這是垃圾郵件傳送者的常見策略， **snowshoe**，這是垃圾郵件傳送者使用的策略，其流量會散佈在許多IP上，以將垃圾郵件傳送最大化。 即使您不是垃圾訊息傳送者，但如果您使用太多IP，尤其是那些IP先前沒有任何流量時，您可能會看起來像一個。
+* **IP太少** 可能導致輸送量問題並可能觸發信譽問題。 輸送量因ISP而異。 ISP願意接受的程度和速度通常取決於其基礎架構和傳送信譽閾值。
+* 區分傳訊型別的流量是關鍵。 請務必至少在個別的IP集區上個別行銷和交易式郵件。
+* 如果您的聲譽大不相同，建議您根據您的郵件策略，將不同的產品或行銷資料流分散到不同的IP集區。 有些行銷人員也依地區細分。 為信譽較低的流量分隔IP無法修正信譽問題，但可防止您的「良好」信譽電子郵件傳送出現問題。 畢竟，您不想為了風險更高而犧牲您的好受眾。
 
-## 反馈循环 {#feedback-loops}
+## 回饋迴路 {#feedback-loops}
 
-在后台，Adobe平台正在处理有关退回、投诉、取消订阅等的数据。 这些反馈循环的设置是交付性的一个重要方面。 投诉可能会损害声誉，因此您应该通过电子邮件地址来注册目标受众的投诉。 请务必注意，Gmail不会提供此数据。 列出取消订阅标头和参与度过滤对Gmail订阅者尤其重要，如今，Gmail订阅者已占据大多数订阅者数据库。
+在幕後，Adobe平台會處理有關退信、投訴、取消訂閱等資料。 這些意見回圈的設定是傳遞能力的重要方面。 投訴可能會損害聲譽，因此您應該使用電子郵件地址向目標受眾提出投訴。 請務必注意，Gmail不會將這些資料提供回來。 列出取消訂閱標頭與參與篩選對Gmail訂閱者來說尤其重要，因為訂閱者資料庫現在大多由訂閱者資料庫組成。
 
 ## 身份验证 {#authentication}
 
-身份验证是ISP用于验证发件人身份的过程。 最常见的两种身份验证协议是 [!DNL Sender Policy Framework] (SPF)和 [!DNL DomainKeys Identified Mail] (DKIM)。 最终用户看不到这些邮件，但可帮助ISP过滤来自已验证发件人的电子邮件。 [!DNL Domain-based Message Authentication Reporting and Conformance] (DMARC)越来越受欢迎，尽管其政策尚未被所有ISP纳入其声誉系统。
+驗證是ISP用來驗證傳送者身分的程式。 最常見的兩種驗證通訊協定為 [!DNL Sender Policy Framework] (SPF)和 [!DNL DomainKeys Identified Mail] (DKIM)。 一般使用者看不到這些訊息，但可協助ISP篩選已驗證寄件者的電子郵件。 [!DNL Domain-based Message Authentication Reporting and Conformance] (DMARC)越來越受歡迎，雖然其政策尚未被所有ISP納入其聲譽系統。
 
 ### SPF
 
-[!DNL Sender Policy Framework] (SPF)是一种身份验证方法，允许域的所有者指定用于从该域发送邮件的邮件服务器。
+[!DNL Sender Policy Framework] (SPF)是一種驗證方法，可讓網域擁有者指定他們用來從該網域傳送郵件的郵件伺服器。
 
 ### DKIM
 
-[!DNL Domain Keys Identified Mail] (DKIM)是一种身份验证方法，用于检测伪造的发件人地址（通常称为欺骗）。 如果启用了DKIM，则允许接收者确认是否有权从该域发送邮件。
+[!DNL Domain Keys Identified Mail] (DKIM)是一種驗證方法，用來偵測偽造的寄件者地址（通常稱為欺騙）。 如果啟用DKIM，接收者可以確認寄件者是否有權從該網域傳送郵件。
 
 ### DMARC
 
-[!DNL Domain-based Message Authentication, Reporting and Conformance] (DMARC)是一种验证方法，允许域所有者保护其域免受未经授权的使用。 DMARC使用SPF或DKIM或两者都允许域所有者控制验证失败邮件的情况：已送达、已隔离或已拒绝。
+[!DNL Domain-based Message Authentication, Reporting and Conformance] (DMARC)是一種驗證方法，可讓網域擁有者保護其網域免受未經授權的使用。 DMARC會使用SPF或DKIM （或兩者），讓網域擁有者控制驗證失敗之郵件的狀況：已傳遞、已隔離或已拒絕。
 
 ## 产品特定资源
 
 **Campaign**
 
-* 了解如何在中将子域完全委派给Adobe Campaign Classic或Standard [此部分](/help/additional-resources/ac-domain-name-setup.md).
-* [控制面板:完全子域委派（教程）](https://experienceleague.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) - *了解如何将子域完全委派给Adobe Campaign Classic。*
-* [控制面板:完全子域委派（教程）](https://experienceleague.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) - *了解如何将子域完全委派给Adobe Campaign Standard。*
-* 了解有关在中为Campaign Classic实例实施反馈循环的更多信息 [此部分](/help/additional-resources/acc-technical-recommendations.md#feedback-loop-acc).
+* 瞭解如何在中將子網域完全委派至Adobe Campaign Classic或Standard [本節](/help/additional-resources/ac-domain-name-setup.md).
+* [控制面板：完整子網域委派（教學課程）](https://experienceleague.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) - *瞭解如何將子網域完全委派至Adobe Campaign Classic。*
+* [控制面板：完整子網域委派（教學課程）](https://experienceleague.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) - *瞭解如何將子網域完全委派至Adobe Campaign Standard。*
+* 進一步瞭解在中為Campaign Classic執行個體實作回饋迴路 [本節](/help/additional-resources/acc-technical-recommendations.md#feedback-loop-acc).
 
 ## 其他资源
 
-* 在 [此部分](/help/additional-resources/authentication.md).
-* 了解有关通过IP升温提高电子邮件声誉的更多信息，请参阅 [此部分](/help/additional-resources/increase-reputation-with-ip-warming.md).
+* 進一步瞭解SPF、DKIM和DMARC驗證方法 [本節](/help/additional-resources/authentication.md).
+* 進一步瞭解透過IP暖身提高您的電子郵件信譽 [本節](/help/additional-resources/increase-reputation-with-ip-warming.md).

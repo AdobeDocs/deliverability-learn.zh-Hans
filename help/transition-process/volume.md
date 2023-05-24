@@ -1,6 +1,6 @@
 ---
-title: 音量 — 有关如何顺利过渡的提示
-description: 您发送的邮件数量对于建立良好声誉至关重要。 了解如何实现顺利过渡。
+title: 數量 — 如何順暢轉換的秘訣
+description: 您傳送的郵件量對建立良好的信譽至關重要。 瞭解如何才能順利轉換。
 topics: Deliverability
 kt: 7055
 thumbnail: kt7055.jpg
@@ -17,40 +17,40 @@ ht-degree: 1%
 
 # 数量
 
-您发送的邮件数量对于建立良好声誉至关重要。 如果你从ISP的角度来看待你 — 如果你开始看到一大堆来自你不认识的人的流量，那会很惊人。 立即发送大量邮件是有风险的，而且肯定会导致通常很难解决的声誉问题。 让自己摆脱名誉不佳的境地，膨胀并阻止因过早发送过多信息而导致的问题，可能会让人沮丧、费时、代价高昂。
+您傳送的郵件量對建立良好的信譽至關重要。 設身處地為ISP著想 — 如果您開始看見來自陌生人的大量流量，將會令人震驚。 立即傳送大量郵件是有風險的，並且肯定會造成通常難以解決的信譽問題。 將您自己從糟糕的聲譽中解救出來，可能會令人沮喪、費時且代價高昂；此外，由於傳送太快而造成大量和封鎖問題。
 
-卷阈值因ISP而异，也可能因您的平均参与量度而异。 有些发送方需要非常低且速度较慢的音量，而另一些发送方可能需要较陡的音量。 我们建议与专家(如Adobe可交付性顾问)合作，制定自定义的批量计划。
+數量臨界值會因ISP而異，也可能因您的平均參與量度而異。 有些寄件者需要非常低且緩慢的音量漸層，而其他寄件者則可能允許更陡的音量漸層。 我們建議您與Adobe傳遞顧問等專家合作，開發客製化的量身計畫。
 
-以下是有关如何顺利过渡的提示和提示列表：
+以下是如何順暢轉換的提示和秘訣清單：
 
-* **权限** 是任何成功的电子邮件计划的基础。
-* **低和慢**  — 从低发送量开始，然后在建立发件人信誉时增加。
-* A **串联邮寄策略** 允许您在使用当前ESP时增加Campaign的流量，而不中断电子邮件日历。
-* **参与事项**  — 从定期打开并单击您电子邮件的订阅者开始。
-* **遵循计划**  — 我们的建议已帮助数百个Campaign客户成功地增加其电子邮件项目。
-* **监控回复电子邮件帐户**. 对于您的客户而言，使用noreply@xyz.com或不做出响应是个糟糕的体验。
-* 不活动的地址可能会对投放能力产生负面影响。 **在您当前的平台上重新激活并重新授予权限**，而不是您的新IP。
-* **域**  — 使用是您公司实际域的子域的发送域
-   * 例如，如果您的公司域是xyz.com，则email.xyz.com比xyzemail.com为ISP提供更可信性
-* **透明度**  — 您的电子邮件域的注册详细信息应公开提供，且不应为私有。
+* **許可權** 是任何成功電子郵件計畫的基礎。
+* **低和慢**  — 從低傳送量開始，然後隨著您建立寄件者信譽而增加。
+* A **串聯郵寄策略** 可讓您在不中斷電子郵件行事曆的情況下，在結束目前的ESP作業時提升Campaign的流量。
+* **參與很重要**  — 從定期開啟和點按您電子郵件的訂閱者開始。
+* **遵循計畫**  — 我們的建議已幫助數百名Campaign客戶成功提升其電子郵件計畫。
+* **監視您的回覆電子郵件帳戶**. 使用noreply@xyz.com或不回應對客戶而言是不好的體驗。
+* 非使用中地址可能會對傳遞能力產生負面影響。 **重新啟用並重新獲得您目前平台的許可權**，而非您的新IP。
+* **網域**  — 使用您公司實際網域的子網域的傳送網域
+   * 例如，如果您的公司網域是xyz.com，email.xyz.com會比xyzemail.com為ISP提供更高的可信度
+* **透明度**  — 您的電子郵件網域的註冊詳細資料應公開提供，且不應為私人。
 
-在很多情况下，事务型邮件并不遵循传统的宣传升温方法。 由于事务型邮件的性质，显然很难控制邮件中的音量，因为它通常需要用户交互才能触发电子邮件联系。 在某些情况下，事务型邮件只需在没有正式计划的情况下进行转换即可。 在其他情况下，最好随着时间的推移，转换每种消息类型，以缓慢增加卷。 例如，您可能希望按如下方式进行过渡：
+在許多情況下，交易式郵件不會遵循傳統的促銷暖身方法。 由於交易式郵件的性質，顯然很難控制其數量，因為它通常需要使用者互動來觸發電子郵件接觸。 在某些情況下，交易式郵件只需在沒有正式計畫的情況下進行轉換即可。 在其他情況下，隨著時間轉換每個訊息型別可能會有助於逐漸增加數量。 例如，您可能想要依下列方式轉換：
 
-1. 购买确认 — 一般情况下参与度较高
-2. 购物车放弃 — 一般为中 — 高参与度
-3. 欢迎电子邮件 — 参与度较高，但可能包含错误地址，具体取决于您的列表收集方法
-4. 回访电子邮件 — 通常降低参与度
+1. 購買確認 — 一般而言參與度高
+2. 購物車放棄 — 中度 — 一般的高參與度
+3. 歡迎電子郵件 — 高參與度，但可能包含錯誤地址，具體取決於您的清單收集方法
+4. 遞回電子郵件 — 一般而言參與度較低
 
 ## 产品特定资源
 
 **Campaign**
 
-* 在中使用Adobe Campaign启动新平台时，了解有关管理投放能力的更多信息 [此部分](/help/additional-resources/ac-starting-new-platform.md).
-* 了解如何通过Adobe Campaign Classic(位于 [此部分](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#sending-using-multiple-waves).
-* 了解如何在中将子域完全委派给Adobe Campaign Classic或Standard [此部分](/help/additional-resources/ac-domain-name-setup.md).
-* [控制面板:完全子域委派（教程）](https://experienceleague.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) - *了解如何将子域完全委派给Adobe Campaign Classic。*
-* [控制面板:完全子域委派（教程）](https://experienceleague.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) - *了解如何将子域完全委派给Adobe Campaign Standard。*
+* 進一步瞭解在中使用Adobe Campaign啟動新平台時如何管理傳遞能力 [本節](/help/additional-resources/ac-starting-new-platform.md).
+* 瞭解如何搭配Adobe Campaign Classic在中使用多個波段傳送 [本節](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#sending-using-multiple-waves).
+* 瞭解如何在中將子網域完全委派至Adobe Campaign Classic或Standard [本節](/help/additional-resources/ac-domain-name-setup.md).
+* [控制面板：完整子網域委派（教學課程）](https://experienceleague.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) - *瞭解如何將子網域完全委派至Adobe Campaign Classic。*
+* [控制面板：完整子網域委派（教學課程）](https://experienceleague.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) - *瞭解如何將子網域完全委派至Adobe Campaign Standard。*
 
 ## 其他资源
 
-* 了解有关通过IP升温提高电子邮件声誉的更多信息，请参阅 [此部分](/help/additional-resources/increase-reputation-with-ip-warming.md).
+* 進一步瞭解透過IP暖身提高您的電子郵件信譽 [本節](/help/additional-resources/increase-reputation-with-ip-warming.md).

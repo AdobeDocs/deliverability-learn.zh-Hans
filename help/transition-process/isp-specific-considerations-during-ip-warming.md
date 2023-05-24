@@ -1,6 +1,6 @@
 ---
 title: IP 预热期间的 ISP 特定考虑因素
-description: ISP有不同的规则和不同的流量查看方式。 这需要一个自定义计划，该计划只针对初始参与度最高的用户。
+description: ISP有不同的規則和不同的流量檢視方式。 這要求自訂計畫，一開始就只針對最高參與的使用者。
 topics: Deliverability
 kt: 7054
 thumbnail: kt7054.jpg
@@ -17,9 +17,9 @@ ht-degree: 16%
 
 # IP 预热期间的 ISP 特定考虑因素
 
-ISP有不同的规则和不同的流量查看方式。 例如，Gmail是最复杂的ISP之一，因为除了所有其他声誉衡量指标外，Gmail还非常严格地考虑参与（打开数和点击数）。 这需要一个自定义计划，该计划仅针对开始时参与度最高的用户。 其他ISP也可能需要相同的ISP。 与您的Adobe可交付性顾问合作，制定特定计划。
+ISP有不同的規則和不同的流量檢視方式。 例如，Gmail是最複雜的ISP之一，因為他們除了所有其他信譽度量外，也非常嚴格地審視參與度（開啟和點按）。 這要求自訂計畫，一開始只針對最高參與的使用者。 其他ISP可能也需要相同的許可權。 與您的Adobe傳遞顧問合作以達成特定計畫。
 
-请参阅 [互联网服务提供商详情](/help/internet-service-provider-specifics/overview.md) 部分，以了解以下选定提供商组之间的重要区别：
+請參閱 [網際網路服務提供者具體資訊](/help/internet-service-provider-specifics/overview.md) 區段，以取得下列所選提供者群組之間重要差異的詳細資訊：
 
 * [Gmail](/help/internet-service-provider-specifics/gmail.md)
 * [Microsoft（Hotmail、Outlook、Windows Live 等）](/help/internet-service-provider-specifics/microsoft.md)
@@ -27,4 +27,4 @@ ISP有不同的规则和不同的流量查看方式。 例如，Gmail是最复�
 
 ## 其他资源
 
-* 了解有关通过IP升温提高电子邮件声誉的更多信息，请参阅 [此部分](/help/additional-resources/increase-reputation-with-ip-warming.md).
+* 進一步瞭解透過IP暖身提高您的電子郵件信譽 [本節](/help/additional-resources/increase-reputation-with-ip-warming.md).

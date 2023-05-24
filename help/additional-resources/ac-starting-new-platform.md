@@ -1,6 +1,6 @@
 ---
 title: 启动新平台
-description: 了解有关使用Adobe Campaign启动新平台时管理投放能力的更多信息。
+description: 進一步瞭解使用Adobe Campaign啟動新平台時如何管理傳遞能力。
 topics: Deliverability
 doc-type: article
 activity: understand
@@ -15,52 +15,52 @@ ht-degree: 8%
 
 # 启动新平台 {#starting-new-platform}
 
-在设置要与Adobe Campaign一起使用的新平台时，维护域和IP地址信誉至关重要。
+在設定要與Adobe Campaign搭配使用的新平台時，維護您的網域和IP位址信譽至關重要。
 
-## 敏感步骤
+## 敏感步驟
 
-开始在新平台上发送电子邮件时，您应当非常谨慎，因为该平台没有任何使用历史，并且在发送IP从未用于此目的时没有声誉。
+在新平台上開始傳送電子郵件時，您應該非常小心，因為平台沒有任何使用記錄，而且從未將傳送IP用於此目的時，沒有信譽。
 
-ISP自然会怀疑从未用来发送电子邮件的IP地址，而这些地址会突然开始发送大量电子邮件流量。 事实上，垃圾邮件发送者通常使用“未知”IP地址（从未过的地址）阻止列表来在检测前发送尽可能多的邮件。
+ISP自然會懷疑從未用來傳送電子郵件，且突然開始傳送大量電子郵件流量的IP位址。 事實上，垃圾郵件傳送者通常使用「未知」IP位址（從未列入封鎖清單的位址）在偵測之前傳送儘可能多的訊息。
 
-在生产阶段开始时，您不能期望达到操作速度。 此外，您不应尝试以此速率发送消息，因为这可能会导致ISP阻止发送地址，并严重危害启动阶段的其余部分。
+在生產階段剛開始時，就輸出而言，您不可能指望達到作業速度。 此外，您不應嘗試以這個速率傳送訊息，因為這可能會導致ISP封鎖傳送位址，並嚴重危害啟動階段的其餘部分。
 
-## 主要原则
+## 主要原則
 
-下面列出了启动新平台时应遵循的主要原则。
+以下列出啟動新平台時應遵循的主要原則。
 
-* 配置专用子域，该子域专用于从Adobe发送的电子邮件促销活动。
+* 設定專屬於從Adobe傳送之電子郵件行銷活動的專用子網域。
 
-* 如果你有这些信息， **将无效地址导入隔离表**.
-首次使用地址列表（可能未完全限定）时，通常会启动平台。 如果您将发送到无效地址或蜜罐地址，这将有助于降低平台的声誉。
+* 如果您有此資訊， **將無效的地址匯入隔離表格**.
+首次使用位址清單且可能不完全合格時，經常會啟動平台。 如果您傳送至無效的位址或蜜罐位址，將降低平台的聲譽。
 
-   * 如果您有无效地址列表，则在首次发送之前将其导入隔离表符合您的最大利益。 隔离表可通过 **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]** (Campaign Classic)和 **[!UICONTROL Administration > Channels > Quarantines > Addresses]** (Campaign Standard)菜单。
+   * 如果您有無效地址清單，則在第一次傳送之前將其匯入隔離表格符合您的最大利益。 隔離表可透過以下網址取得： **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]** (Campaign Classic)和 **[!UICONTROL Administration > Channels > Quarantines > Addresses]** (Campaign Standard)功能表。
 
-   * 尽管如此，如果您希望重新指定无效地址，则最好在建立平台声誉后再逐位地执行此操作，以便随着时间的推移“稀释”不良地址的使用。
+   * 儘管如此，如果您想要重新確認無效位址的資格，最好在平台的聲譽建立並逐位執行這項操作，以「稀釋」一段時間內使用錯誤位址。
 
-* **限制吞吐率** 限制母婴数量。 有关调整此类技术设置的更多信息，请与Adobe Campaign管理员联系。
+* **限制傳輸率** 藉由限制配對的數量。 如需調整這類技術設定的詳細資訊，請聯絡您的Adobe Campaign管理員。
 
-* **逐步增加发送的卷** 以避免被标记为垃圾邮件。 请不要从一开始就定位整个数据库，而是在每次发送时添加列表的额外部分。 这样，您就可以在每一步增加卷，同时降低无效地址的总体速率。 为确保启动阶段的顺利开发，您可以使用批次。
+* **逐步增加傳送的磁碟區** 以避免被標籤為垃圾訊息。 不要從一開始就鎖定整個資料庫，而是在每次傳送時新增額外的清單部分。 這應該可讓您在減少無效位址的整體比率時，增加每個步驟的磁碟區。 若要確保啟動階段的順利開發，您可以使用波段。
 
-* **定期发送**. 从某种程度上讲，最好定期发送小照片，而不是偶尔发送大型活动。
-* **密切关注投放报告**. 高错误指示器可能意味着技术设置配置错误。
+* **定期傳送**. 在某種程度上，定期傳送小型快照比偶爾傳送大型行銷活動更好。
+* **請密切注意傳遞報告**. 高錯誤指標可能表示技術設定設定設定錯誤。
 
 ## 其他资源
 
-有关上述原则及其在Adobe Campaign中实施的更多信息，请参阅以下各节：
+如需上述原則及其在Adobe Campaign實作方式的詳細資訊，請參閱下列章節：
 
 * [利用 IP 预热提高您的电子邮件声誉](../../help/additional-resources/increase-reputation-with-ip-warming.md)
 * [关于垃圾邮件陷阱](../../help/additional-resources/all-about-spam-traps.md)
 
 **Adobe Campaign Classic**
 
-* [通过隔离优化投放](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html#optimizing-your-delivery-through-quarantines)
-* [确定整个平台的隔离地址](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html#identifying-quarantined-addresses-for-the-entire-platform)
-* [使用多个批次发送](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#sending-using-multiple-waves)
-* [投放监测](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html#sending-messages)
+* [透過隔離最佳化您的傳遞](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html#optimizing-your-delivery-through-quarantines)
+* [識別整個平台的隔離地址](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html#identifying-quarantined-addresses-for-the-entire-platform)
+* [使用多個波段傳送](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#sending-using-multiple-waves)
+* [投放监测](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html?lang=zh-Hans#sending-messages)
 
 **Adobe Campaign Standard**
 
-* [通过隔离优化投放](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html#optimizing-your-delivery-through-quarantines)
-* [确定整个平台的隔离地址](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html)
-* [监测投放](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/monitoring-a-delivery.html)
+* [透過隔離最佳化您的傳遞](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html#optimizing-your-delivery-through-quarantines)
+* [識別整個平台的隔離地址](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html)
+* [监测投放](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/monitoring-a-delivery.html?lang=zh-Hans)

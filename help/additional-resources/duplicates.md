@@ -1,6 +1,6 @@
 ---
 title: 重复
-description: 了解如何识别和限制重复项以提高投放能力。
+description: 瞭解如何識別並限制重複專案，以改善傳遞能力。
 topics: Deliverability
 doc-type: article
 activity: understand
@@ -15,30 +15,30 @@ ht-degree: 6%
 
 # 重复 {#duplicates}
 
-拥有重复的电子邮件地址可能会产生多种后果：
+擁有重複的電子郵件地址可能會有多重後果：
 
-* 多次发送同一消息。 即使Adobe在发送之前默认执行重复数据删除过程，在拆分目标时，也不会阻止具有相同内容的不同操作发送相同消息。
-* 不接受退订请求。 如果收件人在收到消息后取消订阅，则其重复的用户档案仍符合将来消息的条件。
+* 相同訊息已傳送多次。 即使Adobe在傳送前依預設會執行重複資料刪除程式，在分割目標時，也不會有內容相同的不同動作停止傳送相同的訊息。
+* 未接受取消訂閱請求。 如果收件者在收到訊息後取消訂閱，其重複的設定檔仍符合未來訊息的資格。
 
-除了选择加入过程的这一侧步之外，这种情况还可能导致用户将消息视为垃圾邮件，并在ISP触阻止列表发过程。
+除了這種選擇加入程式的側邊步驟外，這種情況可能會讓使用者將訊息視為垃圾郵件，並在ISP觸發封鎖清單程式。
 
-对数据库执行操作时，必须特别谨慎：
+在資料庫上執行操作時，您必須特別謹慎：
 
-* 必须仔细配置导入，特别是在选择协调键值时。
-* 更改的电子邮件地址也可以是重复的源。 特别是，具有不同域的两个地址可能会被路由到同一邮箱，例如，如果公司更改了名称并维护了前一个域达到一定时间：joe.doe@amce-co.com和joe.doe@acme-rebranded.com。
-* 自动导入（无论是列表还是来自其他数据库）是管理用户档案时要考虑的元素。 删除或移动另一个分区中的配置文件时会发生什么情况？ 例如，在下达采购订单时，可通过自动导入在初始分区中重新创建该分区。
-* 可以使用视图而不是分区来实施将配置文件存储在不同文件夹中。 这样，您就可以确保配置文件位于同一物理分区中，同时仍然能够显示和管理足够的权限。
+* 必須小心設定匯入，尤其是選擇調解金鑰時。
+* 變更的電子郵件地址也可以是重複專案的來源。 舉例來說，如果公司變更名稱並維持先前網域特定時間： joe.doe@amce-co.com和joe.doe@acme-rebranded.com，會將網域不同的兩個位址路由至相同的信箱。
+* 自動匯入（無論是清單或來自其他資料庫）是管理設定檔時要考慮的元素。 當您刪除或移動另一個分割中的設定檔時，會發生什麼情況？ 它可透過自動匯入在初始分割區中重新建立，例如，當下採購單時。
+* 可以使用檢視而非分割來將設定檔儲存在不同的資料夾中。 如此一來，您就可以確定設定檔位於相同的實體分割區中，同時仍可顯示和管理足夠的許可權。
 
-同样，不同分区之间的重复项也是正常情况。 例如，在为第三方或不同的公司实体发送时，出于不同原因，同一人成为收件人是合乎逻辑的。 但是，在同一分区中查找重复项的情况很少见。
+相同的情況下，不同分割區之間的重複專案是正常的。 例如，為第三方或不同公司實體傳送時，出於不同原因，同一人成為收件者符合邏輯。 然而，在相同分割區中尋找重複專案很少是正常的。
 
 ## 产品特定资源
 
-删除地址重复项可保护您的发送信誉，并确保良好的隔离管理。 请参阅以下产品文档部分，了解更多信息：
+對地址進行重複資料刪除可保護您的傳送信譽，並確保良好的隔離管理。 在以下產品檔案章節深入瞭解：
 
 **Adobe Campaign Classic**
 
-* [重复数据删除活动](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/deduplication.html)
-* [使用重复数据删除活动的合并功能](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/data-management/deduplication-merge.html?lang=zh-Hans)
+* [重複資料刪除活動](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/deduplication.html)
+* [使用重複資料刪除活動的合併功能](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/data-management/deduplication-merge.html?lang=zh-Hans)
 
 **Adobe Campaign Standard**
 

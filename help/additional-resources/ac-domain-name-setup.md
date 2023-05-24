@@ -1,6 +1,6 @@
 ---
 title: 域名设置
-description: 了解如何将子域委派给Adobe Campaign。
+description: 瞭解如何將子網域委派至Adobe Campaign。
 topics: Deliverability
 doc-type: article
 activity: understand
@@ -15,52 +15,52 @@ ht-degree: 2%
 
 # 域名设置
 
-本文档介绍了域名设置和委派的业务和技术要求。 您将需要选择电子邮件发送子域以及（可选）面向外部的子域，以托管您所使用的Adobe平台的Web组件（登陆页面、选择退出页面）。
+本檔案說明網域名稱設定和委派的業務和技術需求。 您需要選取電子郵件傳送子網域，以及（選擇性）對外子網域，以託管您所使用Adobe平台的網頁元件（登陸頁面、退出頁面）。
 
 >[!NOTE]
 >
->您还可以使用控制面板设置新子域（可作为测试版使用）。 在 [此部分](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html#must-read).
+>您也可以使用「控制面板」（提供測試版）設定新子網域。 有关详细信息，请参阅[此部分](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html#must-read)。
 
-## 子域
+## 子網域
 
-借助Adobe，数字营销可以真正成为推动您品牌的客户参与营销计划的情境引擎。  电子邮件仍是数字营销计划的基础。 但是，进入收件箱比以往更加困难。
+透過Adobe，數位行銷可真正成為內容引擎，為您的品牌的客戶參與行銷方案提供動力。  電子郵件仍然是數位行銷方案的基礎。 不過，到達收件匣已變得前所未有的困難。
 
-通过为电子邮件促销活动创建子域，品牌可以将不同类型的流量（例如，营销与公司流量）隔离到特定IP池中，并使用特定的域，从而加快 [IP预热过程](../../help/additional-resources/increase-reputation-with-ip-warming.md) 提高整体投放能力。 如果您共享域，并且该域被阻止或添加到阻止列表中，则可能会影响您的公司邮件投放。 但是，特定于电子邮件营销通信的域名存在的声誉问题或阻止，将仅影响电子邮件的流量。  如果将主域用作多个邮件流的发件人或“发件人”地址，则也可能会中断电子邮件身份验证，从而阻止您的邮件或将其置于垃圾邮件文件夹中。
+為電子郵件行銷活動建立子網域可讓品牌將各種型別的流量（例如行銷與企業）隔離到特定的IP集區和具有特定網域，進而加快 [IP預熱程式](../../help/additional-resources/increase-reputation-with-ip-warming.md) 並提升整體傳遞能力。 如果您共用網域，但該網域遭到封鎖或新增至封鎖清單，可能會影響您的公司郵件傳送。 不過，您電子郵件行銷通訊專屬網域上的信譽問題或封鎖將只會影響該電子郵件流程。  使用您的主網域作為寄件者或多個郵件串流的「寄件者」地址也可能破壞電子郵件驗證，導致您的郵件被封鎖或放入垃圾郵件資料夾。
 
 ### 委派
 
-域名委派是允许域名所有者的方法(技术上为：DNS区域)，以委派其分区(技术上：其下的DNS区域（可称为子区域）到其他实体。 基本上，如果客户正在处理区域“example.com”，则可以将子区域“marketing.example.com”委派给Adobe Campaign。
+網域名稱委派是一種方法，可讓網域名稱（技術上稱為DNS區域）的擁有者將其細分（技術上稱為DNS區域，也可以稱為子區域）委派給另一個實體。 基本上，如果客戶正在處理區域「example.com」，他可以將子區域「marketing.example.com」委派給Adobe Campaign。
 
-这意味着Adobe Campaign的DNS服务器将仅对该区域拥有完全权限，而不对顶级域拥有完全权限。 Adobe Campaign的DNS服务器将对该区域中域名(例如“t.marketing.example.com”本身，但不是“www.example.com”)的查询提供权威性答案。
+這表示Adobe Campaign的DNS伺服器將僅在該區域上擁有完整許可權，而不會在頂層網域上擁有完整許可權。 Adobe Campaign的DNS伺服器會針對該區域中網域名稱的查詢提供權威解答，例如「t.marketing.example.com」本身，而不是「www.example.com」。
 
-通过委派子域以与Adobe Campaign一起使用，客户可以依赖Adobe来维护满足其电子邮件营销发送域行业标准可交付性要求所需的DNS基础结构，同时继续维护和控制其内部电子邮件域的DNS。  子域委派允许：
+透過委派子網域以與Adobe Campaign搭配使用，客戶可以仰賴Adobe來維護所需的DNS基礎架構，以符合其電子郵件行銷傳送網域的產業標準傳遞能力要求，同時繼續維護和控制其內部電子郵件網域的DNS。  子網域委派允許：
 
-客户可通过使用带有其域名Adobe的DNS别名来保持其品牌形象，从而自主实施所有技术最佳实践，以在发送电子邮件期间完全优化投放能力
+客戶可透過使用其網域名稱Adobe的DNS別名來自主實作所有技術最佳實務，以在傳送電子郵件期間完全最佳化傳遞能力，以保持其品牌形象
 
-## DNS设置选项
+## DNS設定選項
 
-为了提供基于云的托管服务，Adobe强烈鼓励客户在部署Adobe Campaign时使用子域委派。  但是，Adobe确实为客户端提供了配置DNS的替代选项 — CNAME设置。
+為了提供雲端型受管服務，Adobe強烈建議客戶在部署Adobe Campaign時使用子網域委派。  不過，Adobe確實為客戶提供設定DNS的替代選項 — CNAME設定。
 
-| 选项 | 描述 | Adobe责任 | 客户责任 |
+| 选项 | 描述 | Adobe責任 | 客戶責任 |
 |--- |------- |--- |--- |
-| 将子域委派到Adobe Campaign | 客户端将子域(email.example.com)委派给Adobe。 在此方案中，Adobe能够控制和维护发送、渲染和跟踪电子邮件促销活动所需的DNS的所有方面，从而将促销活动作为托管服务进行交付。 | 完全管理子域和Adobe Campaign所需的所有DNS记录。 | 正确委派子域以Adobe |
-| 使用 CNAME | 客户端会创建子域，并使用CNAME指向特定于Adobe的记录。  使用此设置，Adobe 和客户共同负责维护 DNS。 | 管理Adobe Campaign所需的DNS记录。 | 创建和控制子域，以及创建/管理Adobe Campaign所需的CNAME记录。 |
+| 將子網域委派給Adobe Campaign | 使用者端將子網域(email.example.com)委派給Adobe。 在此案例中，Adobe可以控制並維護傳遞、演算及追蹤電子郵件行銷活動所需的DNS的各個層面，以受管理的方式提供Campaign。 | 完整管理子網域和Adobe Campaign所需的所有DNS記錄。 | 將子網域正確委派給Adobe |
+| 使用 CNAME | Client會建立子網域並使用CNAME指向Adobe特定記錄。  使用此设置，Adobe 和客户共同负责维护 DNS。 | 管理Adobe Campaign所需的DNS記錄。 | 建立和控制子網域，以及建立/管理Adobe Campaign所需的CNAME記錄。 |
 
-## 所需的DNS记录
+## 必要的DNS記錄
 
-| 记录类型 | 用途 | 示例记录/内容 |
+| 記錄型別 | 用途 | 範例記錄/內容 |
 |--- |--- |--- |
-| MX | 为传入邮件指定邮件服务器 | <i>email.example.com</i></br><i>10 inbound.email.example.com</i> |
-| SPF(TXT) | 发件人策略框架 | <i>email.example.com</i></br>&quot;v=spf1 redirect=__spf.campaign.adobe.com&quot; |
-| DKIM(TXT) | 已识别的DomainKeys邮件 | <i>客户。_domainkey.email.example.com</i></br>&quot;v=DKIM1;k=rsa;&quot; &quot;DKIMPUBLICKEY HERE&quot; |
-| 主机记录(A) | 镜像页面、图像托管和跟踪链接，所有发送域 | A 123.111.100.99中的m.email.example.com</br>A 123.111.100.98中的t.email.example.com</br>email.example.com A 123.111.100.97中的 |
-| 反向DNS(PTR) | 将客户端IP地址映射到客户端品牌主机名 | 18.101.100.192.in-addr.arpa域名指针r18.email.example.com |
-| CNAME | 为其他域名提供别名 | t1.email.example.com是t1.email.example.campaign.adobe.com的别名 |
+| MX | 指定內送郵件的郵件伺服器 | <i>email.example.com</i></br><i>10 inbound.email.example.com</i> |
+| SPF (TXT) | 寄件者原則架構 | <i>email.example.com</i></br>&quot;v=spf1 redirect=__spf.campaign.adobe.com&quot; |
+| DKIM (TXT) | DomainKeys識別的郵件 | <i>使用者端。_domainkey.email.example.com</i></br>&quot;v=DKIM1； k=rsa；&quot; &quot;DKIMPUBLICKEY HERE&quot; |
+| 主機記錄(A) | 映象頁面、影像託管和追蹤連結，所有傳送網域 | m.email.example.com IN A 123.111.100.99</br>t.email.example.com IN A 123.111.100.98</br>email.example.com IN A 123.111.100.97 |
+| 反向DNS (PTR) | 將使用者端IP位址對應到使用者端品牌的主機名稱 | 18.101.100.192.in-addr.arpa網域名稱指標r18.email.example.com |
+| CNAME | 提供另一個網域名稱的別名 | t1.email.example.com是t1.email.example.campaign.adobe.com的別名 |
 
 
-建议使用基于域的邮件身份验证、报告和符合性(DMARC)来验证邮件发送者，并确保目标电子邮件系统信任从您的域发送的邮件。
+建議使用網域型訊息驗證、報告和符合性(DMARC)來驗證郵件寄件者，並確保目的地電子郵件系統信任從您的網域傳送的訊息。
 
-DMARC TXT记录示例：
+DMARC TXT記錄範例：
 
 ```
 _dmarc.email.example.com
@@ -68,13 +68,13 @@ _dmarc.email.example.com
 “v=DMARC1; p=none; rua=mailto:mailauth-reports@myemail.com” 
 ```
 
-您可以手动实施DMARC或联系Adobe，以协助您为品牌设置DMARC。
+您可以手動實作DMARC或聯絡Adobe，協助您為品牌設定DMARC。
 
-## 设置要求
+## 設定需求
 
-### 子域委派
+### 子網域委派
 
-这要求客户端在其DNS服务器中创建子域，并将此子域的名称服务器定义为由Adobe维护的子域。  例如，如果客户的主域名为“example.com”，并且希望将“marketing.example.com”的管理委派给Adobe以进行电子邮件投放，则必须实体化此委派，以将以下类型记录添加到其DNS:
+這要求使用者端在其DNS伺服器中建立子網域，並將此子網域的名稱伺服器定義為Adobe所維護的伺服器。  例如，主要網域名稱為「example.com」的使用者端，如果想要將「marketing.example.com」的管理委派給Adobe其電子郵件傳送，則必須具體化此委派，才能將下列型別記錄新增至其DNS：
 
 ```
 marketing.example.com. NS a.ns.campaign.adobe.com.
@@ -83,126 +83,126 @@ marketing.example.com. NS c.ns.campaign.adobe.com.
 marketing.example.com. NS d.ns.campaign.adobe.com.
 ```
 
-委派域名意味着此域将专门用于通过Adobe Campaign平台发送电子邮件，因此不能用于其他方式（例如，从其他电子邮件基础结构发送电子邮件）。
+委派網域名稱表示此網域將專門用於透過Adobe Campaign平台傳送電子郵件，因此無法用於其他方式（例如，從其他電子郵件基礎結構傳送電子郵件）。
 
-在设置过程中，Adobe将确保将域附加到Adobe传入的电子邮件基础结构，以便管理和处理返回到这些域（MX类型DNS记录配置）的反弹电子邮件。
+在設定過程中，Adobe將確保網域附加到Adobe傳入電子郵件基礎架構，以管理和處理傳回這些網域的反彈電子郵件（MX型別DNS記錄設定）。
 
 ### 使用 CNAME
 
-如果客户端选择使用CNAME而不是委派子域进行Adobe，则在设置阶段，Adobe将提供要置于客户端DNS服务器中的记录，并将在Adobe Campaign DNS服务器中配置相应的值。
+如果使用者端選擇使用CNAME而不是將子網域委派給Adobe，則在設定階段，Adobe將提供要放置在使用者端DNS伺服器中的記錄，並將在Adobe Campaign DNS伺服器中設定對應的值。
 
-## 部署的一般要求
+## 部署的一般需求
 
-实施新的企业营销解决方案时，需要面向外部的组件。  这些功能包括托管登陆页面和Web窗体、设置要跟踪的链接和网页、显示镜像页面以及配置选择退出页面。
+實作新的企業行銷解決方案時，需要面對外部的元件。  這些功能包括託管登入頁面和網路表單、設定要追蹤的連結和網頁、顯示映象頁面，以及設定退出頁面。
 
-虽然这些要求通过由Adobe和客户托管的组件进行管理，但它们包含可供电子邮件收件人查看的URL。  为避免拥有指示底层技术解决方案或托管提供商的URL，可以设置子域以使其对电子邮件的收件人透明。  例如，在查看http://www.customer.com/之类的URL时，域将为“www.customer.com”。  此的子域将为“www”。
+雖然這些需求是透過Adobe和客戶託管的元件來管理，但包含電子郵件收件者可以看到的URL。  為避免具有指出基礎技術解決方案或託管提供者的URL，可以設定子網域以使其對電子郵件的收件者透明。  例如，檢視http://www.customer.com/之類的URL時，網域將是「www.customer.com」。  其子網域會是「www」。
 
-### 子域要求
+### 子網域需求
 
-确定要用于Adobe Campaign应用程序中的品牌URL（镜像页面和跟踪URL）的子域。  此外，还决定电子邮件投放中每个子域的“发件人地址”、“发件人名称”和“回复地址”。
+決定要用於Adobe Campaign應用程式中的品牌URL （映象頁面和追蹤URL）的子網域。  同時決定電子郵件傳遞的每個子網域的「寄件者地址」、「寄件者名稱」和「回覆地址」為何。
 
-填写下表，第一行仅是一个示例。
+完成下表，第一行只是一個範例。
 
-| Subdomain | 发件人地址 | 从名称 | 回复地址 |
+| Subdomain | 寄件者地址 | 發件人名稱 | 回覆地址 |
 |--- |--- |--- |--- |
 | emails.customer.com | news@emails.customer.com | Customer | customercare@customer.com |
 | </br> | </br> | </br> | </br> |
 
 >[!NOTE]
 >
->* “回复地址”字段的用途是希望收件人回复与“发件人地址”不同的地址。  虽然不是必填字段，但Adobe强烈建议“回复地址”有效并链接到受监控的邮箱。  此邮箱必须由客户托管。  它可以是一个支持邮箱，例如customercare@customer.com，用于读取和响应电子邮件。
->* 如果客户未选择“回复地址”，则默认地址始终为 `<tenant>-<type>-<env>@<subdomain>`.
->* 以这种方式设置“回复地址”时，将向未监控的邮箱发送回复。
->* 从Adobe Campaign发送电子邮件时，“发件人地址”邮箱不受监控，营销用户无法访问此邮箱。 Adobe Campaign还不提供自动回复或自动转发此邮箱中收到的电子邮件的功能。
->* 营销活动发件人/发件人地址和错误地址不能为“滥用”或“邮递员”。
+>* 「回覆地址」欄位的用途是當您希望收件者回覆與「寄件者地址」不同的地址時。  雖然不是必要欄位，但Adobe強烈建議「回覆地址」為有效並連結至受監控的信箱。  此信箱必須由客戶託管。  它可能是支援信箱，例如customercare@customer.com，可讀取和回應電子郵件。
+>* 若客戶未選擇「回覆地址」，則預設地址一律為 `<tenant>-<type>-<env>@<subdomain>`.
+>* 當以這種方式設定「回覆地址」時，回覆將傳送至未監控的信箱。
+>* 從Adobe Campaign傳送電子郵件時，「寄件者地址」信箱不受監視，且行銷使用者無法存取此信箱。 Adobe Campaign也不提供自動回覆或自動轉寄此信箱中接收之電子郵件的功能。
+>* 行銷活動寄件者/寄件者地址及錯誤地址不能是「濫用」或「郵遞員」。
 
 
 ## 委派子域
 
-必须通过创建四个名称服务器(NS)记录来委派选定用于Adobe Campaign平台的子域。  这样可将子域正确委派给Adobe。  以下是子域委派和相应DNS说明的示例。  请将“emails.customer.com”替换为您要委派的子域。  请注意，子域必须是唯一的，且不能已被其他方（例如，现有的ESP或MSP）使用。
+選擇用於Adobe Campaign平台的子網域必須透過建立四個名稱伺服器(NS)記錄來委派。  這可讓子網域正確委派給Adobe。  以下是子網域委派和個別DNS指示的範例。  請將「emails.customer.com」取代為您要委派的子網域。  請注意，子網域必須是唯一的，且不能被其他合作對象使用（例如，現有的ESP或MSP）。
 
-| 委派子域 | DNS说明 |
+| 委派的子網域 | DNS指示 |
 |--- |--- |
-| `<subdomain>` | `<subdomain>` NS a.ns.campaign.adobe.com。 </br> `<subdomain>` NS b.ns.campaign.adobe.com。 </br> `<subdomain>` NS c.ns.campaign.adobe.com。 </br> `<subdomain>` NS d.ns.campaign.adobe.com。 |
+| `<subdomain>` | `<subdomain>` NS a.ns.campaign.adobe.com. </br> `<subdomain>` NS b.ns.campaign.adobe.com. </br> `<subdomain>` NS c.ns.campaign.adobe.com. </br> `<subdomain>` NS d.ns.campaign.adobe.com. |
 
-## 跟踪、镜像页面、资源
+## 追蹤、映象頁面、資源
 
-将电子邮件发送子域正确委派给Adobe Campaign后，Adobe技术运营团队将创建两个或多个较低级别的域，以独立管理跟踪和镜像页面。
+在電子郵件傳送子網域正確委派給Adobe Campaign後，AdobeTechOps團隊將建立兩個或多個較低層級的網域，以獨立管理追蹤和映象頁面。
 
 | 类型 | Domain |
 |--- |--- |
-| 镜像页面 | m.`<subdomain>` |
+| 映象頁面 | m.`<subdomain>` |
 | 跟踪 | t.`<subdomain>` |
-| 资源 | res.`<subdomain>` |
+| 资源 | 解析度`<subdomain>` |
 
-## 云部署（可选）
+## 雲端部署（選用）
 
-仅当Adobe Campaign Classic由Adobe完全托管在云中时，才适用此方法。  这是一个可选配置。
+這僅適用於Adobe Campaign Classic已由Adobe完全託管於雲端的情況。  此為選擇性設定。
 
-任何要开发的调查、Web窗体和登陆页面均通过云中完全托管的Adobe Campaign进行管理。  如果需要，可将其他子域委派给Adobe（例如web.customer.com），以用于工具中的任何Web组件。  请注意，子域必须是唯一的，不能被其他方（例如，现有的ESP或MSP）使用。
+任何要開發的調查、網路表單和登入頁面，都會透過Adobe Campaign管理，並在雲端完全託管。  如有需要，系統可能會將其他子網域委派給Adobe (例如web.customer.com)，以用於工具內的任何Web元件。  請注意，子網域必須是唯一的，且不能由另一方使用（例如，現有的ESP或MSP）。
 
-| 委派子域 | DNS说明 |
+| 委派的子網域 | DNS指示 |
 |--- |--- |
-| `<subdomain>` | `<subdomain>` NS a.ns.campaign.adobe.com。</br>`<subdomain>` NS b.ns.campaign.adobe.com。</br>`<subdomain>` NS c.ns.campaign.adobe.com。</br>`<subdomain>` NS d.ns.campaign.adobe.com。 |
+| `<subdomain>` | `<subdomain>` NS a.ns.campaign.adobe.com.</br>`<subdomain>` NS b.ns.campaign.adobe.com.</br>`<subdomain>` NS c.ns.campaign.adobe.com.</br>`<subdomain>` NS d.ns.campaign.adobe.com. |
 
 >[!NOTE]
 >
->默认情况下，工具中的任何Web组件都将使用委派用于电子邮件的初始子域。
+>根據預設，工具中的任何Web元件都會使用委派用於電子郵件的初始子網域。
 
-## 云消息传送部署（可选）
+## 雲端傳訊部署（選用）
 
-如果Adobe Campaign Classic营销实例在客户的内部部署中托管，则客户将需要进行其他技术配置。
+如果Adobe Campaign Classic行銷執行個體託管於客戶內部部署，則客戶需要執行其他技術設定。
 
-任何要开发的调查、Web窗体和登陆页面均通过收件人记录所在的Adobe Campaign营销实例进行管理。
+任何要開發的調查、網路表單和登入頁面，都會透過存在收件者記錄的Adobe Campaign行銷執行個體來管理。
 
-部署由Adobe Campaign营销实例托管的面向外部的Web组件时，需要额外的CNAME DNS配置。  这将允许Web组件（例如web.customer.com）在Internet上公开访问，并使用客户的域进行标记。
+部署由Adobe Campaign行銷執行個體託管的對外網頁元件時，需要額外的CNAME DNS設定。  這可讓網際網路公開存取網頁元件(例如web.customer.com)，並以客戶網域命名。
 
-还需要配置防火墙，以允许访问托管这些Web组件的Adobe Campaign营销实例（在端口80或443上）。
+防火牆也需設定為允許存取代管這些Web元件的Adobe Campaign行銷執行個體（在連線埠80或443上）。
 
-**最佳实践Recommendations:**
+**Recommendations最佳作法：**
 
-托管Web组件的子域将对客户可见，因此请确保该子域具有正确的品牌，并且易于记住，因为可能需要手动键入该子域，例如：https://web.customer.com。
-如果需要在安全页面(HTTPS)上托管任何表单，则需要添加技术配置，如下所述。
+客戶可以看到託管Web元件的子網域，因此請務必正確標示其品牌且容易記憶，因為可能需要手動輸入，例如：https://web.customer.com。
+如果需要將任何表單託管在安全頁面(HTTPS)上，則需要新增技術設定，如下所述。
 
-| 委派子域 | DNS说明 |
+| 委派的子網域 | DNS指示 |
 |--- |--- |
 | `<subdomain>` | `<subdomain>` CNAME `<internal customer server>` |
 
-## 已提供的服务
+## 已提供的服務
 
-在执行这些授权后，由Adobe建立的基础架构可确保为每个授权的或基于CNAME的发送域执行以下服务：
+在這些委派後，Adobe建立的基礎結構可確保為每個委派或CNAME別名傳送網域執行下列服務：
 
-* 在收件箱中创建postmaster@和ubuse@
-* 为委派的域设置反馈循环
-* Adobe还将根据要求配置DMARC记录。 您的可交付性顾问可以协助设计长期的DMARC策略并规划您的发送域。
-由Adobe建立的参数仅在委派完成后由Adobe验证并保持正常工作时有效。  所有Adobe Campaign Cloud选件都包括作为标准的域名委派。
+* 建立郵局主管@和濫用@收件匣
+* 為委派網域設定回饋回圈
+* Adobe也會根據要求設定DMARC記錄。 您的傳遞顧問可協助您設計長期DMARC原則，並針對傳送網域進行規劃。
+由Adobe建立的引數只有在委派完成並由Adobe驗證之後才有效，並且仍然有效。  所有Adobe Campaign Cloud選件都包含標準網域名稱委派。
 
-## 计费和实施条件
+## 帳單與實作條件
 
-* 根据初始合同和选定的一揽子类型，除了作为标准而列入的代表团之外，还可列入其他代表团，
-* 除这些代表团外，还将开具额外的代表团费用，
-* 这些额外委托的计费方法按初始合同规定的每月额外收费。
+* 根據初始合約及所選之封裝型別，除了此初始委派以外作為標準包含之委派外，可能還包括其他委派，
+* 除了這些已包含的委派外，其他委派將需付費，
+* 這些額外委派的計費方法會按照初始合約中的規定，每月額外收費。
 
-如果客户端选择通过Adobe Campaign工具投放的专用关联域名，并且正确实施了相关文档中详细描述的委派先决条件，则将接受这些委派。
+如果使用者端選擇透過Adobe Campaign工具專用於傳遞的相關網域名稱，且已正確實作相關檔案中詳述的委派先決條件，則會接受這些委派。
 
-## 停止服务
+## 服務終止
 
-客户端随时能够提出书面要求，不再从委派服务中受益，并自行进行必要的DNS配置。
+使用者端隨時都可以提出書面要求，要求不再從委派服務中受益，並自行承擔必要的DNS設定。
 
-如果应该出现这种情况，Adobe将向客户端提供一项估计，详细说明返回到非域委派模式所需的服务天数。
+如果發生此情況，Adobe會向使用者端提供預估值，詳細說明返回非網域委派模式所需的服務天數。
 
-如Adobe未能遵守上述承诺，则客户将不再就参与上述可交付性比率承担任何责任。
+若客戶未能遵守上述承諾，則上述交貨率之任何責任將免除Adobe。
 
-终止Marketing Cloud服务将自动导致域委派结束，并按Adobe对这些域进行DNS维护。
+終止Marketing Cloud服務將自動導致網域委派的結束，並按Adobe維護這些網域的DNS。
 
-## 使用控制面板监控子域
+## 使用「控制面板」監控子網域
 
-为实例配置子域后，您可以使用控制面板监控子域。
+為您的執行個體設定子網域後，您就可以使用「控制面板」加以監視。
 
-这允许您查看您委派给Adobe Campaign的所有子域，以及请求续订其SSL证书。
+這可讓您檢視委派給Adobe Campaign的所有子網域，以及要求續約其SSL憑證。
 
 有关更多信息，请参阅[专用文档](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-subdomains.html#subdomains-and-certificates)。
 
 >[!NOTE]
 >
->[控制面板](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hans) 仅供使用Adobe Managed Services的客户使用。
+>[控制面板](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html) 僅供使用Adobe Managed Services的客戶使用。
