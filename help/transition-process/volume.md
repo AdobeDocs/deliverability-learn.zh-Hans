@@ -2,13 +2,13 @@
 title: 数量 — 有关如何顺利过渡的提示
 description: 您发送的邮件量对于建立良好的信誉至关重要。 了解如何才能顺利过渡。
 topics: Deliverability
-kt: 7055
+jira: KT-7055
 thumbnail: kt7055.jpg
 doc-type: article
 activity: understand
 team: ACS
 exl-id: 1bc56061-0c64-4033-b49c-66618916bca6
-source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
+source-git-commit: 9444f8601f2f349398ee5deb9d5f4d4f7abb44f5
 workflow-type: tm+mt
 source-wordcount: '573'
 ht-degree: 1%

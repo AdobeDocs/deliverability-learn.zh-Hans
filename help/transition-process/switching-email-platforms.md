@@ -2,13 +2,13 @@
 title: 如何在切换电子邮件平台时平稳过渡.
 description: 在移动电子邮件服务提供商(ESP)时，也不可能转移您现有的已建立IP地址。 在重新开始时，请务必遵循建立良好信誉的最佳实践。
 topics: Deliverability
-kt: 5259
+jira: KT-5259
 thumbnail: kt5259.jpg
 doc-type: article
 activity: understand
 team: ACS
 exl-id: 5444d576-5bc1-4fa6-9956-c63dc3c60440
-source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
+source-git-commit: 9444f8601f2f349398ee5deb9d5f4d4f7abb44f5
 workflow-type: tm+mt
 source-wordcount: '212'
 ht-degree: 11%

@@ -2,13 +2,13 @@
 title: IP 预热期间的 ISP 特定考虑因素
 description: ISP有不同的规则和不同的流量查看方式。 这需要定制计划，一开始就只针对参与度最高的用户。
 topics: Deliverability
-kt: 7054
+jira: KT-7054
 thumbnail: kt7054.jpg
 doc-type: article
 activity: understand
 team: ACS
 exl-id: 7d61c81c-aa40-47a6-9869-1953a6ad22b2
-source-git-commit: 4d82aa498ce155919dde24aa695a8848351763a6
+source-git-commit: 9444f8601f2f349398ee5deb9d5f4d4f7abb44f5
 workflow-type: tm+mt
 source-wordcount: '159'
 ht-degree: 16%

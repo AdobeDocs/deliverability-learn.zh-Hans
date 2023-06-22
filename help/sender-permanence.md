@@ -2,13 +2,13 @@
 title: 发件人永久性
 description: 永久发送是建立一致的发送数量和策略以维护ISP信誉的过程。
 topics: Deliverability
-kt: 5261
+jira: KT-5261
 thumbnail: kt5261.jpg
 doc-type: article
 activity: understand
 team: TM
 exl-id: f57de522-1361-43a3-8f8b-f9a191986529
-source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
+source-git-commit: 9444f8601f2f349398ee5deb9d5f4d4f7abb44f5
 workflow-type: tm+mt
 source-wordcount: '135'
 ht-degree: 5%

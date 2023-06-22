@@ -2,12 +2,12 @@
 title: Microsoft（Hotmail、Outlook、Windows Live 等）
 description: Microsoft一般是第二大或第三大提供商，具体取决于您名单的组成，并且它们处理的流量与其他ISP略有不同。
 topics: Deliverability
-kt: 5319
+jira: KT-5319
 doc-type: article
 activity: understand
 team: TM
 exl-id: d706cb90-828a-4ab3-8f93-c9bd71553d63
-source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
+source-git-commit: 9444f8601f2f349398ee5deb9d5f4d4f7abb44f5
 workflow-type: tm+mt
 source-wordcount: '334'
 ht-degree: 2%

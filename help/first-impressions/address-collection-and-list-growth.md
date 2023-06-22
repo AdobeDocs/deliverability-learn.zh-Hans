@@ -2,13 +2,13 @@
 title: 地址收集和列表增长
 description: 了解新电子邮件地址的最佳来源是什么、如何确保较高的数据质量并遵守法律准则。
 topics: Deliverability
-kt: 7063
+jira: KT-7063
 thumbnail: kt7063.jpg
 doc-type: article
 activity: understand
 team: TM
 exl-id: 350950dc-4703-402a-8e22-3862f4e21d52
-source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
+source-git-commit: 9444f8601f2f349398ee5deb9d5f4d4f7abb44f5
 workflow-type: tm+mt
 source-wordcount: '1622'
 ht-degree: 4%

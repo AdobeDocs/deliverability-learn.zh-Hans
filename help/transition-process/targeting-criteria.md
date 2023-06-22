@@ -2,13 +2,13 @@
 title: 定位标准
 description: 了解如何从一开始就建立较好的信誉以有效地建立信任，然后再联系较少参与的受众。
 topics: Deliverability
-kt: 7053
+jira: KT-7053
 thumbnail: kt7053.jpg
 doc-type: article
 activity: understand
 team: ACS
 exl-id: e6a855ba-a929-477f-a339-6861a755a529
-source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
+source-git-commit: 9444f8601f2f349398ee5deb9d5f4d4f7abb44f5
 workflow-type: tm+mt
 source-wordcount: '206'
 ht-degree: 22%

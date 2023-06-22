@@ -2,13 +2,13 @@
 title: 第一印象 — 列表收集和欢迎电子邮件
 description: 了解如何通过留下良好的第一印象，让自己做好准备来运行成功的电子邮件计划。
 topics: Deliverability
-kt: 5258
+jira: KT-5258
 thumbnail: kt5258.jpg
 doc-type: article
 activity: understand
 team: TM
 exl-id: 3dc3528b-13c8-4d18-afe1-b647bc5f8082
-source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
+source-git-commit: 9444f8601f2f349398ee5deb9d5f4d4f7abb44f5
 workflow-type: tm+mt
 source-wordcount: '165'
 ht-degree: 4%

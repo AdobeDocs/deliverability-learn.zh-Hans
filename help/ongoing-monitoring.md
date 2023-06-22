@@ -2,13 +2,13 @@
 title: 持续监测
 description: 您需要注意哪些问题。
 topics: Deliverability
-kt: 5263
+jira: KT-5263
 thumbnail: kt5263.jpg
 doc-type: article
 activity: understand
 team: TM
 exl-id: 2defe1ae-5148-46f9-aaa7-8034107980ee
-source-git-commit: e842a8aefa715da80325cb107c2d2092c64a699b
+source-git-commit: 9444f8601f2f349398ee5deb9d5f4d4f7abb44f5
 workflow-type: tm+mt
 source-wordcount: '200'
 ht-degree: 35%

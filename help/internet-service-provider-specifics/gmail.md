@@ -2,12 +2,12 @@
 title: Gmail
 description: Gmail在大多数发件人的电子邮件列表中占最大比例。 他们对待电子邮件的态度也往往与其他所有人略有不同。
 topics: Deliverability
-kt: 5262
+jira: KT-5262
 doc-type: article
 activity: understand
 team: TM
 exl-id: a7319c85-32b5-4a9e-bee9-24f13630c408
-source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
+source-git-commit: 9444f8601f2f349398ee5deb9d5f4d4f7abb44f5
 workflow-type: tm+mt
 source-wordcount: '459'
 ht-degree: 0%
