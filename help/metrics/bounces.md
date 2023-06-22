@@ -2,15 +2,15 @@
 title: 退信数
 description: 了解不同类型的退信。
 topics: Deliverability
-kt: 7047
+jira: KT-7047
 thumbnail: kt7047.jpg
 doc-type: article
 activity: understand
 team: ACS
 exl-id: 6338eb67-3efd-476e-8b26-97bbb6a1d35f
-source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
-workflow-type: tm+mt
-source-wordcount: '477'
+source-git-commit: 9444f8601f2f349398ee5deb9d5f4d4f7abb44f5
+workflow-type: ht
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
