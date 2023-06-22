@@ -2,14 +2,14 @@
 title: 批处理和阻止电子邮件
 description: 了解 ISP 将电子邮件消息放入批量文件夹或阻止它们的原因。
 topics: Deliverability
-kt: 7051
+jira: KT-7051
 thumbnail: kt7051.jpg
 doc-type: article
 activity: understand
 team: ACS
 exl-id: 4b280f90-73b9-4b88-adb8-57b6a46ddad7
-source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
-workflow-type: tm+mt
+source-git-commit: 9444f8601f2f349398ee5deb9d5f4d4f7abb44f5
+workflow-type: ht
 source-wordcount: '321'
 ht-degree: 100%
 
