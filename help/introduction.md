@@ -7,10 +7,10 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 929e325a-514d-49e3-91cf-c8383bb9465e
-source-git-commit: 9444f8601f2f349398ee5deb9d5f4d4f7abb44f5
+source-git-commit: 1dc2f37db66d88701d211c4de9828a2a4d038c4b
 workflow-type: tm+mt
-source-wordcount: '430'
-ht-degree: 74%
+source-wordcount: '432'
+ht-degree: 73%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 74%
 
 >[!NOTE]
 >
->下载 [adobe-deliverability-best-practice-guide.pdf](/help/assets/adobe-deliverability-best-practice-guide.pdf)
+>下载 [adobe-deliverability-best-practice-guide.pdf](/help/assets/adobe-deliverability-best-practice-guide.pdf)（仅限英语）
 
 ## 源
 
