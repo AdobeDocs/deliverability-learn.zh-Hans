@@ -9,7 +9,7 @@ activity: understand
 team: ACS
 exl-id: d781a0b6-5670-4958-8649-f061e7e9a84f
 source-git-commit: 9444f8601f2f349398ee5deb9d5f4d4f7abb44f5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '141'
 ht-degree: 100%
 
