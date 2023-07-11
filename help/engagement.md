@@ -6,9 +6,11 @@ jira: KT-5257
 thumbnail: kt5257.jpg
 doc-type: article
 activity: understand
+role: Leader, User
+level: Beginner
 team: ACS
 exl-id: 5a36b821-bcec-4c4f-ae7e-a697df1bb56d
-source-git-commit: 9444f8601f2f349398ee5deb9d5f4d4f7abb44f5
+source-git-commit: 6b312cdbba496818337c97ec4f42962aea757901
 workflow-type: tm+mt
 source-wordcount: '923'
 ht-degree: 2%

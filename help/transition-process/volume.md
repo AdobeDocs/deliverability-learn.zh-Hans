@@ -6,9 +6,11 @@ jira: KT-7055
 thumbnail: kt7055.jpg
 doc-type: article
 activity: understand
+role: Admin,User
+level: Beginner
 team: ACS
 exl-id: 1bc56061-0c64-4033-b49c-66618916bca6
-source-git-commit: 9444f8601f2f349398ee5deb9d5f4d4f7abb44f5
+source-git-commit: 6b312cdbba496818337c97ec4f42962aea757901
 workflow-type: tm+mt
 source-wordcount: '573'
 ht-degree: 1%

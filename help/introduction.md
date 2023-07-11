@@ -5,9 +5,11 @@ jira: KT-5321
 thumbnail: kt5321.jpg
 doc-type: article
 activity: understand
+role: Admin, Leader, User
+level: Beginner
 team: ACS
 exl-id: 929e325a-514d-49e3-91cf-c8383bb9465e
-source-git-commit: 1dc2f37db66d88701d211c4de9828a2a4d038c4b
+source-git-commit: 7e1bd4d4d691e2598770416b002b8eff344cef74
 workflow-type: tm+mt
 source-wordcount: '432'
 ht-degree: 73%

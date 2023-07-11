@@ -5,7 +5,9 @@ feature: Deliverability
 exl-id: a11e88cf-bf37-42cc-9c09-1d58360459b7
 hide: true
 hidefromtoc: true
-source-git-commit: aca77fb9326e34455a6fec7ffc9a7ad8e1750467
+role: Admin
+level: Beginner
+source-git-commit: 6b312cdbba496818337c97ec4f42962aea757901
 workflow-type: tm+mt
 source-wordcount: '422'
 ht-degree: 3%
@@ -22,7 +24,7 @@ ht-degree: 3%
 
 此问题发生在2023年1月22日至2023年1月26日，但大多数错误隔离发生在1月26日。
 
-在官方沟通中了解详情 [此处](https://tecnologia.libero.it/avviato-il-ritorno-online-di-libero-mail-e-virgilio-mail-66832){_blank}。
+在官方沟通中了解详情 [此处](https://tecnologia.libero.it/avviato-il-ritorno-online-di-libero-mail-e-virgilio-mail-66832){_blank}.
 
 
 ## 影响{#outage-impact}
@@ -43,8 +45,8 @@ ht-degree: 3%
 
 要查找受此问题影响的收件人，或者如果任何其他ISP再次发生此情况，请参阅以下说明：
 
-* 有关Campaign Classicv7和Campaign v8的信息，请参阅 [此页面](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html?lang=en#unquarantine-bulk){_blank}。
-* 有关Campaign Standard，请参阅 [此页面](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=en#unquarantine-bulk){_blank}。
+* 有关Campaign Classicv7和Campaign v8的信息，请参阅 [此页面](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html?lang=en#unquarantine-bulk){_blank}.
+* 有关Campaign Standard，请参阅 [此页面](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=en#unquarantine-bulk){_blank}.
 
 ### Adobe Journey Optimizer{#ajo-update}
 
@@ -52,5 +54,5 @@ ht-degree: 3%
 
 标识地址后，可以使用手动从禁止显示列表中删除这些地址 **[!UICONTROL Delete]** 按钮。 然后，这些地址可以包含在将来的电子邮件营销活动中。
 
-了解详情，请参阅 [本节](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/monitor-reputation/manage-suppression-list.html#remove-from-suppression-list){_blank}。
+了解详情，请参阅 [本节](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/monitor-reputation/manage-suppression-list.html#remove-from-suppression-list){_blank}.
 
