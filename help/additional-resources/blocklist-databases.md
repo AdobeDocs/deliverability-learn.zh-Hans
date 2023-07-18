@@ -27,31 +27,31 @@ ht-degree: 6%
 
 * **Spamhaus**
 
-   请参阅 [https://www.spamhaus.org/](https://www.spamhaus.org/)
+  请参阅 [https://www.spamhaus.org/](https://www.spamhaus.org/)
 
-   数据库更重要。 被列入这一名单总的来说是一种严重的情况。 如果发生这种情况，您必须立即采取行动并警告商业服务、可投放性和 [Adobe客户关怀](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+  数据库更重要。 被列入这一名单总的来说是一种严重的情况。 如果发生这种情况，您必须立即采取行动并警告商业服务、可投放性和 [Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 * **垃圾邮件**
 
-   请参阅 [https://www.spamcop.net/](https://www.spamcop.net/)
+  请参阅 [https://www.spamcop.net/](https://www.spamcop.net/)
 
-   它是最著名的数据库之一。 如果您的IP地址之一被列入此列表，这通常意味着SpamCop用户已将您的邮件声明为垃圾邮件，或者您已将邮件发送到SpamCop蜜罐。
+  它是最著名的数据库之一。 如果您的IP地址之一被列入此列表，这通常意味着SpamCop用户已将您的邮件声明为垃圾邮件，或者您已将邮件发送到SpamCop蜜罐。
 
 * **URIBL**
 
-   请参阅 [https://www.uribl.com/](https://www.uribl.com/)
+  请参阅 [https://www.uribl.com/](https://www.uribl.com/)
 
-   此列表标识在声明为垃圾邮件的邮件中经常出现的域。 如果您的域出现在此列表中，则会显着影响您的可投放性。 您应告知可投放性服务和 [Adobe客户关怀](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 立即。
+  此列表标识在声明为垃圾邮件的邮件中经常出现的域。 如果您的域出现在此列表中，则会显着影响您的可投放性。 您应告知可投放性服务和 [Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 立即。
 
 * **SURBL**
 
-   请参阅 [https://surbl.org/](https://surbl.org/)
+  请参阅 [https://surbl.org/](https://surbl.org/)
 
-   SURBL标识定期出现在垃圾邮件中的网站。 如果您的域出现在此列表中，则会显着影响您的可投放性。 您应告知可投放性服务和 [Adobe客户关怀](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 立即。
+  SURBL标识定期出现在垃圾邮件中的网站。 如果您的域出现在此列表中，则会显着影响您的可投放性。 您应告知可投放性服务和 [Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 立即。
 
 * **iX马尼图**
 
-   这是IP列表，在德国被广泛使用。 请参阅 [https://www.heise.de/ix/nixspam/](https://www.heise.de/ix/nixspam/)
+  这是IP列表，在德国被广泛使用。 请参阅 [https://www.heise.de/ix/nixspam/](https://www.heise.de/ix/nixspam/)
 
 <!--* SORBS
 

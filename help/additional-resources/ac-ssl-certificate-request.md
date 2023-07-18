@@ -76,7 +76,7 @@ ht-degree: 3%
 
 要获取CSR（证书签名请求）文件，请执行以下步骤。
 
-* 如果您有权访问 [控制面板](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html)，请按照 [此页面](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/renewing-subdomain-certificate.html#subdomains-and-certificates) 以从控制面板生成和下载CSR文件。
+* 如果您有权访问 [控制面板](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html)，请按照 [此页面](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/renewing-subdomain-certificate.html?lang=zh-Hans#subdomains-and-certificates) 以从控制面板生成和下载CSR文件。
 
 * 否则，请通过https://adminconsole.adobe.com/创建支持工单，以从Adobe客户关怀部门获取CSR文件以了解所需的子域。
 
@@ -94,7 +94,7 @@ ht-degree: 3%
 
 **要由Adobe组提供帮助的信息：**
 
-| 要提供的信息 | 示例值 | 注释 |
+| 要提供的信息 | 示例值 | 注意 |
 |--- |--- |--- |
 | 客户端名称 | 我的公司 | 您的组织的名称。 Adobe使用此字段来跟踪您的请求（它将不属于CSR/SSL证书）。 |
 | Adobe Campaign环境URL | https://client-mid-prod1.campaign.adobe.com | Adobe Campaign实例URL |
@@ -105,7 +105,7 @@ ht-degree: 3%
 
 **要由IT/SSL内部团队提供的信息：**
 
-| 要提供的信息 | 示例值 | 注释 |
+| 要提供的信息 | 示例值 | 注意 |
 |--- |--- |--- |
 | 国家/地区 [C] | US | 这必须是两个字母的代码。 访问完整的国家/地区列表 [此处](https://www.ssl.com/csrs/country_codes/).</br>*注：对于英国，请使用GB（而不是英国）。* |
 | 省/市/自治区名称 [ST] | 伊利诺伊 | 如果适用。 该值必须是全名，而不是缩写。 |

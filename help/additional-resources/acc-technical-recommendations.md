@@ -127,11 +127,11 @@ nlserver inMail -instance:instance -verbose.
 * 让每个邮箱都由一个实例接收，
 * 配置实例，使其仅处理与其相关的消息：实例信息包含在Adobe Campaign发送的消息的消息ID标头中，因此也位于反馈循环消息中。 只需指定 **checkInstanceName** 参数（默认情况下，不会验证实例，这可能会导致错误隔离某些地址）：
 
-   ```
-   <serverConf>
-     <inMail checkInstanceName="true"/>
-   </serverConf>
-   ```
+  ```
+  <serverConf>
+    <inMail checkInstanceName="true"/>
+  </serverConf>
+  ```
 
 Adobe Campaign的可投放性服务管理您对以下ISP的反馈环路服务的订购：AOL、BlueTie、Comcast、Cox、EarthLink、FastMail、Gmail、Hotmail、HostedEmail、Libero、Mail.ru、MailTrust、OpenSRS、QQ、RoadRunner、Synacor、Telenor、Terra、UnitedOnline、USA、XS4ALL、Yahoo、Yahoo。
 

@@ -6,7 +6,7 @@ feature: Deliverability
 role: Leader, User
 level: Beginner
 source-git-commit: 6b312cdbba496818337c97ec4f42962aea757901
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '172'
 ht-degree: 100%
 

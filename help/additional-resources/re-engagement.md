@@ -65,11 +65,11 @@ Gmail、Microsoft®和OATH等ISP将非参与视为不需要的电子邮件，并
 * 下一阶段是识别那些持续不显示任何活动并在一段时间内逐渐减少向其发送电子邮件的订阅者。 如果过去一年中没有活动，最好暂停订阅者的电子邮件订阅。 尽管他们对电子邮件内容不感兴趣，但始终存在最后机会，让他们通过发送一次性重新确认营销活动来重新激活订阅。
 * 重新确认营销活动是一种询问长时间不活动的订阅者是否想保留在订阅列表中的好方法。 在创建营销活动时，最好添加“单击此处”链接，以便他们可以确认操作并验证其地址。 这样，该操作便可以记录在数据库中。 再确认电子邮件的示例如下：
 
-   ![](../../help/assets/deliverability_implementation_3.png)
+  ![](../../help/assets/deliverability_implementation_3.png)
 
-   一旦订阅者采取了行动，就可以提供确认其重新订阅的登陆页面。 以下是登陆页面的示例：
+  一旦订阅者采取了行动，就可以提供确认其重新订阅的登陆页面。 以下是登陆页面的示例：
 
-   ![](../../help/assets/deliverability_implementation_4.png)
+  ![](../../help/assets/deliverability_implementation_4.png)
 
 ## 产品特定资源
 

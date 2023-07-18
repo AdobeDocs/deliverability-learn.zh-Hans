@@ -116,7 +116,6 @@ marketing.example.com. NS d.ns.campaign.adobe.com.
 >* 从Adobe Campaign发送电子邮件时，不会监控“发件人地址”邮箱，因此营销用户无法访问此邮箱。 Adobe Campaign也不提供自动回复或自动转发此邮箱中收到的电子邮件的功能。
 >* 促销活动发件人/发件人地址和错误地址不能为“滥用”或“邮递员”。
 
-
 ## 委派子域
 
 必须通过创建四个名称服务器(NS)记录来委派选择用于Adobe Campaign平台的子域。  这允许将子域正确委派给Adobe。  以下是子域委派和相应DNS指令的示例。  请将“emails.customer.com”替换为要委派的子域。  请注意，子域必须是唯一的，并且不能被另一方（例如，现有的ESP或MSP）使用。
