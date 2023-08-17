@@ -15,17 +15,17 @@ ht-degree: 6%
 
 # 实时黑洞列表
 
-一些组织维护着被垃圾邮件发送者使用的IP地址和域的数据库。 查阅这些网站有助于了解为什么某些邮件被作为垃圾邮件拒绝。 通常可以请求移除错误地添加到这些列表中的地址。
+有几个组织维护着被垃圾邮件发送者所使用的IP地址和域的数据库。 查阅这些网站有助于了解为什么某些邮件被作为垃圾邮件拒绝。 通常可以请求移除错误地添加到这些列表中的地址。
 
 这些数据库称为RBL（实时黑洞列表），通过DNS机制来查阅它们。 RBL有三种类型：
 
 * 按IP地址：列出发送垃圾邮件或可能正在转发垃圾邮件的IP地址。
 * 按发件人域：列出发送垃圾邮件或配置不正确的发件人域（退回邮件地址的完整域）。
-* 按Web域：列出在垃圾邮件内容中包含的链接和图像的URL中找到的域（向注册商注册的高级别域）。 在Adobe解决方案中，要考虑的域通常是用于跟踪的地址。
+* 按Web域：列出在垃圾邮件内容中所包含的链接和图像的URL中找到的域（向注册机构注册的高级别域）。 在Adobe解决方案中，要考虑的域通常是用于跟踪的地址。
 
-以下列出最广泛使用的RBL。 有关更全面的列表，您可以参阅 [https://www.dnsstuff.com/](https://tools.dnsstuff.com/).
+以下列出了使用最广泛的RBL。 有关更全面的列表，您可以参阅 [https://www.dnsstuff.com/](https://tools.dnsstuff.com/).
 
-* **Spamhaus**
+* **斯班豪斯**
 
   请参阅 [https://www.spamhaus.org/](https://www.spamhaus.org/)
 
@@ -35,23 +35,23 @@ ht-degree: 6%
 
   请参阅 [https://www.spamcop.net/](https://www.spamcop.net/)
 
-  它是最著名的数据库之一。 如果您的IP地址之一被列入此列表，这通常意味着SpamCop用户已将您的邮件声明为垃圾邮件，或者您已将邮件发送到SpamCop蜜罐。
+  它是最著名的数据库之一。 如果某个IP地址位于此列表中，这通常表示SpamCop用户已将您的邮件声明为垃圾邮件，或者您已将邮件发送到SpamCop蜜罐。
 
 * **URIBL**
 
   请参阅 [https://www.uribl.com/](https://www.uribl.com/)
 
-  此列表标识在声明为垃圾邮件的邮件中经常出现的域。 如果您的域出现在此列表中，则会显着影响您的可投放性。 您应告知可投放性服务和 [Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 立即。
+  此列表标识定期出现在声明为垃圾邮件的邮件中的域。 如果您的域出现在此列表中，则会显着影响您的可投放性。 您应通知可投放性服务和 [Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 立即。
 
 * **SURBL**
 
   请参阅 [https://surbl.org/](https://surbl.org/)
 
-  SURBL标识定期出现在垃圾邮件中的网站。 如果您的域出现在此列表中，则会显着影响您的可投放性。 您应告知可投放性服务和 [Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 立即。
+  SURBL可识别定期出现在垃圾邮件中的网站。 如果您的域出现在此列表中，则会显着影响您的可投放性。 您应通知可投放性服务和 [Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 立即。
 
 * **iX马尼图**
 
-  这是IP列表，在德国被广泛使用。 请参阅 [https://www.heise.de/ix/nixspam/](https://www.heise.de/ix/nixspam/)
+  这是IP列表，在德国得到广泛使用。 请参阅 [https://www.heise.de/ix/nixspam/](https://www.heise.de/ix/nixspam/)
 
 <!--* SORBS
 
