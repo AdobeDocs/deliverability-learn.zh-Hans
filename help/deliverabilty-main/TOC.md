@@ -5,9 +5,10 @@ user-guide-description: 了解关键的可交付性术语、概念和方法，�
 feature: Deliverability
 role: Leader, User
 level: Beginner
-source-git-commit: 6b312cdbba496818337c97ec4f42962aea757901
-workflow-type: tm+mt
-source-wordcount: '172'
+auto-video-transcripts: true
+source-git-commit: be28ecdbcd064e2bcca739db492064869ddbb59a
+workflow-type: ht
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
