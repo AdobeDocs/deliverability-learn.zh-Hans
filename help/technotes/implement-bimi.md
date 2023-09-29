@@ -4,10 +4,11 @@ description: 了解如何实施BIMI
 topics: Deliverability
 role: Admin
 level: Beginner
+jira: KT-14079
 exl-id: 6b911bcc-a531-466a-8bd3-7fa469b96cc7
-source-git-commit: 6b312cdbba496818337c97ec4f42962aea757901
+source-git-commit: d23a0477b908427c4e9d889d5d9ed896a6ac8322
 workflow-type: tm+mt
-source-wordcount: '1062'
+source-wordcount: '1099'
 ht-degree: 0%
 
 ---
@@ -68,6 +69,8 @@ DMARC是一种标准，它允许品牌决定邮箱提供商应对失败的电子
 ### 创建您的品牌徽标 {#create-brand-logo}
 
 徽标创建需要完全遵循要求。 请务必参阅 [BIMI小组准则](https://bimigroup.org/creating-bimi-svg-logo-files/){target="_blank"}.
+
+在使用内容分发网络(CDN)时，徽标需要存储在安全位置(HTTPS)中，因此需要禁用阻止邮箱提供商获取徽标的任何保护（例如机器人保护）。
 
 除了技术要求之外，还有一些实用的建议，如采用正方形徽标，背景采用纯色等。 这些推荐有助于实现最佳可视化。
 请注意，不合规可能会导致徽标不显示。
