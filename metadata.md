@@ -3,12 +3,13 @@ cloud: Experience Cloud
 solution: Experience Cloud
 product: experience cloud
 feature-set: Campaign
+version: Classic v7, Standard, v8
 type: Tutorial
 mini-toc-levels: 2
 git-repo: https://github.com/AdobeDocs/deliverability-learn.zh-Hans
 index: true
-source-git-commit: 5d380d84159be51d12ce5dcc4c4f588fd53866ea
-workflow-type: tm+mt
+source-git-commit: 548835f854903179f5fcb7b0c4e819df57a9c72a
+workflow-type: ht
 source-wordcount: '65'
 ht-degree: 100%
 
