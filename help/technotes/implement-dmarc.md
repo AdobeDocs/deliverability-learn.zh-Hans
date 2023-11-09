@@ -4,10 +4,11 @@ description: 了解如何实施BIMI
 topics: Deliverability
 role: Admin
 level: Beginner
-source-git-commit: 5ac5bc90b5a9bf3ce9b390821476c7222983b818
+exl-id: f1c14b10-6191-4202-9825-23f948714f1e
+source-git-commit: bd8cee606c9dcb1593ad3ec45c578f59f8e968f2
 workflow-type: tm+mt
-source-wordcount: '1222'
-ht-degree: 1%
+source-wordcount: '1258'
+ht-degree: 8%
 
 ---
 
@@ -43,11 +44,11 @@ DMARC是可选的，尽管它不是必需的，但是它是免费的，允许电
 
 ## 实施DMARC的最佳实践 {#best-practice}
 
-由于DMARC是可选的，因此默认情况下，在任何ESP平台上都不会对其进行配置。 必须在DNS中为您的域创建DMARC记录才能使其正常工作。 此外，需要您选择的电子邮件地址来指示DMARC报告应在组织内的什么位置。 作为最佳实践，建议您逐步推出DMARC实施，方法是将DMARC策略从p=none提升到p=quarantine，再提升到p=reject，以便让DMARC了解DMARC的潜在影响。
+由于DMARC是可选的，因此默认情况下，在任何ESP平台上都不会对其进行配置。 必须在DNS中为您的域创建DMARC记录才能使其正常工作。 此外，需要您选择的电子邮件地址来指示DMARC报告应在组织内的什么位置。 作为最佳实践，建议您逐步推出 DMARC 实施，方法是将 DMARC 策略从 p=none 提升到 p=quarantine，再提升到 p=reject，以便让您了解 DMARC 的潜在影响。
 
-1. 分析您收到并使用的反馈(p=none)，这告知接收者不对身份验证失败的邮件执行任何操作，但仍会向发件人发送电子邮件报告。 此外，如果合法消息未通过身份验证，请查看和修复SPF/DKIM的问题。
+1. 分析您收到并使用的反馈(p=none)，这告知接收者不对身份验证失败的邮件执行任何操作，但仍会向发件人发送电子邮件报告。 此外，如果合法邮件未通过身份验证，则查看和修复 SPF/DKIM 的问题。
 1. 确定SPF和DKIM是否一致并通过所有合法电子邮件的身份验证，然后将策略移至(p=quarantine)，这会告知接收电子邮件服务器隔离身份验证失败的电子邮件（这通常意味着将这些邮件放入垃圾邮件文件夹）。
-1. 将策略调整为（p=拒绝）。 p=拒绝策略告知接收者完全拒绝（退回）验证失败的域的任何电子邮件。 启用此策略后，只有经域验证为100%经过身份验证的电子邮件才有机会放置收件箱。
+1. 将策略调整为（p=拒绝）。 p= reject 策略告知接收者完全拒绝（退回）验证失败的域的所有电子邮件。 启用此策略后，只有经域验证为 100% 经过身份验证的电子邮件才有机会进入收件箱。
 
    >[!NOTE]
    >
@@ -77,7 +78,7 @@ v=DMARC1; p=reject; fo=1; rua=mailto:dmarc_rua@emaildefense.proofpoint.com;ruf=m
 
 DMARC记录具有多个名为DMARC标记的组件。 每个标记都有一个值，该值指定DMARC的某些方面。
 
-| 标记名称 | 必填/可选 | 功能 | 示例 | 默认值 |
+| 标记名称 | 必填/可选 | 函数 | 示例 | 默认值 |
 |  ---  |  ---  |  ---  |  ---  |  ---  |
 | v | 必需 | 此DMARC标记指定版本。 目前只有一个版本，因此其固定值为v=DMARC1 | V=DMARC1 DMARC1 | DMARC1 |
 | p | 必需 | 显示选定的DMARC策略，并指示接收者报告、隔离或拒绝未通过身份验证检查的邮件。 | p=none、quarantine或reject | - |
@@ -90,6 +91,10 @@ DMARC记录具有多个名为DMARC标记的组件。 每个标记都有一个值
 | aspf | 可选 | 可以是严格(s)或宽松(r)。 宽松的对齐意味着ReturnPath域可以是From Address的子域。 严格对齐意味着Return-Path域必须与From地址完全匹配。 | aspf=r | r |
 
 ## DMARC和Adobe Campaign {#campaign}
+
+>[!NOTE]
+>
+>如果Campaign实例托管在AWS上，则可以使用该控制面板为子域实施DMARC。 [了解如何使用控制面板实施DMARC记录](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/txt-records/dmarc.html).
 
 DMARC失败的一个常见原因是“从”和“错误至”或“返回路径”地址之间未对齐。 为避免这种情况，在设置DMARC时，建议在投放模板中仔细检查您的“发件人”和“错误收件人”地址设置。
 
