@@ -7,9 +7,9 @@ doc-type: Article
 last-substantial-update: 2023-11-06T00:00:00Z
 jira: KT-14320
 thumbnail: KT-14320.jpeg
-source-git-commit: acf2686d59bc27063a255a02de52cbaa3734d5ed
+source-git-commit: 0aeff034f6ca2a3dce065240384d1b0e7922fa31
 workflow-type: tm+mt
-source-wordcount: '1297'
+source-wordcount: '1312'
 ht-degree: 0%
 
 ---
@@ -48,8 +48,9 @@ Adobe的电子邮件可投放性专家已阅读这些博客文章和所有链接
 请务必注意 [!DNL Google] 和 [!DNL Yahoo] 均以名称“1-Click”引用“http/URL”选项，这是有意为之。 从技术上讲，最初的“http/URL”选项允许您将收件人重定向到网站。 这不是 [!DNL Yahoo] 和 [!DNL Google]，都引用了更新的RFC8058，该更新侧重于通过HTTPSPOST请求（而不是网站）处理取消订阅，使其成为“一键式”请求。
 对于Marketo Engage，Adobe已启用“mailto”选项，当前不支持“http/URL”选项。 关于此功能的进一步更新。
 对于Adobe Campaign和Adobe Journey Optimizer，Adobe建议同时使用“mailto”和“1-Click”选项。
-如果您需要有关如何实施list-unsubscribe的更多信息，请在此处查看Adobe Campaign Classic、此处查看Adobe Campaign Standard，此处查看Adobe Journey Optimizer，或随时联系Adobe客户支持团队。
+如果您需要有关如何实施list-unsubscribe的更多信息，请查看 [此处] (https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=en#list-unsubscribe){target="_blank"} for Adobe Campaign Classic, [here] (https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-14778.html?lang=en){target="_blank"} for Adobe Campaign Standard, and [here] (https://experienceleague.adobe.com/docs/journey-optimizer/using/email/email-opt-out.html?lang=en){target="_blank"} 或Adobe Journey Optimizer，请随时联系Adobe客户支持团队。
 对列表取消订阅标头的需求不适用于事务性电子邮件。 请注意，触发的消息（如放弃的购物车和订阅者未生成的类似通信）被视为邮箱提供商的营销消息，例如 [!DNL Google] 和 [!DNL Yahoo] 这些需要取消列表订阅。
+![image](https://git.corp.adobe.com/storage/user/38257/files/a2da6bdb-524d-46a7-b765-718c1fe407b0)
 
 ## 在2天内取消订阅进程：
 
