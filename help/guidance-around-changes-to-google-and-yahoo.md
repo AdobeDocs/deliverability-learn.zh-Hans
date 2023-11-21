@@ -7,9 +7,9 @@ doc-type: Article
 last-substantial-update: 2023-11-06T00:00:00Z
 jira: KT-14320
 thumbnail: KT-14320.jpeg
-source-git-commit: 304c09426f9fd149f8fd0e89a50030819a772e71
+source-git-commit: ce0ecaa7f62e8ba0bbf44dc180908b81475a225e
 workflow-type: tm+mt
-source-wordcount: '1341'
+source-wordcount: '1312'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 [https://blog.google/products/gmail/gmail-security-authentication-spam-protection/](https://blog.google/products/gmail/gmail-security-authentication-spam-protection/){target="_blank"}
 
-![[!DNL Google] 公告](/help/assets/Gmail.png)
+![[!DNL Google] 公告_](/help/assets/Gmail.png)
 
 [https://blog.postmaster.yahooinc.com/post/730172167494483968/more-secure-less-spam](https://blog.postmaster.yahooinc.com/post/730172167494483968/more-secure-less-spam){target="_blank"}
 
@@ -40,7 +40,9 @@ Adobe的电子邮件可投放性专家已阅读这些博客文章和所有链接
 ## DMARC：
 
 [!DNL Google] 和 [!DNL Yahoo] 都将要求您拥有DMARC记录，才能访问您用来向其发送电子邮件的任何域。 它们当前不要求p=reject或p=quarantine设置，因此p=none（通常称为“监控”设置）设置是完全可接受的。 这不会改变您电子邮件的处理方式，它们将执行不使用DMARC时通常会执行的操作。 设置此设置是使用DMARC保护自己的第一步，也是帮助您将电子邮件发送到的新好处 [!DNL Google] 和 [!DNL Yahoo] 它还可以帮助您查看电子邮件生态系统中的任何位置是否存在身份验证问题。
-目前Adobe完全支持DMARC，但不是必需的。 使用任何免费的DMARC检查器查看您的子域是否设置了DMARC，如果不设置，请与Adobe支持团队联系，了解如何最好地进行该设置。 您还可以找到有关DMARC及其实施方法的更多信息 [此处](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/implement-dmarc.html?lang=zh-Hans){target="_blank"} for Adobe Campaign and Adobe Journey Optimizer Adobe or [here](https://experienceleague.adobe.com/docs/marketo/using/getting-started-with-marketo/setup/configure-protocols-for-marketo.html){target="_blank"} 用于Marketo Engage。
+目前Adobe完全支持DMARC，但不是必需的。 使用任何免费的DMARC检查器查看您的子域是否设置了DMARC，如果不设置，请与Adobe支持团队联系，了解如何最好地进行该设置。
+
+您还可以找到有关DMARC及其实施方法的更多信息 [此处](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/implement-dmarc.html?lang=zh-Hans){target="_blank"} for Adobe Campaign and Adobe Journey Optimizer Adobe or [here](https://experienceleague.adobe.com/docs/marketo/using/getting-started-with-marketo/setup/configure-protocols-for-marketo.html){target="_blank"} 用于Marketo Engage。
 
 ## 一键单击（列表）取消订阅：
 
@@ -49,17 +51,9 @@ Adobe的电子邮件可投放性专家已阅读这些博客文章和所有链接
 对于Marketo Engage，Adobe已启用“mailto”选项，当前不支持“http/URL”选项。 关于此功能的进一步更新。
 对于Adobe Campaign和Adobe Journey Optimizer，Adobe建议同时使用“mailto”和“1-Click”选项。
 
-如果您需要有关如何实施list-unsubscribe的更多信息，请查看 [此处](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=en#list-unsubscribe){target="_blank"}
-
-对于Adobe Campaign Classic， [此处](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-14778.html?lang=en){target="_blank"}
-
-适用于Adobe Campaign Standard的，以及 [此处](https://experienceleague.adobe.com/docs/journey-optimizer/using/email/email-opt-out.html?lang=en){target="_blank"}
-
-或Adobe Journey Optimizer，请随时联系Adobe客户支持团队。
+如果您需要有关如何实施list-unsubscribe的更多信息，请查看 [此处](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=en#list-unsubscribe){target="_blank"} for **[!DNL Adobe Campaign Classic]**, [here](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-14778.html?lang=en){target="_blank"}, or **[!DNL Adobe Campaign Standard]**, and [here](https://experienceleague.adobe.com/docs/journey-optimizer/using/email/email-opt-out.html?lang=en){target="_blank"} 对象 **[!DNL Adobe Journey Optimizer]**，或随时联系Adobe客户支持团队。
 
 对列表取消订阅标头的需求不适用于事务性电子邮件。 请注意，触发的消息（如放弃的购物车和订阅者未生成的类似通信）被视为邮箱提供商的营销消息，例如 [!DNL Google] 和 [!DNL Yahoo] 这些需要取消列表订阅。
-
-![image](https://git.corp.adobe.com/storage/user/38257/files/a2da6bdb-524d-46a7-b765-718c1fe407b0)
 
 ## 在2天内取消订阅进程：
 
@@ -69,11 +63,13 @@ Adobe的电子邮件可投放性专家已阅读这些博客文章和所有链接
 ## 投诉率：
 
 长久以来，将低投诉率保持在0.2%以下一直是一种最佳做法。 [!DNL Google] 将长期保持在0.3%的水平上调，但明确表示将这一标准保持在0.1%以下是有好处的。 以下是他们共享的详细信息：
+
 * 将垃圾邮件率保持在0.10%以下。
 * 避免0.30%或更高的垃圾邮件率，尤其是对于任何持续的时间段。
 * 保持较低的垃圾邮件率使发件人能够更好地抵御用户反馈的偶尔激增。
 * 同样，保持高垃圾邮件率将导致垃圾邮件分类增加。 改进垃圾邮件率可能需要一段时间才能对垃圾邮件分类产生积极影响。
   [!DNL Yahoo] 已表示他们的投诉阈值也将在0.30%的范围内。
+
 如果您在监控投诉率方面需要帮助，或者希望帮助制定减少投诉的策略，请咨询您的Adobe可投放性顾问，或者与您的客户团队讨论添加可投放性顾问（如果您还没有这样的顾问）。
 
 ## 这对我作为营销人员有何影响？
