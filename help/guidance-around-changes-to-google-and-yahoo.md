@@ -7,7 +7,7 @@ doc-type: Article
 last-substantial-update: 2023-11-06T00:00:00Z
 jira: KT-14320
 thumbnail: KT-14320.jpeg
-source-git-commit: ce0ecaa7f62e8ba0bbf44dc180908b81475a225e
+source-git-commit: d237d0dd921d84461a4edd47d8da501c23576d58
 workflow-type: tm+mt
 source-wordcount: '1312'
 ht-degree: 1%
@@ -51,7 +51,7 @@ Adobe的电子邮件可投放性专家已阅读这些博客文章和所有链接
 对于Marketo Engage，Adobe已启用“mailto”选项，当前不支持“http/URL”选项。 关于此功能的进一步更新。
 对于Adobe Campaign和Adobe Journey Optimizer，Adobe建议同时使用“mailto”和“1-Click”选项。
 
-如果您需要有关如何实施list-unsubscribe的更多信息，请查看 [此处](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=en#list-unsubscribe){target="_blank"} for **[!DNL Adobe Campaign Classic]**, [here](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-14778.html?lang=en){target="_blank"}, or **[!DNL Adobe Campaign Standard]**, and [here](https://experienceleague.adobe.com/docs/journey-optimizer/using/email/email-opt-out.html?lang=en){target="_blank"} 对象 **[!DNL Adobe Journey Optimizer]**，或随时联系Adobe客户支持团队。
+如果您需要有关如何实施list-unsubscribe的更多信息，请查看 [此处](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=en#list-unsubscribe){target="_blank"} for **[!DNL Adobe Campaign Classic]**, [here](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-14778.html?lang=en){target="_blank"} for **[!DNL Adobe Campaign Standard]**, and [here](https://experienceleague.adobe.com/docs/journey-optimizer/using/email/email-opt-out.html?lang=en){target="_blank"} 对象 **[!DNL Adobe Journey Optimizer]**，或随时联系Adobe客户支持团队。
 
 对列表取消订阅标头的需求不适用于事务性电子邮件。 请注意，触发的消息（如放弃的购物车和订阅者未生成的类似通信）被视为邮箱提供商的营销消息，例如 [!DNL Google] 和 [!DNL Yahoo] 这些需要取消列表订阅。
 
