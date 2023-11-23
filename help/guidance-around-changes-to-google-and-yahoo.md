@@ -7,13 +7,13 @@ doc-type: Article
 last-substantial-update: 2023-11-06T00:00:00Z
 jira: KT-14320
 thumbnail: KT-14320.jpeg
-source-git-commit: 059e57ac5b40c8e7c8562d0dca5c51de01c6b041
+exl-id: 879e9124-3cfe-4d85-a7d1-64ceb914a460
+source-git-commit: be133b442284b39daa8e2dd276c2942402b4936d
 workflow-type: tm+mt
 source-wordcount: '1329'
 ht-degree: 1%
 
 ---
-
 
 # 有关宣布的更改的指导，请参见 [!DNL Google] 和 [!DNL Yahoo]
 
@@ -42,7 +42,7 @@ Adobe的电子邮件可投放性专家已阅读这些博客文章和所有链接
 [!DNL Google] 和 [!DNL Yahoo] 都将要求您拥有DMARC记录，才能访问您用来向其发送电子邮件的任何域。 它们当前不要求p=reject或p=quarantine设置，因此p=none（通常称为“监控”设置）设置是完全可接受的。 这不会改变您电子邮件的处理方式，它们将执行不使用DMARC时通常会执行的操作。 设置此设置是使用DMARC保护自己的第一步，也是帮助您将电子邮件发送到的新好处 [!DNL Google] 和 [!DNL Yahoo] 它还可以帮助您查看电子邮件生态系统中的任何位置是否存在身份验证问题。
 目前Adobe完全支持DMARC，但不是必需的。 使用任何免费的DMARC检查器查看您的子域是否设置了DMARC，如果不设置，请与Adobe支持团队联系，了解如何最好地进行该设置。
 
-您还可以找到有关DMARC及其实施方法的更多信息 [此处](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/implement-dmarc.html?lang=zh-Hans){target="_blank"} for Adobe Campaign and Adobe Journey Optimizer Adobe or [here](https://experienceleague.adobe.com/docs/marketo/using/getting-started-with-marketo/setup/configure-protocols-for-marketo.html){target="_blank"} 用于Marketo Engage。
+您还可以找到有关DMARC及其实施方法的更多信息 [此处](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/implement-dmarc.html?lang=zh-Hans){target="_blank"} for Adobe Campaign or [here](https://experienceleague.adobe.com/docs/marketo/using/getting-started-with-marketo/setup/configure-protocols-for-marketo.html){target="_blank"} 用于Marketo Engage。
 
 ## 一键单击（列表）取消订阅：
 
