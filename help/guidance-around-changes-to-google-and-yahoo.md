@@ -8,16 +8,16 @@ last-substantial-update: 2023-11-06T00:00:00Z
 jira: KT-14320
 thumbnail: KT-14320.jpeg
 exl-id: 879e9124-3cfe-4d85-a7d1-64ceb914a460
-source-git-commit: be133b442284b39daa8e2dd276c2942402b4936d
+source-git-commit: 0ad2e59948aa94008ae5c3f6eec7914223bdb02a
 workflow-type: tm+mt
-source-wordcount: '1329'
+source-wordcount: '1604'
 ht-degree: 1%
 
 ---
 
 # 有关宣布的更改的指导，请参见 [!DNL Google] 和 [!DNL Yahoo]
 
-10月3日，两者 [!DNL Google] 和 [!DNL Yahoo] 通过他们的博客联合宣布了计划的更改。 这些更改旨在通过从2024年2月开始强制实施一些常见的行业最佳实践作为新要求，从而使其用户更安全，并提供更好的电子邮件体验。
+10月3日，两者 [!DNL Google] 和 [!DNL Yahoo] 通过他们的博客联合宣布了计划的更改。 这些更改旨在从2024年2月1日开始强制实施一些常见的行业最佳做法作为新要求，从而使其用户更安全，并提供更好的电子邮件体验。
 
 [https://blog.google/products/gmail/gmail-security-authentication-spam-protection/](https://blog.google/products/gmail/gmail-security-authentication-spam-protection/){target="_blank"}
 
@@ -40,6 +40,9 @@ Adobe的电子邮件可投放性专家已阅读这些博客文章和所有链接
 ## DMARC：
 
 [!DNL Google] 和 [!DNL Yahoo] 都将要求您拥有DMARC记录，才能访问您用来向其发送电子邮件的任何域。 它们当前不要求p=reject或p=quarantine设置，因此p=none（通常称为“监控”设置）设置是完全可接受的。 这不会改变您电子邮件的处理方式，它们将执行不使用DMARC时通常会执行的操作。 设置此设置是使用DMARC保护自己的第一步，也是帮助您将电子邮件发送到的新好处 [!DNL Google] 和 [!DNL Yahoo] 它还可以帮助您查看电子邮件生态系统中的任何位置是否存在身份验证问题。
+
+DMARC的规则不会更改，这意味着除非配置为阻止它，否则父域上的DMARC记录(例如adobe.com)将被继承并涵盖任何子域(例如email.adobe.com)。 您不需要为子域添加不同的DMARC记录，除非您出于各种业务原因需要添加它们。
+
 目前Adobe完全支持DMARC，但不是必需的。 使用任何免费的DMARC检查器查看您的子域是否设置了DMARC，如果不设置，请与Adobe支持团队联系，了解如何最好地进行该设置。
 
 您还可以找到有关DMARC及其实施方法的更多信息 [此处](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/implement-dmarc.html?lang=zh-Hans){target="_blank"} for Adobe Campaign or [here](https://experienceleague.adobe.com/docs/marketo/using/getting-started-with-marketo/setup/configure-protocols-for-marketo.html){target="_blank"} 用于Marketo Engage。
@@ -48,10 +51,19 @@ Adobe的电子邮件可投放性专家已阅读这些博客文章和所有链接
 
 不要惊慌。 [!DNL Google] 和 [!DNL Yahoo] 不是指您的电子邮件正文或页脚中的取消订阅链接，这些链接可能会被安全机器人在执行任务时点击，或者被意外点击。 这意味着“mailto”或“http/URL”版本的List-Unsubscribe标头功能。 此函数位于 [!DNL Yahoo] 和Gmail UI，用户可以单击取消订阅。 Gmail甚至会提示单击“报告垃圾邮件”的用户查看他们是否想要取消订阅，这可以通过将他们变为取消订阅来减少您收到的投诉数量（投诉会损害您的声誉）（不会损害您的声誉）。
 请务必注意 [!DNL Google] 和 [!DNL Yahoo] 均以名称“1-Click”引用“http/URL”选项，这是有意为之。 从技术上讲，最初的“http/URL”选项允许您将收件人重定向到网站。 这不是 [!DNL Yahoo] 和 [!DNL Google]，都引用了更新的RFC8058，该更新侧重于通过HTTPSPOST请求（而不是网站）处理取消订阅，使其成为“一键式”请求。
+
+今天， [!DNL Gmail] 接受“mailto”列表取消订阅选项。 [!DNL Gmail] 已表示“mailto”无法满足其未来的期望，并且从2月开始，发件人需要启用“发布”列表取消订阅选项。
+
+[!DNL Yahoo] 已经表示，他们目前将继续遵守“邮寄”选项，但将来也会要求“邮寄”。
+
+Adobe建议同时使用“mailto”和“post/1-Click”列表取消订阅选项。 Adobe正在努力启用所有电子邮件发送平台上的“发布”支持，以支持用户满足这些要求，并为此目的进行进一步的更新。
+
 对于Marketo Engage，Adobe已启用“mailto”选项，当前不支持“http/URL”选项。 关于此功能的进一步更新。
 对于Adobe Campaign和Adobe Journey Optimizer，Adobe建议同时使用“mailto”和“1-Click”选项。
 
 对列表取消订阅标头的需求不适用于事务性电子邮件。 请注意，触发的消息（如放弃的购物车和订阅者未生成的类似通信）被视为邮箱提供商的营销消息，例如 [!DNL Google] 和 [!DNL Yahoo] 这些需要取消列表订阅。
+
+[!DNL Google] 和 [!DNL Yahoo] 都知道在某些情况下，收件人将取消订阅，然后稍后重新订阅。 虽然他们不愿意分享他们如何识别这些情况的秘密秘密，但他们正在努力寻找方法，避免在这些情况下错误地惩罚发件人。
 
 >[!INFO]
 > 有关如何为解决方案实施list-unsubscribe的更多信息，请查看：
@@ -77,6 +89,8 @@ Adobe的电子邮件可投放性专家已阅读这些博客文章和所有链接
 * 同样，保持高垃圾邮件率将导致垃圾邮件分类增加。 改进垃圾邮件率可能需要一段时间才能对垃圾邮件分类产生积极影响。
   [!DNL Yahoo] 已表示他们的投诉阈值也将在0.30%的范围内。
 
+[!DNL Google] 和 [!DNL Yahoo]他们的目标不是因为某一天的错误或导致投诉暂时激增的错误而惩罚发件人。 相反，他们关注的是长期投诉率高或发送行为不好的发件人。
+
 如果您在监控投诉率方面需要帮助，或者希望帮助制定减少投诉的策略，请咨询您的Adobe可投放性顾问，或者与您的客户团队讨论添加可投放性顾问（如果您还没有这样的顾问）。
 
 ## 这对我作为营销人员有何影响？
@@ -88,3 +102,8 @@ Adobe的电子邮件可投放性专家已阅读这些博客文章和所有链接
 ## 有办法解决这个问题吗？
 
 虽然这个问题总是会出现，但现实情况是，这些更改对的最终用户是有意义的 [!DNL Google] 和 [!DNL Yahoo]的平台。 这些用户希望执行这些规则，这激励了他们。 我们不建议尝试绕过任何这些更改，而是应该后退一步，考虑如何适应这些更改。
+
+## 最终说明：
+
+请注意，这当前不适用于发送给的电子邮件 [!DNL Yahoo].JP或 [!DNL Gmail] 但是，它适用于来自这些位置的电子邮件。
+
