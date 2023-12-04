@@ -6,9 +6,9 @@ role: Admin
 level: Beginner
 jira: KT-14079
 exl-id: 6b911bcc-a531-466a-8bd3-7fa469b96cc7
-source-git-commit: d23a0477b908427c4e9d889d5d9ed896a6ac8322
+source-git-commit: ad0646da88f2b1474e74b6c741d0dd5701e88978
 workflow-type: tm+mt
-source-wordcount: '1099'
+source-wordcount: '1125'
 ht-degree: 0%
 
 ---
@@ -72,7 +72,7 @@ DMARC是一种标准，它允许品牌决定邮箱提供商应对失败的电子
 
 在使用内容分发网络(CDN)时，徽标需要存储在安全位置(HTTPS)中，因此需要禁用阻止邮箱提供商获取徽标的任何保护（例如机器人保护）。
 
-除了技术要求之外，还有一些实用的建议，如采用正方形徽标，背景采用纯色等。 这些推荐有助于实现最佳可视化。
+除了技术要求之外，还有一些实用的建议，如采用正方形徽标，背景采用纯色等。 这些推荐有助于实现最佳可视化。 有些提供者有自己的要求，这些要求是除了印巴国际工作组提出的要求之外的。 [Gmail](https://support.google.com/a/answer/10911027?sjid=903725605955621707-EU){target="_blank"}. 例如，要求徽标至少为96 x 96像素。
 请注意，不合规可能会导致徽标不显示。
 
 ### 已验证标记证书(VMC) {#vmc}
