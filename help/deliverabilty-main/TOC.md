@@ -7,9 +7,9 @@ role: Leader, User
 level: Beginner
 auto-video-transcripts: true
 source-git-commit: acf2686d59bc27063a255a02de52cbaa3734d5ed
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '178'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -46,7 +46,7 @@ ht-degree: 96%
 + [付诸实践](/help/putting-it-in-practice.md)
 + 附录：其他资源 {#additional-resources}
    + [概述](/help/additional-resources/general-resources.md)
-   + [Yahoo和Gmail更新](/help/guidance-around-changes-to-google-and-yahoo.md)
+   + [Yahoo 和 Gmail 更新](/help/guidance-around-changes-to-google-and-yahoo.md)
    + 通用资源 {#generic-resources}
       + [关于垃圾邮件陷阱](/help/additional-resources/all-about-spam-traps.md)
       + [利用 IP 预热提高您的电子邮件声誉](/help/additional-resources/increase-reputation-with-ip-warming.md)
@@ -61,7 +61,7 @@ ht-degree: 96%
       + [启动新平台](/help/additional-resources/ac-starting-new-platform.md)
       + [Campaign Classic - 技术建议](/help/additional-resources/acc-technical-recommendations.md)
    + 技术说明 {#technotes}
-      + [实施DMARC](/help/technotes/implement-dmarc.md)
+      + [实施 DMARC](/help/technotes/implement-dmarc.md)
       + [实施 BIMI](/help/technotes/implement-bimi.md)
       + [在 Italia Online 服务中断后更新退回](/help/technotes/update-bounces-after-it-outage.md)
 
