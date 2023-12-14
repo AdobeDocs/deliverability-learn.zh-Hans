@@ -8,10 +8,10 @@ last-substantial-update: 2023-11-06T00:00:00Z
 jira: KT-14320
 thumbnail: KT-14320.jpeg
 exl-id: 879e9124-3cfe-4d85-a7d1-64ceb914a460
-source-git-commit: 0ad2e59948aa94008ae5c3f6eec7914223bdb02a
+source-git-commit: e7c3164acb1eb2ee46938cea333f416e0376f5b6
 workflow-type: tm+mt
-source-wordcount: '1604'
-ht-degree: 1%
+source-wordcount: '1595'
+ht-degree: 0%
 
 ---
 
@@ -31,7 +31,9 @@ Adobe的电子邮件可投放性专家已阅读这些博客文章和所有链接
 
 ## 那么，到底是什么呢？ [!DNL Google] 和 [!DNL Yahoo] 在干吗？
 
-在电子邮件领域中，存在着法律要求、实际要求和一般最佳实践。 法律要求因地点不同而大不相同，不属于本主题。 相反， [!DNL Google] 和 [!DNL Yahoo] 正在采用最佳实践，并将其转变为实际要求。 无任何项目 [!DNL Google] 和 [!DNL Yahoo] 2月开始的要求是新的，多年来一直是最佳实践建议，但行业采用速度缓慢且参差不齐。 这是 [!DNL Google] 和 [!DNL Yahoo]，这是通过以下方式帮助推进采纳流程的方法：声明“如果您希望将电子邮件部署到我们的用户（这占电子邮件列表的一大部分，在某些情况下高达70%，具体取决于地区和行业），您需要完成这些任务。”
+在电子邮件领域中，存在着法律要求、实际要求和一般最佳实践。 法律要求因地点不同而大不相同，不属于本主题。 相反， [!DNL Google] 和 [!DNL Yahoo] 正在采用最佳实践，并将其转变为实际要求。
+
+无任何项目 [!DNL Google] 和 [!DNL Yahoo] 2月开始的要求是新的，多年来一直是最佳实践建议，但行业采用速度缓慢且参差不齐。 这是 [!DNL Google] 和 [!DNL Yahoo]，这是通过以下方式帮助推进采纳流程的方法：声明“如果您希望将电子邮件部署到我们的用户（这占电子邮件列表的一大部分，在某些情况下高达70%，具体取决于地区和行业），您需要完成这些任务。”
 
 ## 具体情况如何？
 
@@ -50,9 +52,10 @@ DMARC的规则不会更改，这意味着除非配置为阻止它，否则父域
 ## 一键单击（列表）取消订阅：
 
 不要惊慌。 [!DNL Google] 和 [!DNL Yahoo] 不是指您的电子邮件正文或页脚中的取消订阅链接，这些链接可能会被安全机器人在执行任务时点击，或者被意外点击。 这意味着“mailto”或“http/URL”版本的List-Unsubscribe标头功能。 此函数位于 [!DNL Yahoo] 和Gmail UI，用户可以单击取消订阅。 Gmail甚至会提示单击“报告垃圾邮件”的用户查看他们是否想要取消订阅，这可以通过将他们变为取消订阅来减少您收到的投诉数量（投诉会损害您的声誉）（不会损害您的声誉）。
-请务必注意 [!DNL Google] 和 [!DNL Yahoo] 均以名称“1-Click”引用“http/URL”选项，这是有意为之。 从技术上讲，最初的“http/URL”选项允许您将收件人重定向到网站。 这不是 [!DNL Yahoo] 和 [!DNL Google]，都引用了更新的RFC8058，该更新侧重于通过HTTPSPOST请求（而不是网站）处理取消订阅，使其成为“一键式”请求。
 
-今天， [!DNL Gmail] 接受“mailto”列表取消订阅选项。 [!DNL Gmail] 已表示“mailto”无法满足其未来的期望，并且从2月开始，发件人需要启用“发布”列表取消订阅选项。
+请务必注意 [!DNL Google] 和 [!DNL Yahoo] 均以名称“1-Click”引用“http/URL”选项，这是有意为之。 从技术上讲，最初的“http/URL”选项允许您将收件人重定向到网站。 这不是 [!DNL Yahoo] 和 [!DNL Google]，均引用已更新的 [RFC8058](https://datatracker.ietf.org/doc/html/rfc8058){target="_blank"} ，重点是通过HTTPSPOST请求（而不是网站）处理取消订阅，使其成为“一键式”请求。
+
+今天，Gmail接受“mailto”列表取消订阅选项。 Gmail表示，“mailto”无法满足他们未来的期望，发件人需要启用“发布”列表取消订阅选项。 在2024年6月1日之前，已设置某种类型的列表取消订阅的发件人必须实施“1键单击”列表取消订阅。
 
 [!DNL Yahoo] 已经表示，他们目前将继续遵守“邮寄”选项，但将来也会要求“邮寄”。
 
@@ -67,9 +70,9 @@ Adobe建议同时使用“mailto”和“post/1-Click”列表取消订阅选项
 
 >[!INFO]
 > 有关如何为解决方案实施list-unsubscribe的更多信息，请查看：
-> * [!DNL Adobe Campaign Classic]: [技术建议](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=en#list-unsubscribe){target="_blank"}
+> * [!DNL Adobe Campaign Classic]： [技术建议](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=en#list-unsubscribe){target="_blank"}
 >* [!DNL Adobe Campaign Standard]： [什么是List-Unsubscribe标头？ 如何在ACS中实现这一点？](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-14778.html?lang=en){target="_blank"}
->* [!DNL Adobe Journey Optimizer]: [电子邮件选择退出管理](https://experienceleague.adobe.com/docs/journey-optimizer/using/email/email-opt-out.html?lang=en){target="_blank"}
+>* [!DNL Adobe Journey Optimizer]： [电子邮件选择退出管理](https://experienceleague.adobe.com/docs/journey-optimizer/using/email/email-opt-out.html?lang=en){target="_blank"}
 >
 > 或随时联系Adobe客户支持团队。
 
@@ -96,7 +99,9 @@ Adobe建议同时使用“mailto”和“post/1-Click”列表取消订阅选项
 ## 这对我作为营销人员有何影响？
 
 未能遵守Gmail和 [!DNL Yahoo] 可能导致电子邮件登录垃圾邮件文件夹或被阻止（即，从MBP返回以指示电子邮件未投放）。
+
 因此，Adobe强烈建议您执行上述更改，并确保尽快开始遵守这些更改。 现在也是开始在以下网站设定绩效基准的绝佳时机： [!DNL Yahoo] 和 [!DNL Google] 以便您查看在明年2月之后您的量度是否有任何实质性更改。
+
 我们随时为您提供帮助，因此如果您有任何问题或需要支持，请咨询您的Adobe可交付性顾问，或者与您的客户团队讨论添加可交付性顾问（如果您还没有顾问）。
 
 ## 有办法解决这个问题吗？
@@ -107,3 +112,12 @@ Adobe建议同时使用“mailto”和“post/1-Click”列表取消订阅选项
 
 请注意，这当前不适用于发送给的电子邮件 [!DNL Yahoo].JP或 [!DNL Gmail] 但是，它适用于来自这些位置的电子邮件。
 
+## 其他资源（并非特定于这些更改）：
+
+[!DNL Google Sender Guidelines](https://support.google.com/mail/answer/81126){target="_blank"}
+
+[!DNL Google FAQ](https://support.google.com/a/answer/14229414?sjid=2864589551334481470-NC){target="_blank"}
+
+[!DNL Yahoo Sender Guidelines](https://senders.yahooinc.com/best-practices/){target="_blank"}
+
+[!DNL Yahoo FAQ](https://senders.yahooinc.com/faqs/){target="_blank"}
