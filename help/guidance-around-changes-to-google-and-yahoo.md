@@ -8,9 +8,9 @@ last-substantial-update: 2023-11-06T00:00:00Z
 jira: KT-14320
 thumbnail: KT-14320.jpeg
 exl-id: 879e9124-3cfe-4d85-a7d1-64ceb914a460
-source-git-commit: c1aebdc34c3cc38325e9160360f7847f276bd53e
+source-git-commit: 2de69c2def1abfc4107feb80ad973f689af8b27e
 workflow-type: tm+mt
-source-wordcount: '1758'
+source-wordcount: '1755'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ DMARC的规则不会更改，这意味着除非配置为阻止它，否则父域
 
 [!DNL Yahoo] 已经表示，他们目前将继续遵守“邮寄”选项，但将来也会要求“邮寄”。
 
-Adobe建议同时使用“mailto”和“post/1-Click”列表取消订阅选项。 Adobe正在努力启用所有电子邮件发送平台上的“发布”支持，以支持用户满足这些要求，并为此目的进行进一步的更新。
+Adobe建议同时使用“mailto”和“post/1-Click”列表取消订阅选项。 Adobe正在努力启用所有电子邮件发送平台上的“发布”支持，以支持满足这些要求的用户，请参阅以下详细信息。
 
 对列表取消订阅标头的需求不适用于事务性电子邮件。 请注意，触发的消息（如放弃的购物车和订阅者未生成的类似通信）被视为邮箱提供商的营销消息，例如 [!DNL Google] 和 [!DNL Yahoo] 这些需要取消列表订阅。
 
