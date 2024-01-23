@@ -6,7 +6,7 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: 81f7f1b98a1393e265d6881b889fe2aa2ea35e02
+source-git-commit: 9ef6a2d18a7ab580822ca6a0ff8d485354ff71d4
 workflow-type: tm+mt
 source-wordcount: '1731'
 ht-degree: 0%
@@ -203,8 +203,9 @@ Gmail、Outlook.com和Microsoft Outlook支持此方法，并且其界面中直�
 
 要直接配置一键式List-Unsubscribe：
 
-·添加以下“取消订阅收件人取消单击”Web应用程序1；转到资源 — >联机 — > Web应用程序2；上传“取消订阅收件人取消单击”XML ·配置List-Unsubscribe和List-Unsubscribe-Post 1；转到投放属性的SMTP部分。
-2；在Additional SMTP Headers下，在命令行中输入（每个标头应位于单独的一行中）：
+* 在下面的“取消订阅收件人no-click”Web应用程序中添加1*转到资源 — >联机 — > Web应用程序2*上传“取消订阅收件人no-click”XML
+* 配置List-Unsubscribe和List-Unsubscribe-Post 1*转到投放属性的SMTP部分。
+2*在其他SMTP标头下，在命令行中输入（每个标头应位于单独的一行中）：
 
 List-Unsubscribe-Post： List-Unsubscribe=One-Click List-Unsubscribe： &lt;https: domain.com=&quot;&quot; webapp=&quot;&quot; unsubnoclick=&quot;&quot; id=&quot;&lt;%=&quot; recipient.cryptidcamp=&quot;&quot;>>， &lt;mailto: erroraddress=&quot;&quot; subject=&quot;unsubscribe%=message.mimeMessageId%&quot;>
 
