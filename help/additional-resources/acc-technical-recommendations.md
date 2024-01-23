@@ -6,9 +6,9 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: 22e47edbef3f8388e4cd3a01524091458d27ed43
+source-git-commit: 6653260e6bb3fc379529ea4081eeae0a8f7f4eb9
 workflow-type: tm+mt
-source-wordcount: '1712'
+source-wordcount: '1726'
 ht-degree: 0%
 
 ---
@@ -220,7 +220,12 @@ subject=unsubscribe%=message.mimeMessageId%>
 
 以上示例将为支持一键式的ISP启用一键式列表取消订阅，同时确保不支持URL列表取消订阅的接收者仍然可以通过电子邮件请求取消订阅。
 
-单击此处了解如何通过类型规则配置一键式列表取消订阅。
+
+### 创建分类规则以支持一键式List-Unsubscribe：
+
+1 *从导航树中创建新分类规则，单击“新建”以创建新分类
+![图像](https://git.corp.adobe.com/storage/user/38257/files/b8d48b7f-0f33-4118-b61d-e60351c68260)
+
 
 ## 电子邮件优化 {#email-optimization}
 
