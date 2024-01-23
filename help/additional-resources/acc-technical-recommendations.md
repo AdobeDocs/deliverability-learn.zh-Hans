@@ -6,7 +6,7 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: caff9c7d77aed62c9d055fbca370aa756e4bf28b
+source-git-commit: c99e860507df99fdd4e4fad567eb5e9433ab56ef
 workflow-type: tm+mt
 source-wordcount: '1722'
 ht-degree: 0%
@@ -175,12 +175,12 @@ Gmail、Outlook.com和Microsoft Outlook支持此方法，并且其界面中直�
 
 可以在每个电子邮件或现有投放模板中完成此添加。 您还可以创建包含此功能的新投放模板。
 
-1. 列表 — 取消订阅： <mailto:unsubscribe@domain.com>
+* 列表 — 取消订阅： <mailto:unsubscribe@domain.com>
 单击取消订阅链接将打开用户的默认电子邮件客户端。 必须在用于创建电子邮件的分类中添加此分类规则。
 
-2. 列表 — 取消订阅： <https://domain.com/unsubscribe.jsp>
+* 列表 — 取消订阅： <https://domain.com/unsubscribe.jsp>
 单击取消订阅链接会将用户重定向到您的取消订阅表单。
-   ![image](https://git.corp.adobe.com/storage/user/38257/files/3b46450f-2502-48ed-87b9-f537e1850963)
+  ![image](https://git.corp.adobe.com/storage/user/38257/files/3b46450f-2502-48ed-87b9-f537e1850963)
 
 
 ### 创建分类规则 {#creating-a-typology-rule}
@@ -199,18 +199,18 @@ Gmail、Outlook.com和Microsoft Outlook支持此方法，并且其界面中直�
 
 从2024年6月1日开始，Yahoo和Gmail将要求发件人遵守一键式列表取消订阅规定。 要符合“一键式列表取消订阅”要求，发件人必须：
 
-1. 在“List-Unsubscribe-Post： List-Unsubscribe=One-Click”中添加项
-2. 包括URI取消订阅链接
-3. 支持从接收器接收HTTPPOST响应，Adobe Campaign支持此功能。
+* 在“List-Unsubscribe-Post： List-Unsubscribe=One-Click”中添加项
+* 包括URI取消订阅链接
+* 支持从接收器接收HTTPPOST响应，Adobe Campaign支持此功能。
 
 要直接配置一键式List-Unsubscribe：
 
 * 在以下“取消订阅收件人单击”Web应用程序中添加 
-1. 转至“资源” — >“联机” — >“Web应用程序”
-2. 上传“取消订阅的收件人单击”XML
+* 转至“资源” — >“联机” — >“Web应用程序”
+* 上传“取消订阅的收件人单击”XML
 * 配置List-Unsubscribe和List-Unsubscribe-Post
-1. 转到投放属性的SMTP部分。
-2. 在其他SMTP标头下，在命令行中输入（每个标头应位于单独的一行中）：
+* 转到投放属性的SMTP部分。
+* 在其他SMTP标头下，在命令行中输入（每个标头应位于单独的一行中）：
 
 List-Unsubscribe-Post： List-Unsubscribe=One-Click List-Unsubscribe： &lt;https: domain.com=&quot;&quot; webapp=&quot;&quot; unsubnoclick=&quot;&quot; id=&quot;&lt;%=&quot; recipient.cryptidcamp=&quot;&quot;>>， &lt;mailto: erroraddress=&quot;&quot; subject=&quot;unsubscribe%=message.mimeMessageId%&quot;>
 
