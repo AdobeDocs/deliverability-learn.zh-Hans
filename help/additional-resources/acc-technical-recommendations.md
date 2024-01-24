@@ -6,9 +6,9 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: 9175a3ded10ce4ea06712855ae3d2119f945c389
+source-git-commit: 6800c3236a4ffb5005cff12de86cce0295402b00
 workflow-type: tm+mt
-source-wordcount: '1870'
+source-wordcount: '1871'
 ht-degree: 1%
 
 ---
@@ -227,7 +227,7 @@ subject=unsubscribe%=message.mimeMessageId%>
 
 在导航树中单击新建以创建新分类
 
-![typologyrues1](/help/assets/CreatingTypologyRules1.png)
+![typologyrues1](https://git.corp.adobe.com/AdobeDocs/deliverability-learn.en/commit/ae78f381d0501bbc71f5a33bd2e8dd52563b193f#diff-99b6d79de1599be3ab6a20bd059e70a4a39b09feae147af09a91009f90fd1ced)
 
 继续配置分类规则
 
