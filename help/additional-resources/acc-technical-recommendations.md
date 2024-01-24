@@ -6,7 +6,7 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: 2eceddf12ce2baea1113d2688f9f8e75f7d31923
+source-git-commit: b9c8beefe577c8c0943bab31323d5778f1930606
 workflow-type: tm+mt
 source-wordcount: '1864'
 ht-degree: 1%
@@ -245,15 +245,13 @@ subject=unsubscribe%=message.mimeMessageId%>
 >[!NOTE]
 >
 >下面描述的代码仅作为示例引用。
+>此示例详细说明了如何：
+>* 配置URL List-Unsubscribe并将添加标头或附加现有mailto：参数并将其替换为： &lt;mailto..>， <http://…>
+>* 在List-Unsubscribe-Post标头中添加
+>发布URL示例使用var headerUnsubUrl = &quot;http；//campmomentumv7-mkt-prod3.campaign.adobe.com/webApp/unsubNoClick?id=&lt;%= recipient.cryptedId %>&quot;；
+>* 您可以添加其他参数（如&amp;service = ...）
 >
 
-此示例详细说明了如何：
-* 配置URL List-Unsubscribe并将添加标头或附加现有mailto：参数并将其替换为： &lt;mailto..>， <http://…>
-* 在List-Unsubscribe-Post标头中添加
-
-发布URL示例使用var headerUnsubUrl = &quot;http；//campmomentumv7-mkt-prod3.campaign.adobe.com/webApp/unsubNoClick?id=&lt;%= recipient.cryptedId %>&quot;；
-
-您可以添加其他参数（如&amp;service = ...）
 
 ```
 // Function to add or replace a header in the provided headers 
