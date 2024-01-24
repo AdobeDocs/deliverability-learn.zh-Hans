@@ -6,7 +6,7 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: f7c2dcbf1bb86d7018c31b1ae2ef29903fb758aa
+source-git-commit: 4389ac3135223c0d363e67fe7403656a17ee3f6a
 workflow-type: tm+mt
 source-wordcount: '1871'
 ht-degree: 1%
@@ -223,18 +223,20 @@ subject=unsubscribe%=message.mimeMessageId%>
 
 ### 创建分类规则以支持一键式List-Unsubscribe：
 
-* 创建新的分类规则
+# 创建新的分类规则
 * 在导航树中单击新建以创建新分类
   ![image](https://git.corp.adobe.com/AdobeDocs/deliverability-learn.en/blob/main/help/assets/CreatingTypologyRules1.png)
-* 继续配置分类规则
+
+# 继续配置分类规则
 * 规则类型：控件
 * 渠道：电子邮件
 * 阶段：在个性化开始时
 * 级别：您的选择
 * 活动
-  ![image](https://git.corp.adobe.com/AdobeDocs/deliverability-learn.en/blob/main/help/assets/CreatingTypologyRules2.png)
 
-* 对分类规则的javascript进行编码。
+![image](https://git.corp.adobe.com/AdobeDocs/deliverability-learn.en/blob/main/help/assets/CreatingTypologyRules2.png)
+
+# 对分类规则的javascript进行编码。
 
 >[!NOTE]
 >
@@ -345,17 +347,17 @@ return true;
 ```
 ![image](https://git.corp.adobe.com/AdobeDocs/deliverability-learn.en/blob/main/help/assets/CreatingTypologyRules3.png)
 
-* 将新规则添加到电子邮件的“分类”（默认分类正常）。
-  ![image](https://git.corp.adobe.com/AdobeDocs/deliverability-learn.en/blob/main/help/assets/CreatingTypologyRules4.png)
+# 将新规则添加到电子邮件的“分类”（默认分类正常）。
+![image](https://git.corp.adobe.com/AdobeDocs/deliverability-learn.en/blob/main/help/assets/CreatingTypologyRules4.png)
 
-* 准备新投放（验证投放属性中的其他SMTP标头是否为空）。
-  ![image](https://git.corp.adobe.com/AdobeDocs/deliverability-learn.en/blob/main/help/assets/CreatingTypologyRules5.png)
+# 准备新投放（验证投放属性中的其他SMTP标头是否为空）。
+![image](https://git.corp.adobe.com/AdobeDocs/deliverability-learn.en/blob/main/help/assets/CreatingTypologyRules5.png)
 
-* 在投放准备期间检查是否应用了新的分类规则。
-  ![image](https://git.corp.adobe.com/AdobeDocs/deliverability-learn.en/blob/main/help/assets/CreatingTypologyRules6.png)
+# 在投放准备期间检查是否应用了新的分类规则。
+![image](https://git.corp.adobe.com/AdobeDocs/deliverability-learn.en/blob/main/help/assets/CreatingTypologyRules6.png)
 
-* 验证List-Unsubscribe是否存在
-  ![image](https://git.corp.adobe.com/AdobeDocs/deliverability-learn.en/blob/main/help/assets/CreatingTypologyRules6.png)
+# 验证List-Unsubscribe是否存在
+![image](https://git.corp.adobe.com/AdobeDocs/deliverability-learn.en/blob/main/help/assets/CreatingTypologyRules6.png)
 
 
 
