@@ -6,7 +6,7 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: 443f8e0c68705e481e7a3b2dbc6d3618d20e6f32
+source-git-commit: f9dc4fb190557e2698891853965936ef32124f4a
 workflow-type: tm+mt
 source-wordcount: '1864'
 ht-degree: 1%
@@ -207,7 +207,8 @@ Gmail、Outlook.com和Microsoft Outlook支持此方法，并且其界面中直�
 
 * 在以下“取消订阅收件人单击”Web应用程序中添加 
 * 转至“资源” — >“联机” — >“Web应用程序”
-* 上传“取消订阅的收件人单击”XML
+* 上传“取消订阅收件人单击” [XML](/help/assets/WebAppUnsubNoClick.xml)
+
 * 配置List-Unsubscribe和List-Unsubscribe-Post
 * 转到投放属性的SMTP部分。
 * 在其他SMTP标头下，在命令行中输入（每个标头应位于单独的一行中）：
