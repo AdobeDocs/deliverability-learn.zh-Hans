@@ -6,7 +6,7 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: e310c94334dae232f6f31cc5e188906862f563bd
+source-git-commit: 9175a3ded10ce4ea06712855ae3d2119f945c389
 workflow-type: tm+mt
 source-wordcount: '1870'
 ht-degree: 1%
@@ -225,8 +225,9 @@ subject=unsubscribe%=message.mimeMessageId%>
 
 创建新的分类规则
 
-* 在导航树中单击新建以创建新分类
-  ![typologyrues1](/help/assets/CreatingTypologyRules1.png)
+在导航树中单击新建以创建新分类
+
+![typologyrues1](/help/assets/CreatingTypologyRules1.png)
 
 继续配置分类规则
 
