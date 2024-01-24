@@ -6,9 +6,9 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: 0f61e0c36f979372f05772ad5a37114dcb05e8e5
+source-git-commit: 443f8e0c68705e481e7a3b2dbc6d3618d20e6f32
 workflow-type: tm+mt
-source-wordcount: '1870'
+source-wordcount: '1864'
 ht-degree: 1%
 
 ---
@@ -225,7 +225,7 @@ subject=unsubscribe%=message.mimeMessageId%>
 
 创建新的分类规则
 
-在导航树中单击新建以创建新分类
+在导航树中单击“新建”以创建新分类
 
 ![image](/help/assets/CreatingTypologyRules1.png)
 
@@ -237,7 +237,7 @@ subject=unsubscribe%=message.mimeMessageId%>
 * 级别：您的选择
 * 活动
 
-![image](https://git.corp.adobe.com/AdobeDocs/deliverability-learn.en/blob/main/help/assets/CreatingTypologyRules2.png)
+![image](/help/assets/CreatingTypologyRules2.png)
 
 对分类规则的javascript进行编码。
 
@@ -349,23 +349,23 @@ if ( headerUnsubPost === "" ) {
 return true; 
 ```
 
-![image](https://git.corp.adobe.com/AdobeDocs/deliverability-learn.en/blob/main/help/assets/CreatingTypologyRules3.png)
+![image](/help/assets/CreatingTypologyRules3.png)
 
 将新规则添加到电子邮件的“分类”（默认分类正常）。
 
-![image](https://git.corp.adobe.com/AdobeDocs/deliverability-learn.en/blob/main/help/assets/CreatingTypologyRules4.png)
+![image](/help/assets/CreatingTypologyRules4.png)
 
 准备新投放（验证投放属性中的其他SMTP标头是否为空）。
 
-![image](https://git.corp.adobe.com/AdobeDocs/deliverability-learn.en/blob/main/help/assets/CreatingTypologyRules5.png)
+![image](/help/assets/CreatingTypologyRules5.png)
 
 在投放准备期间检查是否应用了新的分类规则。
 
-![image](https://git.corp.adobe.com/AdobeDocs/deliverability-learn.en/blob/main/help/assets/CreatingTypologyRules6.png)
+![image](/help/assets/CreatingTypologyRules6.png)
 
 验证List-Unsubscribe是否存在。
 
-![image](https://git.corp.adobe.com/AdobeDocs/deliverability-learn.en/blob/main/help/assets/CreatingTypologyRules6.png)
+![image](/help/assets/CreatingTypologyRules7.png)
 
 ## 电子邮件优化 {#email-optimization}
 
