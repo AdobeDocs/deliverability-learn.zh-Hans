@@ -6,7 +6,7 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: f9dc4fb190557e2698891853965936ef32124f4a
+source-git-commit: 2eceddf12ce2baea1113d2688f9f8e75f7d31923
 workflow-type: tm+mt
 source-wordcount: '1864'
 ht-degree: 1%
@@ -207,7 +207,7 @@ Gmail、Outlook.com和Microsoft Outlook支持此方法，并且其界面中直�
 
 * 在以下“取消订阅收件人单击”Web应用程序中添加 
 * 转至“资源” — >“联机” — >“Web应用程序”
-* 上传“取消订阅收件人单击” [XML](/help/assets/WebAppUnsubNoClick.xml)
+* 上传“取消订阅收件人单击” [XML](/help/assets/WebAppUnsubNoClick.xml.zip)
 
 * 配置List-Unsubscribe和List-Unsubscribe-Post
 * 转到投放属性的SMTP部分。
@@ -224,13 +224,13 @@ subject=unsubscribe%=message.mimeMessageId%>
 
 ### 创建分类规则以支持一键式List-Unsubscribe：
 
-创建新的分类规则
+创建新的分类规则：
 
-在导航树中单击“新建”以创建新分类
+* 在导航树中单击“新建”以创建新分类
 
 ![image](/help/assets/CreatingTypologyRules1.png)
 
-继续配置分类规则
+继续配置分类规则：
 
 * 规则类型：控件
 * 渠道：电子邮件
@@ -240,7 +240,7 @@ subject=unsubscribe%=message.mimeMessageId%>
 
 ![image](/help/assets/CreatingTypologyRules2.png)
 
-对分类规则的javascript进行编码。
+对分类规则的javascript进行编码：
 
 >[!NOTE]
 >
@@ -356,7 +356,7 @@ return true;
 
 ![image](/help/assets/CreatingTypologyRules4.png)
 
-准备新投放（验证投放属性中的其他SMTP标头是否为空）。
+准备新投放（验证投放属性中的其他SMTP标头是否为空）
 
 ![image](/help/assets/CreatingTypologyRules5.png)
 
