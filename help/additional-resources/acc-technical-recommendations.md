@@ -6,7 +6,7 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: 097f41c29e189c2a8abf79e65ec322d39a2213db
+source-git-commit: 2b8a058e271843750a025e1aa3f61151c285e0d0
 workflow-type: tm+mt
 source-wordcount: '1860'
 ht-degree: 1%
@@ -228,7 +228,7 @@ subject=unsubscribe%=message.mimeMessageId%>
 
 * 在导航树中单击“新建”以创建新分类
 
-![image](/help/assets/CreatingTypologyRules1.png){width="50%"}{hight="50%"}
+![image](/help/assets/CreatingTypologyRules1.png){width="150%"}{hight="150%"}
 
 继续配置分类规则：
 
