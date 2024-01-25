@@ -6,9 +6,9 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: b9c8beefe577c8c0943bab31323d5778f1930606
+source-git-commit: 097f41c29e189c2a8abf79e65ec322d39a2213db
 workflow-type: tm+mt
-source-wordcount: '1864'
+source-wordcount: '1860'
 ht-degree: 1%
 
 ---
@@ -180,7 +180,7 @@ Gmail、Outlook.com和Microsoft Outlook支持此方法，并且其界面中直�
 
 * 列表 — 取消订阅： <https://domain.com/unsubscribe.jsp>
 单击取消订阅链接会将用户重定向到您的取消订阅表单。
-  ![image](https://git.corp.adobe.com/storage/user/38257/files/3b46450f-2502-48ed-87b9-f537e1850963)
+  ![image](/help/assets/ListUnsubscribe1.png)
 
 
 ### 创建分类规则 {#creating-a-typology-rule}
@@ -228,7 +228,7 @@ subject=unsubscribe%=message.mimeMessageId%>
 
 * 在导航树中单击“新建”以创建新分类
 
-![image](/help/assets/CreatingTypologyRules1.png)
+![image](/help/assets/CreatingTypologyRules1.png){width="50%"}{hight="50%"}
 
 继续配置分类规则：
 
@@ -248,7 +248,7 @@ subject=unsubscribe%=message.mimeMessageId%>
 >此示例详细说明了如何：
 >* 配置URL List-Unsubscribe并将添加标头或附加现有mailto：参数并将其替换为： &lt;mailto..>， <http://…>
 >* 在List-Unsubscribe-Post标头中添加
->发布URL示例使用var headerUnsubUrl = &quot;http；//campmomentumv7-mkt-prod3.campaign.adobe.com/webApp/unsubNoClick?id=&lt;%= recipient.cryptedId %>&quot;；
+>发布URL示例使用var headerUnsubUrl = &quot;http://campmomentumv7-mkt-prod3.campaign.adobe.com/webApp/unsubNoClick?id=&lt;%= recipient.cryptedId %>&quot;：
 >* 您可以添加其他参数（如&amp;service = ...）
 >
 
