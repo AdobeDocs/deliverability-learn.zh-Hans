@@ -8,9 +8,9 @@ last-substantial-update: 2023-11-06T00:00:00Z
 jira: KT-14320
 thumbnail: KT-14320.jpeg
 exl-id: 879e9124-3cfe-4d85-a7d1-64ceb914a460
-source-git-commit: 73d0722bb0b40ea9cad9d50a805396fdfac27c49
+source-git-commit: ef6152550bf56395dd9e57e1286b1bebf141128c
 workflow-type: tm+mt
-source-wordcount: '1762'
+source-wordcount: '1760'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ Adobe建议同时使用“mailto”和“post/1-Click”列表取消订阅选项
 > Adobe正在努力启用我们所有电子邮件发送平台上的“发布”支持，以支持我们的用户满足以下要求：
 > 
 > 
-> * [!DNL Adobe Campaign Classic V7/V8]：完全支持POST今天的一次单击，相关说明可找到 [此处](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=en#list-unsubscribe){target="_blank"} 到1月中旬。
+> * [!DNL Adobe Campaign Classic V7/V8]：完全支持POST今天的一次单击，相关说明可找到 [此处](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=en#list-unsubscribe){target="_blank"}.
 >* [!DNL Adobe Campaign Standard]：将进行更新以支持2月底之前单击POST。 将提供设置说明 [此处](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-14778.html?lang=en){target="_blank"} 一旦准备好。
 >* [!DNL Adobe Journey Optimizer]：目前支持单击POST1，但有些关键改进正在执行中。 将发布对分步设置的更新 [此处](https://experienceleague.adobe.com/docs/journey-optimizer/using/email/email-opt-out.html?lang=en){target="_blank"} 一旦准备好。
 > * [!DNL Marketo]：将更新以支持POST1单击。 准备就绪后，将在需要时自动应用它。
