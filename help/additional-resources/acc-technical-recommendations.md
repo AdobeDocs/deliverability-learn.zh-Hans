@@ -6,9 +6,9 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: f8aaa0c21daf93953fb0daa6a5d9262c8d1654a0
+source-git-commit: c14b1eecbe522c650a8be376f8f133901497216a
 workflow-type: tm+mt
-source-wordcount: '1858'
+source-wordcount: '1863'
 ht-degree: 1%
 
 ---
@@ -175,10 +175,10 @@ Gmail、Outlook.com和Microsoft Outlook支持此方法，并且其界面中直�
 
 可以在每个电子邮件或现有投放模板中完成此添加。 您还可以创建包含此功能的新投放模板。
 
-1. 列表 — 取消订阅： <mailto:unsubscribe@domain.com>
+    1. List-Unsubscribe： mailto:unsubscribe@domain.com
 单击取消订阅链接将打开用户的默认电子邮件客户端。 必须在用于创建电子邮件的分类中添加此分类规则。
 
-2. 列表 — 取消订阅： <https://domain.com/unsubscribe.jsp>
+    2. List-Unsubscribe： https://domain.com/unsubscribe.jsp
 单击取消订阅链接会将用户重定向到您的取消订阅表单。
 
 ![image](/help/assets/UTF-8-1.png)
@@ -246,7 +246,7 @@ subject=unsubscribe%=message.mimeMessageId%>
 >
 >下面描述的代码仅作为示例引用。
 >此示例详细说明了如何：
->* 配置URL List-Unsubscribe并将添加标头或附加现有mailto：参数并将其替换为： &lt;mailto..>， <http://…>
+>* 配置URL List-Unsubscribe并将添加标头或附加现有mailto：参数并将其替换为： &lt;mailto..>>， http://...
 >* 在List-Unsubscribe-Post标头中添加
 >发布URL示例使用var headerUnsubUrl = &quot;http://campmomentumv7-mkt-prod3.campaign.adobe.com/webApp/unsubNoClick?id=&lt;%= recipient.cryptedId %>&quot;：
 >* 您可以添加其他参数（如&amp;service = ...）
