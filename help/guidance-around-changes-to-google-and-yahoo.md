@@ -8,7 +8,7 @@ last-substantial-update: 2023-11-06T00:00:00Z
 jira: KT-14320
 thumbnail: KT-14320.jpeg
 exl-id: 879e9124-3cfe-4d85-a7d1-64ceb914a460
-source-git-commit: 8de2247f78f8c6e8467ffe51ffdf1b6107d30118
+source-git-commit: 50017358f7f88f5579de282a1f528916ecb17493
 workflow-type: tm+mt
 source-wordcount: '1775'
 ht-degree: 0%
@@ -51,7 +51,7 @@ DMARC的规则不会更改，这意味着除非配置为阻止它，否则父域
 
 ## 一键单击（列表）取消订阅：
 
-不要惊慌。 [!DNL Google] 和 [!DNL Yahoo] 不是指您的电子邮件正文或页脚中的取消订阅链接，这些链接可能会被安全机器人在执行任务时点击，或者被意外点击。 这意味着“mailto”或“http/URL”版本的List-Unsubscribe标头功能。 此函数位于 [!DNL Yahoo] 和Gmail UI，用户可以单击取消订阅。 Gmail甚至会提示单击“报告垃圾邮件”的用户查看他们是否想要取消订阅，这可以通过将他们变为取消订阅来减少您收到的投诉数量（投诉会损害您的声誉）（不会损害您的声誉）。
+不要惊慌。 [!DNL Google] 和 [!DNL Yahoo] 不是指您的电子邮件正文或页脚中的取消订阅链接，这些链接可能会被安全机器人在执行任务时点击，或者被意外点击。 这意味着“mailto”或“http/URI”版本的List-Unsubscribe标头功能。 此函数位于 [!DNL Yahoo] 和Gmail UI，用户可以单击取消订阅。 Gmail甚至会提示单击“报告垃圾邮件”的用户查看他们是否想要取消订阅，这可以通过将他们变为取消订阅来减少您收到的投诉数量（投诉会损害您的声誉）（不会损害您的声誉）。
 
 请务必注意 [!DNL Google] 和 [!DNL Yahoo] 均以名称“1-Click”引用“http/URI”选项，这是有意为之。 从技术上讲，最初的“http/URI”选项允许您将收件人重定向到网站。 这不是 [!DNL Yahoo] 和 [!DNL Google]，均引用已更新的 [RFC8058](https://datatracker.ietf.org/doc/html/rfc8058){target="_blank"} ，重点是通过HTTPSPOST请求（而不是网站）处理取消订阅，使其成为“一键式”请求。
 
