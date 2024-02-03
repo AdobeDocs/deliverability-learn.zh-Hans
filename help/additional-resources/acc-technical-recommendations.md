@@ -6,7 +6,7 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: 8fe2a9de16a7856c66a643ce7aaf22bae016246e
+source-git-commit: 5afc345e1cc8e47153db6b5f98e06d8ad0fb4d48
 workflow-type: tm+mt
 source-wordcount: '1861'
 ht-degree: 1%
@@ -175,9 +175,9 @@ Gmail、Outlook.com和Microsoft Outlook支持此方法，并且其界面中直�
 
 可以在每个电子邮件或现有投放模板中完成此添加。 您还可以创建包含此功能的新投放模板。
 
-1.List-Unsubscribe： mailto:unsubscribe@domain.com单击取消订阅链接可打开用户的默认电子邮件客户端。 必须在用于创建电子邮件的分类中添加此分类规则。
+* List-Unsubscribe： mailto:unsubscribe@domain.com单击取消订阅链接可打开用户的默认电子邮件客户端。 必须在用于创建电子邮件的分类中添加此分类规则。
 
-2.List-Unsubscribe： https://domain.com/unsubscribe.jsp单击取消订阅链接会将用户重定向到您的取消订阅表单。
+* List-Unsubscribe： https://domain.com/unsubscribe.jsp单击取消订阅链接会将用户重定向到您的取消订阅表单。
 
 ![image](/help/assets/UTF-8-1.png)
 
