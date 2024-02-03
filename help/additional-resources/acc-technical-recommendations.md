@@ -6,9 +6,9 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: 98ec94935810c060ec0ad7c70336276104072ee3
+source-git-commit: 0c735dcf872728be6131b5a185f4b6973b26dcd3
 workflow-type: tm+mt
-source-wordcount: '1861'
+source-wordcount: '1867'
 ht-degree: 1%
 
 ---
@@ -224,25 +224,29 @@ subject=unsubscribe%=message.mimeMessageId%>
 
 ### 创建分类规则以支持一键式List-Unsubscribe：
 
-1. **创建新的分类规则：**
+**1. 创建新的分类规则：**
 
-   * 在导航树中单击“新建”以创建新分类
+    *在导航树中单击“新建”以创建新分类
+
 
 ![image](/help/assets/CreatingTypologyRules1.png)
 
 
-* **继续配置分类规则：**
 
-   * 规则类型：控件
-   * 渠道：电子邮件
-   * 阶段：在个性化开始时
-   * 级别：您的选择
-   * 活动
+**2. **继续配置分类规则：**
+
+    *规则类型：控件
+    *渠道：电子邮件
+    *阶段：在个性化开始时
+    *级别：您的选择
+    *活动
+
 
 ![image](/help/assets/CreatingTypologyRules2.png)
 
 
 **对分类规则的javascript进行编码：**
+
 
 >[!NOTE]
 >
@@ -350,25 +354,30 @@ if ( headerUnsubPost === "" ) {
 return true; 
 ```
 
+
 ![image](/help/assets/CreatingTypologyRules3.png)
 
 
-* **将新规则添加到电子邮件中的分类（默认分类正常）：**
+
+**3. 将新规则添加到电子邮件中的分类（默认分类正常）：**
 
 ![image](/help/assets/CreatingTypologyRules4.png)
 
 
-* **准备新投放（验证投放属性中的其他SMTP标头是否为空）**
+
+**4. 准备新投放（验证投放属性中的其他SMTP标头是否为空）**
 
 ![image](/help/assets/CreatingTypologyRules5.png)
 
 
-* **在投放准备期间检查是否应用了新的分类规则。**
+
+**5. 在投放准备期间检查是否应用了新的分类规则。**
 
 ![image](/help/assets/CreatingTypologyRules6.png)
 
 
-* **验证List-Unsubscribe是否存在。**
+
+**6. 验证List-Unsubscribe是否存在。**
 
 ![image](/help/assets/CreatingTypologyRules7.png)
 
