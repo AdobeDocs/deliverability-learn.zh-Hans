@@ -6,7 +6,7 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: 0c735dcf872728be6131b5a185f4b6973b26dcd3
+source-git-commit: 73ce12a86176e59ff4112c19382f7a62714b41e7
 workflow-type: tm+mt
 source-wordcount: '1867'
 ht-degree: 1%
@@ -226,20 +226,20 @@ subject=unsubscribe%=message.mimeMessageId%>
 
 **1. 创建新的分类规则：**
 
-    *在导航树中单击“新建”以创建新分类
+* 在导航树中单击“新建”以创建新分类
 
 
 ![image](/help/assets/CreatingTypologyRules1.png)
 
 
 
-**2. **继续配置分类规则：**
+**2. 继续配置分类规则：**
 
-    *规则类型：控件
-    *渠道：电子邮件
-    *阶段：在个性化开始时
-    *级别：您的选择
-    *活动
+* 规则类型：控件
+* 渠道：电子邮件
+* 阶段：在个性化开始时
+* 级别：您的选择
+* 活动
 
 
 ![image](/help/assets/CreatingTypologyRules2.png)
