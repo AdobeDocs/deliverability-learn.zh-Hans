@@ -6,9 +6,9 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: 66526ebad0914ef9afa995f7d826e644c0350182
+source-git-commit: 3dc1d2f352346fa2ef7b5c883da6a3e243cb32c0
 workflow-type: tm+mt
-source-wordcount: '1860'
+source-wordcount: '1858'
 ht-degree: 1%
 
 ---
@@ -146,7 +146,7 @@ Adobe Campaign的可投放性服务管理您对以下ISP的反馈循环服务的
 
 使用此功能有助于保护您的声誉，并且反馈将作为取消订阅执行。
 
-要使用List-Unsubscribe，必须输入类似于下面的命令行：
+要使用List-Unsubscribe，必须输入类似于以下内容的命令行：
 
 ```
 List-Unsubscribe: <mailto: client@newsletter.example.com?subject=unsubscribe?body=unsubscribe>
@@ -180,7 +180,7 @@ Gmail、Outlook.com和Microsoft Outlook支持此方法，并且其界面中直�
 
 * 列表 — 取消订阅： <https://domain.com/unsubscribe.jsp>
 单击取消订阅链接会将用户重定向到您的取消订阅表单。
-  ![image](/help/assets/ListUnsubscribe1.png)
+  ![image](/help/assets/UTF-8-1.png)
 
 
 ### 创建分类规则 {#creating-a-typology-rule}
@@ -206,12 +206,11 @@ Gmail、Outlook.com和Microsoft Outlook支持此方法，并且其界面中直�
 要直接配置一键式List-Unsubscribe：
 
 * 在以下“取消订阅收件人单击”Web应用程序中添加 
-* 转至“资源” — >“联机” — >“Web应用程序”
-* 上传“取消订阅收件人单击” [XML](/help/assets/WebAppUnsubNoClick.xml.zip)
-
+   1. 转至“资源” — >“联机” — >“Web应用程序”
+   2. 上传“取消订阅收件人单击” [XML](/help/assets/WebAppUnsubNoClick.xml.zip)
 * 配置List-Unsubscribe和List-Unsubscribe-Post
-* 转到投放属性的SMTP部分。
-* 在其他SMTP标头下，在命令行中输入（每个标头应位于单独的一行中）：
+   1. 转到投放属性的SMTP部分。
+   2. 在其他SMTP标头下，在命令行中输入（每个标头应位于单独的一行中）：
 
 ```
 List-Unsubscribe-Post: List-Unsubscribe=One-Click
