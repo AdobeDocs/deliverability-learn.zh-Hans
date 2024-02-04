@@ -6,7 +6,7 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: 73ce12a86176e59ff4112c19382f7a62714b41e7
+source-git-commit: b4be656998890f9c98b8417835ae7c5bda2bc499
 workflow-type: tm+mt
 source-wordcount: '1867'
 ht-degree: 1%
@@ -236,8 +236,8 @@ subject=unsubscribe%=message.mimeMessageId%>
 **2. 继续配置分类规则：**
 
 * 规则类型：控件
+* 阶段：定位开始时
 * 渠道：电子邮件
-* 阶段：在个性化开始时
 * 级别：您的选择
 * 活动
 
