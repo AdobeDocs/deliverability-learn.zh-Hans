@@ -1,23 +1,18 @@
 ---
-source-git-commit: 5de602d6b75e524dac8688e40db0e96bdbafceba
+source-git-commit: 945a7ba5e3c3ac9544199e1bb62273933a82f04a
 workflow-type: tm+mt
 source-wordcount: '168'
 ht-degree: 7%
 
 ---
-### 创建分类规则以支持一键式List-Unsubscribe：
+# 创建分类规则以支持一键式List-Unsubscribe：
 
 **1. 创建新的分类规则：**
-
 * 在导航树中单击“新建”以创建新分类
-
 
 ![image](/help/assets/CreatingTypologyRules1.png)
 
-
-
 **2. 继续配置分类规则：**
-
 * 规则类型：控件
 * 阶段：定位开始时
 * 渠道：电子邮件
@@ -140,19 +135,13 @@ return true;
 
 ![image](/help/assets/CreatingTypologyRules3.png)
 
-
-
 **3. 将新规则添加到电子邮件中的分类（默认分类正常）：**
 
 ![image](/help/assets/CreatingTypologyRules4.png)
 
-
-
 **4. 准备新投放（验证投放属性中的其他SMTP标头是否为空）**
 
 ![image](/help/assets/CreatingTypologyRules5.png)
-
-
 
 **5. 在投放准备期间检查是否应用了新的分类规则。**
 
