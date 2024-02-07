@@ -6,7 +6,7 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: 2e3cebdad1613c852e950c379ddba689a3d8110e
+source-git-commit: bfdf87937d001791701884d29db2da1fd7a0e8ee
 workflow-type: tm+mt
 source-wordcount: '1867'
 ht-degree: 1%
@@ -215,8 +215,7 @@ List-Unsubscribe： https://domain.com/unsubscribe.jsp
 
 ```
 List-Unsubscribe-Post: List-Unsubscribe=One-Click
-List-Unsubscribe: <https://domain.com/webApp/unsubNoClick?id=<%= recipient.cryptidcamp %>>, <mailto: %=errorAddress%?
-subject=unsubscribe%=message.mimeMessageId%>
+List-Unsubscribe: https://domain.com/webApp/unsubNoClick?id=<%= recipient.cryptedId %>, < mailto:<%@ include option='NmsEmail_DefaultErrorAddr' %>?subject=unsubscribe<%=escape(message.mimeMessageId) %> >
 ```
 
 以上示例将为支持一键式的ISP启用一键式列表取消订阅，同时确保不支持URL列表取消订阅的接收者仍然可以通过电子邮件请求取消订阅。
