@@ -8,7 +8,7 @@ mini-toc-levels: 2
 git-repo: https://github.com/AdobeDocs/deliverability-learn.zh-Hans
 index: true
 source-git-commit: a510f3ddc968ee8f53fa98f5b03ff9c4ca344a67
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '53'
 ht-degree: 100%
 
