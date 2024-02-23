@@ -6,9 +6,9 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: bfdf87937d001791701884d29db2da1fd7a0e8ee
+source-git-commit: b5e1d878c889112e08da0969d50bdb3c72e48f8c
 workflow-type: tm+mt
-source-wordcount: '1867'
+source-wordcount: '1868'
 ht-degree: 1%
 
 ---
@@ -139,7 +139,7 @@ Adobe Campaign的可投放性服务管理您对以下ISP的反馈循环服务的
 
 ### 关于列表取消订阅 {#about-list-unsubscribe}
 
-添加名为的SMTP标头 **列表 — 取消订阅** 是确保获得最佳可投放性管理的强制要求。从2024年6月1日开始，Yahoo和Gmail将要求发件人遵守一键式列表取消订阅规定。 要了解如何配置一键式List-Unsubscribe，请参阅下文。
+添加名为的SMTP标头 **列表 — 取消订阅** 是确保优化可投放性管理所必需的。 从2024年6月1日开始，Yahoo和Gmail将要求发件人遵守一键式列表取消订阅规定。 要了解如何配置一键式列表取消订阅，请参阅 [本节](#one-click-list-unsubscribe).
 
 
 此标头可用作“报告为垃圾邮件”图标的替代方法。 它将在电子邮件界面中显示为取消订阅链接。
@@ -181,7 +181,7 @@ List-Unsubscribe： mailto:unsubscribe@domain.com
 List-Unsubscribe： https://domain.com/unsubscribe.jsp
 * 单击 **取消订阅** 链接会将用户重定向到您的取消订阅表单。
 
-![image](/help/assets/UTF-8-1.png)
+![image](../assets/UTF-8-1.png)
 
 
 ### 创建分类规则 {#creating-a-typology-rule}
@@ -196,7 +196,7 @@ List-Unsubscribe： https://domain.com/unsubscribe.jsp
 >
 >了解如何在Adobe Campaign Classic中创建分类规则 [本节](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/about-campaign-typologies.html#typology-rules).
 
-### 一键式列表取消订阅
+### 一键式列表取消订阅 {#one-click-list-unsubscribe}
 
 从2024年6月1日开始，Yahoo和Gmail将要求发件人遵守一键式列表取消订阅规定。 要符合“一键式列表取消订阅”要求，发件人必须：
 
@@ -215,7 +215,7 @@ List-Unsubscribe： https://domain.com/unsubscribe.jsp
 
 ```
 List-Unsubscribe-Post: List-Unsubscribe=One-Click
-List-Unsubscribe: https://domain.com/webApp/unsubNoClick?id=<%= recipient.cryptedId %>, < mailto:<%@ include option='NmsEmail_DefaultErrorAddr' %>?subject=unsubscribe<%=escape(message.mimeMessageId) %> >
+List-Unsubscribe: <https://domain.com/webApp/unsubNoClick?id=<%= recipient.cryptedId %> >, < mailto:<%@ include option='NmsEmail_DefaultErrorAddr' %>?subject=unsubscribe<%=escape(message.mimeMessageId) %> >
 ```
 
 以上示例将为支持一键式的ISP启用一键式列表取消订阅，同时确保不支持URL列表取消订阅的接收者仍然可以通过电子邮件请求取消订阅。
@@ -227,9 +227,7 @@ List-Unsubscribe: https://domain.com/webApp/unsubNoClick?id=<%= recipient.crypte
 
 * 在导航树中单击“新建”以创建新分类
 
-
-![image](/help/assets/CreatingTypologyRules1.png)
-
+![image](../assets/CreatingTypologyRules1.png)
 
 
 **2. 继续配置分类规则：**
@@ -241,7 +239,7 @@ List-Unsubscribe: https://domain.com/webApp/unsubNoClick?id=<%= recipient.crypte
 * 活动
 
 
-![image](/help/assets/CreatingTypologyRules2.png)
+![image](../assets/CreatingTypologyRules2.png)
 
 
 **对分类规则的javascript进行编码：**
@@ -354,31 +352,31 @@ return true;
 ```
 
 
-![image](/help/assets/CreatingTypologyRules3.png)
+![image](../assets/CreatingTypologyRules3.png)
 
 
 
 **3. 将新规则添加到电子邮件中的分类（默认分类正常）：**
 
-![image](/help/assets/CreatingTypologyRules4.png)
+![image](../assets/CreatingTypologyRules4.png)
 
 
 
 **4. 准备新投放（验证投放属性中的其他SMTP标头是否为空）**
 
-![image](/help/assets/CreatingTypologyRules5.png)
+![image](../assets/CreatingTypologyRules5.png)
 
 
 
 **5. 在投放准备期间检查是否应用了新的分类规则。**
 
-![image](/help/assets/CreatingTypologyRules6.png)
+![image](../assets/CreatingTypologyRules6.png)
 
 
 
 **6. 验证List-Unsubscribe是否存在。**
 
-![image](/help/assets/CreatingTypologyRules7.png)
+![image](../assets/CreatingTypologyRules7.png)
 
 
 ## 电子邮件优化 {#email-optimization}
