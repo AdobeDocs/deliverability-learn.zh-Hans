@@ -1,5 +1,5 @@
 ---
-source-git-commit: d30c3e96a9e341f34d471af35692da9e1c0b72d4
+source-git-commit: 5e7c7bf626b6277abf8d50181826deb2e21c868f
 workflow-type: tm+mt
 source-wordcount: '944'
 ht-degree: 0%
@@ -48,7 +48,7 @@ DO：允许订阅者指定关系。
 
 DO：在电子邮件模板中使用List Unsubscribe标头，以便在电子邮件顶部显示取消订阅链接的电子邮件客户端(例如：gmail.com)可以轻松找到用户习惯于查找取消订阅的位置。
 
-+ 单击此处(https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/guidance-around-changes-to-google-and-yahoo.html)了解有关一键取消订阅的行业计划的更多信息。
++ 单击 [此处](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/guidance-around-changes-to-google-and-yahoo.html?lang=zh-Hans) 了解有关一键取消订阅的行业计划的更多信息。
 
 不要的
 
