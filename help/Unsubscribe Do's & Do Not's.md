@@ -1,13 +1,11 @@
 ---
-source-git-commit: 34a7b7c8d6a2bda2f5b131bbbd9570c0b577c02c
+source-git-commit: 214036c89a3c0b3ebcdfc66bc8a4e4bd2ede5766
 workflow-type: tm+mt
-source-wordcount: '944'
+source-wordcount: '929'
 ht-degree: 0%
 
 ---
 # 取消订阅Do&#39;s和Do&#39;s
-
-本文档旨在查看有关电子邮件取消订阅管理的推荐最佳实践。
 
 取消订阅是电子邮件生命周期的自然组成部分。 但营销人员有时很难说再见。 您非常努力地制作最吸引人的电子邮件，并就您的品牌提供的产品和服务提供最划算的优惠。 但是，一些订阅者决定继续订阅是完全正常的，也是应该预料的。 这可能有很多原因，但归根结底，他们不想再听到你的消息。
 
