@@ -6,7 +6,7 @@ feature: Deliverability
 role: Leader, User
 level: Beginner
 auto-video-transcripts: true
-source-git-commit: d7ed7b433ea5f4c113f98ab09fb704e5d6f940e6
+source-git-commit: 5ff4aef893acb65818278c249e7fc9ab54f22192
 workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 100%
