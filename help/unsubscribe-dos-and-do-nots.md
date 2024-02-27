@@ -8,7 +8,7 @@ doc-type: Feature Video
 duration: 0
 last-substantial-update: 2024-02-27T00:00:00Z
 jira: KT-15029
-source-git-commit: 77de42d30ce01ab66323da1731a4a0bf96a94f44
+source-git-commit: d4af9b039e2f8f140124cf21edec825e803c1308
 workflow-type: tm+mt
 source-wordcount: '948'
 ht-degree: 0%
@@ -30,7 +30,8 @@ ht-degree: 0%
 
 **DO：** 将您的取消订阅链接驱动器设置为登录页面，用户可以在该页面确认要从列表中删除他们
 
-+ 登陆页面上的广告词应包含一个可单击的链接，上面显示“确认我的取消订阅”，可能还包括另一个链接，上面显示“让我选择禁用，降低我从您那里收到邮件的频率”。 虽然这不是一键式取消订阅方法，但它有助于避免导致错误取消订阅的机器人点击。
+登陆页面上的广告词应包含一个可单击的链接，上面显示“确认我的取消订阅”，可能还包括另一个链接，上面显示“让我选择禁用，降低我从您那里收到邮件的频率”。 虽然这不是一键式取消订阅方法，但它有助于避免导致错误取消订阅的机器人点击。
+
 + 如果取消订阅会将用户带到登陆页面，请确保在用户登陆页面后，登陆页面会提供一次单击取消订阅功能。
 
 **DO：** 使此过程简单且透明。 示例：
@@ -57,7 +58,7 @@ ht-degree: 0%
 
 **DO：** 在电子邮件模板中使用List Unsubscribe标头，以便在电子邮件顶部显示取消订阅链接的电子邮件客户端(例如：gmail.com)可以轻松找到用户习惯于查找取消订阅的位置。
 
-+ 单击 [此处](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/guidance-around-changes-to-google-and-yahoo.html?lang=zh-Hans) 了解有关一键取消订阅的行业计划的更多信息。
+单击 [此处](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/guidance-around-changes-to-google-and-yahoo.html?lang=zh-Hans) 了解有关一键取消订阅的行业计划的更多信息。
 
 ## 不要的
 
@@ -90,6 +91,7 @@ ht-degree: 0%
 **请勿：** 强制他们在您处理请求之前为您提供取消订阅的原因。
 
 + 允许客户在某个位置添加此信息对您未来的见解很有用，不过在取消订阅登陆页面上可将其添加为可选字段。
+
 + 更好的方法是通知他们已成功取消订阅，然后为他们留出空间以选择性地提供原因。
 
 请记住，取消订阅总比抱怨好。 未积极使用您的电子邮件计划的人可能会对您的可投放性信誉和量度产生负面影响。 现在，您该集中精力培养与当前订阅者的更深层关系，方法是让他们看到他们迫不及待地想要打开、点进和购买的参与式相关消息！
