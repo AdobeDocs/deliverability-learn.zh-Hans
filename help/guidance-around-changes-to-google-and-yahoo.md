@@ -8,10 +8,10 @@ last-substantial-update: 2023-11-06T00:00:00Z
 jira: KT-14320
 thumbnail: KT-14320.jpeg
 exl-id: 879e9124-3cfe-4d85-a7d1-64ceb914a460
-source-git-commit: 50017358f7f88f5579de282a1f528916ecb17493
+source-git-commit: e2c2fbfee5e404e1eef25dd0068a6bdd560ed977
 workflow-type: tm+mt
-source-wordcount: '1775'
-ht-degree: 0%
+source-wordcount: '1770'
+ht-degree: 1%
 
 ---
 
@@ -67,13 +67,11 @@ Adobe建议同时使用“mailto”和“post/1-Click”列表取消订阅选项
 
 >[!INFO]
 > Adobe正在努力启用我们所有电子邮件发送平台上的“发布”支持，以支持我们的用户满足以下要求：
-> 
-> 
-> * [!DNL Adobe Campaign Classic V7/V8]：完全支持POST今天的一次单击，相关说明可找到 [此处](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=en#list-unsubscribe){target="_blank"}.
->* [!DNL Adobe Campaign Standard]：将进行更新以支持2月底之前单击POST。 将提供设置说明 [此处](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-14778.html?lang=en){target="_blank"} 一旦准备好。
+>
+> * [!DNL Adobe Campaign v7/v8]：完全支持POST今天的一次单击，相关说明可找到 [此处](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=en#list-unsubscribe){target="_blank"}.
+>* [!DNL Adobe Campaign Standard]：自2月19日起，完全支持POST1点击。 可以找到更多信息 [此处](https://experienceleague.adobe.com/docs/campaign-standard/using/administrating/configuring-channels/configuring-email-channel.html#email-channel-parameters){target="_blank"}.
 >* [!DNL Adobe Journey Optimizer]：支持今天的POST1单击，但有些关键改进正在进行，并预计在2024年3月进行。 将发布文档更新 [此处](https://experienceleague.adobe.com/docs/journey-optimizer/using/email/email-opt-out.html?lang=en){target="_blank"} 一旦准备好。
-> * [!DNL Marketo]：自2024年1月31日起，完全支持POST1-Click-List-Unsubscribe。 用户无需执行任何操作。
-
+> * [!DNL Marketo]：自2024年1月31日起，支持POST1键式列表取消订阅。 用户无需执行任何操作。
 
 ## 在2天内取消订阅进程：
 
@@ -102,7 +100,7 @@ Adobe建议同时使用“mailto”和“post/1-Click”列表取消订阅选项
 
 [!DNL Gmail]：
 
-2024年2月 — 旨在发出不合规警告的临时退回将开始。 如果您尚未遵守相关规定，则在短暂延迟后，电子邮件仍会正常发送。 如果您完全符合要求，则不会出现临时退回，也不会有任何发现。
+2024年2月 — 旨在发出不合规警告的临时退回将开始。 如果您尚未遵守相关规定，在短暂延迟后，电子邮件仍可正常送达。如果您完全符合要求，则不会出现临时退回，也不会有任何发现。
 
 2024年4月 — 对于除List-Unsubscribe 1-Click之外的所有其他内容都不合规的发件人，将开始阻止这些发件人。 最初只会阻止一部分不合规的电子邮件，阻止的%会随着时间的推移而增加。
 

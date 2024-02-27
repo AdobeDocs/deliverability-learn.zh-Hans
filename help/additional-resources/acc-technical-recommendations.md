@@ -6,9 +6,9 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: b5e1d878c889112e08da0969d50bdb3c72e48f8c
+source-git-commit: 466b775442964e2d8cad133280e6b9f8af148b25
 workflow-type: tm+mt
-source-wordcount: '1868'
+source-wordcount: '1871'
 ht-degree: 1%
 
 ---
@@ -139,10 +139,13 @@ Adobe Campaign的可投放性服务管理您对以下ISP的反馈循环服务的
 
 ### 关于列表取消订阅 {#about-list-unsubscribe}
 
-添加名为的SMTP标头 **列表 — 取消订阅** 是确保优化可投放性管理所必需的。 从2024年6月1日开始，Yahoo和Gmail将要求发件人遵守一键式列表取消订阅规定。 要了解如何配置一键式列表取消订阅，请参阅 [本节](#one-click-list-unsubscribe).
+添加名为的SMTP标头 **列表 — 取消订阅** 是确保优化可投放性管理所必需的。
 
+>[!CAUTION]
+>
+>从2024年6月1日开始，Yahoo！ 而且Gmail要求发件人遵守 **一键式列表取消订阅**. 要了解如何配置一键式列表取消订阅，请参阅 [本节](#one-click-list-unsubscribe).
 
-此标头可用作“报告为垃圾邮件”图标的替代方法。 它将在电子邮件界面中显示为取消订阅链接。
+此标头可用作“报告为垃圾邮件”图标的替代方法。 它会在电子邮件界面中显示为取消订阅链接。
 
 使用此功能有助于保护您的声誉，并且反馈将作为取消订阅执行。
 
@@ -191,20 +194,18 @@ List-Unsubscribe： https://domain.com/unsubscribe.jsp
 >[!NOTE]
 >
 >我们建议创建分类规则：List-Unsubscribe功能将自动添加到每封电子邮件中。
-
->[!NOTE]
 >
->了解如何在Adobe Campaign Classic中创建分类规则 [本节](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/about-campaign-typologies.html#typology-rules).
+>了解如何在Adobe Campaign v7/v8中创建类型规则 [本节](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/about-campaign-typologies.html#typology-rules).
 
 ### 一键式列表取消订阅 {#one-click-list-unsubscribe}
 
-从2024年6月1日开始，Yahoo和Gmail将要求发件人遵守一键式列表取消订阅规定。 要符合“一键式列表取消订阅”要求，发件人必须：
+从2024年6月1日开始，Yahoo和Gmail将要求发件人遵守一键式列表取消订阅规定。 为符合此要求，发件人必须：
 
-1. 在“List-Unsubscribe-Post： List-Unsubscribe=One-Click”中添加项
-2. 包括URI取消订阅链接
-3. 支持从接收器接收HTTPPOST响应，Adobe Campaign支持此功能。
+1. 添加以下命令行：`List-Unsubscribe-Post: List-Unsubscribe=One-Click`.
+1. 包括URI取消订阅链接。
+1. 支持从接收器接收HTTPPOST响应，Adobe Campaign支持此功能。
 
-要直接配置一键式List-Unsubscribe：
+要直接在Adobe Campaign v7/v8中配置一键式List-Unsubscribe ：
 
 * 在以下“取消订阅收件人单击”Web应用程序中添加 
    1. 转至“资源” — >“联机” — >“Web应用程序”
