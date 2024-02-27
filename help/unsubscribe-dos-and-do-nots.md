@@ -1,10 +1,21 @@
 ---
-source-git-commit: 68580661062e1e323ff728c09ebf3a5103544fff
+title: 取消订阅Do's和Do's
+description: 使用管理取消订阅时要执行的操作以及要避免的操作的列表。
+feature: Deliverability
+role: Admin
+level: Beginner
+doc-type: Feature Video
+duration: 0
+last-substantial-update: 2024-02-27T00:00:00Z
+jira: KT-15029
+source-git-commit: 77de42d30ce01ab66323da1731a4a0bf96a94f44
 workflow-type: tm+mt
-source-wordcount: '929'
+source-wordcount: '948'
 ht-degree: 0%
 
 ---
+
+
 # 取消订阅Do&#39;s和Do&#39;s
 
 取消订阅是电子邮件生命周期的自然组成部分。 但营销人员有时很难说再见。 您非常努力地制作最吸引人的电子邮件，并就您的品牌提供的产品和服务提供最划算的优惠。 但是，一些订阅者决定继续订阅是完全正常的，也是应该预料的。 这可能有很多原因，但归根结底，他们不想再听到你的消息。
