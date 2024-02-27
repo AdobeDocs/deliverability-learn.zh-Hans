@@ -6,10 +6,10 @@ feature: Deliverability
 role: Leader, User
 level: Beginner
 auto-video-transcripts: true
-source-git-commit: 5ff4aef893acb65818278c249e7fc9ab54f22192
+source-git-commit: 56d385754b768a65c44c3661646361080a087656
 workflow-type: tm+mt
-source-wordcount: '178'
-ht-degree: 100%
+source-wordcount: '183'
+ht-degree: 97%
 
 ---
 
@@ -47,6 +47,7 @@ ht-degree: 100%
 + 附录：其他资源 {#additional-resources}
    + [概述](/help/additional-resources/general-resources.md)
    + [Yahoo 和 Gmail 更新](/help/guidance-around-changes-to-google-and-yahoo.md)
+   + [取消订阅Do&#39;s和Do&#39;s](/help/unsubscribe-dos-and-do-nots.md)
    + 通用资源 {#generic-resources}
       + [关于垃圾邮件陷阱](/help/additional-resources/all-about-spam-traps.md)
       + [利用 IP 预热提高您的电子邮件声誉](/help/additional-resources/increase-reputation-with-ip-warming.md)
