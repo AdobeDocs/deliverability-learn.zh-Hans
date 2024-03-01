@@ -6,9 +6,9 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: ea91b7285814eca254590f2aff128fb6e5f77520
+source-git-commit: ffa2e9788326389ae2e4da6e272367cdc837b72e
 workflow-type: tm+mt
-source-wordcount: '2060'
+source-wordcount: '2086'
 ht-degree: 1%
 
 ---
@@ -141,6 +141,8 @@ Adobe Campaign的可投放性服务管理您对以下ISP的反馈循环服务的
 
 此标头可用作“报告为垃圾邮件”图标的替代方法。 它在ISP的电子邮件界面中显示为“取消订阅”链接。
 
+使用此功能可降低投诉率并有助于保护您的声誉。 反馈将作为取消订阅执行。
+
 Gmail， Outlook.com， Yahoo！ 和Microsoft Outlook支持此方法。 可直接在其界面中找到“取消订阅”链接。 例如：
 
 ![image](../assets/List-Unsubscribe-example-Gmail.png)
@@ -153,8 +155,6 @@ Gmail， Outlook.com， Yahoo！ 和Microsoft Outlook支持此方法。 可直�
 >* 在ISP的垃圾邮件投诉阈值下
 >* 已通过完全身份验证
 
-使用此功能可降低投诉率并有助于保护您的声誉。 反馈将作为取消订阅执行。
-
 存在两个版本的List-Unsubscribe标头功能：
 
 * **“mailto”列表 — 取消订阅**  — 对于此方法，单击 **取消订阅** 链接会向电子邮件标头中指定的取消订阅地址发送预填充的电子邮件。 [了解详情](#mailto-list-unsubscribe)
@@ -163,7 +163,7 @@ Gmail， Outlook.com， Yahoo！ 和Microsoft Outlook支持此方法。 可直�
 
 * **“一键式”列表取消订阅**  — 对于此方法，单击 **取消订阅** 链接直接取消订阅用户。 [了解详情](#one-click-list-unsubscribe)
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >从2024年6月1日开始，Yahoo！ 而且Gmail要求发件人遵守 **一键式列表取消订阅**. [了解有关此更改的更多信息](../guidance-around-changes-to-google-and-yahoo.md)
 >
@@ -193,9 +193,7 @@ Gmail， Outlook.com， Yahoo！ 和Microsoft Outlook支持此方法。 可直�
 
 可以在每个电子邮件或现有投放模板中完成此添加。 您还可以创建包含此功能的新投放模板。
 
-例如，将以下脚本输入到 **[!UICONTROL Additional SMTP headers]** 字段： `List-Unsubscribe: mailto:unsubscribe@domain.com`
-
-单击 **取消订阅** 链接会向unsubscribe@domain.com地址发送电子邮件。
+例如，将以下脚本输入到 **[!UICONTROL Additional SMTP headers]** 字段： `List-Unsubscribe: mailto:unsubscribe@domain.com`. 单击 **取消订阅** 链接会向unsubscribe@domain.com地址发送电子邮件。
 
 您也可以使用动态地址。 例如，要向为平台定义的错误地址发送电子邮件，您可以使用以下脚本： `List-Unsubscribe: <mailto:<%=errorAddress%>?subject=unsubscribe%=message.mimeMessageId%>`
 
@@ -247,6 +245,8 @@ List-Unsubscribe: https://domain.com/unsubscribe.jsp
 
 #### 在投放或模板中配置一键式列表 — 取消订阅 {#one-click-delivery-template}
 
+要在投放或投放模板中配置一键式List-Unsubscribe，请执行以下步骤。
+
 1. 转到 **[!UICONTROL SMTP]** 投放属性的部分。
 
 1. 下 **[!UICONTROL Additional SMTP Headers]**，输入命令行，如下例所示。 每个标题应位于单独的行中。
@@ -263,6 +263,8 @@ List-Unsubscribe: <https://domain.com/webApp/unsubNoClick?id=<%= recipient.crypt
 以上示例将为支持一键式服务的ISP启用“一键式列表 — 取消订阅”，同时确保不支持“mailto”的接收者仍然可以通过电子邮件请求取消订阅。
 
 #### 创建分类规则以支持一键式列表取消订阅 {#one-click-typology-rule}
+
+要使用分类规则配置One-Click List-Unsubscribe，请执行以下步骤。
 
 1. 在导航树中，转到 **[!UICONTROL Typolgy rules]** 并单击 **[!UICONTROL New]**.
 
