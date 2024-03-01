@@ -1,5 +1,5 @@
 ---
-source-git-commit: 0332be5688f9d0375d1dba97c39a87d0e8d28c52
+source-git-commit: d105a5b7d81aa14144b9d01f28a5e24c1110ae6c
 workflow-type: tm+mt
 source-wordcount: '168'
 ht-degree: 7%
@@ -8,11 +8,13 @@ ht-degree: 7%
 # 创建分类规则以支持一键式List-Unsubscribe：
 
 **1. 创建新的分类规则：**
+
 * 在导航树中单击“新建”以创建新分类
 
 ![image](/help/assets/CreatingTypologyRules1.png)
 
 **2. 继续配置分类规则：**
+
 * 规则类型：控件
 * 阶段：定位开始时
 * 渠道：电子邮件
