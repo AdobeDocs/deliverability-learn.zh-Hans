@@ -6,7 +6,7 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: ffa2e9788326389ae2e4da6e272367cdc837b72e
+source-git-commit: 3ceca47634f946488115ccbef5cb9ffb5aba8b07
 workflow-type: tm+mt
 source-wordcount: '2086'
 ht-degree: 1%
@@ -232,7 +232,7 @@ List-Unsubscribe: https://domain.com/unsubscribe.jsp
 * 包括URI取消订阅链接。
 * 支持从接收器接收HTTPPOST响应，Adobe Campaign支持此功能。 您也可以使用外部服务。
 
-要直接在Adobe Campaign v7/v8中支持“一键式列表 — 取消订阅”PSOT响应，您必须在“取消订阅收件人no-click”Web应用程序中添加。 为实现此操作，请执行以下步骤：
+要直接在Adobe Campaign v7/v8中支持“一键式列表 — 取消订阅”POST响应，您必须在“取消订阅收件人：一键式取消订阅”Web应用程序中添加。 为实现此操作，请执行以下步骤：
 
 1. 转到 **[!UICONTROL Resources]** > **[!UICONTROL Online]** > **[!UICONTROL Web applications]**.
 
