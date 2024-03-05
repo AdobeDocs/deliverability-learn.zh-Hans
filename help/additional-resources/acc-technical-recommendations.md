@@ -6,9 +6,9 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: 12bd5f583476dad0eac9641389ce35b40dc5136c
+source-git-commit: b163628adde1e4d7225a1c2c54d29b24e2b2a352
 workflow-type: tm+mt
-source-wordcount: '2045'
+source-wordcount: '2064'
 ht-degree: 1%
 
 ---
@@ -159,13 +159,11 @@ Gmail， Outlook.com， Yahoo！ 和Microsoft Outlook支持此方法。 可直�
 
 * **“mailto”列表 — 取消订阅**  — 对于此方法，单击 **取消订阅** 链接会向电子邮件标头中指定的取消订阅地址发送预填充的电子邮件。 [了解详情](#mailto-list-unsubscribe)
 
-<!--OR: With this method, clicking the **Unsubscribe** link opens the user's default email client with a pre-filled email to the unsubscribe address specified in the email header. This allows the user to unsubscribe simply by sending the email without any further manual steps.-->
-
 * **“一键式”列表取消订阅**  — 对于此方法，单击 **取消订阅** 链接直接取消订阅用户。 [了解详情](#one-click-list-unsubscribe)
 
->[!IMPORTANT]
+>[!NOTE]
 >
->>了解如何在中配置一键式列表取消订阅 [本节](#one-click-list-unsubscribe).
+>从2024年6月1日开始，主要ISP将要求发件人遵守 **一键式列表取消订阅**.
 
 ### “mailto”列表 — 取消订阅 {#mailto-list-unsubscribe}
 
@@ -197,17 +195,6 @@ Gmail， Outlook.com， Yahoo！ 和Microsoft Outlook支持此方法。 可直�
 
 ![image](../assets/List-Unsubscribe-template-SMTP.png)
 
-<!--
-List-Unsubscribe: mailto:unsubscribe@domain.com 
-* Clicking the **unsubscribe** link opens the user's default email client. This typology rule must be added in a typology used for creating email.
-
-List-Unsubscribe: https://domain.com/unsubscribe.jsp 
-
-* Clicking the **unsubscribe** link redirects the user to your unsubscribe form.
-
-  ![image](../assets/UTF-8-1.png)
--->
-
 #### 创建分类规则 {#creating-a-typology-rule}
 
 规则必须包含生成命令行的脚本，并且必须包含在电子邮件标头中。
@@ -221,6 +208,8 @@ List-Unsubscribe: https://domain.com/unsubscribe.jsp
 ### 一键式列表取消订阅 {#one-click-list-unsubscribe}
 
 对于此方法，单击 **取消订阅** 链接直接取消订阅用户，只需一个操作即可取消订阅。
+
+从2024年6月1日开始，主要ISP将要求发件人遵守 **一键式列表取消订阅**.
 
 为符合此要求，发件人必须：
 
