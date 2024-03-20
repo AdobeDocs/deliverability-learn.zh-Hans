@@ -1,7 +1,7 @@
 ---
-source-git-commit: 758bc4144e09c53883d682a480f5f52a25c98111
+source-git-commit: e5b40a9f0a58f70066c5210053cfd88fc938bb65
 workflow-type: tm+mt
-source-wordcount: '929'
+source-wordcount: '916'
 ht-degree: 0%
 
 ---
@@ -45,8 +45,6 @@ ht-degree: 0%
 + 可以为订阅者提供选项 — 这可以通过首选项中心/选择退出计划进行管理。
 
 **DO：** 在电子邮件模板中使用List Unsubscribe标头，以便在电子邮件顶部显示取消订阅链接的电子邮件客户端(例如：gmail.com)可以轻松找到用户习惯于查找取消订阅的位置。
-
-+ 单击 [此处](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/guidance-around-changes-to-google-and-yahoo.html?lang=zh-Hans) 了解有关一键取消订阅的行业计划的更多信息。
 
 ## 不要的
 
