@@ -2,12 +2,12 @@
 source-git-commit: d105a5b7d81aa14144b9d01f28a5e24c1110ae6c
 workflow-type: tm+mt
 source-wordcount: '168'
-ht-degree: 7%
+ht-degree: 6%
 
 ---
 # 创建分类规则以支持一键式List-Unsubscribe：
 
-**1. 创建新的分类规则：**
+**1。 创建新的分类规则：**
 
 * 在导航树中单击“新建”以创建新分类
 
@@ -32,7 +32,7 @@ ht-degree: 7%
 >
 >下面描述的代码仅作为示例引用。
 >此示例详细说明了如何：
->* 配置URL List-Unsubscribe并将添加标头或附加现有mailto：参数并将其替换为： &lt;mailto..>>， https://...
+>* 配置URL List-Unsubscribe并将添加标头或附加现有mailto：参数并将其替换为： &lt;mailto.。>， https://...
 >* 在List-Unsubscribe-Post标头中添加
 >发布URL示例使用var headerUnsubUrl = &quot;https://campmomentumv7-mkt-prod3.campaign.adobe.com/webApp/unsubNoClick?id=&lt;%= recipient.cryptedId %>&quot;÷
 >* 您可以添加其他参数（如&amp;service = ...）
@@ -141,16 +141,16 @@ return true;
 
 ![image](/help/assets/CreatingTypologyRules4.png)
 
-**4. 准备新投放（验证投放属性中的其他SMTP标头是否为空）**
+**4。 准备新投放（验证投放属性中的其他SMTP标头是否为空）**
 
 ![image](/help/assets/CreatingTypologyRules5.png)
 
-**5. 在投放准备期间检查是否应用了新的分类规则。**
+**5。 在投放准备期间检查是否应用了新分类规则。**
 
 ![image](/help/assets/CreatingTypologyRules6.png)
 
 
 
-**6. 验证List-Unsubscribe是否存在。**
+**6。 验证List-Unsubscribe是否存在。**
 
 ![image](/help/assets/CreatingTypologyRules7.png)

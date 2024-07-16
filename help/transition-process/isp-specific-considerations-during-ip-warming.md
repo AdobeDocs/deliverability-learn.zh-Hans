@@ -21,7 +21,7 @@ ht-degree: 16%
 
 ISP具有不同的规则和不同的流量查看方式。 例如，Gmail是最复杂的ISP之一，因为他们非常严格地查看参与度（打开和点击）以及所有其他信誉指标。 这需要制定一个自定义计划，最初仅定向参与度最高的用户。 其他ISP可能也需要同样的要求。 与您的Adobe可投放性顾问合作制定特定计划。
 
-请参阅 [互联网服务提供商详情](/help/internet-service-provider-specifics/overview.md) 部分以了解有关以下所选提供商组之间的重要差异的更多信息：
+有关以下所选提供商组之间的重要差异的更多信息，请参阅[互联网服务提供商详情](/help/internet-service-provider-specifics/overview.md)部分：
 
 * [Gmail](/help/internet-service-provider-specifics/gmail.md)
 * [Microsoft（Hotmail、Outlook、Windows Live 等）](/help/internet-service-provider-specifics/microsoft.md)
@@ -29,4 +29,4 @@ ISP具有不同的规则和不同的流量查看方式。 例如，Gmail是最�
 
 ## 其他资源
 
-* 了解更多有关利用IP预热提高您的电子邮件声誉的信息，请参阅 [本节](/help/additional-resources/increase-reputation-with-ip-warming.md).
+* 在[本节](/help/additional-resources/increase-reputation-with-ip-warming.md)中了解更多有关利用IP预热提高电子邮件信誉的信息。

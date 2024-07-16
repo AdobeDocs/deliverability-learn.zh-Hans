@@ -8,8 +8,8 @@ team: ACS
 exl-id: 4155b89f-a636-404c-8951-563c1b4d0289
 source-git-commit: e7427d6109f3201affa58decde36294d1631bf5b
 workflow-type: tm+mt
-source-wordcount: '407'
-ht-degree: 6%
+source-wordcount: '373'
+ht-degree: 2%
 
 ---
 
@@ -23,35 +23,35 @@ ht-degree: 6%
 * 按发件人域：列出发送垃圾邮件或配置不正确的发件人域（退回邮件地址的完整域）。
 * 按Web域：列出在垃圾邮件内容中所包含的链接和图像的URL中找到的域（向注册机构注册的高级别域）。 在Adobe解决方案中，要考虑的域通常是用于跟踪的地址。
 
-以下列出了使用最广泛的RBL。 有关更全面的列表，您可以参阅 [https://www.dnsstuff.com/](https://tools.dnsstuff.com/).
+以下列出了使用最广泛的RBL。 有关更全面的列表，请参阅[https://www.dnsstuff.com/](https://tools.dnsstuff.com/)。
 
-* **斯班豪斯**
+* **Spamhaus**
 
-  请参阅 [https://www.spamhaus.org/](https://www.spamhaus.org/)
+  请参阅[https://www.spamhaus.org/](https://www.spamhaus.org/)
 
-  数据库更重要。 被列入这一名单总的来说是一种严重的情况。 如果发生这种情况，您必须立即采取行动并警告商业服务、可投放性和 [Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+  数据库更重要。 被列入这一名单总的来说是一种严重的情况。 如果发生这种情况，您必须立即采取行动并警告商业服务、可投放性和[Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
 
 * **垃圾邮件**
 
-  请参阅 [https://www.spamcop.net/](https://www.spamcop.net/)
+  请参阅[https://www.spamcop.net/](https://www.spamcop.net/)
 
   它是最著名的数据库之一。 如果某个IP地址位于此列表中，这通常表示SpamCop用户已将您的邮件声明为垃圾邮件，或者您已将邮件发送到SpamCop蜜罐。
 
 * **URIBL**
 
-  请参阅 [https://www.uribl.com/](https://www.uribl.com/)
+  请参阅[https://www.uribl.com/](https://www.uribl.com/)
 
-  此列表标识定期出现在声明为垃圾邮件的邮件中的域。 如果您的域出现在此列表中，则会显着影响您的可投放性。 您应通知可投放性服务和 [Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 立即。
+  此列表标识定期出现在声明为垃圾邮件的邮件中的域。 如果您的域出现在此列表中，则会显着影响您的可投放性。 您应立即通知可交付性服务和[Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
 
 * **SURBL**
 
-  请参阅 [https://surbl.org/](https://surbl.org/)
+  请参阅[https://surbl.org/](https://surbl.org/)
 
-  SURBL可识别定期出现在垃圾邮件中的网站。 如果您的域出现在此列表中，则会显着影响您的可投放性。 您应通知可投放性服务和 [Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 立即。
+  SURBL可识别定期出现在垃圾邮件中的网站。 如果您的域出现在此列表中，则会显着影响您的可投放性。 您应立即通知可交付性服务和[Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
 
 * **iX马尼图**
 
-  这是IP列表，在德国得到广泛使用。 请参阅 [https://www.heise.de/ix/nixspam/](https://www.heise.de/ix/nixspam/)
+  这是IP列表，在德国得到广泛使用。 请参阅[https://www.heise.de/ix/nixspam/](https://www.heise.de/ix/nixspam/)
 
 <!--* SORBS
 

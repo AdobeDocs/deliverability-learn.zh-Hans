@@ -8,11 +8,11 @@ exl-id: f1c14b10-6191-4202-9825-23f948714f1e
 source-git-commit: 2a78db97a46150237629eef32086919cacf4998c
 workflow-type: tm+mt
 source-wordcount: '1284'
-ht-degree: 5%
+ht-degree: 9%
 
 ---
 
-# 实施 [!DNL Domain-based Message Authentication, Reporting and Conformance] (DMARC)
+# 实施[!DNL Domain-based Message Authentication, Reporting and Conformance] (DMARC)
 
 本文的目的是为读者进一步提供电子邮件认证方法DMARC的信息。 通过解释DMARC的工作方式及其各种政策选项，读者将更好地了解DMARC对电子邮件可投放性的影响。
 
@@ -22,9 +22,9 @@ ht-degree: 5%
 
 DMARC有三个政策选项：
 
-* **监视器(p=none)：** 指示邮箱提供商/ISP对邮件执行正常操作。
-* **隔离(p=quarantine)：** 指示邮箱提供商/ISP传送未将DMARC传递到收件人的垃圾邮件或垃圾邮件文件夹的邮件。
-* **拒绝（p=拒绝）：** 指示邮箱提供商/ISP阻止未通过DMARC导致退回的邮件。
+* **监视器(p=none)：**&#x200B;指示邮箱提供商/ISP执行通常对邮件执行的操作。
+* **隔离（p=隔离）：**&#x200B;指示邮箱提供商/ISP传送未将DMARC传递到收件人的垃圾邮件或垃圾邮件文件夹的邮件。
+* **拒绝(p=reject)：**&#x200B;指示邮箱提供商/ISP阻止未通过DMARC的邮件，从而导致退回。
 
 ## DMARC的工作原理 {#how}
 
@@ -44,7 +44,8 @@ DMARC是可选的，尽管它不是必需的，但是它是免费的，允许电
 
 ## 实施DMARC的最佳实践 {#best-practice}
 
-由于DMARC是可选的，因此默认情况下，在任何ESP平台上都不会对其进行配置。 必须在DNS中为您的域创建DMARC记录才能使其正常工作。 此外，需要您选择的电子邮件地址来指示DMARC报告应在组织内的什么位置。 作为最佳实践，建议您逐步推出DMARC实施，方法是将DMARC策略从p=none提升到p=quarantine，再提升到p=reject，以便让DMARC了解DMARC的潜在影响。
+由于DMARC是可选的，因此默认情况下，在任何ESP平台上都不会对其进行配置。 必须在DNS中为您的域创建DMARC记录才能使其正常工作。 此外，需要您选择的电子邮件地址来指示DMARC报告应在组织内的什么位置。 作为最佳实践，它是
+建议您逐步推出DMARC实施，方法是将DMARC策略从p=none提升到p=quarantine，再提升到p=reject，以便让DMARC了解DMARC的潜在影响。
 
 1. 分析您收到并使用的反馈(p=none)，这告知接收者不对身份验证失败的邮件执行任何操作，但仍会向发件人发送电子邮件报告。 此外，如果合法邮件未通过身份验证，则查看和修复 SPF/DKIM 的问题。
 1. 确定SPF和DKIM是否一致并通过所有合法电子邮件的身份验证，然后将策略移至(p=quarantine)，这会告知接收电子邮件服务器隔离身份验证失败的电子邮件（这通常意味着将这些邮件放入垃圾邮件文件夹）。
@@ -58,19 +59,19 @@ DMARC是可选的，尽管它不是必需的，但是它是免费的，允许电
 
 DMARC提供接收有关SPF/DKIM失败的电子邮件的报告的功能。 在身份验证过程中，ISP服务生成了两个不同的报告，发件人可以通过其DMARC策略中的RUA/RUF标记接收这些报告：
 
-* **汇总报表(RUA)：** 不包含任何对GDPR敏感的PII（个人身份信息）。
-* **法医报告（联阵）：** 包含对GDPR敏感的电子邮件地址。 在使用之前，最好在内部检查如何处理需要符合GDPR的信息。
+* **汇总报表(RUA)：**&#x200B;不包含任何对GDPR敏感的PII（个人身份信息）。
+* **取证报告(RUF)：**&#x200B;包含对GDPR敏感的电子邮件地址。 在使用之前，最好在内部检查如何处理需要符合GDPR的信息。
 
 这些报告的主要用途是接收尝试欺骗的电子邮件概述。 这些是技术含量很高的报告，最好通过第三方工具消化。 一些专门DMARC监控的公司包括：
 
 * [ValiMail](https://www.valimail.com/products/#automated-delivery)
-* [阿加里语](https://www.agari.com/)
-* [德马尔西安](https://dmarcian.com/)
-* [校对](https://www.proofpoint.com/us)
+* [加加里](https://www.agari.com/)
+* [Dmarcian](https://dmarcian.com/)
+* [校对点](https://www.proofpoint.com/us)
 
 >[!CAUTION]
 >
->如果要添加用于接收报告的电子邮件地址位于为其创建DMARC记录的域之外，则需要授权其外部域将指定给您拥有此域的DNS。 为此，请按照 [dmarc.org文档](https://dmarc.org/2015/08/receiving-dmarc-reports-outside-your-domain)
+>如果要添加用于接收报告的电子邮件地址位于为其创建 DMARC 记录的域之外，则需要授权其外部域以指定到您拥有此域的 DNS。为此，请执行 [dmarc.org 文档](https://dmarc.org/2015/08/receiving-dmarc-reports-outside-your-domain)中详述的步骤
 
 ### 示例DMARC记录 {#example}
 
@@ -86,7 +87,7 @@ DMARC记录具有多个名为DMARC标记的组件。 每个标记都有一个值
 |  ---  |  ---  |  ---  |  ---  |  ---  |
 | v | 必需 | 此DMARC标记指定版本。 目前只有一个版本，因此其固定值为v=DMARC1 | V=DMARC1 DMARC1 | DMARC1 |
 | p | 必需 | 显示选定的DMARC策略，并指示接收者报告、隔离或拒绝未通过身份验证检查的邮件。 | p=none、quarantine或reject | - |
-| fo | 可选 | 允许域所有者指定报告选项。 | 0：如果一切失败，则生成报告<br/>1：如果任何操作失败，则生成报表<br/>d：如果DKIM失败，则生成报告<br/>s：如果SPF失败，则生成报告 | 1（建议用于DMARC报表） |
+| fo | 可选 | 允许域所有者指定报告选项。 | 0：如果一切失败，则生成报告<br/>1：如果一切失败，则生成报告<br/>d：如果DKIM失败，则生成报告<br/>s：如果SPF失败，则生成报告 | 1（建议用于DMARC报表） |
 | pct | 可选 | 告知受过滤的邮件的百分比。 | pct=20 | 100 |
 | rua | 可选（推荐） | 标识将提交汇总报表的位置。 | `rua=mailto:aggrep@example.com` | - |
 | ruf | 可选（推荐） | 确定将提交鉴证报告的位置。 | `ruf=mailto:authfail@example.com` | - |
@@ -98,7 +99,7 @@ DMARC记录具有多个名为DMARC标记的组件。 每个标记都有一个值
 
 >[!NOTE]
 >
->如果Campaign实例托管在AWS上，则可以使用该控制面板为子域实施DMARC。 [了解如何使用控制面板实施DMARC记录](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/txt-records/dmarc.html).
+>如果Campaign实例托管在AWS上，则可以使用该控制面板为子域实施DMARC。 [了解如何使用控制面板](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/txt-records/dmarc.html)实施DMARC记录。
 
 DMARC失败的一个常见原因是“从”和“错误至”或“返回路径”地址之间未对齐。 为避免这种情况，在设置DMARC时，建议在投放模板中仔细检查您的“发件人”和“错误收件人”地址设置。
 

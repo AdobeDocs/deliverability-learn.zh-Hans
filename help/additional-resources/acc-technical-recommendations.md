@@ -25,11 +25,11 @@ Adobe Campaign检查是否为IP地址提供了反向DNS，并且这正确指向I
 
 网络配置的重要一点是，确保为传出消息的每个IP地址定义正确的反向DNS。 这意味着对于给定的IP地址，存在反向DNS记录（PTR记录），具有循环回初始IP地址的匹配DNS（A记录）。
 
-反向DNS的域选择在处理某些ISP时会产生影响。 特别是，AOL只接受与反向DNS具有相同域的地址的反馈循环(请参阅 [反馈环](#feedback-loop))。
+反向DNS的域选择在处理某些ISP时会产生影响。 特别是，AOL只接受与反向DNS具有相同域中的地址的反馈循环（请参阅[反馈循环](#feedback-loop)）。
 
 >[!NOTE]
 >
->您可以使用 [此外部工具](https://mxtoolbox.com/SuperTool.aspx) 验证域的配置。
+>您可以使用[此外部工具](https://mxtoolbox.com/SuperTool.aspx)来验证域的配置。
 
 ### MX规则 {#mx-rules}
 
@@ -39,7 +39,7 @@ MX规则（邮件交换器）是管理发送服务器和接收服务器之间通
 
 >[!NOTE]
 >
->有关Adobe Campaign Classic中MX管理的更多信息，请参阅 [本节](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/email-deliverability.html#mx-configuration).
+>有关Adobe Campaign Classic中MX管理的详细信息，请参阅[此部分](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/email-deliverability.html#mx-configuration)。
 
 ### TLS {#tls}
 
@@ -67,34 +67,34 @@ SPF记录目前可在DNS服务器上定义为TXT类型记录（代码16）或SPF
 v=spf1 ip4:12.34.56.78/32 ip4:12.34.56.79/32 ~all
 ```
 
-将两个IP地址12.34.56.78和12.34.56.79定义为有权发送域的电子邮件。 **~所有** 表示任何其他地址都应解释为SoftFail。
+将两个IP地址12.34.56.78和12.34.56.79定义为有权发送域的电子邮件。 **~all**&#x200B;表示任何其他地址都应解释为SoftFail。
 
 用于定义SPF记录的Recommendations：
 
-* 添加 **~所有** (SoftFail)或 **-all** （失败）最终拒绝除已定义服务器以外的所有服务器。 如果没有这些信息，服务器将能够伪造此域（使用中性评估）。
-* 不添加 **ptr** (openspf.org建议不要这样做，因为这样做成本高昂且不可靠)。
+* 在末尾添加&#x200B;**~all** (SoftFail)或&#x200B;**-all** (Fail)以拒绝除已定义服务器以外的所有服务器。 如果没有这些信息，服务器将能够伪造此域（使用中性评估）。
+* 请勿添加&#x200B;**ptr**(openspf.org建议不要添加，因为这样做成本高昂且不可靠)。
 
 >[!NOTE]
 >
->在中了解有关SPF的更多信息 [本节](/help/additional-resources/authentication.md#spf).
+>在[本节](/help/additional-resources/authentication.md#spf)中了解有关SPF的更多信息。
 
 ## 身份验证
 
 >[!NOTE]
 >
->在中了解关于电子邮件身份验证不同形式的更多信息 [本节](/help/additional-resources/authentication.md).
+>在[本节](/help/additional-resources/authentication.md)中了解关于不同形式的电子邮件身份验证的更多信息。
 
 ### DKIM {#dkim-acc}
 
 >[!NOTE]
 >
->对于托管或混合安装，如果已升级到 [增强MTA](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/sending-with-enhanced-mta.html#sending-messages)，DKIM电子邮件身份验证签名由Enhanced MTA对所有域的所有邮件进行。
+>对于托管或混合安装，如果您已升级到[Enhanced MTA](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/sending-with-enhanced-mta.html#sending-messages)，则Enhanced MTA将为所有域的所有邮件完成DKIM电子邮件身份验证签名。
 
-使用 [DKIM](/help/additional-resources/authentication.md#dkim) 与Adobe Campaign Classic配合使用需要满足以下先决条件：
+在Adobe Campaign Classic中使用[DKIM](/help/additional-resources/authentication.md#dkim)需要以下先决条件：
 
 **Adobe Campaign选项声明**：在Adobe Campaign中，DKIM私钥基于DKIM选择器和域。 当前无法为使用不同选择器的同一域/子域创建多个私钥。 无法定义哪个selector域/子域必须用于平台或电子邮件中的身份验证。 平台可以选择其中一个私钥，这意味着身份验证失败的可能性很高。
 
-* 如果您已为Adobe Campaign实例配置了DomainKeys，则只需选择 **dkim** 在 [域管理规则](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html#email-management-rules). 如果没有，请执行与DomainKeys（取代DKIM）相同的配置步骤（私钥/公钥）。
+* 如果您已经为Adobe Campaign实例配置了DomainKeys，则只需在[域管理规则](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html#email-management-rules)中选择&#x200B;**dkim**&#x200B;即可。 如果没有，请执行与DomainKeys（取代DKIM）相同的配置步骤（私钥/公钥）。
 * 由于DKIM是DomainKeys的改进版本，因此不必为同一域同时启用DomainKeys和DKIM。
 * 以下域当前验证DKIM：AOL、Gmail。
 
@@ -102,7 +102,7 @@ v=spf1 ip4:12.34.56.78/32 ip4:12.34.56.79/32 ~all
 
 反馈循环的工作方式是在ISP级别声明用于发送消息的一系列IP地址的给定电子邮件地址。 ISP会以类似于退回邮件的方式，将收件人报告为垃圾邮件的邮件发送到此邮箱。 该平台应配置为阻止将来向投诉用户投放内容。 即使他们没有使用正确的选择退出链接，也不要再与他们联系，这一点很重要。 基于这些投诉，ISP会将IP地址添加到其IP阻止列表。 根据ISP的不同，约1%的投诉率将导致阻止IP地址。
 
-目前正在制定一个标准来定义反馈循环消息的格式： [滥用反馈报告格式(ARF)](https://tools.ietf.org/html/rfc6650).
+当前正在制定一个标准来定义反馈循环消息的格式： [滥用反馈报告格式(ARF)](https://tools.ietf.org/html/rfc6650)。
 
 为实例实施反馈循环需要：
 
@@ -111,8 +111,8 @@ v=spf1 ip4:12.34.56.78/32 ip4:12.34.56.79/32 ~all
 
 在Adobe Campaign中实施简单的反馈循环时，会使用退回消息功能。 反馈循环邮箱用作退回邮箱，并定义规则以检测这些邮件。 将报告邮件为垃圾邮件的收件人的电子邮件地址添加到隔离列表。
 
-* 创建或修改退回邮件规则， **反馈循环**，在 **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Mail rule sets]** 原因如下 **已拒绝** 和类型 **硬**.
-* 如果专门为反馈循环定义了邮箱，请通过在中创建新外部退回邮件帐户来定义用于访问邮箱的参数 **[!UICONTROL Administration > Platform > External accounts]**.
+* 在&#x200B;**[!UICONTROL Administration > Campaign Management > Non deliverables Management > Mail rule sets]**&#x200B;中创建或修改退回邮件规则&#x200B;**Feedback_loop**，原因为&#x200B;**已拒绝**，类型为&#x200B;**Hard**。
+* 如果已专门为反馈循环定义了邮箱，请通过在&#x200B;**[!UICONTROL Administration > Platform > External accounts]**&#x200B;中新建外部退回邮件帐户来定义用于访问邮箱的参数。
 
 该机制可立即运作，以处理投诉通知。 为确保此规则正常工作，您可以暂时停用帐户以便它们不收集这些邮件，然后手动检查反馈循环邮箱的内容。 在服务器上，执行以下命令：
 
@@ -125,7 +125,7 @@ nlserver inMail -instance:instance -verbose.
 
 * 复制在任意数量的邮箱上接收的邮件，
 * 让每个邮箱被一个实例接收，
-* 配置实例，使其仅处理与其相关的消息：实例信息包含在Adobe Campaign发送的消息的消息ID标头中，因此也位于反馈循环消息中。 只需指定 **checkinstancename** 配置文件中的参数（默认情况下，不会验证实例，这可能会导致错误隔离某些地址）：
+* 配置实例，使其仅处理与其相关的消息：实例信息包含在Adobe Campaign发送的消息的消息ID标头中，因此也位于反馈循环消息中。 只需在实例配置文件中指定&#x200B;**checkInstanceName**&#x200B;参数（默认情况下，实例未经验证，这可能导致某些地址被错误隔离）：
 
   ```
   <serverConf>
@@ -137,7 +137,7 @@ Adobe Campaign的可投放性服务管理您对以下ISP的反馈循环服务的
 
 ## 列表 — 取消订阅 {#list-unsubscribe}
 
-添加名为的SMTP标头 **列表 — 取消订阅** 是确保优化可投放性管理所必需的。
+必须添加名为&#x200B;**List-Unsubscribe**&#x200B;的SMTP标头，以确保实现最佳可投放性管理。
 
 此标头可用作“报告为垃圾邮件”图标的替代方法。 它在ISP的电子邮件界面中显示为“取消订阅”链接。
 
@@ -157,17 +157,17 @@ Gmail， Outlook.com， Yahoo！ 和Microsoft Outlook支持此方法。 可直�
 
 存在两个版本的List-Unsubscribe标头功能：
 
-* **“mailto”列表 — 取消订阅**  — 对于此方法，单击 **取消订阅** 链接会向电子邮件标头中指定的取消订阅地址发送预填充的电子邮件。 [了解详情](#mailto-list-unsubscribe)
+* **&quot;mailto&quot; List-Unsubscribe** — 使用此方法，单击&#x200B;**取消订阅**&#x200B;链接会将预填充的电子邮件发送到电子邮件标头中指定的取消订阅地址。 [了解详情](#mailto-list-unsubscribe)
 
-* **“一键式”列表取消订阅**  — 对于此方法，单击 **取消订阅** 链接直接取消订阅用户。 [了解详情](#one-click-list-unsubscribe)
+* **&quot;One-Click&quot; List-Unsubscribe** — 使用此方法，单击&#x200B;**Unsubscribe**&#x200B;链接将直接取消订阅用户。 [了解详情](#one-click-list-unsubscribe)
 
 >[!NOTE]
 >
->从2024年6月1日开始，主要ISP将要求发件人遵守 **一键式列表取消订阅**.
+>从2024年6月1日开始，主要ISP将要求发件人遵守&#x200B;**一键式列表取消订阅**。
 
 ### “mailto”列表 — 取消订阅 {#mailto-list-unsubscribe}
 
-对于此方法，单击 **取消订阅** 链接会向电子邮件标头中指定的取消订阅地址发送预填充的电子邮件。
+使用此方法时，单击&#x200B;**取消订阅**&#x200B;链接会将预填充的电子邮件发送到电子邮件标头中指定的取消订阅地址。
 
 要使用“mailto”列表取消订阅，必须输入命令行，在其中指定电子邮件地址，例如： `List-Unsubscribe: <mailto:client@newsletter.example.com?subject=unsubscribe?body=unsubscribe>`
 
@@ -177,21 +177,21 @@ Gmail， Outlook.com， Yahoo！ 和Microsoft Outlook支持此方法。 可直�
 
 您还可以使用命令行创建动态“mailto”List-Unsubscribe，例如： `List-Unsubscribe: <mailto:<%=errorAddress%>?subject=unsubscribe%=message.mimeMessageId%>`
 
-实施 **“mailto”列表 — 取消订阅** 在Campaign中，您可以：
+要在Campaign中实施&#x200B;**&quot;mailto&quot; List-Unsubscribe**，您可以：
 
-* 直接在投放或投放模板中添加命令行 —  [了解如何](#adding-a-command-line-in-a-delivery-template)
+* 直接在投放或投放模板中添加命令行 — [了解如何操作](#adding-a-command-line-in-a-delivery-template)
 
-* 创建分类规则 —  [了解如何](#creating-a-typology-rule)
+* 创建分类规则 — [了解如何操作](#creating-a-typology-rule)
 
 #### 在投放或模板中添加命令行 {#adding-a-command-line-in-a-delivery-template}
 
-必须将命令行添加到 **[!UICONTROL Additional SMTP headers]** 电子邮件的SMTP标头的部分。
+必须将命令行添加到电子邮件的SMTP标头的&#x200B;**[!UICONTROL Additional SMTP headers]**&#x200B;部分中。
 
 可以在每个电子邮件或现有投放模板中完成此添加。 您还可以创建包含此功能的新投放模板。
 
-例如，将以下脚本输入到 **[!UICONTROL Additional SMTP headers]** 字段： `List-Unsubscribe: mailto:unsubscribe@domain.com`. 单击 **取消订阅** 链接会向unsubscribe@domain.com地址发送电子邮件。
+例如，在&#x200B;**[!UICONTROL Additional SMTP headers]**&#x200B;字段中输入以下脚本： `List-Unsubscribe: mailto:unsubscribe@domain.com`。 单击&#x200B;**取消订阅**&#x200B;链接会向unsubscribe@domain.com地址发送电子邮件。
 
-您也可以使用动态地址。 例如，要向为平台定义的错误地址发送电子邮件，您可以使用以下脚本： `List-Unsubscribe: <mailto:<%=errorAddress%>?subject=unsubscribe%=message.mimeMessageId%>`
+您也可以使用动态地址。 例如，若要向为平台定义的错误地址发送电子邮件，您可以使用以下脚本： `List-Unsubscribe: <mailto:<%=errorAddress%>?subject=unsubscribe%=message.mimeMessageId%>`
 
 ![image](../assets/List-Unsubscribe-template-SMTP.png)
 
@@ -199,7 +199,7 @@ Gmail， Outlook.com， Yahoo！ 和Microsoft Outlook支持此方法。 可直�
 
 规则必须包含生成命令行的脚本，并且必须包含在电子邮件标头中。
 
-了解如何在Adobe Campaign v7/v8中创建类型规则 [本节](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/about-campaign-typologies.html#typology-rules).
+在[本节](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/about-campaign-typologies.html#typology-rules)中了解如何在Adobe Campaign v7/v8中创建分类规则。
 
 >[!NOTE]
 >
@@ -207,34 +207,34 @@ Gmail， Outlook.com， Yahoo！ 和Microsoft Outlook支持此方法。 可直�
 
 ### 一键式列表取消订阅 {#one-click-list-unsubscribe}
 
-对于此方法，单击 **取消订阅** 链接直接取消订阅用户，只需一个操作即可取消订阅。
+使用此方法，单击&#x200B;**取消订阅**&#x200B;链接将直接取消订阅用户，只需一个操作即可取消订阅。
 
-从2024年6月1日开始，主要ISP将要求发件人遵守 **一键式列表取消订阅**.
+从2024年6月1日开始，主要ISP将要求发件人遵守&#x200B;**一键式列表取消订阅**。
 
 为符合此要求，发件人必须：
 
-* 添加以下命令行： `List-Unsubscribe-Post: List-Unsubscribe=One-Click`.
+* 添加以下命令行： `List-Unsubscribe-Post: List-Unsubscribe=One-Click`。
 * 包括URI取消订阅链接。
 * 支持从接收器接收HTTPPOST响应，Adobe Campaign支持此功能。 您也可以使用外部服务。
 
 要直接在Adobe Campaign v7/v8中支持“一键式列表 — 取消订阅”POST响应，您必须在“取消订阅收件人：一键式取消订阅”Web应用程序中添加。 为实现此操作，请执行以下步骤：
 
-1. 转到 **[!UICONTROL Resources]** > **[!UICONTROL Online]** > **[!UICONTROL Web applications]**.
+1. 转到&#x200B;**[!UICONTROL Resources]** > **[!UICONTROL Online]** > **[!UICONTROL Web applications]**。
 
-1. 上传“取消订阅收件人单击” [XML](/help/assets/WebAppUnsubNoClick.xml.zip) 文件。
+1. 上传“取消订阅的收件人不点击”的[XML](/help/assets/WebAppUnsubNoClick.xml.zip)文件。
 
-配置 **一键式列表取消订阅** 在Campaign中，您可以：
+要在Campaign中配置&#x200B;**一键式List-Unsubscribe**，您可以：
 
-* 在投放或投放模板中添加命令行 —  [了解如何](#one-click-delivery-template)
-* 创建分类规则 —  [了解如何](#one-click-typology-rule)
+* 在投放或投放模板中添加命令行 — [了解如何操作](#one-click-delivery-template)
+* 创建分类规则 — [了解如何操作](#one-click-typology-rule)
 
 #### 在投放或模板中配置一键式列表 — 取消订阅 {#one-click-delivery-template}
 
 要在投放或投放模板中配置一键式List-Unsubscribe，请执行以下步骤。
 
-1. 转到 **[!UICONTROL SMTP]** 投放属性的部分。
+1. 转到投放属性的&#x200B;**[!UICONTROL SMTP]**&#x200B;部分。
 
-1. 下 **[!UICONTROL Additional SMTP Headers]**，输入命令行，如下例所示。 每个标题应位于单独的行中。
+1. 在&#x200B;**[!UICONTROL Additional SMTP Headers]**&#x200B;下，输入命令行，如下例所示。 每个标题应位于单独的行中。
 
 例如：
 
@@ -251,16 +251,16 @@ List-Unsubscribe: <https://domain.com/webApp/unsubNoClick?id=<%= recipient.crypt
 
 要使用分类规则配置One-Click List-Unsubscribe，请执行以下步骤。
 
-1. 在导航树中，转到 **[!UICONTROL Typolgy rules]** 并单击 **[!UICONTROL New]**.
+1. 从导航树中，转到&#x200B;**[!UICONTROL Typolgy rules]**&#x200B;并单击&#x200B;**[!UICONTROL New]**。
 
    ![image](../assets/CreatingTypologyRules1.png)
 
 
 1. 配置新的分类规则，例如：
 
-   * **[!UICONTROL Rule type]**：**[!UICONTROL Control]**
-   * **[!UICONTROL Phase]**：**[!UICONTROL At the start of targeting]**
-   * **[!UICONTROL Channel]**：**[!UICONTROL Email]**
+   * **[!UICONTROL Rule type]**： **[!UICONTROL Control]**
+   * **[!UICONTROL Phase]**： **[!UICONTROL At the start of targeting]**
+   * **[!UICONTROL Channel]**： **[!UICONTROL Email]**
    * **[!UICONTROL Level]**：您的选择
    * **[!UICONTROL Active]**
 
@@ -274,8 +274,8 @@ List-Unsubscribe: <https://domain.com/webApp/unsubNoClick?id=<%= recipient.crypt
    >下面描述的代码仅作为示例引用。
 
    此示例详细说明了如何：
-   * 配置“mailto”列表取消订阅。 它会添加标头或附加现有的“mailto：”参数，并将其替换为： &lt;mailto..>>， https://...
-   * 在一键式List-Unsubscribe标头中添加。 它使用 `var headerUnsubUrl = "https://campmomentumv7-mkt-prod3.campaign.adobe.com/webApp/unsubNoClick?id=<%= recipient.cryptedId %>"÷`
+   * 配置“mailto”列表取消订阅。 它会添加标头或附加现有的“mailto：”参数，并将其替换为： &lt;mailto..>， https://...
+   * 在一键式List-Unsubscribe标头中添加。 它使用`var headerUnsubUrl = "https://campmomentumv7-mkt-prod3.campaign.adobe.com/webApp/unsubNoClick?id=<%= recipient.cryptedId %>"÷`
 
    >[!NOTE]
    >
@@ -391,7 +391,7 @@ List-Unsubscribe: <https://domain.com/webApp/unsubNoClick?id=<%= recipient.crypt
 
    >[!CAUTION]
    >
-   >验证 **[!UICONTROL Additional SMTP headers]** 投放属性中的字段为空。
+   >验证投放属性中的&#x200B;**[!UICONTROL Additional SMTP headers]**&#x200B;字段是否为空。
 
    ![image](../assets/CreatingTypologyRules5.png)
 
@@ -409,9 +409,9 @@ List-Unsubscribe: <https://domain.com/webApp/unsubNoClick?id=<%= recipient.crypt
 
 SMTP（简单邮件传输协议）是用于电子邮件传输的Internet标准。
 
-规则未检查的SMTP错误列在 **[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]** > **[!UICONTROL Delivery log qualification]** 文件夹。 默认情况下，这些错误消息被解释为无法访问软错误。
+规则未检查的SMTP错误列在&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]** > **[!UICONTROL Delivery log qualification]**&#x200B;文件夹中。 默认情况下，这些错误消息被解释为无法访问软错误。
 
-必须确定最常见的错误，并在中添加相应的规则 **[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]** > **[!UICONTROL Mail rule sets]** 如果您希望正确地确认来自SMTP服务器的反馈。 如果没有此操作，平台将执行不必要的重试（对于未知用户），或者在执行给定数量的测试后错误地隔离某些收件人。
+如果您希望正确地限定来自SMTP服务器的反馈，则必须确定最常见的错误，并在&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]** > **[!UICONTROL Mail rule sets]**&#x200B;中添加相应的规则。 如果没有此操作，平台将执行不必要的重试（对于未知用户），或者在执行给定数量的测试后错误地隔离某些收件人。
 
 ### 专用IP {#dedicated-ips}
 

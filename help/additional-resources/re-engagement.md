@@ -8,8 +8,8 @@ team: ACS
 exl-id: 30118706-d4c0-4bd8-8c9b-50c26b8374ef
 source-git-commit: d6094cd2ef0a8a7741e7d8aa4db15499fad08f90
 workflow-type: tm+mt
-source-wordcount: '924'
-ht-degree: 1%
+source-wordcount: '913'
+ht-degree: 0%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 1%
 
 ## ISP如何查看非参与活动？ {#how-do-isps-view-non-engagement-activity-}
 
-多年来，ISP一直使用来自用户的参与反馈量度来确定报文的放置位置或是否应该投放。 用户 [参与](/help/engagement.md) 包括正反馈和负反馈，ISP会定期监控。 没有参与也许是消极参与的主要原因之一。 从可交付性的角度来看，始终如一地向没有表现出参与度的用户发送营销活动也会降低IP地址和域的整体信誉。
+多年来，ISP一直使用来自用户的参与反馈量度来确定报文的放置位置或是否应该投放。 用户[参与](/help/engagement.md)由正反馈和负反馈组成，ISP会定期监视。 没有参与也许是消极参与的主要原因之一。 从可交付性的角度来看，始终如一地向没有表现出参与度的用户发送营销活动也会降低IP地址和域的整体信誉。
 
 Gmail、Microsoft®和OATH等ISP将非参与视为不需要的电子邮件，并开始将邮件重定向到垃圾邮件文件夹。 此外，这些订阅者可能不再拥有电子邮件帐户，这可用作“回收”垃圾邮件陷阱。 这意味着该地址在一段时间内无效，并且所有消息都被拒绝。 如果您的订阅者管理系统没有删除“硬退回”地址，则可能会邮寄给垃圾邮件陷阱，这可能导致严重的投放问题。
 
@@ -75,9 +75,9 @@ Gmail、Microsoft®和OATH等ISP将非参与视为不需要的电子邮件，并
 
 **Adobe Campaign**
 
-* [在Campaign Classic中跟踪日志](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/delivery-dashboard.html#tracking-logs)
-* [在Campaign Standard中跟踪日志](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/sending-and-tracking-messages/tracking-messages.html#tracking-logs)
+* [Campaign Classic中的跟踪日志](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/delivery-dashboard.html#tracking-logs)
+* [Campaign Standard中的跟踪日志](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/sending-and-tracking-messages/tracking-messages.html#tracking-logs)
 
 **Adobe客户历程管理**
 
-* [消息跟踪](https://experienceleague.adobe.com/docs/journey-optimizer/using/reporting/message-tracking.html?lang=zh-Hans)
+* [邮件跟踪](https://experienceleague.adobe.com/docs/journey-optimizer/using/reporting/message-tracking.html?lang=zh-Hans)

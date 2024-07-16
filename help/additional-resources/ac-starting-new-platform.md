@@ -8,8 +8,8 @@ team: ACS
 exl-id: 6c9ade01-3052-4311-af80-888294820024
 source-git-commit: d6094cd2ef0a8a7741e7d8aa4db15499fad08f90
 workflow-type: tm+mt
-source-wordcount: '603'
-ht-degree: 8%
+source-wordcount: '549'
+ht-degree: 6%
 
 ---
 
@@ -31,19 +31,19 @@ ISP自然会怀疑从未用于发送电子邮件、突然开始发送大量电�
 
 * 配置专用于从Adobe发送的电子邮件促销活动的专用子域。
 
-* 如果你有这个信息， **将无效地址导入隔离表**.
+* 如果您有此信息，请&#x200B;**将无效地址导入隔离表**。
 首次使用地址列表且可能不完全合格时，经常会启动平台。 如果发送到无效地址或honeypot地址，这将有助于降低平台的声誉。
 
-   * 如果您有一个无效地址列表，则在首次发送之前将其导入隔离表符合您的最大利益。 隔离表可通过以下方式获取 **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]** (Campaign Classic)和 **[!UICONTROL Administration > Channels > Quarantines > Addresses]** (Campaign Standard)菜单。
+   * 如果您有一个无效地址列表，则在首次发送之前将其导入隔离表符合您的最大利益。 隔离表通过&#x200B;**[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]** (Campaign Classic)和&#x200B;**[!UICONTROL Administration > Channels > Quarantines > Addresses]** (Campaign Standard)菜单提供。
 
    * 同样，如果您希望重新限定无效地址，则最好在逐个建立平台的信誉之后这样做，以便“稀释”随着时间的推移使用无效地址。
 
-* **限制吞吐率** 限制匹配项的数目。 有关调整此类技术设置的更多信息，请与Adobe Campaign管理员联系。
+* **通过限制mtachild的数量来限制吞吐率**。 有关调整此类技术设置的更多信息，请与Adobe Campaign管理员联系。
 
-* **逐步增加发送的卷** 以避免被标记为垃圾邮件。 不要从一开始就定位整个数据库，而是在每次发送时都添加列表的一个额外部分。 这样您就可以在每一步增加容量，同时降低无效地址的总速率。 为确保启动阶段的顺利发展，可以使用波段。
+* **逐步增加发送的卷**&#x200B;以避免被标记为垃圾邮件。 不要从一开始就定位整个数据库，而是在每次发送时都添加列表的一个额外部分。 这样您就可以在每一步增加容量，同时降低无效地址的总速率。 为确保启动阶段的顺利发展，可以使用波段。
 
-* **定期发送**. 从某种程度上讲，定期发送小批次比偶尔发送大批次要好。
-* **请密切关注投放报告**. 高错误指示器可能意味着技术设置配置不正确。
+* **定期发送**。 从某种程度上讲，定期发送小批次比偶尔发送大批次要好。
+* **请密切注意投放报告**。 高错误指示器可能意味着技术设置配置不正确。
 
 ## 其他资源
 

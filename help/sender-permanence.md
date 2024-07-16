@@ -11,7 +11,7 @@ exl-id: f57de522-1361-43a3-8f8b-f9a191986529
 source-git-commit: 9444f8601f2f349398ee5deb9d5f4d4f7abb44f5
 workflow-type: tm+mt
 source-wordcount: '135'
-ht-degree: 5%
+ht-degree: 2%
 
 ---
 
@@ -23,9 +23,9 @@ ht-degree: 5%
 * 一致性是向ISP证明发送者信誉可靠并且不试图绕过任何由于发送实践不佳导致的信誉问题的关键。
 * 在某些ISP甚至认为发件人完全可信之前，需要长期保持这些一致的策略。
 
-**下面给出了一些示例：**
+**下面是一些示例：**
 
-![良好的发送持久性](assets/Sender_Permanence_1.png)
+![发送持久性良好](assets/Sender_Permanence_1.png)
 
 ![发送持久性错误](assets/Sender_Permanence_2.png)
 

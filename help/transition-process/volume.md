@@ -12,7 +12,7 @@ team: ACS
 exl-id: 1bc56061-0c64-4033-b49c-66618916bca6
 source-git-commit: 6b312cdbba496818337c97ec4f42962aea757901
 workflow-type: tm+mt
-source-wordcount: '573'
+source-wordcount: '553'
 ht-degree: 1%
 
 ---
@@ -25,16 +25,16 @@ ht-degree: 1%
 
 下面是有关如何顺利过渡的提示和提示列表：
 
-* **权限** 是任何成功的电子邮件计划的基础。
-* **低和慢**  — 从低发送量开始，然后随着您建立发件人信誉而增加。
-* A **串联邮寄策略** 允许您在使用当前ESP逐渐变慢时增加Campaign的音量，而不会中断电子邮件日历。
-* **参与事项**  — 从定期打开和单击电子邮件的订阅者开始。
-* **遵循计划**  — 我们的建议已帮助数百个Campaign客户成功增加了其电子邮件项目。
-* **监控您的回复电子邮件帐户**. 对于您的客户来说，使用noreply@xyz.com或不做出响应是不好的体验。
-* 非活动地址可能会对可投放性产生负面影响。 **在当前平台上重新激活并重新获得权限**，而不是您的新IP。
-* **域**  — 使用作为公司实际域的子域的发送域
+* **权限**&#x200B;是任何成功的电子邮件计划的基础。
+* **低和慢** — 从低发送量开始，然后随着您建立发件人信誉而增加。
+* **串联邮件策略**&#x200B;允许您在不中断电子邮件日历的情况下增加Campaign的邮件量，同时使用当前的ESP结束邮件。
+* **参与很重要** — 从定期打开并单击您电子邮件的订阅者开始。
+* **遵循计划** — 我们的建议已帮助数百个Campaign客户成功增加了其电子邮件计划。
+* **监视您的回复电子邮件帐户**。 对于您的客户来说，使用noreply@xyz.com或不做出响应是不好的体验。
+* 非活动地址可能会对可投放性产生负面影响。 **重新激活并重新访问您当前的平台**，而不是新IP。
+* **域** — 使用作为公司实际域的子域的发送域
    * 例如，如果您的公司域是xyz.com ，则email.xyz.com为ISP提供的信誉会比xyzemail.com更高
-* **透明度**  — 您的电子邮件域的注册详细信息应公开提供，不应为私人。
+* **透明度** — 电子邮件域的注册详细信息应公开提供，不应为私人。
 
 在许多情况下，事务性邮件不遵循传统的促销预热方法。 由于事务性邮件的性质，显然很难控制其数量，因为它通常需要用户交互来触发电子邮件触控。 在某些情况下，事务性邮件可以简单地在没有正式计划的情况下进行转换。 在其他情况下，随着时间推移而转换每种报文类型可能会有助于缓慢地增加报文量。 例如，您可能希望按如下方式进行过渡：
 
@@ -47,12 +47,12 @@ ht-degree: 1%
 
 **Campaign**
 
-* 了解有关在中使用Adobe Campaign启动新平台时管理投放能力的更多信息 [本节](/help/additional-resources/ac-starting-new-platform.md).
-* 了解如何在中通过Adobe Campaign Classic使用多个批次发送 [本节](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#sending-using-multiple-waves).
-* 了解如何在中将子域完全委派给Adobe Campaign Classic或Standard [本节](/help/additional-resources/ac-domain-name-setup.md).
+* 在[本节](/help/additional-resources/ac-starting-new-platform.md)中了解有关使用Adobe Campaign启动新平台时管理可投放性的更多信息。
+* 在[本节](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#sending-using-multiple-waves)中了解如何通过Adobe Campaign Classic使用多个批次发送。
+* 在[本节](/help/additional-resources/ac-domain-name-setup.md)中了解如何将子域完全委派给Adobe Campaign Classic或Standard。
 * [控制面板：完全子域委派（教程）](https://experienceleague.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) - *了解如何将子域完全委派给Adobe Campaign Classic。*
 * [控制面板：完全子域委派（教程）](https://experienceleague.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) - *了解如何将子域完全委派给Adobe Campaign Standard。*
 
 ## 其他资源
 
-* 了解更多有关利用IP预热提高您的电子邮件声誉的信息，请参阅 [本节](/help/additional-resources/increase-reputation-with-ip-warming.md).
+* 在[本节](/help/additional-resources/increase-reputation-with-ip-warming.md)中了解更多有关利用IP预热提高电子邮件信誉的信息。
