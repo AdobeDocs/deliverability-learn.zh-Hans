@@ -99,7 +99,7 @@ DMARC记录具有多个名为DMARC标记的组件。 每个标记都有一个值
 
 >[!NOTE]
 >
->如果Campaign实例托管在AWS上，则可以使用该控制面板为子域实施DMARC。 [了解如何使用控制面板](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/txt-records/dmarc.html)实施DMARC记录。
+>如果Campaign实例托管在AWS上，则可以使用该控制面板为子域实施DMARC。 [了解如何使用控制面板](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/txt-records/dmarc.html?lang=zh-Hans)实施DMARC记录。
 
 DMARC失败的一个常见原因是“从”和“错误至”或“返回路径”地址之间未对齐。 为避免这种情况，在设置DMARC时，建议在投放模板中仔细检查您的“发件人”和“错误收件人”地址设置。
 

@@ -48,10 +48,10 @@ ht-degree: 1%
 **Campaign**
 
 * 在[本节](/help/additional-resources/ac-starting-new-platform.md)中了解有关使用Adobe Campaign启动新平台时管理可投放性的更多信息。
-* 在[本节](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#sending-using-multiple-waves)中了解如何通过Adobe Campaign Classic使用多个批次发送。
+* 在[本节](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=zh-Hans#sending-using-multiple-waves)中了解如何通过Adobe Campaign Classic使用多个批次发送。
 * 在[本节](/help/additional-resources/ac-domain-name-setup.md)中了解如何将子域完全委派给Adobe Campaign Classic或Standard。
-* [控制面板：完全子域委派（教程）](https://experienceleague.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) - *了解如何将子域完全委派给Adobe Campaign Classic。*
-* [控制面板：完全子域委派（教程）](https://experienceleague.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) - *了解如何将子域完全委派给Adobe Campaign Standard。*
+* [控制面板：完全子域委派（教程）](https://experienceleague.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html?lang=zh-Hans) - *了解如何将子域完全委派给Adobe Campaign Classic。*
+* [控制面板：完全子域委派（教程）](https://experienceleague.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html?lang=zh-Hans) - *了解如何将子域完全委派给Adobe Campaign Standard。*
 
 ## 其他资源
 

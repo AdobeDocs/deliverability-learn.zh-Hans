@@ -59,13 +59,13 @@ ht-degree: 2%
 
 **Adobe Campaign Classic**
 
-* [定义正确的受众](https://experienceleague.adobe.com/docs/campaign-standard/using/communication-channels/delivery-bestpractices/define-the-right-audience.html#communication-channels)
-* [压力规则](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/pressure-rules.html)
+* [定义正确的受众](https://experienceleague.adobe.com/docs/campaign-standard/using/communication-channels/delivery-bestpractices/define-the-right-audience.html?lang=zh-Hans#communication-channels)
+* [压力规则](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/pressure-rules.html?lang=zh-Hans)
 
 **Adobe Campaign Standard**
 
-* [定义正确的受众](https://experienceleague.adobe.com/docs/campaign-standard/using/communication-channels/delivery-bestpractices/define-the-right-audience.html)
-* [疲劳规则](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/working-with-typology-rules/fatigue-rules.html)
+* [定义正确的受众](https://experienceleague.adobe.com/docs/campaign-standard/using/communication-channels/delivery-bestpractices/define-the-right-audience.html?lang=zh-Hans)
+* [疲劳规则](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/working-with-typology-rules/fatigue-rules.html?lang=zh-Hans)
 
 ## 其他资源
 

@@ -29,8 +29,8 @@ ht-degree: 16%
 
 **Analytics**
 
-* [如何提高参与率和留存率（教程）](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/mobile-app-analytics/measuring-mobile-analytics/how-to-increase-engagement-and-retention-rates.html?lang=en#mobile-app-analytics)： *使用同类群组通过参与受众的行为识别参与受众，并了解让您的移动应用程序产生吸引力的根本原因。 使用区段IQ中的数据科学算法了解区段之间的区别和相似之处。*
+* [如何提高参与率和留存率（教程）](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/mobile-app-analytics/measuring-mobile-analytics/how-to-increase-engagement-and-retention-rates.html?lang=zh-Hans#mobile-app-analytics)： *使用同类群组通过参与受众的行为识别参与受众，并了解让您的移动应用程序产生吸引力的根本原因。 使用区段IQ中的数据科学算法了解区段之间的区别和相似之处。*
 
 **Campaign Standard**
 
-* [AI支持的电子邮件：预测参与度评分](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/preparing-and-testing-messages/predictive.html#predictive-scoring)
+* [AI支持的电子邮件：预测参与度评分](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/preparing-and-testing-messages/predictive.html?lang=zh-Hans#predictive-scoring)

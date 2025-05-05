@@ -37,9 +37,9 @@ ht-degree: 5%
 
 **Adobe Campaign Classic**
 
-* [重复数据删除活动](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/deduplication.html)
+* [重复数据删除活动](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/deduplication.html?lang=zh-Hans)
 * [使用重复数据删除活动的合并功能](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/data-management/deduplication-merge.html?lang=zh-Hans)
 
 **Adobe Campaign Standard**
 
-* [从导入的文件中删除数据重复项](https://experienceleague.adobe.com/docs/campaign-standard/using/managing-processes-and-data/workflow-use-case/data-management/deduplicating-data-imported-file.html)
+* [从导入的文件中删除数据重复项](https://experienceleague.adobe.com/docs/campaign-standard/using/managing-processes-and-data/workflow-use-case/data-management/deduplicating-data-imported-file.html?lang=zh-Hans)

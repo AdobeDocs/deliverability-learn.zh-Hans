@@ -66,8 +66,8 @@ Adobe平台上新发件人的入门流程包括设置发送域并确保正确建
 **Campaign**
 
 * 在[本节](/help/additional-resources/ac-domain-name-setup.md)中了解如何将子域完全委派给Adobe Campaign Classic或Standard。
-* [控制面板：完全子域委派（教程）](https://experienceleague.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) - *了解如何将子域完全委派给Adobe Campaign Classic。*
-* [控制面板：完全子域委派（教程）](https://experienceleague.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) - *了解如何将子域完全委派给Adobe Campaign Standard。*
+* [控制面板：完全子域委派（教程）](https://experienceleague.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html?lang=zh-Hans) - *了解如何将子域完全委派给Adobe Campaign Classic。*
+* [控制面板：完全子域委派（教程）](https://experienceleague.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html?lang=zh-Hans) - *了解如何将子域完全委派给Adobe Campaign Standard。*
 * 在[本节](/help/additional-resources/acc-technical-recommendations.md#feedback-loop-acc)中了解有关Campaign Classic实例实现反馈循环的更多信息。
 
 ## 其他资源

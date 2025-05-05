@@ -83,7 +83,7 @@ ht-degree: 1%
 以下是一些可遵循的最佳实践：
 
 * 为每个委派的子域引发一个请求。
-* 可以将多个子域合并到单个CSR请求中，但只能在同一环境中这样做。 例如，在Campaign Classic中，营销服务器、[中间源服务器](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/install-campaign-on-prem/mid-sourcing-server.html)和[执行实例](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/configure-transactional-messaging/configuring-instances.html#execution-instance)是三个不同的环境。
+* 可以将多个子域合并到单个CSR请求中，但只能在同一环境中这样做。 例如，在Campaign Classic中，营销服务器、[中间源服务器](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/install-campaign-on-prem/mid-sourcing-server.html?lang=zh-Hans)和[执行实例](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/configure-transactional-messaging/configuring-instances.html?lang=zh-Hans#execution-instance)是三个不同的环境。
 * 在续订任何SSL证书之前，您必须获取新的CSR。 请勿使用一年或更久以前的旧CSR文件。
 
 您需要提供以下信息。
@@ -199,7 +199,7 @@ ht-degree: 1%
 
 * 创建支持票证以在证书到期日期至少两周前请求更新的证书。 除非CSR详细信息已更改，否则您无需请求其他CSR。
 
-* 如果您有权访问[控制面板](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hans)，并且您的环境由AWS环境中的Adobe托管，则可以使用该控制面板在证书过期前续订证书。 有关详细信息，请参阅[此部分](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html#monitoring-certificates)。
+* 如果您有权访问[控制面板](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hans)，并且您的环境由AWS环境中的Adobe托管，则可以使用该控制面板在证书过期前续订证书。 有关详细信息，请参阅[此部分](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html?lang=zh-Hans#monitoring-certificates)。
 
 ### 步骤8 — 更新任何特定配置 {#update-configuration}
 
@@ -207,7 +207,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->对于Campaign Classic，要更新的URL主要位于[部署向导](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/initial-configuration/deploying-an-instance.html#deployment-wizard)和[外部帐户](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/accessing-external-database/external-accounts.html)（跟踪、镜像页和公共资源域）中。 有关Campaign Standard，请参阅[品牌策略配置](https://experienceleague.adobe.com/docs/campaign-standard/using/administrating/application-settings/branding.html#about-brand-identity)。
+>对于Campaign Classic，要更新的URL主要位于[部署向导](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/initial-configuration/deploying-an-instance.html?lang=zh-Hans#deployment-wizard)和[外部帐户](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/accessing-external-database/external-accounts.html?lang=zh-Hans)（跟踪、镜像页和公共资源域）中。 有关Campaign Standard，请参阅[品牌策略配置](https://experienceleague.adobe.com/docs/campaign-standard/using/administrating/application-settings/branding.html?lang=zh-Hans#about-brand-identity)。
 
 更新配置后，将使用HTTPS URL而不是HTTP发送新电子邮件。 要检查URL现在是否安全，您可以快速执行以下测试：
 
@@ -218,8 +218,8 @@ ht-degree: 1%
 
 **Campaign Classic**
 
-* [控制面板：添加SSL证书（教程）](https://experienceleague.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/adding-ssl-certificates.html) — 了解如何添加SSL证书以保护子域。
+* [控制面板：添加SSL证书（教程）](https://experienceleague.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/adding-ssl-certificates.html?lang=zh-Hans) — 了解如何添加SSL证书以保护子域。
 
 **Campaign Standard**
 
-* [控制面板：添加SSL证书（教程）](https://experienceleague.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/adding-ssl-certificates.html) — 了解如何添加SSL证书以保护子域。
+* [控制面板：添加SSL证书（教程）](https://experienceleague.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/adding-ssl-certificates.html?lang=zh-Hans) — 了解如何添加SSL证书以保护子域。

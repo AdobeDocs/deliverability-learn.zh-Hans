@@ -39,7 +39,7 @@ MX规则（邮件交换器）是管理发送服务器和接收服务器之间通
 
 >[!NOTE]
 >
->有关Adobe Campaign Classic中MX管理的详细信息，请参阅[此部分](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/email-deliverability.html#mx-configuration)。
+>有关Adobe Campaign Classic中MX管理的详细信息，请参阅[此部分](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/email-deliverability.html?lang=zh-Hans#mx-configuration)。
 
 ### TLS {#tls}
 
@@ -88,13 +88,13 @@ v=spf1 ip4:12.34.56.78/32 ip4:12.34.56.79/32 ~all
 
 >[!NOTE]
 >
->对于托管或混合安装，如果您已升级到[Enhanced MTA](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/sending-with-enhanced-mta.html#sending-messages)，则Enhanced MTA将为所有域的所有邮件完成DKIM电子邮件身份验证签名。
+>对于托管或混合安装，如果您已升级到[Enhanced MTA](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/sending-with-enhanced-mta.html?lang=zh-Hans#sending-messages)，则Enhanced MTA将为所有域的所有邮件完成DKIM电子邮件身份验证签名。
 
 在Adobe Campaign Classic中使用[DKIM](/help/additional-resources/authentication.md#dkim)需要以下先决条件：
 
 **Adobe Campaign选项声明**：在Adobe Campaign中，DKIM私钥基于DKIM选择器和域。 当前无法为使用不同选择器的同一域/子域创建多个私钥。 无法定义哪个selector域/子域必须用于平台或电子邮件中的身份验证。 平台可以选择其中一个私钥，这意味着身份验证失败的可能性很高。
 
-* 如果您已经为Adobe Campaign实例配置了DomainKeys，则只需在[域管理规则](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html#email-management-rules)中选择&#x200B;**dkim**&#x200B;即可。 如果没有，请执行与DomainKeys（取代DKIM）相同的配置步骤（私钥/公钥）。
+* 如果您已经为Adobe Campaign实例配置了DomainKeys，则只需在[域管理规则](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html?lang=zh-Hans#email-management-rules)中选择&#x200B;**dkim**&#x200B;即可。 如果没有，请执行与DomainKeys（取代DKIM）相同的配置步骤（私钥/公钥）。
 * 由于DKIM是DomainKeys的改进版本，因此不必为同一域同时启用DomainKeys和DKIM。
 * 以下域当前验证DKIM：AOL、Gmail。
 
@@ -199,7 +199,7 @@ Gmail， Outlook.com， Yahoo！ 和Microsoft Outlook支持此方法。 可直�
 
 规则必须包含生成命令行的脚本，并且必须包含在电子邮件标头中。
 
-在[本节](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/about-campaign-typologies.html#typology-rules)中了解如何在Adobe Campaign v7/v8中创建分类规则。
+在[本节](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/about-campaign-typologies.html?lang=zh-Hans#typology-rules)中了解如何在Adobe Campaign v7/v8中创建分类规则。
 
 >[!NOTE]
 >

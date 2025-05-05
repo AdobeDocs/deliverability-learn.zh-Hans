@@ -19,7 +19,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->您还可以使用控制面板（作为测试版提供）设置新子域。 有关详细信息，请参阅[此部分](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html#must-read)。
+>您还可以使用控制面板（作为测试版提供）设置新子域。 有关详细信息，请参阅[此部分](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=zh-Hans#must-read)。
 
 ## 子域
 
@@ -201,7 +201,7 @@ marketing.example.com. NS d.ns.campaign.adobe.com.
 
 这样，您就可以查看委派给Adobe Campaign的所有子域，并请求续订其SSL证书。
 
-有关更多信息，请参阅[专用文档](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-subdomains.html#subdomains-and-certificates)。
+有关更多信息，请参阅[专用文档](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-subdomains.html?lang=zh-Hans#subdomains-and-certificates)。
 
 >[!NOTE]
 >
