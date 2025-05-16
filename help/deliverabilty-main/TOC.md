@@ -9,7 +9,7 @@ auto-video-transcripts: true
 source-git-commit: 0d78f4c588ae55c61a7e40e07a3b8d33ce84cb01
 workflow-type: tm+mt
 source-wordcount: '179'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -55,12 +55,12 @@ ht-degree: 100%
       + [重新接触最佳实践](/help/additional-resources/re-engagement.md)
       + [实时黑洞列表](/help/additional-resources/blocklist-databases.md)
       + [疑难解答](/help/additional-resources/troubleshooting.md)
-   + 有关 [!DNL Adobe Campaign] 的资源 {#campaign}
+   + [!DNL Adobe Campaign]的资源 {#campaign}
       + [域名设置](/help/additional-resources/ac-domain-name-setup.md)
       + [SSL 证书请求进程](/help/additional-resources/ac-ssl-certificate-request.md)
       + [启动新平台](/help/additional-resources/ac-starting-new-platform.md)
       + [Campaign Classic - 技术建议](/help/additional-resources/acc-technical-recommendations.md)
-   + 技术说明 {#technotes}
+   + 技术说明{#technotes}
       + [实施 DMARC](/help/technotes/implement-dmarc.md)
       + [实施 BIMI](/help/technotes/implement-bimi.md)
       + [在 Italia Online 服务中断后更新退回](/help/technotes/update-bounces-after-it-outage.md)
