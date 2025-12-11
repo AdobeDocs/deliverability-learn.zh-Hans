@@ -6,7 +6,7 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 8a78abd3-afba-49a7-a2ae-8b2c75326749
-source-git-commit: 57016f89df54d5c74755a6a108a92db45153ec18
+source-git-commit: 0be68f5674904aa105985a6e5fc4771c41f7fe48
 workflow-type: tm+mt
 source-wordcount: '2124'
 ht-degree: 1%
@@ -15,14 +15,14 @@ ht-degree: 1%
 
 # SSL 证书请求进程
 
-将域委派给Adobe以发送电子邮件后（请参阅[域名设置](/help/additional-resources/ac-domain-name-setup.md)），Adobe将创建并使用特定子域执行特定功能。
+在将域委派给Adobe以发送电子邮件后（请参阅[域名设置](/help/additional-resources/ac-domain-name-setup.md)），Adobe将创建并使用特定子域执行特定功能。
 
-例如，如果您已委派&#x200B;*email.example.com*&#x200B;来Adobe发送电子邮件，则Adobe将创建如下所示的子域：
+例如，如果您已将&#x200B;*email.example.com*&#x200B;委派给Adobe以发送电子邮件，Adobe将创建如下子域：
 * *t.email.example.com* — 用于跟踪链接
 * *m.email.example.com* — 用于镜像页面
 * *res.email.example.com* — 用于托管资源（如图像）
 
-建议通过SSL (HTTPS)**&#x200B;**&#x200B;保护这些域。 事实上，不安全的链接(HTTP)很容易被拦截，并且会在现代浏览器上标出警告。
+建议通过SSL (HTTPS)****&#x200B;保护这些域。 事实上，不安全的链接(HTTP)很容易被拦截，并且会在现代浏览器上标出警告。
 
 要在这些子域上安装SSL证书，此过程包括请求CSR文件，然后为Adobe购买SSL证书以进行安装或续订。
 
@@ -34,7 +34,7 @@ ht-degree: 1%
 
 ## 术语表
 
-| 搜索词 | 描述 |
+| 术语 | 描述 |
 |--- |--- |
 | CA（证书颁发机构） | SSL证书提供商，在验证组织或个人（如DigiCert、Symantec等）的标识后向其颁发数字证书。<ul><li>受信任的CA通常被视为颁发根证书的第三方CA。</li><li>如果证书由使用该证书的相同组织/公司签名，则即使它们是SSL证书（如自签名证书），该证书也会被分类为不受信任的CA。</li></ul> |
 | 链证书 | 包含根证书和一个或多个中间证书的证书称为链（或链接）证书。 |
@@ -47,18 +47,18 @@ ht-degree: 1%
 | 低保证证书 | 低保证证书（也称为域验证证书）仅包括证书中的域名（不包括业务/组织名称）。 |
 | PEM（隐私增强邮件） | 扩展名为.pem的证书，包含ASCII (Base64)数据。 此类证书以“ — — — 开始证书 — — - ”行开头。 |
 | 根证书 | 证书颁发机构以树结构的形式颁发证书。 根证书是树的最顶部证书。 |
-| SAN （主题替代名称） | 主题备用名称是其他主机名（站点、IP地址、通用名称等） 这些证书应该作为单个SSL证书的一部分签名。 |
+| SAN （主题替代名称） | 使用者可选名称是应作为单个SSL证书的一部分签名的其他主机名（站点、IP地址、通用名称等）。 |
 | 自签名证书 | 由创建证书的人而不是受信任的证书颁发机构签名的证书。 自签名证书可以启用与CA签名的证书相同级别的加密，但有两个主要缺点：<ul><li>访客的连接可能被劫持，使得攻击者能够查看发送的所有数据（从而破坏加密连接的目的）</li><li> 证书无法像受信任的证书那样被吊销。</li></ul> |
 | SSL（安全套接字层） | 用于在Web服务器和浏览器之间建立加密链接的标准安全技术。 |
 | 通配符证书 | 通配符证书可以保护单个域名(例如*.adobe.com)上无限数量的第一级子域。 |
 
 ## 主要步骤
 
-1. 索取证书签名请求(CSR)文件，并提供所需信息（国家/地区、州、城市、组织名称、组织单位名称等） Adobe。
-1. 验证由Adobe生成的CSR文件，并验证您提供的所有信息是否正确。
+1. 索取证书签名请求(CSR)文件，并向Adobe提供所需信息（国家/地区、州/省、城市、组织名称、组织单位名称等）。
+1. 验证Adobe生成的CSR文件，并验证您提供的所有信息是否正确。
 1. 使用CSR详细信息生成由受信任的证书颁发机构<!--taking care of asking for using the subjectAltName SSL extension (SAN) if it is for several domain names, and get/purchase the resulting certificate (ideally) in PEM format for Apache server-->签名的证书。
 1. 验证SSL证书并验证它是否与CSR匹配。
-1. 向Adobe提供SSL证书，由他们进行安装。
+1. 将SSL证书提供给Adobe，由后者安装该证书。
 1. 测试是否已成功为每个安全子域安装SSL证书。
 1. 监测SSL证书的有效期。
 1. 更新Adobe Campaign中的任何特定配置。
@@ -67,10 +67,10 @@ ht-degree: 1%
 
 ### 先决条件
 
-您必须识别域名和功能（跟踪、镜像页面、Web应用程序等） 来保护。
+要保护安全，您必须标识域名和功能（跟踪、镜像页面、Web应用程序等）。
 >[!NOTE]
 >
->Adobe有助于定义要涉及的域名和函数。 有关更多信息，请与您的Adobe客户团队联系。
+>Adobe可帮助定义要涉及的域名和函数。 有关更多信息，请与您的Adobe客户团队联系。
 
 ### 步骤1 — 获取CSR文件
 
@@ -78,12 +78,12 @@ ht-degree: 1%
 
 * 如果您有权访问[控制面板](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hans)，请按照[此页面](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/renewing-subdomain-certificate.html?lang=zh-Hans#subdomains-and-certificates)上的说明从控制面板生成并下载CSR文件。
 
-* 否则，请通过https://adminconsole.adobe.com/创建支持工单，以从Adobe客户关怀部门获取CSR文件所需的子域。
+* 否则，请通过https://adminconsole.adobe.com/创建支持工单，以从Adobe客户关怀团队获取CSR文件所需的子域。
 
 以下是一些可遵循的最佳实践：
 
 * 为每个委派的子域引发一个请求。
-* 可以将多个子域合并到单个CSR请求中，但只能在同一环境中这样做。 例如，在Campaign Classic中，营销服务器、[中间源服务器](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/install-campaign-on-prem/mid-sourcing-server.html?lang=zh-Hans)和[执行实例](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/configure-transactional-messaging/configuring-instances.html?lang=zh-Hans#execution-instance)是三个不同的环境。
+* 可以将多个子域合并到单个CSR请求中，但只能在同一环境中这样做。 例如，在Campaign Classic中，营销服务器、[中间源服务器](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/install-campaign-on-prem/mid-sourcing-server.html)和[执行实例](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/configure-transactional-messaging/configuring-instances.html#execution-instance)是三个不同的环境。
 * 在续订任何SSL证书之前，您必须获取新的CSR。 请勿使用一年或更久以前的旧CSR文件。
 
 您需要提供以下信息。
@@ -100,18 +100,18 @@ ht-degree: 1%
 | Adobe Campaign环境URL | https://client-mid-prod1.campaign.adobe.com | Adobe Campaign实例URL |
 | 公用名[CN] | t.subdomain.customer.com | 这可以是任何相关的域，但通常是跟踪域。 |
 | 使用者替代名称[SAN] | t.subdomain.customer.com | 确保将跟踪子域作为SAN包括在内。 |
-| 使用者替代名称[SAN] | m.subdomain.customer.com |
-| 使用者替代名称[SAN] | res.subdomain.customer.com |
+| 使用者替代名称[SAN] | m.subdomain.customer.com | |
+| 使用者替代名称[SAN] | res.subdomain.customer.com | |
 
 **要由IT/SSL内部团队提供的信息：**
 
 | 要提供的信息 | 示例值 | 注释 |
 |--- |--- |--- |
-| 国家/地区[C] | US | 这必须是两个字母的代码。 在[此处](https://www.ssl.com/csrs/country_codes/)访问完整的国家/地区列表。</br>*注意：对于英国，请使用GB （而不是UK）。* |
+| 国家/地区[C] | 美国 | 这必须是两个字母的代码。 在[此处](https://www.ssl.com/csrs/country_codes/)访问完整的国家/地区列表。</br>*注意：对于英国，请使用GB （而不是UK）。* |
 | 省/市/自治区名称[ST] | 伊利诺伊 | 如果适用。 该值必须是全名，而不是缩写。 |
-| 城市/地区名称[L] | 芝加哥 |
-| 组织名称[O] | ACME |
-| 组织单位名称[OU] | IT |
+| 城市/地区名称[L] | 芝加哥 | |
+| 组织名称[O] | ACME | |
+| 组织单位名称[OU] | IT | |
 
 >[!NOTE]
 >
@@ -119,7 +119,7 @@ ht-degree: 1%
 
 ### 步骤2 — 验证CSR文件
 
-在提交您的请求及相关信息后，Adobe会生成证书签名请求(CSR)文件，并会向您提供该文件。
+在提交您的请求并提供相关信息后，Adobe会生成证书签名请求(CSR)文件，并将该文件提供给您。
 
 生成的CSR文件中的文本必须以&#x200B;**&quot;-----BEGIN CERTIFICATE REQUEST-----&quot;**&#x200B;开头。
 
@@ -140,7 +140,7 @@ ht-degree: 1%
    * 不应超过2048位；
    * 必须由有效的CA（证书颁发机构）签署；
    * 必须包括CSR文件中提到的所有SAN （主题替代名称）。
-* 如果有一个或多个中间证书，则必须提供根证书和所有要Adobe的中间证书。
+* 如果有一个或多个中间证书，则必须向Adobe提供根证书和所有中间证书。
 * 您可以设置任意证书有效期，但Adobe建议选择足够长的时间（例如两年）。
 
 >[!NOTE]
@@ -162,7 +162,7 @@ ht-degree: 1%
 
 * 如果您有权访问[控制面板](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hans)，请按照[此页面](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/renewing-subdomain-certificate.html?lang=zh-Hans#installing-ssl-certificate)上的说明将证书上传到控制面板。
 
-* 否则，请通过https://adminconsole.adobe.com/创建另一个支持票证，以请求Adobe在Adobe服务器上安装证书。
+* 否则，请通过https://adminconsole.adobe.com/创建另一个支持工单，以请求Adobe在Adobe服务器上安装证书。
 
 您需要提供：
 
@@ -172,7 +172,7 @@ ht-degree: 1%
 
 ### 步骤6 — 测试SSL证书的安装
 
-安装SSL证书并经Adobe客户关怀部门确认后，确保为所有URL成功安装了该证书。
+安装SSL证书并由Adobe客户关怀部门确认后，确保为所有URL成功安装了该证书。
 
 在关闭SSL安装票证之前，请执行以下测试。 另请确保按照[此部分](#update-configuration)中的说明更新任何特定配置。
 
@@ -195,11 +195,11 @@ ht-degree: 1%
 
 您可以在浏览器中检查证书的有效期。 例如，在Google Chrome中，单击&#x200B;**安全** > **证书**。
 
-检查有效期是您的责任。 Adobe建议您实施用于监视证书到期的进程。 详细了解SSL证书在[本文](https://www.thesslstore.com/blog/what-happens-when-your-ssl-certificate-expires/)后过期时会发生什么情况。
+检查有效期是您的责任。 Adobe建议您实施一个流程来监控证书到期情况。 详细了解SSL证书在[本文](https://www.thesslstore.com/blog/what-happens-when-your-ssl-certificate-expires/)后过期时会发生什么情况。
 
 * 创建支持票证以在证书到期日期至少两周前请求更新的证书。 除非CSR详细信息已更改，否则您无需请求其他CSR。
 
-* 如果您有权访问[控制面板](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hans)，并且您的环境由AWS环境中的Adobe托管，则可以使用该控制面板在证书过期前续订证书。 有关详细信息，请参阅[此部分](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html?lang=zh-Hans#monitoring-certificates)。
+* 如果您有权访问[控制面板](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hans)，并且您的环境由Adobe在AWS环境中托管，则可以使用该控制面板在证书过期前续订证书。 有关详细信息，请参阅[此部分](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html#monitoring-certificates)。
 
 ### 步骤8 — 更新任何特定配置 {#update-configuration}
 
@@ -207,7 +207,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->对于Campaign Classic，要更新的URL主要位于[部署向导](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/initial-configuration/deploying-an-instance.html?lang=zh-Hans#deployment-wizard)和[外部帐户](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/accessing-external-database/external-accounts.html?lang=zh-Hans)（跟踪、镜像页和公共资源域）中。 有关Campaign Standard，请参阅[品牌策略配置](https://experienceleague.adobe.com/docs/campaign-standard/using/administrating/application-settings/branding.html?lang=zh-Hans#about-brand-identity)。
+>对于Campaign Classic，要更新的URL主要位于[部署向导](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/initial-configuration/deploying-an-instance.html#deployment-wizard)和[外部帐户](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/accessing-external-database/external-accounts.html)（跟踪、镜像页和公共资源域）中。 对于Campaign Standard，请参阅[品牌策略配置](https://experienceleague.adobe.com/docs/campaign-standard/using/administrating/application-settings/branding.html#about-brand-identity)。
 
 更新配置后，将使用HTTPS URL而不是HTTP发送新电子邮件。 要检查URL现在是否安全，您可以快速执行以下测试：
 
@@ -218,8 +218,8 @@ ht-degree: 1%
 
 **Campaign Classic**
 
-* [控制面板：添加SSL证书（教程）](https://experienceleague.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/adding-ssl-certificates.html?lang=zh-Hans) — 了解如何添加SSL证书以保护子域。
+* [控制面板：添加SSL证书（教程）](https://experienceleague.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/adding-ssl-certificates.html) — 了解如何添加SSL证书以保护子域。
 
 **Campaign Standard**
 
-* [控制面板：添加SSL证书（教程）](https://experienceleague.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/adding-ssl-certificates.html?lang=zh-Hans) — 了解如何添加SSL证书以保护子域。
+* [控制面板：添加SSL证书（教程）](https://experienceleague.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/adding-ssl-certificates.html) — 了解如何添加SSL证书以保护子域。
