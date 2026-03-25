@@ -6,10 +6,10 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 75538ef8-8e4b-4940-8d11-42ebd7c65e93
-source-git-commit: 3616470b31f45d589d323a6b90c7fd5df3b467b7
+source-git-commit: b859229410ca0199f9e9d57025a9fe022834a217
 workflow-type: tm+mt
-source-wordcount: '121'
-ht-degree: 31%
+source-wordcount: '124'
+ht-degree: 32%
 
 ---
 
@@ -33,13 +33,14 @@ ht-degree: 31%
 * [实时黑洞列表](../../help/additional-resources/blocklist-databases.md)
 * [疑难解答](../../help/additional-resources/troubleshooting.md)
 
-  <!--
-    [IP Certification](../../help/additional-resources/ip-certification.md)
-    [Third-party monitoring tools](../../help/additional-resources/third-party-monitoring-tools.md)-->
+<!--
+[IP Certification](../../help/additional-resources/ip-certification.md)
+[Third-party monitoring tools](../../help/additional-resources/third-party-monitoring-tools.md)
+-->
 
 ## 产品特定资源
 
-此外，本节还列出了许多特定于产品的资源，以帮助您实施Adobe解决方案的可交付性和取得成功。
+此外，此部分还列出了许多特定于产品的资源，以帮助您实施Adobe解决方案的可交付性和取得成功。
 
 **[!DNL Adobe Campaign]**
 

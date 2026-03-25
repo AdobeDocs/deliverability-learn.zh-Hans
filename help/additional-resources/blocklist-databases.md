@@ -6,10 +6,10 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 4155b89f-a636-404c-8951-563c1b4d0289
-source-git-commit: e7427d6109f3201affa58decde36294d1631bf5b
+source-git-commit: b859229410ca0199f9e9d57025a9fe022834a217
 workflow-type: tm+mt
-source-wordcount: '373'
-ht-degree: 2%
+source-wordcount: '423'
+ht-degree: 9%
 
 ---
 
@@ -41,18 +41,20 @@ ht-degree: 2%
 
   请参阅[https://www.uribl.com/](https://www.uribl.com/)
 
-  此列表标识定期出现在声明为垃圾邮件的邮件中的域。 如果您的域出现在此列表中，则会显着影响您的可投放性。 您应立即通知可交付性服务和[Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
+  此列表标识定期出现在声明为垃圾邮件的邮件中的域。 如果您的域出现在此列表中，则会显着影响您的可投放性。 您应立即通知可投放性服务和[Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
 
 * **SURBL**
 
   请参阅[https://surbl.org/](https://surbl.org/)
 
-  SURBL可识别定期出现在垃圾邮件中的网站。 如果您的域出现在此列表中，则会显着影响您的可投放性。 您应立即通知可交付性服务和[Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
+  SURBL可识别定期出现在垃圾邮件中的网站。 如果您的域出现在此列表中，则会显着影响您的可投放性。 您应立即通知可投放性服务和[Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
 
 * **iX马尼图**
 
   这是IP列表，在德国得到广泛使用。 请参阅[https://www.heise.de/ix/nixspam/](https://www.heise.de/ix/nixspam/)
 
-<!--* SORBS
+<!--
+* SORBS
 
-  [https://www.nl.sorbs.net](https://www.nl.sorbs.net) compiles a list of IP addresses that are reputed to be dynamic IP address (i.e. attributed temporarily to ISP subscribers) or "open relay" addresses. Certain domains check whether the IP address of a sender is not listed on this site before accepting email. Checking the IP addresses on this site can prove useful.-->
+  [https://www.nl.sorbs.net](https://www.nl.sorbs.net) compiles a list of IP addresses that are reputed to be dynamic IP address (i.e. attributed temporarily to ISP subscribers) or "open relay" addresses. Certain domains check whether the IP address of a sender is not listed on this site before accepting email. Checking the IP addresses on this site can prove useful.
+-->
