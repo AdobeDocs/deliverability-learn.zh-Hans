@@ -5,7 +5,7 @@ feature-set: Campaign, Journey Optimizer, Marketo Engage
 solution: Experience Cloud, Campaign, Marketo Engage
 type: Tutorial
 mini-toc-levels: 2
-git-repo: https://github.com/AdobeDocs/deliverability-learn.en
+git-repo: https://github.com/AdobeDocs/deliverability-learn.zh-Hans
 index: true
 source-git-commit: b859229410ca0199f9e9d57025a9fe022834a217
 workflow-type: ht
