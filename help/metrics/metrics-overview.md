@@ -9,15 +9,15 @@ activity: understand
 team: ACS
 exl-id: d781a0b6-5670-4958-8649-f061e7e9a84f
 source-git-commit: 9444f8601f2f349398ee5deb9d5f4d4f7abb44f5
-workflow-type: tm+mt
-source-wordcount: '96'
+workflow-type: ht
+source-wordcount: '174'
 ht-degree: 100%
 
 ---
 
 # 可投放性指标
 
-识别发送信誉问题的最佳方法之一是通过指标。让我们看一下要监测的一些关键可投放性指标，以及如何使用它们识别信誉问题。
+识别发送信誉问题的最佳方法之一是通过指标。 让我们看一下要监测的一些关键可投放性指标，以及如何使用它们识别信誉问题。
 
 * [跳出次数](/help/metrics/bounces.md)
 * [投诉](/help/metrics/complaints.md)
@@ -29,7 +29,7 @@ ht-degree: 100%
 **Adobe Campaign Classic**
 
 * [投放监测](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html?lang=zh-Hans)
-* [监测投放能力](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/deliverability-management/monitoring-deliverability.html?lang=zh-Hans)
+* [监测可投放性](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/deliverability-management/monitoring-deliverability.html?lang=zh-Hans)
 * [了解投放失败](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html?lang=zh-Hans)
 
 **Adobe Campaign Standard**

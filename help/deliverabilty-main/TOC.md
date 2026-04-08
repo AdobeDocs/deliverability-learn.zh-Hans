@@ -7,9 +7,9 @@ role: Leader, User
 level: Beginner
 auto-video-transcripts: true
 source-git-commit: 0d78f4c588ae55c61a7e40e07a3b8d33ce84cb01
-workflow-type: tm+mt
-source-wordcount: '179'
-ht-degree: 97%
+workflow-type: ht
+source-wordcount: '182'
+ht-degree: 100%
 
 ---
 
@@ -55,7 +55,7 @@ ht-degree: 97%
       + [重新接触最佳实践](/help/additional-resources/re-engagement.md)
       + [实时黑洞列表](/help/additional-resources/blocklist-databases.md)
       + [疑难解答](/help/additional-resources/troubleshooting.md)
-   + [!DNL Adobe Campaign]的资源 {#campaign}
+   + [!DNL Adobe Campaign] 的相关资源 {#campaign}
       + [域名设置](/help/additional-resources/ac-domain-name-setup.md)
       + [SSL 证书请求进程](/help/additional-resources/ac-ssl-certificate-request.md)
       + [启动新平台](/help/additional-resources/ac-starting-new-platform.md)
