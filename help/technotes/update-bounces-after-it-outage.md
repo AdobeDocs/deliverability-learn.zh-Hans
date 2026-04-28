@@ -46,7 +46,7 @@ ht-degree: 4%
 要查找受此问题影响的收件人，或在其他任何ISP再次出现此问题的情况下，请参阅以下说明：
 
 * 对于Campaign Classic v7和Campaign v8，请参阅[此页面](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html?lang=en#unquarantine-bulk){_blank}。
-* 对于Campaign Standard，请参阅[此页面](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=en#unquarantine-bulk){_blank}。
+* 对于Campaign Standard，请参阅[此页面](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=zh-Hans#unquarantine-bulk){_blank}。
 
 ### Adobe Journey Optimizer{#ajo-update}
 
@@ -54,5 +54,5 @@ ht-degree: 4%
 
 Once identified, these addresses can be manually removed from the suppression list using the **[!UICONTROL Delete]** button. 这些地址随后可以包含在将来的电子邮件营销活动中。
 
-有关详细信息，请参阅[此部分](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/monitor-reputation/manage-suppression-list.html#remove-from-suppression-list){_blank}。
+有关详细信息，请参阅[此部分](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/monitor-reputation/manage-suppression-list.html?lang=zh-Hans#remove-from-suppression-list){_blank}。
 
