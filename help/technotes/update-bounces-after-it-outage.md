@@ -7,10 +7,10 @@ hide: true
 hidefromtoc: true
 role: Admin
 level: Beginner
-source-git-commit: 6b312cdbba496818337c97ec4f42962aea757901
+source-git-commit: e1a2c58e92da00186d91c7acfd8fd7300133a51c
 workflow-type: tm+mt
-source-wordcount: '395'
-ht-degree: 3%
+source-wordcount: '459'
+ht-degree: 4%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 3%
 
 ## 影响{#outage-impact}
 
-与大多数互联网服务提供商(ISP)发生中断的情况一样，通过Campaign或Journey Optimizer发送的一些电子邮件被错误地标记为跳出。 这不仅影响到Adobe，而且还会影响所有试图在服务中断期间将电子邮件发送到意大利在线的用户。
+与大多数互联网服务提供商(ISP)发生中断的情况一样，通过Campaign或Journey Optimizer发送的一些电子邮件被错误地标记为跳出。 这不仅影响了Adobe，还影响了在服务中断期间尝试将电子邮件发送到意大利在线的每一个人。
 
 症状为：
 
@@ -45,14 +45,14 @@ ht-degree: 3%
 
 要查找受此问题影响的收件人，或在其他任何ISP再次出现此问题的情况下，请参阅以下说明：
 
-* 有关Campaign Classicv7和Campaign v8的信息，请参阅[此页面](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html?lang=zh-Hans#unquarantine-bulk){_blank}。
-* 有关Campaign Standard，请参阅[此页面](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=zh-Hans#unquarantine-bulk){_blank}。
+* 对于Campaign Classic v7和Campaign v8，请参阅[此页面](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html?lang=en#unquarantine-bulk){_blank}。
+* 对于Campaign Standard，请参阅[此页面](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=en#unquarantine-bulk){_blank}。
 
 ### Adobe Journey Optimizer{#ajo-update}
 
 根据标准退回处理逻辑，Adobe Journey Optimizer已使用&#x200B;**[!UICONTROL Reason]**&#x200B;设置&#x200B;**[!UICONTROL Invalid Recipient]**&#x200B;将这些电子邮件地址自动添加到禁止列表。 要更正此问题，您需要通过查找并删除这些电子邮件地址来更新禁止显示列表。
 
-识别地址后，可以使用&#x200B;**[!UICONTROL Delete]**&#x200B;按钮从禁止显示列表中手动删除这些地址。 这些地址随后可以包含在将来的电子邮件营销活动中。
+Once identified, these addresses can be manually removed from the suppression list using the **[!UICONTROL Delete]** button. 这些地址随后可以包含在将来的电子邮件营销活动中。
 
-在[本节](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/monitor-reputation/manage-suppression-list.html?lang=zh-Hans#remove-from-suppression-list){_blank}中了解详情。
+有关详细信息，请参阅[此部分](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/monitor-reputation/manage-suppression-list.html#remove-from-suppression-list){_blank}。
 
