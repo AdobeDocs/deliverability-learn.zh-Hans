@@ -4,10 +4,9 @@ description: 了解如何在意大利在线中断后更新退回鉴别
 feature: Deliverability
 exl-id: a11e88cf-bf37-42cc-9c09-1d58360459b7
 hide: true
-hidefromtoc: true
 role: Admin
 level: Beginner
-source-git-commit: e1a2c58e92da00186d91c7acfd8fd7300133a51c
+source-git-commit: 1c1e1b673fbc640fec84948878060b8bc0354ba2
 workflow-type: tm+mt
 source-wordcount: '459'
 ht-degree: 4%
@@ -52,7 +51,7 @@ ht-degree: 4%
 
 根据标准退回处理逻辑，Adobe Journey Optimizer已使用&#x200B;**[!UICONTROL Reason]**&#x200B;设置&#x200B;**[!UICONTROL Invalid Recipient]**&#x200B;将这些电子邮件地址自动添加到禁止列表。 要更正此问题，您需要通过查找并删除这些电子邮件地址来更新禁止显示列表。
 
-Once identified, these addresses can be manually removed from the suppression list using the **[!UICONTROL Delete]** button. 这些地址随后可以包含在将来的电子邮件营销活动中。
+识别地址后，可以使用&#x200B;**[!UICONTROL Delete]**&#x200B;按钮从禁止显示列表中手动删除这些地址。 这些地址随后可以包含在将来的电子邮件营销活动中。
 
 有关详细信息，请参阅[此部分](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/monitor-reputation/manage-suppression-list.html?lang=zh-Hans#remove-from-suppression-list){_blank}。
 
