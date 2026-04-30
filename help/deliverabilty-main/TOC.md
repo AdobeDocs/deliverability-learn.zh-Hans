@@ -6,10 +6,10 @@ feature: Deliverability
 role: Leader, User
 level: Beginner
 auto-video-transcripts: true
-source-git-commit: 0d78f4c588ae55c61a7e40e07a3b8d33ce84cb01
-workflow-type: ht
+source-git-commit: 1c1e1b673fbc640fec84948878060b8bc0354ba2
+workflow-type: tm+mt
 source-wordcount: '182'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -63,5 +63,4 @@ ht-degree: 100%
    + 技术说明{#technotes}
       + [实施 DMARC](/help/technotes/implement-dmarc.md)
       + [实施 BIMI](/help/technotes/implement-bimi.md)
-      + [在 Italia Online 服务中断后更新退回](/help/technotes/update-bounces-after-it-outage.md)
-
+      + {hide-from-toc}[意大利在线中断后更新退回](/help/technotes/update-bounces-after-it-outage.md)
