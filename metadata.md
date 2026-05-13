@@ -9,7 +9,7 @@ product_v2:
   - id: b27e5950-9033-45ac-9f86-eb22e567f615
 type: Tutorial
 mini-toc-levels: 2
-git-repo: https://github.com/AdobeDocs/deliverability-learn.en
+git-repo: https://github.com/AdobeDocs/deliverability-learn.zh-Hans
 index: true
 source-git-commit: 76da12040067e8e9443d817afd43c0367e8c7e4b
 workflow-type: tm+mt
