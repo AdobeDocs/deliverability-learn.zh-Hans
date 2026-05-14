@@ -6,9 +6,26 @@ role: Admin
 level: Beginner
 jira: KT-14079
 exl-id: 6b911bcc-a531-466a-8bd3-7fa469b96cc7
-source-git-commit: b96539608acd51ce76ef5bdaf5afd07b5a4208b7
+TQID: https://experienceleague.adobe.com/dPuoipUKH36RSGUfhzOV1Xhu9qQTLYV4zu6Vw0Be-xY
+product_v2:
+  - id: b27e5950-9033-45ac-9f86-eb22e567f615
+  - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2:
+  - id: b0bb9048-d951-48d8-8232-45cf248a7e27
+  - id: e2290edd-b061-4880-9d79-dee306cf5aa9
+  - id: ea90ebee-5c84-42d9-8b21-006bdabc95a3
+  - id: f71e690b-4480-4b67-9ef5-88f42f9cdfdb
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 75df8537199680e5f1fc4b98cefdb05220fee7bf
 workflow-type: tm+mt
-source-wordcount: '1125'
+source-wordcount: 1162
 ht-degree: 0%
 
 ---
@@ -25,7 +42,7 @@ BIMI不会直接提高可投放性或您的声誉。 它可以帮助与收件人
 
 ## 它看起来如何？
 
-您可以在[BIMI组的页面](https://bimigroup.org/where-is-my-bimi-logo-displayed/){target="_blank"}上找到不同提供商的一些实施示例，以及哪些提供商确实显示徽标的更多详细信息。
+您可以在[BIMI组的页面](https://bimigroup.org/where-is-my-bimi-logo-displayed/){target="_blank"}上找到来自不同提供商的一些实施示例，以及哪些提供商确实显示徽标的更多详细信息。
 
 ## BIMI小组是谁？
 
@@ -37,7 +54,7 @@ BIMI Group由来自业界不同领域的多个利益相关者组成：Google、Y
 
 支持BIMI的邮箱提供商名单正在稳步增长。 可在[此处](https://bimigroup.org/bimi-infographic/){target="_blank"}找到支持提供商以及考虑BIMI的提供商的最新列表。
 
-截至2023年4月，该列表包括Gmail、Yahoo、La Poste、Fastmail、Onet.pl和Zone、Proofpoint作为反垃圾邮件设备以及Apple Mail(从iOS 16开始)。
+截至2023年4月，该列表包括Gmail、Yahoo、La Poste、Fastmail、Onet.pl和Zone、Proofpoint作为反垃圾邮件设备以及Apple Mail（从iOS 16开始）。
 
 名单上最显眼的名字显然是雅虎和Gmail，以及最近采用雅虎的Apple和iOS16。 Apple在组合中扮演着特殊角色，因为他们不是邮箱提供商，但他们确实向其本机邮件应用程序添加了BIMI支持。 符合BIMI标准的邮件将显示为“经过数字认证的电子邮件”，以提升对品牌的信任。
 
@@ -45,13 +62,13 @@ BIMI Group由来自业界不同领域的多个利益相关者组成：Google、Y
 
 实施BIMI确实需要几个步骤：
 
-1. 发送域及其组织域的执行级别上的DMARC （基于域的消息身份验证、报告和一致性）实施 — [了解详情](#dmarc)
+1. 发送域及其组织域的执行级别上的DMARC （基于域的消息身份验证、报告和符合性）实现 — [了解详情](#dmarc)
 
-1. 以SVGTinyPS格式创建您的品牌徽标 — [了解详情](#create-brand-logo)
+1. 以SVG TinyPS格式创建您的品牌徽标 — [了解详情](#create-brand-logo)
 
 1. 注册验证标记证书（仅某些提供商需要） — [了解详情](#vmc)
 
-1. Publish包含徽标和证书的BIMI DNS记录 — [了解详情](#publish-bimi-record)
+1. 发布包含徽标和证书的BIMI DNS记录 — [了解详情](#publish-bimi-record)
 
 1. 信誉良好 — [了解更多](#good-reputation)
 
@@ -62,9 +79,9 @@ BIMI Group由来自业界不同领域的多个利益相关者组成：Google、Y
 
 ### DMARC {#dmarc}
 
-DMARC是一种标准，它允许品牌决定邮箱提供商应如何处理未通过[身份验证](../additional-resources/authentication.md)的电子邮件。 所谓的策略范围从“无”到“隔离”（垃圾邮件文件夹放置）到“拒绝”（完全阻止邮件）。 只有后两项政策被称作“执行”，有资格加入BIMI。 由Adobe发送的邮件正在传递身份验证，因为SPF (Sender Policy Framework)和DKIM (Domain Keys Identified Mail)默认进行了设置。 Adobe正在应请求在您的发送域上设置DMARC。
+DMARC是一种标准，它允许品牌决定邮箱提供商应如何处理未通过[身份验证](../additional-resources/authentication.md)的电子邮件。 所谓的策略范围从“无”到“隔离”（垃圾邮件文件夹放置）到“拒绝”（完全阻止邮件）。 只有后两项政策被称作“执行”，有资格加入BIMI。 由Adobe发送的邮件正在传递身份验证，因为SPF (Sender Policy Framework)和DKIM (Domain Keys Identified Mail)默认进行了设置。 Adobe会根据请求在您的发送域上设置DMARC。
 
-除了在发送域上使用DMARC之外，还需要在组织域的实施级别使用DMARC(如果发送域是news.example.com，example.com是组织域)。
+除了在发送域上使用DMARC之外，还需要在组织域的实施级别使用DMARC（如果发送域为news.example.com，则example.com为组织域）。
 
 ### 创建您的品牌徽标 {#create-brand-logo}
 
@@ -77,7 +94,7 @@ DMARC是一种标准，它允许品牌决定邮箱提供商应如何处理未通
 
 ### 已验证标记证书(VMC) {#vmc}
 
-仅某些邮箱提供商(如Gmail和Apple)需要验证标记证书(VMC)，因此是可选的。 我们建议使用VMC来真正利用BIMI。
+仅某些邮箱提供商（如Gmail和Apple）需要验证标记证书(VMC)，因此是可选的。 我们建议使用VMC来真正利用BIMI。
 
 已验证的标记证书是验证品牌是否可以使用徽标的合法验证。 认证机构将通过注册该品牌标志的商标局对此进行核实。 此过程涉及多次法律验证和检查，可能需要一些时间。 目前有两个CA（证书颁发机构）正在颁发VMC：Digicert和Entrust。 第一组商标办事处为美国、加拿大、欧盟、英国、德国、日本、澳大利亚和西班牙。
 
@@ -97,7 +114,7 @@ default._bimi.[domain] IN TXT "v=BIMI1; l=[SVG URL]; a=[PEM URL]
 
 “PEM URL”是已验证标记证书的文件位置。
 
-对于发送域，这需要Adobe完成。
+对于发送域，此操作需要由Adobe完成。
 
 ### 良好的声誉 {#good-reputation}
 
@@ -111,6 +128,6 @@ default._bimi.[domain] IN TXT "v=BIMI1; l=[SVG URL]; a=[PEM URL]
 
 * 您可以安全地开始使用VMC，如果您的BIMI记录不包含VMC URL，但是该徽标已可在Yahoo中显示，则不会对您的声誉造成损害。
 
-* 在组织层面实施DMARC是一项艰巨的任务。 一些公司专门帮助品牌实现全面的DMARC采用。
+* 在组织层面实施DMARC是一项艰巨的任务。 有些公司专门帮助品牌厂商实现对DMARC的全面采用。
 
-* [此处](https://bimigroup.org/faqs-for-senders-esps/){target="_blank"}发布了大量常见问题解答。
+* [此处](https://bimigroup.org/faqs-for-senders-esps/){target="_blank"}发布了常见问题解答的详尽列表。

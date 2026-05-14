@@ -6,10 +6,24 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: f89dbb38-a8d4-4294-b017-6fed72591593
-source-git-commit: d6094cd2ef0a8a7741e7d8aa4db15499fad08f90
+TQID: https://experienceleague.adobe.com/7KlDe-wQmAih6L4bl4xrw-lVS35-wNzyyxneyFbSo0A
+product_v2:
+  - id: b27e5950-9033-45ac-9f86-eb22e567f615
+  - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2:
+  - id: b0bb9048-d951-48d8-8232-45cf248a7e27
+  - id: c5f60233-d5ea-4453-a799-0ad258b4d399
+  - id: f71e690b-4480-4b67-9ef5-88f42f9cdfdb
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+source-git-commit: 75df8537199680e5f1fc4b98cefdb05220fee7bf
 workflow-type: tm+mt
-source-wordcount: '363'
-ht-degree: 5%
+source-wordcount: 413
+ht-degree: 8%
 
 ---
 
@@ -17,7 +31,7 @@ ht-degree: 5%
 
 拥有重复的电子邮件地址可能会产生多种后果：
 
-* 同一消息被多次发送。 即使Adobe在发送之前默认执行重复数据删除过程，在拆分Target时，也不会阻止具有相同内容的其他操作发送相同的消息。
+* 同一消息被多次发送。 即使Adobe在发送之前默认执行重复数据删除过程，在拆分目标时，也不会阻止具有相同内容的其他操作发送相同的消息。
 * 未处理退订请求。 如果收件人在收到消息后取消订阅，则其重复的用户档案仍适用于未来的消息。
 
 除了这种逐步执行选择加入流程外，这种情况还可能导致用户将消息视为垃圾邮件，并在ISP触发ISP阻止列表流程。
@@ -38,7 +52,7 @@ ht-degree: 5%
 **Adobe Campaign Classic**
 
 * [重复数据删除活动](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/deduplication.html?lang=zh-Hans)
-* [使用重复数据删除活动的合并功能](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/data-management/deduplication-merge.html?lang=zh-Hans)
+* [使用外部重复数据删除活动的合并功能](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/data-management/deduplication-merge.html?lang=zh-Hans)
 
 **Adobe Campaign Standard**
 

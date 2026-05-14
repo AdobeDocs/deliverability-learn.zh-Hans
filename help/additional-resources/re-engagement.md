@@ -6,10 +6,29 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 30118706-d4c0-4bd8-8c9b-50c26b8374ef
-source-git-commit: d6094cd2ef0a8a7741e7d8aa4db15499fad08f90
+TQID: https://experienceleague.adobe.com/XbAU6Y0r4Ed8W7t71MMNV02jdp2-og04-v-n2lT5m-4
+product_v2:
+  - id: b27e5950-9033-45ac-9f86-eb22e567f615
+  - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2:
+  - id: a075b2c1-7748-4328-b7f6-343aa314616a
+  - id: c5f60233-d5ea-4453-a799-0ad258b4d399
+  - id: e2290edd-b061-4880-9d79-dee306cf5aa9
+  - id: ea90ebee-5c84-42d9-8b21-006bdabc95a3
+  - id: f71e690b-4480-4b67-9ef5-88f42f9cdfdb
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 75df8537199680e5f1fc4b98cefdb05220fee7bf
 workflow-type: tm+mt
-source-wordcount: '913'
-ht-degree: 0%
+source-wordcount: 973
+ht-degree: 2%
 
 ---
 
@@ -22,13 +41,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->有关重新接触活动策略和Adobe可投放性服务的更多信息，请联系您的可投放性顾问，或与您的Adobe销售代理联系。
+>有关重新接触活动策略和Adobe可投放性服务的更多信息，请联系您的可投放性顾问，或与Adobe销售代理联系。
 
 ## ISP如何查看非参与活动？ {#how-do-isps-view-non-engagement-activity-}
 
 多年来，ISP一直使用来自用户的参与反馈量度来确定报文的放置位置或是否应该投放。 用户[参与](/help/engagement.md)由正反馈和负反馈组成，ISP会定期监视。 没有参与也许是消极参与的主要原因之一。 从可交付性的角度来看，始终如一地向没有表现出参与度的用户发送营销活动也会降低IP地址和域的整体信誉。
 
-Gmail、Microsoft®和OATH等ISP将非参与视为不需要的电子邮件，并开始将邮件重定向到垃圾邮件文件夹。 此外，这些订阅者可能不再拥有电子邮件帐户，这可用作“回收”垃圾邮件陷阱。 这意味着该地址在一段时间内无效，并且所有消息都被拒绝。 如果您的订阅者管理系统没有删除“硬退回”地址，则可能会邮寄给垃圾邮件陷阱，这可能导致严重的投放问题。
+Gmail、®和OATH等ISP将非参与视为不需要的电子邮件，并开始将邮件重定向到垃圾邮件文件夹。 此外，这些订阅者可能不再拥有电子邮件帐户，这可用作“回收”垃圾邮件陷阱。 这意味着该地址在一段时间内无效，并且所有消息都被拒绝。 如果您的订阅者管理系统没有删除“硬退回”地址，则可能会邮寄给垃圾邮件陷阱，这可能导致严重的投放问题。
 
 ## 您应如何进入非活动状态？ {#how-should-you-approach-inactivity-}
 
@@ -75,9 +94,9 @@ Gmail、Microsoft®和OATH等ISP将非参与视为不需要的电子邮件，并
 
 **Adobe Campaign**
 
-* [Campaign Classic中的跟踪日志](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/delivery-dashboard.html?lang=zh-Hans#tracking-logs)
+* [Campaign Classic中的跟踪日志](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/delivery-dashboard.html#tracking-logs)
 * [Campaign Standard中的跟踪日志](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/sending-and-tracking-messages/tracking-messages.html?lang=zh-Hans#tracking-logs)
 
 **Adobe客户历程管理**
 
-* [邮件跟踪](https://experienceleague.adobe.com/docs/journey-optimizer/using/reporting/message-tracking.html?lang=zh-Hans)
+* [消息跟踪](https://experienceleague.adobe.com/docs/journey-optimizer/using/reporting/message-tracking.html?lang=zh-Hans)

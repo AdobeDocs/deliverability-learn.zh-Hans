@@ -6,10 +6,27 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 8a78abd3-afba-49a7-a2ae-8b2c75326749
-source-git-commit: 0be68f5674904aa105985a6e5fc4771c41f7fe48
+TQID: https://experienceleague.adobe.com/zM1boPuxPGJbjlSk1ncR7vTvrhe529sv-OCZwNTCHRE
+product_v2:
+  - id: b27e5950-9033-45ac-9f86-eb22e567f615
+  - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2:
+  - id: b3b8a63f-51fc-40f6-a7d2-a31c5d49fb45
+  - id: c5f60233-d5ea-4453-a799-0ad258b4d399
+  - id: f71e690b-4480-4b67-9ef5-88f42f9cdfdb
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 75df8537199680e5f1fc4b98cefdb05220fee7bf
 workflow-type: tm+mt
-source-wordcount: '2124'
-ht-degree: 1%
+source-wordcount: 2374
+ht-degree: 4%
 
 ---
 
@@ -47,14 +64,14 @@ ht-degree: 1%
 | 低保证证书 | 低保证证书（也称为域验证证书）仅包括证书中的域名（不包括业务/组织名称）。 |
 | PEM（隐私增强邮件） | 扩展名为.pem的证书，包含ASCII (Base64)数据。 此类证书以“ — — — 开始证书 — — - ”行开头。 |
 | 根证书 | 证书颁发机构以树结构的形式颁发证书。 根证书是树的最顶部证书。 |
-| SAN （主题替代名称） | 使用者可选名称是应作为单个SSL证书的一部分签名的其他主机名（站点、IP地址、通用名称等）。 |
+| SAN （主题替代名称） | 主题备用名称是其他主机名（站点、IP地址、通用名称等） 这些证书应该作为单个SSL证书的一部分签名。 |
 | 自签名证书 | 由创建证书的人而不是受信任的证书颁发机构签名的证书。 自签名证书可以启用与CA签名的证书相同级别的加密，但有两个主要缺点：<ul><li>访客的连接可能被劫持，使得攻击者能够查看发送的所有数据（从而破坏加密连接的目的）</li><li> 证书无法像受信任的证书那样被吊销。</li></ul> |
 | SSL（安全套接字层） | 用于在Web服务器和浏览器之间建立加密链接的标准安全技术。 |
-| 通配符证书 | 通配符证书可以保护单个域名(例如*.adobe.com)上无限数量的第一级子域。 |
+| 通配符证书 | 通配符证书可以保护单个域名（例如*.adobe.com）上无限数量的第一级子域。 |
 
 ## 主要步骤
 
-1. 索取证书签名请求(CSR)文件，并向Adobe提供所需信息（国家/地区、州/省、城市、组织名称、组织单位名称等）。
+1. 索取证书签名请求(CSR)文件，并提供所需信息（国家/地区、州、城市、组织名称、组织单位名称等） Adobe。
 1. 验证Adobe生成的CSR文件，并验证您提供的所有信息是否正确。
 1. 使用CSR详细信息生成由受信任的证书颁发机构<!--taking care of asking for using the subjectAltName SSL extension (SAN) if it is for several domain names, and get/purchase the resulting certificate (ideally) in PEM format for Apache server-->签名的证书。
 1. 验证SSL证书并验证它是否与CSR匹配。
@@ -67,7 +84,7 @@ ht-degree: 1%
 
 ### 先决条件
 
-要保护安全，您必须标识域名和功能（跟踪、镜像页面、Web应用程序等）。
+您必须识别域名和功能（跟踪、镜像页面、Web应用程序等） 来保护。
 >[!NOTE]
 >
 >Adobe可帮助定义要涉及的域名和函数。 有关更多信息，请与您的Adobe客户团队联系。
@@ -107,7 +124,7 @@ ht-degree: 1%
 
 | 要提供的信息 | 示例值 | 注释 |
 |--- |--- |--- |
-| 国家/地区[C] | 美国 | 这必须是两个字母的代码。 在[此处](https://www.ssl.com/csrs/country_codes/)访问完整的国家/地区列表。</br>*注意：对于英国，请使用GB （而不是UK）。* |
+| 国家/地区[C] | 美国 | 这必须是两个字母的代码。 在[此处](https://www.ssl.com/csrs/country_codes/)访问完整的国家/地区列表。</br>*注意：对于英国，请使用GB （不是英国）。* |
 | 省/市/自治区名称[ST] | 伊利诺伊 | 如果适用。 该值必须是全名，而不是缩写。 |
 | 城市/地区名称[L] | 芝加哥 | |
 | 组织名称[O] | ACME | |

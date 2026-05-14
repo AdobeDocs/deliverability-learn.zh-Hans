@@ -6,12 +6,27 @@ role: Admin
 level: Beginner
 doc-type: Feature Video
 duration: 0
-last-substantial-update: 2024-02-27T00:00:00Z
+last-substantial-update: 2024-02-27T00:00:00.000Z
 jira: KT-15029
 exl-id: d8ca4d48-c6c1-45a9-bf6a-3f58ee161a53
-source-git-commit: 964230b60e345ffc624860e978beb6b08ad4c0b2
+TQID: https://experienceleague.adobe.com/YRkDn6lXosAOfAtZrWRoNstTK-MGWl8Y3PicB6iDTJY
+product_v2:
+  - id: b27e5950-9033-45ac-9f86-eb22e567f615
+  - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2:
+  - id: f71e690b-4480-4b67-9ef5-88f42f9cdfdb
+  - id: f82558ea-6af5-44eb-a424-5b3389abb0a3
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 75df8537199680e5f1fc4b98cefdb05220fee7bf
 workflow-type: tm+mt
-source-wordcount: '925'
+source-wordcount: 928
 ht-degree: 0%
 
 ---
@@ -56,7 +71,7 @@ ht-degree: 0%
 
 + 可以为订阅者提供选项 — 这可以通过首选项中心/选择退出计划进行管理。
 
-**DO：**&#x200B;在电子邮件模板中使用List Unsubscribe标头，以便在电子邮件顶部显示取消订阅链接的电子邮件客户端(例如：gmail.com)可以轻松找到用户习惯于查找取消订阅的位置。
+**DO：**&#x200B;在电子邮件模板中使用List Unsubscribe标头，以便在电子邮件顶部显示取消订阅链接的电子邮件客户端（例如：gmail.com）可以轻松找到用户习惯于查找取消订阅的位置。
 
 
 ## do nots

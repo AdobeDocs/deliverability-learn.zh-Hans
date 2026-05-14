@@ -6,9 +6,41 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: b163628adde1e4d7225a1c2c54d29b24e2b2a352
+TQID: https://experienceleague.adobe.com/Y58eIzSpKUV-B-MiQ-6KNkk31tg1M6Bg27ZqGv-DESc
+product_v2:
+  - id: b27e5950-9033-45ac-9f86-eb22e567f615
+  - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2:
+  - id: a075b2c1-7748-4328-b7f6-343aa314616a
+  - id: b0bb9048-d951-48d8-8232-45cf248a7e27
+  - id: b3b8a63f-51fc-40f6-a7d2-a31c5d49fb45
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+  - id: c5f60233-d5ea-4453-a799-0ad258b4d399
+  - id: d1d0a9cd-295d-4976-8c39-ddae266f240e
+  - id: e2290edd-b061-4880-9d79-dee306cf5aa9
+  - id: ea90ebee-5c84-42d9-8b21-006bdabc95a3
+  - id: f71e690b-4480-4b67-9ef5-88f42f9cdfdb
+  - id: f82558ea-6af5-44eb-a424-5b3389abb0a3
+  - id: fdbb8fc9-ffa3-4b86-88fe-aa4c5a3e1bc6
+subfeature_v2:
+  - id: b75843fa-0a67-4a44-a6b1-cc627b0481dc
+  - id: e656c701-3899-4db3-989c-de0980ddfffa
+  - id: eff19c99-440a-4318-b319-444edc4d8d8f
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 75df8537199680e5f1fc4b98cefdb05220fee7bf
 workflow-type: tm+mt
-source-wordcount: '2064'
+source-wordcount: 2168
 ht-degree: 1%
 
 ---
@@ -35,7 +67,7 @@ Adobe Campaign检查是否为IP地址提供了反向DNS，并且这正确指向I
 
 MX规则（邮件交换器）是管理发送服务器和接收服务器之间通信的规则。
 
-更准确地说，它们用于控制Adobe Campaign MTA（消息传输代理）向每个单独的电子邮件域或ISP(例如，hotmail.com、comcast.net)发送电子邮件的速度。 这些规则通常基于ISP发布的限制（例如，每个SMTP连接不超过20条消息）。
+更准确地说，它们用于控制Adobe Campaign MTA（消息传输代理）向每个单独的电子邮件域或ISP（例如，hotmail.com、comcast.net）发送电子邮件的速度。 这些规则通常基于ISP发布的限制（例如，每个SMTP连接不超过20条消息）。
 
 >[!NOTE]
 >
@@ -67,12 +99,12 @@ SPF记录目前可在DNS服务器上定义为TXT类型记录（代码16）或SPF
 v=spf1 ip4:12.34.56.78/32 ip4:12.34.56.79/32 ~all
 ```
 
-将两个IP地址12.34.56.78和12.34.56.79定义为有权发送域的电子邮件。 **~all**&#x200B;表示任何其他地址都应解释为SoftFail。
+将两个IP地址12.34.56.78和12.34.56.79定义为已授权发送域的电子邮件。 **~all**&#x200B;表示任何其他地址都应解释为SoftFail。
 
-用于定义SPF记录的Recommendations：
+有关定义SPF记录的建议：
 
 * 在末尾添加&#x200B;**~all** (SoftFail)或&#x200B;**-all** (Fail)以拒绝除已定义服务器以外的所有服务器。 如果没有这些信息，服务器将能够伪造此域（使用中性评估）。
-* 请勿添加&#x200B;**ptr**(openspf.org建议不要添加，因为这样做成本高昂且不可靠)。
+* 请勿添加&#x200B;**ptr**（openspf.org建议不要添加，因为这样做成本高昂且不可靠）。
 
 >[!NOTE]
 >
@@ -88,14 +120,14 @@ v=spf1 ip4:12.34.56.78/32 ip4:12.34.56.79/32 ~all
 
 >[!NOTE]
 >
->对于托管或混合安装，如果您已升级到[Enhanced MTA](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/sending-with-enhanced-mta.html?lang=zh-Hans#sending-messages)，则Enhanced MTA将为所有域的所有邮件完成DKIM电子邮件身份验证签名。
+>对于托管或混合安装，如果您已升级到[Enhanced MTA](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/sending-with-enhanced-mta.html#sending-messages)，DKIM电子邮件身份验证签名将由Enhanced MTA对所有域的所有邮件完成。
 
-在Adobe Campaign Classic中使用[DKIM](/help/additional-resources/authentication.md#dkim)需要以下先决条件：
+将[DKIM](/help/additional-resources/authentication.md#dkim)与Adobe Campaign Classic结合使用需要以下先决条件：
 
 **Adobe Campaign选项声明**：在Adobe Campaign中，DKIM私钥基于DKIM选择器和域。 当前无法为使用不同选择器的同一域/子域创建多个私钥。 无法定义哪个selector域/子域必须用于平台或电子邮件中的身份验证。 平台可以选择其中一个私钥，这意味着身份验证失败的可能性很高。
 
-* 如果您已经为Adobe Campaign实例配置了DomainKeys，则只需在[域管理规则](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html?lang=zh-Hans#email-management-rules)中选择&#x200B;**dkim**&#x200B;即可。 如果没有，请执行与DomainKeys（取代DKIM）相同的配置步骤（私钥/公钥）。
-* 由于DKIM是DomainKeys的改进版本，因此不必为同一域同时启用DomainKeys和DKIM。
+* 如果您已经为Adobe Campaign实例配置了DomainKeys，则只需在[域管理规则](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html#email-management-rules)中选择&#x200B;**dkim**&#x200B;即可。 如果没有，请执行与DomainKeys（取代DKIM）相同的配置步骤（私钥/公钥）。
+* 没有必要为同一个域同时启用DomainKeys和DKIM，因为DKIM是DomainKeys的改进版本。
 * 以下域当前验证DKIM：AOL、Gmail。
 
 ## 反馈环 {#feedback-loop-acc}
@@ -145,7 +177,7 @@ Adobe Campaign的可投放性服务管理您对以下ISP的反馈循环服务的
 
 Gmail， Outlook.com， Yahoo！ 和Microsoft Outlook支持此方法。 可直接在其界面中找到“取消订阅”链接。 例如：
 
-![image](../assets/List-Unsubscribe-example-Gmail.png)
+![图像](../assets/List-Unsubscribe-example-Gmail.png)
 
 >[!NOTE]
 >
@@ -193,7 +225,7 @@ Gmail， Outlook.com， Yahoo！ 和Microsoft Outlook支持此方法。 可直�
 
 您也可以使用动态地址。 例如，若要向为平台定义的错误地址发送电子邮件，您可以使用以下脚本： `List-Unsubscribe: <mailto:<%=errorAddress%>?subject=unsubscribe%=message.mimeMessageId%>`
 
-![image](../assets/List-Unsubscribe-template-SMTP.png)
+![图像](../assets/List-Unsubscribe-template-SMTP.png)
 
 #### 创建分类规则 {#creating-a-typology-rule}
 
@@ -215,11 +247,11 @@ Gmail， Outlook.com， Yahoo！ 和Microsoft Outlook支持此方法。 可直�
 
 * 添加以下命令行： `List-Unsubscribe-Post: List-Unsubscribe=One-Click`。
 * 包括URI取消订阅链接。
-* 支持从接收器接收HTTPPOST响应，Adobe Campaign支持此功能。 您也可以使用外部服务。
+* 支持从接收器接收HTTP POST响应，Adobe Campaign支持此功能。 您也可以使用外部服务。
 
-要直接在Adobe Campaign v7/v8中支持“一键式列表 — 取消订阅”POST响应，您必须在“取消订阅收件人：一键式取消订阅”Web应用程序中添加。 为实现此操作，请执行以下步骤：
+要直接在Adobe Campaign v7/v8中支持“一键式列表 — 取消订阅帖子”响应，您必须在“取消订阅收件人no-click”Web应用程序中添加。 为实现此操作，请执行以下步骤：
 
-1. 转到&#x200B;**[!UICONTROL Resources]** > **[!UICONTROL Online]** > **[!UICONTROL Web applications]**。
+1. 转到 **[!UICONTROL Resources]** > **[!UICONTROL Online]** > **[!UICONTROL Web applications]**。
 
 1. 上传“取消订阅的收件人不点击”的[XML](/help/assets/WebAppUnsubNoClick.xml.zip)文件。
 
@@ -243,7 +275,7 @@ List-Unsubscribe-Post: List-Unsubscribe=One-Click
 List-Unsubscribe: <https://domain.com/webApp/unsubNoClick?id=<%= recipient.cryptedId %> >, < mailto:<%@ include option='NmsEmail_DefaultErrorAddr' %>?subject=unsubscribe<%=escape(message.mimeMessageId) %> >
 ```
 
-![image](../assets/List-Unsubscribe-1-click-template-SMTP.png)
+![图像](../assets/List-Unsubscribe-1-click-template-SMTP.png)
 
 以上示例将为支持一键式服务的ISP启用“一键式列表 — 取消订阅”，同时确保不支持“mailto”的接收者仍然可以通过电子邮件请求取消订阅。
 
@@ -253,19 +285,19 @@ List-Unsubscribe: <https://domain.com/webApp/unsubNoClick?id=<%= recipient.crypt
 
 1. 从导航树中，转到&#x200B;**[!UICONTROL Typolgy rules]**&#x200B;并单击&#x200B;**[!UICONTROL New]**。
 
-   ![image](../assets/CreatingTypologyRules1.png)
+   ![图像](../assets/CreatingTypologyRules1.png)
 
 
 1. 配置新的分类规则，例如：
 
-   * **[!UICONTROL Rule type]**： **[!UICONTROL Control]**
-   * **[!UICONTROL Phase]**： **[!UICONTROL At the start of targeting]**
-   * **[!UICONTROL Channel]**： **[!UICONTROL Email]**
+   * **[!UICONTROL Rule type]**: **[!UICONTROL Control]**
+   * **[!UICONTROL Phase]**: **[!UICONTROL At the start of targeting]**
+   * **[!UICONTROL Channel]**: **[!UICONTROL Email]**
    * **[!UICONTROL Level]**：您的选择
    * **[!UICONTROL Active]**
 
 
-   ![image](../assets/CreatingTypologyRules2.png)
+   ![图像](../assets/CreatingTypologyRules2.png)
 
 1. 对分类规则的javascript进行编码，如以下示例所示。
 
@@ -274,7 +306,7 @@ List-Unsubscribe: <https://domain.com/webApp/unsubNoClick?id=<%= recipient.crypt
    >下面描述的代码仅作为示例引用。
 
    此示例详细说明了如何：
-   * 配置“mailto”列表取消订阅。 它会添加标头或附加现有的“mailto：”参数，并将其替换为： &lt;mailto..>， https://...
+   * 配置“mailto”列表取消订阅。 它会添加标头或附加现有“mailto：”参数，并将其替换为： &lt;mailto..>、https://...
    * 在一键式List-Unsubscribe标头中添加。 它使用`var headerUnsubUrl = "https://campmomentumv7-mkt-prod3.campaign.adobe.com/webApp/unsubNoClick?id=<%= recipient.cryptedId %>"÷`
 
    >[!NOTE]
@@ -377,7 +409,7 @@ List-Unsubscribe: <https://domain.com/webApp/unsubNoClick?id=<%= recipient.crypt
    ```
 
 
-   ![image](../assets/CreatingTypologyRules3.png)
+   ![图像](../assets/CreatingTypologyRules3.png)
 
 1. 将新规则添加到应用于电子邮件的分类。
 
@@ -385,7 +417,7 @@ List-Unsubscribe: <https://domain.com/webApp/unsubNoClick?id=<%= recipient.crypt
    >
    >您可以将其添加到默认分类。
 
-   ![image](../assets/CreatingTypologyRules4.png)
+   ![图像](../assets/CreatingTypologyRules4.png)
 
 1. 准备新投放。
 
@@ -393,15 +425,15 @@ List-Unsubscribe: <https://domain.com/webApp/unsubNoClick?id=<%= recipient.crypt
    >
    >验证投放属性中的&#x200B;**[!UICONTROL Additional SMTP headers]**&#x200B;字段是否为空。
 
-   ![image](../assets/CreatingTypologyRules5.png)
+   ![图像](../assets/CreatingTypologyRules5.png)
 
 1. 在投放准备期间检查是否应用新的分类规则。
 
-   ![image](../assets/CreatingTypologyRules6.png)
+   ![图像](../assets/CreatingTypologyRules6.png)
 
 1. 验证取消订阅链接是否存在。
 
-   ![image](../assets/CreatingTypologyRules7.png)
+   ![图像](../assets/CreatingTypologyRules7.png)
 
 ## 电子邮件优化 {#email-optimization}
 
@@ -415,4 +447,4 @@ SMTP（简单邮件传输协议）是用于电子邮件传输的Internet标准�
 
 ### 专用IP {#dedicated-ips}
 
-Adobe为每位客户提供专用的IP策略，并增加IP，以建立信誉并优化投放性能。
+Adobe为每位客户提供了专用的IP策略，并增加了IP，以建立信誉并优化投放性能。

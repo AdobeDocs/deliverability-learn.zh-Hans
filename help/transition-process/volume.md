@@ -10,9 +10,22 @@ role: Admin,User
 level: Beginner
 team: ACS
 exl-id: 1bc56061-0c64-4033-b49c-66618916bca6
-source-git-commit: 6b312cdbba496818337c97ec4f42962aea757901
+TQID: https://experienceleague.adobe.com/piIfp9yQkAa1F1bkO9zM7PcOConZhTrwARo4Y8wtMsQ
+product_v2:
+  - id: b27e5950-9033-45ac-9f86-eb22e567f615
+  - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2:
+  - id: e64968b2-4ee5-47f9-8cae-0588f184b9eb
+  - id: f71e690b-4480-4b67-9ef5-88f42f9cdfdb
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+source-git-commit: 75df8537199680e5f1fc4b98cefdb05220fee7bf
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: 600
 ht-degree: 1%
 
 ---
@@ -21,7 +34,7 @@ ht-degree: 1%
 
 您发送的邮件量对于建立良好的信誉至关重要。 设身处地为ISP着想 — 如果你开始看到来自陌生人的大量流量，那将会令人担忧。 立即发送大量邮件是有风险的，并且必然会导致通常难以解决的信誉问题。 将自己从声誉不佳、阻止因发送太快而造成的大量问题中解救出来，可能会令人沮丧、耗时且成本高昂。
 
-数量阈值因ISP而异，也可能因平均参与量度而异。 有些发件人要求非常低且缓慢的体积斜坡，而其他发件人则可能要求更陡的体积斜坡。 我们建议与专家(如Adobe可交付性顾问)合作，制定定制的容量计划。
+数量阈值因ISP而异，也可能因平均参与量度而异。 有些发件人要求非常低且缓慢的体积斜坡，而其他发件人则可能要求更陡的体积斜坡。 我们建议与专家（如Adobe可交付性顾问）合作制定自定义的容量计划。
 
 下面是有关如何顺利过渡的提示和提示列表：
 
