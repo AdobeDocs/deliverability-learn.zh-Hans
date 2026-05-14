@@ -95,7 +95,7 @@ Gmail、®和OATH等ISP将非参与视为不需要的电子邮件，并开始将
 **Adobe Campaign**
 
 * [Campaign Classic中的跟踪日志](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/delivery-dashboard.html#tracking-logs)
-* [Campaign Standard中的跟踪日志](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/sending-and-tracking-messages/tracking-messages.html#tracking-logs)
+* [Campaign Standard中的跟踪日志](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/sending-and-tracking-messages/tracking-messages.html?lang=zh-Hans#tracking-logs)
 
 **Adobe客户历程管理**
 
