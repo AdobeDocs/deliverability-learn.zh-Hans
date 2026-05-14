@@ -6,9 +6,14 @@ exl-id: a11e88cf-bf37-42cc-9c09-1d58360459b7
 hide: true
 role: Admin
 level: Beginner
-source-git-commit: 1c1e1b673fbc640fec84948878060b8bc0354ba2
+TQID: https://experienceleague.adobe.com/hPHB9s3PH7E9L3omZMTWZA2ZB0d1JS5vEfawQOjnBLw
+product_v2: id: b27e5950-9033-45ac-9f86-eb22e567f615id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616aid: b3b8a63f-51fc-40f6-a7d2-a31c5d49fb45id: f71e690b-4480-4b67-9ef5-88f42f9cdfdb
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+source-git-commit: 75df8537199680e5f1fc4b98cefdb05220fee7bf
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: 459
 ht-degree: 4%
 
 ---
@@ -45,7 +50,7 @@ ht-degree: 4%
 要查找受此问题影响的收件人，或在其他任何ISP再次出现此问题的情况下，请参阅以下说明：
 
 * 对于Campaign Classic v7和Campaign v8，请参阅[此页面](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html?lang=en#unquarantine-bulk){_blank}。
-* 对于Campaign Standard，请参阅[此页面](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=zh-Hans#unquarantine-bulk){_blank}。
+* 对于Campaign Standard，请参阅[此页面](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=en#unquarantine-bulk){_blank}。
 
 ### Adobe Journey Optimizer{#ajo-update}
 
@@ -53,5 +58,5 @@ ht-degree: 4%
 
 识别地址后，可以使用&#x200B;**[!UICONTROL Delete]**&#x200B;按钮从禁止显示列表中手动删除这些地址。 这些地址随后可以包含在将来的电子邮件营销活动中。
 
-有关详细信息，请参阅[此部分](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/monitor-reputation/manage-suppression-list.html?lang=zh-Hans#remove-from-suppression-list){_blank}。
+有关详细信息，请参阅[此部分](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/monitor-reputation/manage-suppression-list.html#remove-from-suppression-list){_blank}。
 

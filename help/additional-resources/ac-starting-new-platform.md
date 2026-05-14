@@ -6,10 +6,16 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 6c9ade01-3052-4311-af80-888294820024
-source-git-commit: d6094cd2ef0a8a7741e7d8aa4db15499fad08f90
+TQID: https://experienceleague.adobe.com/cQa5nOTSJwxDGX-QkXGez5dpm5N-8I7QZ-LsEW0FRLo
+product_v2: id: b27e5950-9033-45ac-9f86-eb22e567f615id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616aid: c5474392-5419-4296-9e41-f6f4ce4f6e9bid: c5f60233-d5ea-4453-a799-0ad258b4d399id: d1d0a9cd-295d-4976-8c39-ddae266f240eid: e2290edd-b061-4880-9d79-dee306cf5aa9id: f71e690b-4480-4b67-9ef5-88f42f9cdfdbid: fdbb8fc9-ffa3-4b86-88fe-aa4c5a3e1bc6
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 75df8537199680e5f1fc4b98cefdb05220fee7bf
 workflow-type: tm+mt
-source-wordcount: '549'
-ht-degree: 6%
+source-wordcount: 666
+ht-degree: 9%
 
 ---
 
@@ -21,7 +27,7 @@ ht-degree: 6%
 
 在新平台上开始发送电子邮件时，您应该非常小心，因为该平台没有任何使用历史，并且从未将发送IP用于此目的时的信誉也不高。
 
-ISP自然会怀疑从未用于发送电子邮件、突然开始发送大量电子邮件流量的IP地址。 事实上，垃圾邮件发送者通常使用“未知”IP地址(从未被阻止列表的地址)在检测之前发送尽可能多的邮件。
+ISP自然会怀疑从未用于发送电子邮件、突然开始发送大量电子邮件流量的IP地址。 事实上，垃圾邮件发送者通常使用“未知”IP地址（从未被阻止列表的地址）在检测之前发送尽可能多的邮件。
 
 在生产阶段刚开始时，您就不可能指望达到以产出衡量的运行速度。 此外，您不应尝试以这种速率发送消息，因为这可能导致ISP阻塞发送地址并严重危害启动阶段的其余部分。
 
@@ -29,7 +35,7 @@ ISP自然会怀疑从未用于发送电子邮件、突然开始发送大量电�
 
 下面列出了启动新平台时应遵循的主要原则。
 
-* 配置专用于从Adobe发送的电子邮件促销活动的专用子域。
+* 配置一个专用子域，该子域特定于从Adobe发送的电子邮件营销活动。
 
 * 如果您有此信息，请&#x200B;**将无效地址导入隔离表**。
 首次使用地址列表且可能不完全合格时，经常会启动平台。 如果发送到无效地址或honeypot地址，这将有助于降低平台的声誉。
@@ -54,13 +60,13 @@ ISP自然会怀疑从未用于发送电子邮件、突然开始发送大量电�
 
 **Adobe Campaign Classic**
 
-* [通过隔离优化投放](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html?lang=zh-Hans#optimizing-your-delivery-through-quarantines)
-* [确定整个平台的隔离地址](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html?lang=zh-Hans#identifying-quarantined-addresses-for-the-entire-platform)
-* [使用多个批次发送](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=zh-Hans#sending-using-multiple-waves)
+* [通过隔离优化投放](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html#optimizing-your-delivery-through-quarantines)
+* [确定整个平台的隔离地址](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html#identifying-quarantined-addresses-for-the-entire-platform)
+* [使用多个批次发送](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#sending-using-multiple-waves)
 * [投放监测](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html?lang=zh-Hans#sending-messages)
 
 **Adobe Campaign Standard**
 
-* [通过隔离优化投放](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=zh-Hans#optimizing-your-delivery-through-quarantines)
-* [确定整个平台的隔离地址](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=zh-Hans)
+* [通过隔离优化投放](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html#optimizing-your-delivery-through-quarantines)
+* [确定整个平台的隔离地址](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html)
 * [监测投放](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/monitoring-a-delivery.html?lang=zh-Hans)

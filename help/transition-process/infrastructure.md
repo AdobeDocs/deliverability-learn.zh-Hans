@@ -10,9 +10,15 @@ role: Admin, Leader
 level: Beginner
 team: ACS
 exl-id: 4025d95c-cc77-4e0c-9904-aaf60019b18c
-source-git-commit: 6b312cdbba496818337c97ec4f42962aea757901
+TQID: https://experienceleague.adobe.com/FWlVtNGACEM6dKsnYQJU-z04mP902M5EXZmxxsKDyqU
+product_v2: id: b27e5950-9033-45ac-9f86-eb22e567f615id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: b0bb9048-d951-48d8-8232-45cf248a7e27id: c5f60233-d5ea-4453-a799-0ad258b4d399id: e2290edd-b061-4880-9d79-dee306cf5aa9id: ea90ebee-5c84-42d9-8b21-006bdabc95a3id: f71e690b-4480-4b67-9ef5-88f42f9cdfdb
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 75df8537199680e5f1fc4b98cefdb05220fee7bf
 workflow-type: tm+mt
-source-wordcount: '898'
+source-wordcount: 923
 ht-degree: 2%
 
 ---
@@ -25,7 +31,7 @@ ht-degree: 2%
 
 时代变了，一些ISP（如Gmail和Yahoo）现在将域信誉作为附加点向发件人附加电子邮件信誉。 您的域信誉基于您的发送域，而不是您的IP地址。 这意味着在ISP过滤决策时，您的品牌优先。
 
-Adobe平台上新发件人的入门流程包括设置发送域并确保正确建立您的基础架构。 您应该与专家合作，了解您计划长期使用哪些域。 以下是一些可形成良好域策略的提示：
+在Adobe平台上，新发件人的载入流程包括设置发送域并确保正确建立您的基础架构。 您应该与专家合作，了解您计划长期使用哪些域。 以下是一些可形成良好域策略的提示：
 
 * 在您选择的域中尽可能清晰地反映品牌，以便用户不会将邮件错误地识别为垃圾邮件。 例如newsletter.foo.com、receipts.foo.com等。
 * 您不应使用父域或公司域，因为它可能会影响从您的组织向ISP的邮件投放。
@@ -47,7 +53,7 @@ Adobe平台上新发件人的入门流程包括设置发送域并确保正确建
 
 ## 身份验证 {#authentication}
 
-身份验证是ISP用于验证发件人身份的过程。 最常见的两种身份验证协议是[!DNL Sender Policy Framework] (SPF)和[!DNL DomainKeys Identified Mail] (DKIM)。 最终用户看不到这些内容，但可以帮助ISP过滤来自已验证发件人的电子邮件。 [!DNL Domain-based Message Authentication Reporting and Conformance] (DMARC)越来越受欢迎，尽管其策略尚未被所有ISP纳入其信誉系统。
+身份验证是ISP用于验证发件人身份的过程。 最常见的两种身份验证协议是[!DNL Sender Policy Framework] (SPF)和[!DNL DomainKeys Identified Mail] (DKIM)。 最终用户看不到这些内容，但可以帮助ISP过滤来自已验证发件人的电子邮件。[!DNL Domain-based Message Authentication Reporting and Conformance] (DMARC)越来越受欢迎，尽管其政策尚未被所有ISP纳入其声誉体系。
 
 ### SPF
 
@@ -55,20 +61,20 @@ Adobe平台上新发件人的入门流程包括设置发送域并确保正确建
 
 ### DKIM
 
-[!DNL Domain Keys Identified Mail] (DKIM)是一种用于检测伪造发件人地址（通常称为欺骗）的身份验证方法。 如果启用了DKIM，则允许接收者确认是否授权发送者从该域发送邮件。
+[!DNL Domain Keys Identified Mail] (DKIM)是一种用于检测伪造发件人地址（通常称为欺骗）的身份验证方法。 如果启用了DKIM，则接收者可以确认发件人是否有权从该域发送邮件。
 
 ### DMARC
 
-[!DNL Domain-based Message Authentication, Reporting and Conformance] (DMARC)是一种身份验证方法，它允许域所有者保护其域免遭未经授权的使用。 DMARC使用SPF或DKIM或同时使用两者来允许域所有者控制身份验证失败的邮件发生的情况：投放、隔离或拒绝。
+[!DNL Domain-based Message Authentication, Reporting and Conformance] (DMARC)是一种身份验证方法，它允许域所有者保护其域免遭未经授权的使用。 DMARC使用SPF或DKIM或同时使用两者来允许域所有者控制身份验证失败的邮件发生的情况：已投放、已隔离或已拒绝。
 
 ## 产品特定资源
 
 **Campaign**
 
 * 在[本节](/help/additional-resources/ac-domain-name-setup.md)中了解如何将子域完全委派给Adobe Campaign Classic或Standard。
-* [控制面板：完全子域委派（教程）](https://experienceleague.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html?lang=zh-Hans) - *了解如何将子域完全委派给Adobe Campaign Classic。*
-* [控制面板：完全子域委派（教程）](https://experienceleague.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html?lang=zh-Hans) - *了解如何将子域完全委派给Adobe Campaign Standard。*
-* 在[本节](/help/additional-resources/acc-technical-recommendations.md#feedback-loop-acc)中了解有关Campaign Classic实例实现反馈循环的更多信息。
+* [控制面板：完全子域委派（教程）](https://experienceleague.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) - *了解如何将子域完全委派给Adobe Campaign Classic。*
+* [控制面板：完全子域委派（教程）](https://experienceleague.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) - *了解如何将子域完全委派给Adobe Campaign Standard。*
+* 在[本节](/help/additional-resources/acc-technical-recommendations.md#feedback-loop-acc)中了解有关为Campaign Classic实例实施反馈循环的更多信息。
 
 ## 其他资源
 
