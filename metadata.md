@@ -10,7 +10,7 @@ product_v2:
 usetq: true
 type: Tutorial
 mini-toc-levels: 2
-git-repo: https://github.com/AdobeDocs/deliverability-learn.en
+git-repo: https://github.com/AdobeDocs/deliverability-learn.zh-Hans
 index: true
 source-git-commit: 21b46115ca02135c5b21be3b45c07dbdcaf49c76
 workflow-type: ht
