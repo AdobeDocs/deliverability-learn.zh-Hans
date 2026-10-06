@@ -9,28 +9,37 @@ duration: 0
 last-substantial-update: 2024-02-27T00:00:00.000Z
 jira: KT-15029
 exl-id: d8ca4d48-c6c1-45a9-bf6a-3f58ee161a53
-TQID: https://experienceleague.adobe.com/YRkDn6lXosAOfAtZrWRoNstTK-MGWl8Y3PicB6iDTJY
+TQID: 'https://experienceleague.adobe.com/YRkDn6lXosAOfAtZrWRoNstTK-MGWl8Y3PicB6iDTJY'
 product_v2:
   - id: b27e5950-9033-45ac-9f86-eb22e567f615
+    internal-label: Marketo Engage
   - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+    internal-label: CX Enterprise
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: f71e690b-4480-4b67-9ef5-88f42f9cdfdb
+    internal-label: Resources
   - id: f82558ea-6af5-44eb-a424-5b3389abb0a3
+    internal-label: Templates
+  - id: 63876777-85c3-57e1-a2da-81f02956c63c
+    internal-label: Deliverability
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 75df8537199680e5f1fc4b98cefdb05220fee7bf
+    internal-label: Privacy
+source-git-commit: d66463b8c8097e19fd50b9b033e6b21165d7e8c9
 workflow-type: tm+mt
-source-wordcount: 928
+source-wordcount: '928'
 ht-degree: 0%
-
 ---
-
 # 取消订阅待办事项和待办事项
 
 取消订阅是电子邮件生命周期的自然组成部分。 但营销人员有时很难说再见。 您非常努力地制作最吸引人的电子邮件，并就您的品牌提供的产品和服务提供最划算的优惠。 但是，一些订阅者决定继续订阅是完全正常的，也是应该预料的。 这可能有很多原因，但归根结底，他们不想再听到你的消息。
